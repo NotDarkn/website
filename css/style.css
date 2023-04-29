@@ -1,5 +1,14 @@
 @font-face {
-  font-family: "comic-sans";
-  src: url("../fonts/comic-sans.ttf") format('truetype');
+  font-family: 'ComicSans';
+  src: url("comic-sans.ttf") format('truetype');
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal; 
+}
+
+h1, h2, h3, h4 {
+  font-family: "ComicSans", sans-serif;
+}
+
+p {
+  font-family: "ComicSans", sans-serif;
+}
