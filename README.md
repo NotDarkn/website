@@ -21,9 +21,9 @@
 - [ ] Create a to-do.html
 - [ ] Add both the chanelog.html and to-do.html to the site
 - [ ] Remove the padding between lists, texts, and headers
+- [ ] Make all incorrect 404 pages **REDIRECT** to `icrazeis.gay/404`
 - [ ] Add more information to the README of this GitHub
 - [ ] Add some HTML comments for me to read it easier
-- [ ] Make all incorrect 404 pages REDIRECT to `icrazeis.gay/404`
 ***
 - [ ] Add an animation when opening up the site
 - [ ] Make a simplistic UI to make the site look better
