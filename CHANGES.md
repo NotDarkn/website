@@ -2,10 +2,10 @@
 **Added**
 - Added support for custom fonts
   - List of the following added fonts:
-    - SF Pro Display: Regular
-    - SF Pro Display: Medium
-    - Aaragh Sans Serif
-    - LDF Comic Sanse
+    - **SF Pro Display:** Regular
+    - **SF Pro Display:** Medium
+    - **Aaragh:** Sans Serif
+    - **LDF:** Comic Sans
 - Created a `font.css` for just text fonts
 - Created a to-do list for the GitHub
 - Created a changelogs.md for the GitHub
