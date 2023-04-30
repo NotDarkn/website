@@ -15,7 +15,6 @@
 - [x] Change some of the information in the 404 page
 - [x] Make a scaled mobile version for better reading
 - [x] Make the font size a bit bigger for normal text
-- [x] Make the website have a mobile favicon
 ***
 - [ ] Create a changelog.html
 - [ ] Create a to-do.html
@@ -24,6 +23,7 @@
 - [ ] Make all incorrect 404 pages **REDIRECT** to `icrazeis.gay/404`
 - [ ] Add more information to the README of this GitHub
 - [ ] Add some HTML comments for me to read it easier
+- [ ] Make the website have an iOS favicon
 ***
 - [ ] Add an animation when opening up the site
 - [ ] Make a simplistic UI to make the site look better
