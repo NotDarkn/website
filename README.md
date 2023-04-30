@@ -13,13 +13,14 @@
 - [x] Create a changelog onto the GitHub
 - [x] Make `/css`, `/fonts/` and `/img` go to an actual 404 page
 - [x] Change some of the information in the 404 page
+- [x] Make a scaled mobile version for better reading
+- [x] Make the font size a bit bigger for normal text
 ***
 - [ ] Create a changelog.html
 - [ ] Create a to-do.html
 - [ ] Add both the chanelog.html and to-do.html to the site
 - [ ] Remove the padding between lists, texts, and headers
 - [ ] Add more information to the README of this GitHub
-- [ ] Make a scaled mobile version for better reading
 - [ ] Add some HTML comments for me to read it easier
 - [ ] Make all incorrect 404 pages REDIRECT to `icrazeis.gay/404`
 ***
