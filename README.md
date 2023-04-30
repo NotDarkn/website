@@ -11,6 +11,8 @@
 - [x] Organize the site with different fonts and font sizes
 - [x] Create a checklist on GitHub
 - [x] Create a changelog onto the GitHub
+- [x] Make `/css`, `/fonts/` and `/img` go to an actual 404 page
+- [x] Change some of the information in the 404 page
 ***
 - [ ] Create a changelog.html
 - [ ] Create a to-do.html
@@ -19,13 +21,7 @@
 - [ ] Add more information to the README of this GitHub
 - [ ] Make a scaled mobile version for better reading
 - [ ] Add some HTML comments for me to read it easier
-- [ ] Change some of the information in the 404 page
-- [ ] Temporarily add proper 404 pages to `/css`, `/fonts`, and `/img`
-- [ ] Make all incorrect icraze.gay redirects go to the proper 404 page
-  - This includes the following:
-    - `icrazeis.gay/css`
-    - `icrazeis.gay/fonts`
-    - `icrazeis.gay/img`
+- [ ] Make all incorrect 404 pages REDIRECT to `icrazeis.gay/404`
 ***
 - [ ] Add an animation when opening up the site
 - [ ] Make a simplistic UI to make the site look better
