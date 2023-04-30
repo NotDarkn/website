@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/73033672/235336048-73e62b4f-7d48-4ea1-964c-9b2ddcbca7a4.png)
+![image](https://user-images.githubusercontent.com/73033672/235336865-36fef4a7-9a6a-4e31-b638-9abb3daf363e.png)
 <h1><p align="center"><a href="https://icrazeis.gay">website</p></h1>
 <p align="center">please get out of here</p>
 
