@@ -1,1 +1,8 @@
-iCrazeWare
+body {
+	background-color: #131516;
+	color: #FFFFFF;
+}
+
+a[href] {
+	color: #2E8FF9;
+}
