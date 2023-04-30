@@ -6,15 +6,8 @@
 }
 
 @font-face {
-  font-family: 'SF-Med';
-  src: url('../fonts/sf-pro-medium.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF-Bold';
-  src: url('../fonts/sf-pro-bold.otf') format('opentype');
+  font-family: 'SF-SemiBold';
+  src: url('../fonts/sf-pro-semibold.otf') format('opentype');
 }
 
 @font-face {
@@ -24,15 +17,8 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'D-Sans-Serif';
-  src: url('../fonts/sans-serif.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 h1, h2 {
-  font-family: "SF-Bold", sans-serif;
+  font-family: "SF-SemiBold", sans-serif;
 }
 
 p {
