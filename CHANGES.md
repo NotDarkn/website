@@ -1,3 +1,8 @@
+## April 30th, 2023 Changelog
+**Added**
+- Display scaling for mobile devices
+- Bit higher font size for normal text
+
 ## April 29th, 2023 Changelog
 **Added**
 - Added support for custom fonts
