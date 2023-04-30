@@ -15,6 +15,7 @@
 - [x] Change some of the information in the 404 page
 - [x] Make a scaled mobile version for better reading
 - [x] Make the font size a bit bigger for normal text
+- [x] Make the website have a mobile favicon
 ***
 - [ ] Create a changelog.html
 - [ ] Create a to-do.html

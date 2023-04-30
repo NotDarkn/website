@@ -2,10 +2,10 @@
 **Added**
 - Display scaling for mobile devices
 - Bit higher font size for normal text
+- Apple devices now have a website favicon
 
 **Changed**
-- Now uses a 32x32 favicon
-  - This was suppose to fix favicons on mobile devices
+- PC favicon is now 128x128, but can be upscaled to 512x512
 
 ## April 29th, 2023 Changelog
 **Added**
