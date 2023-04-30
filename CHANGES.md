@@ -11,7 +11,7 @@
 - The "p.s" text is now slightly larger
 
 **Removed**
-- Removed three fonts:
+- Removed five fonts:
   - **SF Pro Display** - Medium
   - **SF Pro Display** - Bold
   - **SF Pro Display** - Semibold
