@@ -3,6 +3,10 @@
 - Display scaling for mobile devices
 - Bit higher font size for normal text
 
+**Changed**
+- Now uses a 32x32 favicon
+  - This was suppose to fix favicons on mobile devices
+
 ## April 29th, 2023 Changelog
 **Added**
 - Added support for custom fonts
