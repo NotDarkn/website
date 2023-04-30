@@ -7,6 +7,8 @@
 **Changed**
 - PC favicon is now 128x128, but can be upscaled to 512x512
 - Header font is now "SF Pro Display - Regular"
+- The "p.s" text is now alligned in the middle
+- The "p.s" text is now slightly larger
 
 **Removed**
 - Removed three fonts:
