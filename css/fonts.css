@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Comic-Sans';
+  src: url("../fonts/comic-sans.ttf") format('opentype');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'SF-Med';
+  src: url('../fonts/sf-pro-medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Reg';
+  src: url('../fonts/sf-pro-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'D-Sans-Serif';
+  src: url('../fonts/sans-serif.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2 {
+  font-family: "SF-Med", sans-serif;
+}
+
+h4, h5 {
+  font-family: "Comic-Sans", sans-serif;
+}
+
+p {
+  font-family: "SF-Reg", sans-serif;
+}
