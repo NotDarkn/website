@@ -6,7 +6,14 @@
 
 **Changed**
 - PC favicon is now 128x128, but can be upscaled to 512x512
-- Header font is now "San Fransico Pro Display - Bold"
+- Header font is now "SF Pro Text - Semibold"
+
+**Removed**
+- Removed three fonts:
+  - **SF Pro Display** - Medium
+  - **SF Pro Display** - Bold
+  - **SF Pro Display** - Semibold
+  - **Aaragh** - Sans Serif
 
 ## April 29th, 2023 Changelog
 **Added**
