@@ -17,11 +17,7 @@
   font-style: normal;
 }
 
-h1, h2 {
-  font-family: "SF-SemiBold", sans-serif;
-}
-
-p {
+h1, h2, p {
   font-family: "SF-Reg", sans-serif;
 }
 
