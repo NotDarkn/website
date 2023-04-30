@@ -9,8 +9,11 @@
 - Created a `font.css` for just text fonts
 - Created a to-do list for the GitHub
 - Created a changelogs.md for the GitHub
+- Created `css.html`, `fonts.html`, and `img.html` to be 404 pages
+  - This used to go to a 404 page with just a white bg & no font
 
 **Changed**
+- Changed the 404 page to be a bit different, isn't drastic but it's there
 - Changed some of the information in the website to be accurate
 - Changed the background to be dark instead of light mode
 - Changed the text to be white so dark mode would work
