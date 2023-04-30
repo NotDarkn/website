@@ -10,6 +10,7 @@
 - [x] Fix some incorrect information in the AI-created text
 - [x] Organize the site with different fonts and font sizes
 - [x] Create a checklist on GitHub, I'm not doing it in a .html
+- [x] Create a changelog onto the GitHub, I like seeing changes
 ***
 - [ ] Remove the padding between lists, texts, and headers
 - [ ] Add more information to the README of this GitHub
