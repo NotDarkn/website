@@ -9,6 +9,7 @@
 - `index.html` now partially uses `style="font-family"` in some text
 - Adding a `/` between text (ex: `.gay/help/`) no longer breaks font/colors
 - Hopefully fixed mobile scaling on 404 pages
+- Actually put `</font>` at the end of `<font>`
 
 **Removed:**
 - Removed three files:
