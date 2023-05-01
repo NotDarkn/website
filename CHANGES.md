@@ -1,3 +1,8 @@
+## May 1st, 2023 Changelog
+**Changed**
+- `fonts.css` no longer forces `<font>` to be Comic-Sans
+- `index.html` now partially uses `style="font-family"` in some text
+
 ## April 30th, 2023 Changelog
 **Added**
 - Display scaling for mobile devices
