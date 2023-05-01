@@ -6,7 +6,13 @@
 **Changed**
 - `fonts.css` no longer forces `<font>` to be Comic-Sans
 - `index.html` now partially uses `style="font-family"` in some text
+- Adding a `/` between text (ex: `.gay/help/`) no longer breaks font/colors
 
+**Removed:**
+- Removed three files:
+  - `css.html` - No longer needed
+  - `img.html` - No longer needed
+  - `fonts.html` - No longer needed
 ## April 30th, 2023 Changelog
 **Added**
 - Display scaling for mobile devices
