@@ -20,8 +20,8 @@
 - [x] Add an iPhone/iOS favicon
 - [x] Create a changelog.html
 - [x] Create a to-do.html
+- [x] Add both the chanelog.html and to-do.html to the site
 ***
-- [ ] Add both the chanelog.html and to-do.html to the site
 - [ ] Remove the padding between lists, texts, and headers
 - [ ] Add more information to the README of this GitHub
 - [ ] Add some HTML comments for me to read it easier
