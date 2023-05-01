@@ -12,6 +12,7 @@
 - Actually put `</font>` at the end of `<font>`
 
 **Removed:**
+- Properly removed `sf-pro-semibold` from `fonts.css`
 - Removed three files:
   - `css.html` - No longer needed
   - `img.html` - No longer needed
