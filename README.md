@@ -5,6 +5,7 @@
 - [x] Add a "p.s" at the bottom
 - [x] Add some text which are links
 - [x] Create a 404 page
+- [x] Add a PC favicon
 - [x] Support and add custom fonts
 - [x] Support and add dark mode
 - [x] Fix some incorrect information in the AI-created text
@@ -15,6 +16,7 @@
 - [x] Change some of the information in the 404 page
 - [x] Make a scaled mobile version for better reading
 - [x] Make the font size a bit bigger for normal text
+- [x] Add an iPhone/iOS favicon
 ***
 - [ ] Create a changelog.html
 - [ ] Create a to-do.html
