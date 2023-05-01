@@ -2,6 +2,7 @@
 **Added**
 - Display scaling for mobile devices
 - Bit higher font size for normal text
+- Favicons for mobile devices
 
 **Changed**
 - PC favicon is now 128x128, but can be upscaled to 512x512
