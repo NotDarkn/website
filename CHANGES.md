@@ -10,6 +10,7 @@
 - Adding a `/` between text (ex: `.gay/help/`) no longer breaks font/colors
 - Hopefully fixed mobile scaling on 404 pages
 - Actually put `</font>` at the end of `<font>`
+- Converting `<font>` to `<div>` slowly
 
 **Removed:**
 - Properly removed `sf-pro-semibold` from `fonts.css`
