@@ -1,4 +1,8 @@
 ## May 1st, 2023 Changelog
+**Added**
+- Created `changelog.html`
+- Created `to-do.html`
+
 **Changed**
 - `fonts.css` no longer forces `<font>` to be Comic-Sans
 - `index.html` now partially uses `style="font-family"` in some text

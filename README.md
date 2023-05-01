@@ -17,9 +17,9 @@
 - [x] Make a scaled mobile version for better reading
 - [x] Make the font size a bit bigger for normal text
 - [x] Add an iPhone/iOS favicon
+- [x] Create a changelog.html
+- [x] Create a to-do.html
 ***
-- [ ] Create a changelog.html
-- [ ] Create a to-do.html
 - [ ] Add both the chanelog.html and to-do.html to the site
 - [ ] Remove the padding between lists, texts, and headers
 - [ ] Make all incorrect 404 pages **REDIRECT** to `icrazeis.gay/404`
