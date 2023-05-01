@@ -1,3 +1,7 @@
+* {
+	
+}
+
 body {
 	background-color: #131516;
 	color: #E3E1DE;
@@ -5,9 +9,4 @@ body {
 
 a[href] {
 	color: #2E8FF9;
-}
-
-viewport {
-  width: device-width ;
-  zoom: 1.0 ;
 }

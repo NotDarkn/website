@@ -2,11 +2,13 @@
 **Added**
 - Created `changelog.html`
 - Created `to-do.html`
+- `index.html` now includes a credit alongside some extra info below
 
 **Changed**
 - `fonts.css` no longer forces `<font>` to be Comic-Sans
 - `index.html` now partially uses `style="font-family"` in some text
 - Adding a `/` between text (ex: `.gay/help/`) no longer breaks font/colors
+- Hopefully fixed mobile scaling on 404 pages
 
 **Removed:**
 - Removed three files:
