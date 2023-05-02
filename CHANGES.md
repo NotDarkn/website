@@ -4,6 +4,7 @@
 
 **Changed:**
 - The `To-do List` and `Changelogs` now redirect to the GitHub
+- Fixed the URLs in the `To-do List` and `Changelogs`
 
 **Removed:**
 - Removed two files:
