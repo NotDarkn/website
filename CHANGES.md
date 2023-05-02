@@ -1,3 +1,16 @@
+## May 2nd, 2023 Changelog
+**Added**
+- There is now a `TO-DO.md` instead of a `to-do.html`
+
+**Changed:**
+- The `To-do List` and `Changelogs` now redirect to the GitHub
+
+**Removed:**
+- Removed two files:
+  - `to-do.html` - Too difficult to make
+  - `changelog.html` - we have a GitHub .md to do this
+- Removed to-do list from README.md and transported it to `TO-DO.md`
+
 ## May 1st, 2023 Changelog
 **Added**
 - Created `changelog.html`
