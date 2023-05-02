@@ -33,6 +33,6 @@
 ### Important
 - [ ] Add an animation when opening up the site
 - [ ] Add animations when scrolling down in the site
-    - For example, scrolling down shows the three tweaks that are infected
+   - For example, scrolling down shows the three tweaks that are infected
 - [ ] Add a way to automatically change between dark & light mode
 - [ ] Make a simplistic UI to make the site look better
