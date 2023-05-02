@@ -23,6 +23,7 @@
 - [x] Add both the chanelog.html and to-do.html to the site
 ***
 - [ ] Replace all `<font>` in the code to be `div` classes in `style.css`
+- [ ] Make the 404 page center in the middle, not just text
 - [ ] Remove the padding between lists, texts, and headers
 - [ ] Add more information to the README of this GitHub
 - [ ] Add some HTML comments for me to read it easier
