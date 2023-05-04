@@ -1,3 +1,7 @@
+## May 4th, 2023 Changelog
+**Changed:**
+- Fixed the picture in the embed for the URL.
+
 ## May 2nd, 2023 Changelog
 **Added**
 - There is now a `TO-DO.md` instead of a `to-do.html`
