@@ -1,3 +1,9 @@
+## May 16th, 2023 Changelog
+**Changed:**
+- Now using the domain: `osu.bio`
+  - Namecheap locked me out of my account and suspended `icrazeis.gay`, so I had to.
+- Fixed the embed picture again
+
 ## May 4th, 2023 Changelog
 **Changed:**
 - Fixed the picture in the embed for the URL.
