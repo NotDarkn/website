@@ -1,3 +1,8 @@
+## May 22nd, 2023 Changelog
+**Changed:**
+- Removed iCraze Propaganda
+  - I wanted the domain to be removed. I'm tired of it being blocked now lol
+
 ## May 16th, 2023 Changelog
 **Changed:**
 - Now using the domain: `osu.bio`
