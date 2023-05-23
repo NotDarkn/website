@@ -12,12 +12,14 @@
 - [x] Create some text which are links
 - [x] Create custom fonts for future use
 - [x] Create a scaled version of the site for mobile devices
+- [x] Create more information to the README of this GitHub
 
 ##### Changed
 - [x] Change the website background to be in dark mode
 - [x] Change the website with different fonts
 - [x] Change some of the information in the 404 page
 - [x] Change the website to have a bigger font size
+- [x] Change the website to have text dead set fullscreen middle
 
 ##### Fixed
 - [x] Make `/css`, `/fonts/` and `/img` go to an actual 404 page
@@ -27,7 +29,6 @@
 ### In Progress
 - [ ] Replace all `<font>` in the code to be `div` classes in `style.css`
 - [ ] Remove the padding between lists, texts, and headers
-- [ ] Add more information to the README of this GitHub
 - [ ] Add some HTML comments for me to read it easier
 ***
 ### Important

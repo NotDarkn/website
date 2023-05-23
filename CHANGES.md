@@ -5,6 +5,12 @@
 **Changed:**
 - Replaced "placeholder" with "Fake iCraze Propaganda" redirect
 - Main page also fully states that the propaganda is **satire.**
+- Both the main page and 404 has fully centered text.
+- Both the main page and 404 have a box surrounding the text.
+- Decided to capitalize "fake iCraze propaganda"
+
+**Removed:**
+- Removed "here" from "fake iCraze propaganda here"
 
 ## May 22nd, 2023 Changelog
 **Added:**
