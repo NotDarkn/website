@@ -1,3 +1,11 @@
+## May 23rd, 2023 Changelog
+**Added:**
+- Readded iCraze Propaganda under a **clickable redirect.**
+
+**Changed:**
+- Replaced "placeholder" with "Fake iCraze Propaganda" redirect
+- Main page also fully states that the propaganda is **satire.**
+
 ## May 22nd, 2023 Changelog
 **Added:**
 - Multiple new Sakamato images
