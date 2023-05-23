@@ -1,12 +1,14 @@
 ## May 22nd, 2023 Changelog
 **Added:**
-- Multiple new sakamato images for favicons, and embeds.
+- Multiple new Sakamato images
+- Multiple new, uhh interesting images
 
 **Changed:**
 - Removed iCraze Propaganda
   - I wanted the domain to be removed. I'm tired of it being blocked now lol
 - Changed all embeds to use an image of Sakamato
 - Changed all titles, embed descriptions, and more.
+- Changed favicon to be an, interesting image, same with apple favicons.
 
 **Removed:**
 - 404.html no longer has an embed.
