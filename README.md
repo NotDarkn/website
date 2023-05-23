@@ -1,4 +1,4 @@
-![screenshot](https://github.com/NotDarkn/website/assets/73033672/eb3c43ef-1114-4ef2-9f2c-fcca2a6cddff)
+![YES SCREENSHOT](https://github.com/NotDarkn/website/assets/73033672/2fe78e31-c251-4012-bde3-981dad72a45b)
 <h1><p align="center"><a href="https://osu.bio">Darkn's Profile</a></p></h1>
 
 <h2>Features</h2>
