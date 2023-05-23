@@ -3,7 +3,7 @@
 
 <h2>Features</h2>
 <ul>
-  <li>Black Void of Nothing./li>
+  <li>Black Void of Nothing.</li>
   <li>Quite Literally Nothing.</li>
   <li>Fake Propaganda Hosted at <a href="https://osu.bio/icraze">osu.bio/icraze</a></li>
 </ul>
