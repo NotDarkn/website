@@ -13,7 +13,9 @@ a[href] {
 	left: 50%;
 	/* bring your own prefixes */
 	transform: translate(-50%, -50%);
+	text-align: center;
 	display: table-cell;
 	padding: 40px;
 	border: 5px solid #1c87c9;
+	width: device-width
 }
