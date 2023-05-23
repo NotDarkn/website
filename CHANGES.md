@@ -13,6 +13,7 @@
 **Removed:**
 - 404.html no longer has an embed.
 - testing.html no longer exists.
+- Removed redundant extra pieces of code
 
 ## May 16th, 2023 Changelog
 **Changed:**
