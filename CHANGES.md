@@ -1,11 +1,13 @@
 ## May 24th, 2023 Changelog
 **Added:**
 - "notdarkn#7188" now has an image.
+- New screenshot with both the main site and the propaganda site
 
 **Changed:**
 - Changed main page "GitHub | Changelogs | To-do" to "MC Server: play.osu.bio"
 - Changed README slightly, header is a bit smaller.
 - Changed 404 page redirect button and description.
+- Under r/Jailbreak request, I moved the "p.s" satire for `icraze.html` to the top.
 
 **Removed:**
 - Removed `testing.html`, as it was no longer needed.
