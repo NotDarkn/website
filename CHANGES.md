@@ -1,6 +1,19 @@
+## May 24th, 2023 Changelog
+**Added:**
+- "notdarkn#7188" now has an image.
+
+**Changed:**
+- Changed main page "GitHub | Changelogs | To-do" to "MC Server: play.osu.bio"
+- Changed README slightly, header is a bit smaller.
+- Changed 404 page redirect button and description.
+
+**Removed:**
+- Removed `testing.html`, as it was no longer needed.
+
 ## May 23rd, 2023 Changelog
 **Added:**
 - Readded iCraze Propaganda under a **clickable redirect.**
+- Readded `testing.html` to further test stuff
 
 **Changed:**
 - Replaced "placeholder" with "Fake iCraze Propaganda" redirect
