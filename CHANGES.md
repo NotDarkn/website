@@ -1,32 +1,42 @@
 ## May 28th, 2023 Changelog
+
 **Added**
+
 - Added images to clarify what happened
 
 **Changed:**
+
 - The website no longer redirects to the iCraze propaganda.
   - P.S: Fuck you to the person who actually believed it. You are an incompetent fuck.
 - The main page has been slightly changed & placeholder'd.
 
 ## May 24th, 2023 Changelog
+
 **Added:**
+
 - "notdarkn#7188" now has an image.
 - New screenshot with both the main site and the propaganda site
 
 **Changed:**
+
 - Changed main page "GitHub | Changelogs | To-do" to "MC Server: play.osu.bio"
 - Changed README slightly, header is a bit smaller.
 - Changed 404 page redirect button and description.
 - Under r/Jailbreak request, I moved the "p.s" satire for `icraze.html` to the top.
 
 **Removed:**
+
 - Removed `testing.html`, as it was no longer needed.
 
 ## May 23rd, 2023 Changelog
+
 **Added:**
+
 - Readded iCraze Propaganda under a **clickable redirect.**
 - Readded `testing.html` to further test stuff
 
 **Changed:**
+
 - Replaced "placeholder" with "Fake iCraze Propaganda" redirect
 - Main page also fully states that the propaganda is **satire.**
 - Both the main page and 404 has fully centered text.
@@ -34,14 +44,18 @@
 - Decided to capitalize "fake iCraze propaganda"
 
 **Removed:**
+
 - Removed "here" from "fake iCraze propaganda here"
 
 ## May 22nd, 2023 Changelog
+
 **Added:**
+
 - Multiple new Sakamato images
 - Multiple new, uhh interesting images
 
 **Changed:**
+
 - Removed iCraze Propaganda
   - I wanted the domain to be removed. I'm tired of it being blocked now lol
 - Changed all embeds to use an image of Sakamato
@@ -49,41 +63,53 @@
 - Changed favicon to be an, interesting image, same with apple favicons.
 
 **Removed:**
+
 - 404.html no longer has an embed.
 - testing.html no longer exists.
 - Removed redundant extra pieces of code
 
 ## May 16th, 2023 Changelog
+
 **Changed:**
+
 - Now using the domain: `osu.bio`
   - Namecheap locked me out of my account and suspended `icrazeis.gay`, so I had to.
 - Fixed the embed picture again
 
 ## May 4th, 2023 Changelog
+
 **Changed:**
+
 - Fixed the picture in the embed for the URL.
 
 ## May 2nd, 2023 Changelog
+
 **Added**
+
 - There is now a `TO-DO.md` instead of a `to-do.html`
 
 **Changed:**
+
 - The `To-do List` and `Changelogs` now redirect to the GitHub
 - Fixed the URLs in the `To-do List` and `Changelogs`
 
 **Removed:**
+
 - Removed two files:
   - `to-do.html` - Too difficult to make
   - `changelog.html` - we have a GitHub .md to do this
 - Removed to-do list from README.md and transported it to `TO-DO.md`
 
 ## May 1st, 2023 Changelog
+
 **Added**
+
 - Created `changelog.html`
 - Created `to-do.html`
 - `index.html` now includes a credit alongside some extra info below
 
 **Changed**
+
 - `fonts.css` no longer forces `<font>` to be Comic-Sans
 - `index.html` now partially uses `style="font-family"` in some text
 - Adding a `/` between text (ex: `.gay/help/`) no longer breaks font/colors
@@ -92,18 +118,23 @@
 - Slowly converting `<font>` to `<div>`
 
 **Removed:**
+
 - Properly removed `sf-pro-semibold` from `fonts.css`
 - Removed three files:
   - `css.html` - No longer needed
   - `img.html` - No longer needed
   - `fonts.html` - No longer needed
+
 ## April 30th, 2023 Changelog
+
 **Added**
+
 - Display scaling for mobile devices
 - Bit higher font size for normal text
 - Favicons for mobile devices
 
 **Changed**
+
 - PC favicon is now 128x128, but can be upscaled to 512x512
 - Header font is now "SF Pro Display - Regular"
 - The "p.s" text is now alligned in the middle
@@ -111,6 +142,7 @@
 - The `</li>` part in the index.html is actually in the right place now
 
 **Removed**
+
 - Removed five fonts:
   - **SF Pro Display** - Medium
   - **SF Pro Display** - Bold
@@ -119,7 +151,9 @@
   - **Aaragh** - Sans Serif
 
 ## April 29th, 2023 Changelog
+
 **Added**
+
 - Added support for custom fonts
   - List of the following added fonts:
     - **SF Pro Display:** Regular
@@ -133,13 +167,16 @@
   - This used to go to a 404 page with just a white bg & no font
 
 **Changed**
+
 - Changed the 404 page to be a bit different, isn't drastic but it's there
 - Changed some of the information in the website to be accurate
 - Changed the background to be dark instead of light mode
 - Changed the text to be white so dark mode would work
 
 ## April 28th, 2023 Changelog
+
 **Added**
+
 - Added iCraze propaganda
 - Added tweaks to be uninstalled
 - Added a "p.s" at the bottom
@@ -147,6 +184,7 @@
 - Added a Discord embed for the 404 page
 
 **Changed:**
+
 - Obtained `icrazeis.gay` domain
 - Created a GitHub Pages Website
 - Enforced `https://` onto the site because NameCheap SUCKS
