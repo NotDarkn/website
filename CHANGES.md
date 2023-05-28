@@ -1,7 +1,11 @@
 ## May 28th, 2023 Changelog
+**Added**
+- Added images to clarify what happened
+
 **Changed:**
 - The website no longer redirects to the iCraze propaganda.
   - P.S: Fuck you to the person who actually believed it. You are an incompetent fuck.
+- The main page has been slightly changed & placeholder'd.
 
 ## May 24th, 2023 Changelog
 **Added:**
