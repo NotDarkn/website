@@ -25,11 +25,11 @@ a[href] {
 }
 
 .buttonuhh {
-  background-color: #FFFFFF;
-  border: 1px solid #222222;
+  background-color: #191919;
+  border: 1px solid #fff;
   border-radius: 26px;
   box-sizing: border-box;
-  color: #222222;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-family: "SF-Reg",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
@@ -55,14 +55,15 @@ a[href] {
 }
 
 .buttonuhh:active {
-  background-color: #F7F7F7;
-  border-color: #000000;
+  background-color: #141414;
+  border-color: #fff;
   transform: scale(.96);
 }
 
 .buttonuhh:disabled {
+  background-color: grey;
   border-color: #DDDDDD;
-  color: #DDDDDD;
+  color: #000000;
   cursor: not-allowed;
   opacity: 1;
 }
