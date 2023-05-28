@@ -1,3 +1,8 @@
+## May 28th, 2023 Changelog
+**Changed:**
+- The website no longer redirects to the iCraze propaganda.
+  - P.S: Fuck you to the person who actually believed it. You are an incompetent fuck.
+
 ## May 24th, 2023 Changelog
 **Added:**
 - "notdarkn#7188" now has an image.
