@@ -15,6 +15,7 @@
     <i>Creator of <a href=https://osu.bio>osu.bio</a> and <a href=https://icrazeis.gay>icrazeis.gay</a></i>
   <li><h3>iCraze: <a href="https://discord.com/users/883412614699446283">iCraze#3017</a></h3></li>
     <i>Main material used for propaganda</i>
+  <li><h3>hell0u: <a href="https://disocrd.com/users/836279485984538634">wave#5654</a><h3></li>
   <li><h3>r/Jailbreak: <a href="https://discord.gg/jb">discord.gg/jb</a></h3></li>
     <i>Main distributor of <a href=https://osu.bio>osu.bio</a></i>
 </ul>

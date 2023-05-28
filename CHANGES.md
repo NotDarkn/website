@@ -3,12 +3,15 @@
 **Added**
 
 - Added images to clarify what happened
+- Button to continue through the `icraze.html` page (ty hell0u <3)
+- Tickboxes to continue through the `icraze.html` page (ty hell0u <3)
 
 **Changed:**
 
 - The website no longer redirects to the iCraze propaganda.
   - P.S: Fuck you to the person who actually believed it. You are an incompetent fuck.
 - The main page has been slightly changed & placeholder'd.
+- Changed to using Astro (ty hell0u <3)
 
 ## May 24th, 2023 Changelog
 

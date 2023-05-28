@@ -15,6 +15,8 @@
 - [x] Create custom fonts for future use
 - [x] Create a scaled version of the site for mobile devices
 - [x] Create more information to the README of this GitHub
+- [x] Create a button to continue to the propaganda
+- [x] Create a ticklist to continue to the propaganda
 
 ##### Changed
 
@@ -23,6 +25,7 @@
 - [x] Change some of the information in the 404 page
 - [x] Change the website to have a bigger font size
 - [x] Change the website to have text dead set fullscreen middle
+- [x] Change the website to start using astro
 
 ##### Fixed
 
