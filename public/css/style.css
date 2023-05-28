@@ -27,15 +27,15 @@ a[href] {
 .buttonuhh {
   background-color: #FFFFFF;
   border: 1px solid #222222;
-  border-radius: 32px;
+  border-radius: 26px;
   box-sizing: border-box;
   color: #222222;
   cursor: pointer;
   display: inline-block;
   font-family: "SF-Reg",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 20px;
   margin: 0;
   outline: none;
   padding: 26px 36px;
