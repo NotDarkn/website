@@ -1,3 +1,8 @@
+## June 30th, 2023 Changelog
+**Changed**
+- "notdarkn#7188" is now "@notdarkn" due to new Discord username changes.
+- Removed some text in the `style.css` that I didn't need.
+
 ## May 28th, 2023 Changelog
 
 **Added**
