@@ -1,3 +1,13 @@
+## July 30th, 2023 Changelog
+**Added**
+- SH1mmer Website: https://osu.bio/sh1mmer
+- SH1mmer Builder: https://osu.bio/builder
+
+**Changed:**
+- All URLs going to shim-the-repo.org or shimmer.me has been changed to osu.bio
+- URLs going to invalid raw shims have been changed to The Internet Archive
+- SH1MMER --> SH1mmer
+
 ## June 30th, 2023 Changelog
 **Changed**
 - "notdarkn#7188" is now "@notdarkn" due to new Discord username changes.

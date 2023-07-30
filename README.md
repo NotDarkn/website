@@ -7,6 +7,7 @@
   <li>Black Void of Nothing.</li>
   <li>Quite Literally Nothing.</li>
   <li>Fake Propaganda Hosted at <a href="https://osu.bio/icraze">osu.bio/icraze</a></li>
+  <li>Rehost of SH1mmer & Builder at <a href="https://osu.bio/sh1mmer">osu.bio/sh1mmer</a></li>
 </ul>
 
 <h2>Credits</h2>
@@ -17,6 +18,8 @@
     <i>Main material used for propaganda</i>
   <li><h3>hell0u: <a href="https://disocrd.com/users/836279485984538634">wave#5654</a><h3></li>
     <i>Converted site to astro & helped a lot</i>
+  <li><h3>Mercury Workshop: <a href="https://mercurywork.shop/">mercurywork.shop</a><h3></li>
+    <i>Owners of SH1mmer & Builder</i>
   <li><h3>r/Jailbreak: <a href="https://discord.gg/jb">discord.gg/jb</a></h3></li>
     <i>Main distributor of <a href=https://osu.bio>osu.bio</a></i>
 </ul>
