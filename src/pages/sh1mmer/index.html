@@ -26,15 +26,15 @@
 
 <body>
   <div class="header">
-    <h1>SH1MMER</h1>
+    <h1>SH1mmer</h1>
     <p class="acronym">
       Shady Hacking 1nstrument Makes Machine Enrollment Retreat
     </p>
   </div>
   <div class="section blue">
-    <h3>What is SH1MMER?</h3>
+    <h3>What is SH1mmer?</h3>
     <p>
-      SH1MMER is an exploit capable of completely unenrolling
+      SH1mmer is an exploit capable of completely unenrolling
       enterprise-managed Chromebooks. It was found by
       the <a href="https://mercurywork.shop">Mercury Workshop team</a> and
       was released on January,
@@ -69,9 +69,9 @@
     hatch, jacuzzi, kukui, nami, octopus, orco, pyro, reks, sentry, stout,
     strongbad, tidus, ultima, volteer, zork
     <p>
-      First you need to download a sh1mmer bin. Download a shim at <a
+      First you need to download a SH1mmer bin. Download a shim at <a
         href="https://archive.org/download/sh1mmer/crew/">The Internet Archive</a><br> , and build it with the <a
-        href="/builder">sh1mmer web builder</a><br>
+        href="/builder">SH1mmer web builder</a><br>
       Once you've obtained a MODIFIED SHIM (NOT A RAW SHIM), you can continue.
     </p>
     <p>
@@ -123,7 +123,7 @@
       Once it re-shows the original recovery screen, plug your shimmed USB
       into your Chromebook, and press the power button, reload key (↻), and
       esc key again. After a brief black-and-white loading screen, you should
-      be in the SH1MMER menu.
+      be in the SH1mmer menu.
     </p>
     <img src="/assets/utils-select01.png" />
     <p>Play around with the UI, exit, and reboot.</p>
@@ -138,21 +138,21 @@
       If you aren't willing to take apart your chromebook to unenroll, you can use an affiliated project,
       <a href="https://fog.gay">E-HALCYON</a> to boot into a deprovisioned environment temporarily
     </p>
-    <h3>How to use sh1mmer after the patch, if you're willing to take the back cover off your chromebook</h4>
+    <h3>How to use SH1mmer after the patch, if you're willing to take the back cover off your chromebook</h4>
 
-      <p>you'll only need to do this once, and it will let you use sh1mmer even after it's been completely patched</p>
+      <p>you'll only need to do this once, and it will let you use SH1mmer even after it's been completely patched</p>
       <pre>
 
 
         1. unplug everything, open the back panel, disconnect the battery to disable WP, plug in the charger
-        2. boot into sh1mmer and use "unenroll"/"deprovision" (yes I know it will show an error, but that doesn't
+        2. boot into SH1mmer and use "unenroll"/"deprovision" (yes I know it will show an error, but that doesn't
         matter)
         (you will also need to run "remove block_devmode" if you're using the old legacy version)
         3. go to the bash shell and run this command:
         /usr/share/vboot/bin/set_gbb_flags.sh 0x8090
         do not use "reset gbb flags" after this
 
-        4. exit sh1mmer, unplug everything, reconnect the battery, reconnect the charger
+        4. exit SH1mmer, unplug everything, reconnect the battery, reconnect the charger
         5. boot up, press ctrl+d to enter developer mode
         6. once it completes, use ctrl+alt+shift+r to powerwash
         7. after powerwash, immediately go to the ctrl+alt+f2 (forward) shell, login as "root" and run these commands:
@@ -177,7 +177,7 @@
       <p>
         Note that while unenrolled, it is recommended to add your personal
         account first, then add your school account, then switch between the two
-        as needed. Mercury Workshop does not condone the use of SH1MMER or
+        as needed. Mercury Workshop does not condone the use of SH1mmer or
         unenrolling to cheat in school.
       </p>
       <p>
@@ -207,8 +207,8 @@
   </div>
   <div class="section blue">
     <h3>
-      <a href="/sh1mmer/faq.html" target="_self">FAQ</a>
-      <a href="/sh1mmer/credits.html" target="_self">Credits</a>
+      <a href="/sh1mmer/faq" target="_self">FAQ</a>
+      <a href="/sh1mmer/credits" target="_self">Credits</a>
     </h3>
     <p> We have a
       <a href="https://akkoma.mercurywork.shop">
