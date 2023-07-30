@@ -1,7 +1,7 @@
 ## July 30th, 2023 Changelog
 **Added**
-- SH1mmer Website: https://osu.bio/sh1mmer
-- SH1mmer Builder: https://osu.bio/builder
+- SH1mmer Website: `https://osu.bio/sh1mmer`
+- SH1mmer Builder: `https://osu.bio/builder`
 
 **Changed:**
 - All URLs going to shim-the-repo.org or shimmer.me has been changed to osu.bio
