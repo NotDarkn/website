@@ -159,14 +159,14 @@
         (you will also need to run "Disable block_devmode" if you're using the old legacy version)
         3. go to the bash shell and run this command:
         <kbd>/usr/share/vboot/bin/set_gbb_flags.sh 0x8090</kbd>
-        > do not use "Reset GBB Flags" after this
+        <i>> do not use "Reset GBB Flags" after this</i>
         4. exit SH1mmer, unplug everything, reconnect the battery, reconnect the charger
         5. boot up, press <kbd>CTRL + D</kbd> to enter developer mode
         6. once it completes, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash
         7. after powerwash, immediately go to the <kbd>CTRL + ALT + F2 (→)</kbd> shell, login as "root" and run these commands:
         <kbd>tpm_manager_client take_ownership</kbd>
         <kbd>cryptohome --action=remove_firmware_management_parameters</kbd>
-        > both commands should report success, otherwise there has been an error and you should downgrade to v110 or lower
+        <i>> both commands should report success, otherwise there has been an error and you should downgrade to v110 or lower</i>
         8. press <kbd>CTRL + ALT + F1 (←)</kbd>, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash again
         9. profit
 
