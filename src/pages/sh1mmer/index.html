@@ -156,21 +156,19 @@
 
 
         1. unplug everything, open the back panel, disconnect the battery to disable WP, plug in the charger
-        2. boot into SH1mmer and use "unenroll"/"deprovision" (yes I know it will show an error, but that doesn't
-        matter)
-        (you will also need to run "remove block_devmode" if you're using the old legacy version)
+        2. boot into SH1mmer and use "Un-Enroll" / "Deprovision" (it'll error but ignore that)
+        (you will also need to run "Disable block_devmode" if you're using the old legacy version)
         3. go to the bash shell and run this command:
         <kbd>/usr/share/vboot/bin/set_gbb_flags.sh 0x8090</kbd>
-        do not use "reset gbb flags" after this
-
+        > do not use "Reset GBB Flags" after this
         4. exit SH1mmer, unplug everything, reconnect the battery, reconnect the charger
-        5. boot up, press ctrl+d to enter developer mode
-        6. once it completes, use ctrl+alt+shift+r to powerwash
-        7. after powerwash, immediately go to the ctrl+alt+f2 (forward) shell, login as "root" and run these commands:
+        5. boot up, press <kbd>CTRL + D</kbd> to enter developer mode
+        6. once it completes, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash
+        7. after powerwash, immediately go to the <kbd>CTRL + ALT + F2 (→)</kbd> shell, login as "root" and run these commands:
         <kbd>tpm_manager_client take_ownership</kbd>
         <kbd>cryptohome --action=remove_firmware_management_parameters</kbd>
-        > both commands should say success, otherwise there has been an error and you should downgrade to v110 or lower
-        8. press <kbd>CTRL + ALT + F1 (back)</kbd> (back), use ctrl+alt+shift+r to powerwash again
+        > both commands should report success, otherwise there has been an error and you should downgrade to v110 or lower
+        8. press <kbd>CTRL + ALT + F1 (←)</kbd>, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash again
         9. profit
 
         NOTE: if you're on dedede, your WP method is probably different. look your model up online to find the WP
