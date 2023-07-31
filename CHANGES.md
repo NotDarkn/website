@@ -1,3 +1,14 @@
+## July 31th, 2023 Changelog:
+**Added:**
+- osu.bio credits to `https://osu.bio/sh1mmer/credits`
+
+**Changed:**
+- Formatting on (almost) every site on the SH1mmer rehost
+- Many small pieces of text on the SH1mmer rehost
+
+**Removed:**
+- The to-do list, it's useless now
+
 ## July 30th, 2023 Changelog
 **Added**
 - SH1mmer Website: `https://osu.bio/sh1mmer`
