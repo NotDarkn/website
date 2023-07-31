@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="Rehosted SH1mmer" />
+  <meta property="og:description" content="SH1mmer: Rehost" />
+  <meta property="og:url" content="https://osu.bio/sh1mmer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://osu.bio/icon.png" />
+  <meta property="og:image:alt" content="SH1mmer" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:site_name" content="osu.bio" />
+  <title>SH1mmer</title>
+  <link rel="icon" href="/icon.png" />
+  <link rel="stylesheet" href="/main.css" />
+  <script src="/script.js" defer></script>
+  <script>
+    var messages = {
+      mercury:
+        "Check the credits button at the bottom of the page for more info.",
+      pc: "Or if you can download the recovery utility extension on your school computer, but that's exceedingly rare.",
+      board:
+        "It's somewhere in the firmware log/debug info on the recovery screen. It is also shown at the bottom of the Android Preferences app. You can also go to a connected WiFi network in settings, click the Learn More link next to the message about syncing, and your board name will be somewhere in the URL of the newly-opened help tab.",
+      launch:
+        "Click the extensions icon in Chrome, then click Chromebook Recovery Utility.",
+    };
+  </script>
+  <base target="_blank" />
+</head>
+
+<body>
+  <div class="header">
+    <h1>Unpatch</h1>
+        <a href="/sh1mmer" target="_self"> Back to home </a>
+</div>
+  
+  <div class="section green">
+    <h3>How to use SH1mmer after the patch</h3>
+    <h4>(This will require you to remove the back cover off your Chromebook)</h4>
+      <p>you'll only need to do this once, and it will let you use SH1mmer even after it's been completely patched</p>
+      <pre>
+  
+        1. unplug everything, open the back panel, disconnect the battery to disable WP, plug in the charger
+        2. boot into SH1mmer and use "Un-Enroll" / "Deprovision" (it'll error but ignore that)
+        (you will also need to run "Disable block_devmode" if you're using the old legacy version)
+        3. go to the bash shell and run this command:
+        <kbd>/usr/share/vboot/bin/set_gbb_flags.sh 0x8090</kbd>
+        <i>> do not use "Reset GBB Flags" after this</i>
+        4. exit SH1mmer, unplug everything, reconnect the battery, reconnect the charger
+        5. boot up, press <kbd>CTRL + D</kbd> to enter developer mode
+        6. once it completes, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash
+        7. after powerwash, immediately go to the <kbd>CTRL + ALT + F2 (→)</kbd> shell, login as "root" and run these commands:
+        <kbd>tpm_manager_client take_ownership</kbd>
+        <kbd>cryptohome --action=remove_firmware_management_parameters</kbd>
+        <i>> both commands should report success, otherwise there has been an error and you should downgrade to v110 or lower</i>
+        8. press <kbd>CTRL + ALT + F1 (←)</kbd>, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash again
+        9. profit
+
+        NOTE: if you're on dedede, your WP method is probably different. look your model up online to find the WP
+        method.
+      </pre>
+  </div>
+</body>
+
+</html>
