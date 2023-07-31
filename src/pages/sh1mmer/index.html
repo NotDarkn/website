@@ -52,7 +52,7 @@
       For more info, check out the <a href="https://coolelectronics.me/blog/breaking-cros-2">Writeup</a>
     </p>
       <br>
-    <h4>If this isn't working for you, check <a href="/sh1mmer#:~:text=exit%2C%20and%20reboot.-,The%20Fog,-...%20(google%27s%20response%2C%20and">"The Fog"</a> section below.</h4>
+    <h4>If this isn't working for you, check <a href="/sh1mmer#:~:text=exit%2C%20and%20reboot.-,The%20Fog,-...">"The Fog"</a> section below.</h4>
 
   </div>
   <div class="section green">
@@ -67,7 +67,7 @@
     <p>
       First, you'll need to find your managed Chromebook's board name. This can
       be done by going to <kbd>chrome://version</kbd> on your Chromebook and
-      copying the word after "stable-channel", or with
+      copying the word after <kbd>stable-channel</kbd>, or with
       <u onclick="alert(messages.board)">a variety of other methods</u>.
     </p>
     <p>
@@ -81,9 +81,9 @@
     <p>
       First you need to download a SH1mmer bin at <a
         href="https://archive.org/download/sh1mmer/crew/">The Internet Archive</a><br>
-        Then select the shim and build it with the <a
+        Then select your downloaded shim and build it with the <a
         href="/sh1mmer/builder">SH1mmer Web Builder</a><br>
-      Once you've obtained a MODIFIED SHIM (NOT A RAW SHIM), you can continue.
+      Once you've obtained a INJECTED SHIM (NOT A RAW SHIM), you can continue.
     </p>
     <p>
       Download the
@@ -100,81 +100,45 @@
       be completely cleared and partitioned.
     </p>
     <p>
-      In the recovery utility window, click the settings icon and press "use
+      In the recovery utility window, click the settings icon and press "Use
       local image".
     </p>
     <img src="/assets/recovery_utility.png" />
     <p>
-      Select your shim file, identify your USB, and start the writing process.
+      Select your injected shim file, identify your USB, and start the writing process.
       This will take about 10 minutes.
     </p>
     <hr />
     <h3>Executing on Chromebook</h3>
     <p>
       Once writing is complete, enter recovery mode on your Chromebook. This
-      is done by pressing the power button, reload key (↻), and esc key at the
+      is done by pressing the power button, reload key (↻), and ESC key at the
       same time. Your screen should look one of the images below:
     </p>
     <img src="/assets/recover_black.png" />
     <img src="/assets/recover_white.png" />
     <p>Press <kbd>CTRL + D</kbd> on this screen, then press enter.</p>
     <p>
-      It will now say something about "returning to secure mode" or that "OS
-      verification is off". You will most likely not actually be in dev mode,
+      It will now say something about "Confirm returning to secure mode" or that "OS
+      verification is OFF". You will most likely not actually be in dev mode,
       but the exploit will work regardless. Your screen should look like one
       of the images below:
     </p>
     <img src="/assets/confirm_black.png" />
     <img src="/assets/confirm_white.png" />
     <p>
-      On this screen, press the power button, reload key (↻), and esc key at
+      On this screen, press the power button, reload key (↻), and ESC key at
       the same time again! This is very important and cannot be skipped.
     </p>
     <p>
       Once it re-shows the original recovery screen, plug your shimmed USB
       into your Chromebook, and press the power button, reload key (↻), and
-      esc key again. After a brief black-and-white loading screen, you should
+      ESC key again. After a brief black-and-white loading screen, you should
       be in the SH1mmer menu.
     </p>
     <img src="/assets/utils-select01.png" />
     <p>Play around with the UI, exit, and reboot.</p>
     <hr />
-    <h3> The Fog...</h3>
-    <br>
-    <h4>(Google's response, and why this might not be working for you)</h4>
-    <p>
-
-      Downgrading and unenrollment has been patched by Google. If your Chromebook has never updated to version 112
-      before (check in <kbd>chrome://version</kbd>), then you can ignore this and follow the normal instructions. If not,
-      unenrollment will not work as normal.
-
-      If you aren't willing to take apart your Chromebook to unenroll, you can use an affiliated project,
-      <a href="https://fog.gay">E-HALCYON</a> to boot into a deprovisioned environment temporarily
-    </p>
-    <h3>How to use SH1mmer after the patch, if you're willing to take the back cover off your Chromebook</h4>
-
-      <p>you'll only need to do this once, and it will let you use SH1mmer even after it's been completely patched</p>
-      <pre>
-
-        1. unplug everything, open the back panel, disconnect the battery to disable WP, plug in the charger
-        2. boot into SH1mmer and use "Un-Enroll" / "Deprovision" (it'll error but ignore that)
-        (you will also need to run "Disable block_devmode" if you're using the old legacy version)
-        3. go to the bash shell and run this command:
-        <kbd>/usr/share/vboot/bin/set_gbb_flags.sh 0x8090</kbd>
-        <i>> do not use "Reset GBB Flags" after this</i>
-        4. exit SH1mmer, unplug everything, reconnect the battery, reconnect the charger
-        5. boot up, press <kbd>CTRL + D</kbd> to enter developer mode
-        6. once it completes, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash
-        7. after powerwash, immediately go to the <kbd>CTRL + ALT + F2 (→)</kbd> shell, login as "root" and run these commands:
-        <kbd>tpm_manager_client take_ownership</kbd>
-        <kbd>cryptohome --action=remove_firmware_management_parameters</kbd>
-        <i>> both commands should report success, otherwise there has been an error and you should downgrade to v110 or lower</i>
-        8. press <kbd>CTRL + ALT + F1 (←)</kbd>, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash again
-        9. profit
-
-        NOTE: if you're on dedede, your WP method is probably different. look your model up online to find the WP
-        method.
-      </pre>
       <h3>What now?</h3>
       <p>
         You will now be able to, among other things, unenroll your Chromebook.
@@ -213,6 +177,80 @@
         <a href="/kiosks.txt">at this TXT file</a>. Saving a copy of this file
         for future reference is probably a smart move.
       </p>
+    <hr />
+      <h3> The Fog...</h3>
+    <br>
+    <h4>(Google's response, and why this might not be working for you)</h4>
+    <p>
+      Downgrading and unenrollment has been patched by Google. If your Chromebook has never updated to version 112
+      before (check in <kbd>chrome://version</kbd>), then you can ignore this and follow the normal instructions. If not,
+      unenrollment will not work as normal.
+
+      If you aren't willing to take apart your Chromebook to unenroll, you can use an affiliated project,
+      <a href="https://fog.gay">E-HALCYON</a> to boot into a deprovisioned environment temporarily
+    </p>
+    <hr />
+    <h3>How to use SH1mmer after the patch, if you're willing to take the back cover off your Chromebook</h4>
+
+      <p>you'll only need to do this once, and it will let you use SH1mmer even after it's been completely patched</p>
+      <pre>
+
+        1. unplug everything, open the back panel, disconnect the battery to disable WP, plug in the charger
+        2. boot into SH1mmer and use "Un-Enroll" / "Deprovision" (it'll error but ignore that)
+        (you will also need to run "Disable block_devmode" if you're using the old legacy version)
+        3. go to the bash shell and run this command:
+        <kbd>/usr/share/vboot/bin/set_gbb_flags.sh 0x8090</kbd>
+        <i>> do not use "Reset GBB Flags" after this</i>
+        4. exit SH1mmer, unplug everything, reconnect the battery, reconnect the charger
+        5. boot up, press <kbd>CTRL + D</kbd> to enter developer mode
+        6. once it completes, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash
+        7. after powerwash, immediately go to the <kbd>CTRL + ALT + F2 (→)</kbd> shell, login as "root" and run these commands:
+        <kbd>tpm_manager_client take_ownership</kbd>
+        <kbd>cryptohome --action=remove_firmware_management_parameters</kbd>
+        <i>> both commands should report success, otherwise there has been an error and you should downgrade to v110 or lower</i>
+        8. press <kbd>CTRL + ALT + F1 (←)</kbd>, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash again
+        9. profit
+
+        NOTE: if you're on dedede, your WP method is probably different. look your model up online to find the WP
+        method.
+      </pre>
+      <hr />
+        <h3> The Fog...</h3>
+      <br>
+      <h4>(Google's response, and why this might not be working for you)</h4>
+      <p>
+        Downgrading and unenrollment has been patched by Google. If your Chromebook has never updated to version 112
+        before (check in <kbd>chrome://version</kbd>), then you can ignore this and follow the normal instructions. If not,
+        unenrollment will not work as normal.
+  
+        If you aren't willing to take apart your Chromebook to unenroll, you can use an affiliated project,
+        <a href="https://fog.gay">E-HALCYON</a> to boot into a deprovisioned environment temporarily
+      </p>
+      <hr />
+        <h3>How to use SH1mmer after the patch, if you're willing to take the back cover off your Chromebook</h3>
+  
+        <p>you'll only need to do this once, and it will let you use SH1mmer even after it's been completely patched</p>
+        <pre>
+  
+          1. unplug everything, open the back panel, disconnect the battery to disable WP, plug in the charger
+          2. boot into SH1mmer and use "Un-Enroll" / "Deprovision" (it'll error but ignore that)
+          (you will also need to run "Disable block_devmode" if you're using the old legacy version)
+          3. go to the bash shell and run this command:
+          <kbd>/usr/share/vboot/bin/set_gbb_flags.sh 0x8090</kbd>
+          <i>> do not use "Reset GBB Flags" after this</i>
+          4. exit SH1mmer, unplug everything, reconnect the battery, reconnect the charger
+          5. boot up, press <kbd>CTRL + D</kbd> to enter developer mode
+          6. once it completes, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash
+          7. after powerwash, immediately go to the <kbd>CTRL + ALT + F2 (→)</kbd> shell, login as "root" and run these commands:
+          <kbd>tpm_manager_client take_ownership</kbd>
+          <kbd>cryptohome --action=remove_firmware_management_parameters</kbd>
+          <i>> both commands should report success, otherwise there has been an error and you should downgrade to v110 or lower</i>
+          8. press <kbd>CTRL + ALT + F1 (←)</kbd>, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash again
+          9. profit
+  
+          NOTE: if you're on dedede, your WP method is probably different. look your model up online to find the WP
+          method.
+        </pre>
   </div>
   <div class="section blue">
     <h3>
