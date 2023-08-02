@@ -16,9 +16,9 @@
     <title>Wax4Web (Legacy)</title>
     <link rel="icon" href="/sh1mmer/icon.png" />
     <link rel="stylesheet" href="/sh1mmer/main.css" />
-    <script src="/script.js" defer></script>
+    <script src="/sh1mmer/script.js" defer></script>
 
-    <script src="/wax4web/libv86.js"></script>
+    <script src="/sh1mmer/wax4web/libv86.js"></script>
     <script>
         const $ = _ => document.querySelector(_);
 
@@ -44,21 +44,21 @@
         }
         function startVM() {
             var emulator = window.emulator = new V86Starter({
-                wasm_path: "/wax4web/v86.wasm",
+                wasm_path: "/sh1mmer/wax4web/v86.wasm",
                 memory_size: 512 * 1024 * 1024,
                 vga_memory_size: 2 * 1024 * 1024,
                 screen_container: $("#screen_container"),
                 bios: {
-                    url: "/wax4web/seabios.bin",
+                    url: "/sh1mmer/wax4web/seabios.bin",
                 },
                 vga_bios: {
-                    url: "/wax4web/vgabios.bin",
+                    url: "/sh1mmer/wax4web/vgabios.bin",
                 },
                 bzimage: {
-                    url: "/wax4web/bzImage"
+                    url: "/sh1mmer/wax4web/bzImage"
                 },
                 initrd: {
-                    url: "/wax4web/legacy"
+                    url: "/sh1mmer/wax4web/legacy"
                 },
                 hda: {
                     buffer: document.all.hd_image.files[0]
