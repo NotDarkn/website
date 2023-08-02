@@ -9,6 +9,9 @@
 - Changed The Internet Archive to `dl.osu.bio`
 - Changed file locations of SH1mmer files in `/public` to `/public/sh1mmer`
 
+**Removed:**
+- `/wax` as it isn't used for the website
+
 ## July 31th, 2023 Changelog:
 **Added:**
 - osu.bio credits to `https://osu.bio/sh1mmer/credits`
