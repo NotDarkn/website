@@ -1,3 +1,16 @@
+## August 21st, 2023 Changelog:
+**Added:**
+- Added more missing files to the `archive.org` mirror at `https://osu.bio/sh1mmer/downloader`
+  - Added `brask.bin.zip`
+  - Added `nami..bin`
+  - Added `brya.bin.zip`
+
+**Changed:**
+- Changed the warning at `/sh1mmer/downloader` to be less vague
+  - "your browser is too old and this won't work" to "you won't be able to download from the Discord mirror using this browser or device!"
+- Changed the placement of the `archive.org` mirror at `/sh1mmer/downloader`
+  - It's now above `discord.com` instead of being below it.
+
 ## August 2nd, 2023 Changelog:
 **Added:**
 - Glitz RMA Downloader at `https://osu.bio/sh1mmer/downloader`
