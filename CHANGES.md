@@ -1,3 +1,13 @@
+## August 24th, 2023 Changelog:
+**Added:**
+- Added `diffusehyperion.github.io` as a mirror at `https://osu.bio/sh1mmer/downloader`
+- Added proper credits at the bottom of `/sh1mmer/downloader`
+
+**Changed**
+- Changed much of the text at `/sh1mmmer/downloader`
+- Changed the status of `coral.bin` and `corsola.bin` on `dl.osu.bio`
+ - They now both work as I've obtained working variants.
+
 ## August 21st, 2023 Changelog:
 **Added:**
 - Added more missing files to the `archive.org` mirror at `https://osu.bio/sh1mmer/downloader`

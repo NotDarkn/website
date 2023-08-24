@@ -13,11 +13,11 @@
 
 <h2>Credits</h2>
 <ul>
-  <li><h3>Darkn: <a href="https://discord.com/users/829745505784692776">notdarkn#7188</a></h3></li> 
+  <li><h3>Darkn: <a href="https://discord.com/users/829745505784692776">@notdarkn</a></h3></li> 
     <i>Creator of <a href=https://osu.bio>osu.bio</a> and <a href=https://icrazeis.gay>icrazeis.gay</a></i>
-  <li><h3>iCraze: <a href="https://discord.com/users/883412614699446283">iCraze#3017</a></h3></li>
+  <li><h3>iCraze: <a href="https://discord.com/users/883412614699446283">@icraze</a></h3></li>
     <i>Main material used for propaganda</i>
-  <li><h3>hell0u: <a href="https://disocrd.com/users/836279485984538634">wave#5654</a><h3></li>
+  <li><h3>hell0u: <a href="https://disocrd.com/users/836279485984538634">@waveeeeeee</a><h3></li>
     <i>Converted site to astro & helped a lot</i>
   <li><h3>Mercury Workshop: <a href="https://mercurywork.shop/">mercurywork.shop</a><h3></li>
     <i>Owners of SH1mmer & Builder</i>
