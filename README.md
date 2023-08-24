@@ -9,7 +9,7 @@
   <li>Fake Propaganda Hosted at <a href="https://osu.bio/icraze">osu.bio/icraze</a></li>
   <li>Rehost of SH1mmer & Builder at <a href="https://osu.bio/sh1mmer">osu.bio/sh1mmer</a></li>
   <li>Rehost of SH1mmer RMA Shims at <a href="https://dl.osu.bio">dl.osu.bio</a></li>
-  <li>Second rehost of SH1mmer RMA Shims at </li><a href="https://osu.bio/sh1mmer/downloader">osu.bio/sh1mmer/downloader</a></li>
+  <li>Second rehost of SH1mmer RMA Shims at <a href="https://osu.bio/sh1mmer/downloader">osu.bio/sh1mmer/downloader</a></li>
 </ul>
 
 <h2>Credits</h2>
