@@ -3001,14 +3001,19 @@
   <button id="download">download</button>
 
   <h3 style="display:none" id="progress"></h3>
-  <br>
-  <br>
-  <h3>
+
+    <br>
+    
+    <br>
+
+  <div class="float">
+
+    <h3>
     In order to use these RMA SHIMS to un-enroll your Chromebook, you will need to inject SH1mmer <a href="/sh1mmer/builder">here</a>.
-  </h3>
-  <h3>
     these files are not endorsed, created, provided, nor officially supported by the Mercury Workshop group.<br>
-  </h3>
+    </h3>
+    
+  </div>
 
   <h3>
     <a href="https://discord.gg/bAgNyGpXSx">discord</a> •
@@ -3045,16 +3050,18 @@
 
   h2 {
     font-family: "SF-Reg";
-    animation: MoveUpDown 1s ease-in-out infinite, MoveLeft 3.72s ease-in-out infinite;
-    position: relative;
-    left: 0;
-    bottom: 0;
   }
 
   p {
     font-family: "SF-Reg";
   }
-
+  
+  .float {
+    animation: MoveUpDown 1s ease-in-out infinite, MoveLeft 3.72s ease-in-out infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
   @keyframes MoveUpDown {
 
     0%,
