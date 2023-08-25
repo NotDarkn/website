@@ -53,12 +53,15 @@
 
 .section.blue {
   background-color: var(--light);
+  color: #e6d8ff;
 }
 .section.green {
   background-color: var(--dark1);
+  color: #e6d8ff;
 }
 *::selection {
   background-color: var(--dark2);
+  color: #e6d8ff;
 }
 
 h3 {
