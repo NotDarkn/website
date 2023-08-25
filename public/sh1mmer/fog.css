@@ -14,7 +14,6 @@
   margin: 0px;
   padding: 0px;
   font-family: "Exo", sans-serif;
-  color: #e6d8ff;
 }
 
 @keyframes scroll {
@@ -33,14 +32,13 @@
   background-repeat: repeat-x;
   text-align: center;
   padding: 50px 5vw;
-  color: #e6d8ff(--font);
+  color: var(--font);
   animation: scroll 60s linear infinite;
 }
 
 .header h1 {
   font-size: 15vw;
   font-family: "Sofia Sans", sans-serif;
-  color: #e6d8ff;
 }
 
 .header .acronym {
@@ -54,21 +52,17 @@
 
 .section.blue {
   background-color: var(--light);
-  color: #e6d8ff;
 }
 .section.green {
   background-color: var(--dark1);
-  color: #e6d8ff;
 }
 *::selection {
   background-color: var(--dark2);
-  color: #e6d8ff;
 }
 
 h3 {
   font-family: "Space Grotesk", monospace;
   font-size: 50px;
-  color: #e6d8ff;
 }
 
 p,
@@ -76,7 +70,7 @@ li,
 img {
   margin-top: 30px;
   font-size: 25px;
-  color: #e6d8ff;
+
 }
 
 u {
@@ -86,7 +80,7 @@ u {
 kbd {
   font-family: "Space Grotesk", monospace;
   background-color: var(--dark2);
-  color: #e6d8ff(--white);
+  color: var(--white);
   white-space: nowrap;
   font-size: 90%;
   border-radius: 10px;
