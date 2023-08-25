@@ -33,13 +33,14 @@
   background-repeat: repeat-x;
   text-align: center;
   padding: 50px 5vw;
-  color: var(--font);
+  color: #e6d8ff(--font);
   animation: scroll 60s linear infinite;
 }
 
 .header h1 {
   font-size: 15vw;
   font-family: "Sofia Sans", sans-serif;
+  color: #e6d8ff;
 }
 
 .header .acronym {
@@ -67,6 +68,7 @@
 h3 {
   font-family: "Space Grotesk", monospace;
   font-size: 50px;
+  color: #e6d8ff;
 }
 
 p,
@@ -84,7 +86,7 @@ u {
 kbd {
   font-family: "Space Grotesk", monospace;
   background-color: var(--dark2);
-  color: var(--white);
+  color: #e6d8ff(--white);
   white-space: nowrap;
   font-size: 90%;
   border-radius: 10px;
