@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Sofia+Sans&family=Exo:wght@500&display=swap");
+@import url("https://fonts.xz.style/serve/inter.css");
 
 /* use vars bypassi! */
 :root {
@@ -13,7 +13,7 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Exo", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 @keyframes scroll {
@@ -27,7 +27,7 @@
 
 .header {
   background-repeat: no-repeat;
-  background-image: url("/sh1mmer/assets/background_fog.png");
+  background-image: url("/sh1mmer/assets/background_min_fog.png");
   background-size: 540px 100%;
   background-repeat: repeat-x;
   text-align: center;
@@ -61,7 +61,7 @@
 }
 
 h3 {
-  font-family: "Space Grotesk", monospace;
+  font-family: "Inter", monospace;
   font-size: 50px;
 }
 
@@ -78,7 +78,7 @@ u {
 }
 
 kbd {
-  font-family: "Space Grotesk", monospace;
+  font-family: "Inter", monospace;
   background-color: var(--dark2);
   color: var(--white);
   white-space: nowrap;
@@ -118,7 +118,7 @@ a {
   text-decoration: none;
   white-space: nowrap;
   border-radius: 10px;
-  font-family: "Sofia Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 5px 10px;
   max-width: 100%;
   transition: filter 250ms;
