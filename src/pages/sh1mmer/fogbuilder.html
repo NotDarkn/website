@@ -65,19 +65,34 @@
 
       <!-- note: please just enable word wrap on your editor instead of screwing up the indentation for everyone else -->
       <!-- coolelectronics, you better disable your auto-formatter -->
-      <p>First of all, you'll need a linux PC or VM. WSL is not guaranteed to work</p>
-      <p>Now, you'll need to boot into <a href="https://sh1mmer.me">SH1MMER</a>, and press the Un-Enroll option. It won't truly unenroll you if you've received the 112 update patching unenrollment and downgrading, but it is still a necessary step for the rest of this. If you've never used SH1MMER before or don't have an image lying around, make sure to follow all the instructions on <a href="https://sh1mmer.me">sh1mmer.me</a> for unenrollment before proceeding with the rest of the tutorial here</p>
-      <p>Next, you need a version 107 recovery image corresponding to your board, which you can pick up from <a href="https://chrome100.dev">chrome100.dev</a>. Once you've downloaded the right image for your board and have confirmed it's for version 107, unzip it and save it to a safe place. Now open up a terminal and type in the following commands (make sure to replace /path/to/recovery/image.bin with the actual path)</p>
+      <p>
+        First, you'll need to find your school Chromebook's board name. This can
+        be done by going to <kbd>chrome://version</kbd> on your Chromebook and
+        copying the word after <kbd>stable-channel</kbd>, or by looking up the Chromebook's model.
+    </p>
+    <p>
+        Next you need a recovery image for that board name. There should be one corresponding to your board <a
+            href="https://chrome100.dev">here</a> but if not you'll have to source them on your own..
+        somehow.
+    </p>
+    <p>
+        Once you've found your raw shim, make sure to extract it if it's in a .zip file. If it has some kind of
+        other compression format (.xz, .xf, .gz, etc) make sure you uncompress it first.
+    </p>
+    <p>
+        Next, hit the big start button and select your .bin file. The VM will start up. This will use a
+        considerable amount of memory on your system and take a while. If it freezes, that's normal. Once it
+        finishes, it will automatically download the patched version.
+    </p>
+    <p style="text-align: center">
+        <i>
+            │ p.s: this isn't real and is still a SH1mmer Builder │
 
-      <!--have to do this or else you get weird indentation on the rendered page-->
-      <pre>git clone https://github.com/MercuryWorkshop/RecoMod
-cd RecoMod
-chmod +x recomod.sh
-sudo ./recomod.sh -i /path/to/recovery/image.bin --halcyon --rw_legacy</pre>
-
-      <p>The script will modify the image in place, and it can now be flashed with a standard recovery tool onto a USB of your choice.</p>
-      <p>Enable developer mode and get to the dev mode block screen similarly to how you would with SH1MMER, then plug in the USB. The recovery screen will show up, and at this point you need to start spamming the E key on your keyboard. It will begin a 5 minute wait sequence, and near the end of the 5 minutes start spamming E again. You will only have to wait 5 minutes once, subsequent boots will have the 5 minute wait omitted</p>
-      <p>The boot splash will show, and you will enter a special menu. Use arrow keys to navigate the cursor down to "activate halcyon environment" and press enter. Then navigate down to "Install halcyon semi-tethered" and wait for it to finish. Once it's finished, go back to "activate halcyon environment" and press "Boot halcyon semi-tethered". and you will be booted into a downgraded and unenrolled ChromeOS environment.</p>
+            <br>
+        
+            │ simply put, it's a <b>design concept</b> │
+        </i>
+    </p>
     </div>
 
     <div style="height:10vh">
