@@ -300,16 +300,21 @@
       display: flex;
   }
 
-  canvas textarea #screen_container .linux_output {
-      color: whitesmoke;
-      font: 10px monospace;
+  textarea {
+        /* no clue why but it wont work if its mixed with other elements */
+        background-color: black;
+    }
 
-  }
+    canvas textarea #screen_container .linux_output {
+        color: whitesmoke;
+        font: 10px monospace;
 
-  .label {
-      font: 18px monospace;
-      text-align: center
-  }
+    }
+
+    .label {
+        font: 18px monospace;
+        text-align: center
+    }
 </style>
 
 </html>
