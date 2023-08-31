@@ -162,6 +162,37 @@
     </p>
     </div>
 
+    <div class="section green">
+
+      <h1 class="center"><a style="user-select: none; cursor:pointer;" onclick="start()">Start</a></h1>
+
+      <div class="flex evenly" id="displaycontainer">
+          <div>
+              <div class="label">Linux Emulator Output: </div>
+              <div id="screen_container">
+
+                  <div class="linux_output">
+                  </div>
+                  <canvas></canvas>
+              </div>
+
+          </div>
+          <div>
+              <div class="label">Wax Injector Output: </div>
+
+              <textarea readonly id="injector_output" rows="17" cols="60"> </textarea>
+          </div>
+      </div>
+      <br>
+      <input id="hd_image" class="invisible" type=file></input>
+
+      <a id="downloadURL" class="invisible" download="injected_shim.bin"></a>
+      <p style="text-align: center">
+          • Fog4Web is powered by <a href="https://github.com/buildroot/buildroot">Buildroot</a> and <a
+              href="https://github.com/copy/v86">v86</a> •
+      </p>
+  </div>
+
     <div style="height:10vh">
     </div>
     <div class="description" id="FAQ">
@@ -213,5 +244,72 @@
     </div>
   </div>
 </body>
+<style>
+  #displaycontainer {
+      /* background-color: var(--light); */
+      padding: 3em;
+      border-radius: 10px;
+  }
+
+  .center {
+      text-align: center;
+      margin: 1em;
+  }
+
+  #injector_output {
+      resize: none;
+      width: max-content;
+      outline: none;
+      color: whitesmoke;
+      border: 5px solid black;
+      border-radius: 10px;
+      font: 10px monospace;
+  }
+
+  canvas,
+  #injector_output,
+  #screen_container,
+  .linux_output,
+  #screen_container {
+      width: 40vw;
+      height: 40vh;
+  }
+  #screen_container {
+      background-color: black;
+      border: 5px solid black;
+      border-radius: 10px;
+
+      overflow: hidden;
+  }
+
+  .linux_output {
+      outline: none;
+      white-space: pre;
+      font: 10px monospace;
+      line-height: 10px;
+      user-select: none;
+      color: whitesmoke;
+
+  }
+
+  .evenly {
+      justify-content: space-evenly;
+  }
+
+  .flex {
+      display: flex;
+  }
+
+  canvas textarea #screen_container .linux_output {
+      color: whitesmoke;
+      font: 10px monospace;
+
+  }
+
+  .label {
+      font: 18px monospace;
+      text-align: center
+  }
+</style>
 
 </html>
