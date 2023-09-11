@@ -17,15 +17,16 @@
   <link rel="icon" href="/sh1mmer/icon.png" />
   <link rel="stylesheet" href="/sh1mmer/main.css" />
   <script src="/script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-    $(document).ready(function(){
-       $("#button").click(function(){
-          $('html, body').animate({
-             scrollTop: $("#divElement").offset().top
-          }, 1000);
-       });
-    });
- </script>
+     $(document).ready(function(){
+        $("#button").click(function(){
+           $('html, body').animate({
+              scrollTop: $("#divElement").offset().top
+           }, 1000);
+        });
+     });
+  </script>
   <script>
     var messages = {
       mercury:
