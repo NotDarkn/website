@@ -18,6 +18,13 @@
   <link rel="stylesheet" href="/sh1mmer/main.css" />
   <script src="/script.js" defer></script>
   <script>
+      $("#button").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#myDiv").offset().top
+      }, 2000);
+    });
+  </script>
+  <script>
     var messages = {
       mercury:
         "Check the credits button at the bottom of the page for more info.",
@@ -27,13 +34,6 @@
       launch:
         "Click the extensions icon in Chrome, then click Chromebook Recovery Utility.",
     };
-  </script>
-  <script>
-      $("#button").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#myDiv").offset().top
-      }, 2000);
-    });
   </script>
   <base target="_blank" />
 </head>
