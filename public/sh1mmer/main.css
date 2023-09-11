@@ -124,6 +124,6 @@ a, button {
   transition: filter 250ms;
 }
 
-a:hover {
+a:hover, button:hover {
   filter: brightness(80%);
 }
