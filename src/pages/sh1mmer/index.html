@@ -18,12 +18,14 @@
   <link rel="stylesheet" href="/sh1mmer/main.css" />
   <script src="/script.js" defer></script>
   <script>
-      $("#button").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#myDiv").offset().top
-      }, 2000);
+    $(document).ready(function(){
+       $("#button").click(function(){
+          $('html, body').animate({
+             scrollTop: $("#divElement").offset().top
+          }, 1000);
+       });
     });
-  </script>
+ </script>
   <script>
     var messages = {
       mercury:
