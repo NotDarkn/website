@@ -127,3 +127,7 @@ a, button {
 a:hover, button:hover {
   filter: brightness(80%);
 }
+
+#fogbutton {
+  cursor:pointer;
+}
