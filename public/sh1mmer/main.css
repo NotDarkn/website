@@ -110,7 +110,7 @@ spc {
   margin-right: 10px;
 }
 
-a {
+a, button {
   background-color: var(--white);
   color: black;
   border: none;
