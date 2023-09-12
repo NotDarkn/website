@@ -104,10 +104,54 @@
         <b>IMPORTANT:</b> DO NOT CLOSE YOUR CHROMEBOOK until the next step and DO NOT SKIP the next step
       </p>
     <hr />
-    <h3>Safe Re-unerollment</h3>
+    <h3>Safe Re-Unerollment</h3>
       <p>
-        placeholder
+        By this point you should be at the distrct login screen, which looks like
+        the image below:
       </p>
+        <img src="/sh1mmer/assets/district_login.png">
+      <p>
+        On this screen, press <kbd>CTRL + ALT + Forward/F2 (→)</kbd>. After pressing this,
+        you shuld end up on a black console-looking screen. It should look like
+        the image below:
+      </p>
+        <img src="/sh1mmer/assets/chromeos_console.png">
+      <p>
+        The login is <kbd>root</kbd>, and <b>if it needs a password</b>, the password is
+        <kbd>test0000</kbd>. After logging in, some red text should appear meaning
+        you can type commands into the console now.
+      </p>
+      <p>
+        Type in the following command into the console: <br>
+        <kbd>vpd -i RW_VPD -s check_enrollment=0</kbd>
+      </p>
+      <p>
+        Your device should now be un-enrolled again, but you should still be inside of
+        a currently enrolled session.
+      </p>
+      <p>
+        Press <kbd>CTRL + ALT + Backwards/F1 (←)</kbd> and you should exit
+        out of the black console screen and re-enter the district login screen.
+      </p>
+      <hr />
+      <h3>Using Kiosk</h3>
+        <p>
+          Take your Kiosk test normally as you would.
+        </p>
+        <p>
+          Try not to close your Chromebook lid until you are ACTUALLY IN THE KIOSK APP, 
+          if you shut down your Chromebook in any way before that it'll force you to 
+          powerwash/turn on dev mode again and will be majorly inconvenient.
+        </p>
+        <p>
+          Once you are done with the kiosk test, reboot your computer with 
+          <kbd>Power Button (⏻), reload key (↻)</kbd>, and follow the instructions to 
+          re-enable secure mode or developer mode, then powerwash.
+        </p>
+        <p>
+          By this point, your Chromebook is unenrolled again and you have successfully 
+          taken a kiosk test!
+        </p>
   </div>
 </body>
 
