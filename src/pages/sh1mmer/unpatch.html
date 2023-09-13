@@ -17,7 +17,14 @@
   <link rel="icon" href="/sh1mmer/icon.png" />
   <link rel="stylesheet" href="/sh1mmer/main.css" />
   <script src="/sh1mmer/script.js" defer></script>
-
+  <script>
+    var messages = {
+      brain: 
+        "If you don't have a brain I don't know what you expect me to do except to say you're fucking retarded.",
+      screw:
+        "The most common screw types on Chromebooks are: Phillips #0, #000, #1, etc",
+    };
+  </script>
   <base target="_blank" />
 </head>
 
@@ -32,32 +39,97 @@
     <h5>
       if this isn't working for you, use: <a
       href="https://fog.gay">E-Halcyon</a> instead.</h5>
-      <p>
-        you'll only need to do this once, and it will let you 
-        use SH1mmer even after it's been completely patched.
-      </p>
-      <pre>
-  
-        1. unplug everything, open the back panel, disconnect the battery to disable WP, plug in the charger
-        2. boot into SH1mmer and use "Un-Enroll" / "Deprovision" (it'll error but ignore that)
-        (you will also need to run "Disable block_devmode" if you're using the old legacy version)
-        3. go to the bash shell and run this command:
-        <kbd>/usr/share/vboot/bin/set_gbb_flags.sh 0x8090</kbd>
-        <i>> do not use "Reset GBB Flags" after this</i>
-        4. exit SH1mmer, unplug everything, reconnect the battery, reconnect the charger
-        5. boot up, press <kbd>CTRL + D</kbd> to enter developer mode
-        6. once it completes, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash
-        7. after powerwash, immediately go to the <kbd>CTRL + ALT + F2 (→)</kbd> shell, login as "root" and run these commands:
-        <kbd>tpm_manager_client take_ownership</kbd>
-        <kbd>cryptohome --action=remove_firmware_management_parameters</kbd>
-        <i>> both commands should report success, otherwise there has been an error and you should downgrade to v110 or lower</i>
-        8. press <kbd>CTRL + ALT + F1 (←)</kbd>, use <kbd>CTRL + ALT + Shift + R</kbd> to powerwash again
-        9. profit
-
-        NOTE: if you're on dedede, your WP method is probably different. look your model up online to find the WP
-        method.
-      </pre>
-  </div>
+    <hr />
+      <h3>What you'll need</h3>
+        <li>
+          <u onclick="alert(messages.screw)">A screwdriver</u>; this is needed to open
+          up the Chromebook.
+        </li>
+        <li>
+          <u onclick="alert(messages.brain)">A brain</u>; note that it has to be competent 
+          alongside being there.
+        </li>
+      <h3>Battery Disassembly</h3>
+        <p>
+          First, you'll need to unplug everything in the Chromebook, such as
+          the charger, any USB devices, etc.
+        </p>
+        <p>
+          Take your <u onclick="alert(messages.screw)">screwdriver</u> and open the 
+          back panel of your Chromebook.
+        </p>
+        <p>
+          Find the battery cable and unplug it from the Chromebook, this should disable
+          the Write Protection on the majority of supported Chromebooks w/ SH1mmer.
+        </p>
+          <i>
+            p.s: if you're on <kbd>dedede</kbd>, your WP method may be different.
+          </i>
+        <p>
+          Plug in the charger, and turn on the Chromebook. Yes, this will work as the
+          Chromebook will run on battery power.
+        </p>
+      <hr />
+        <h3>Using SH1mmer</h3>
+          <p>
+            Boot into SH1mmer using your preferred method of choice (USB, SD Card, etc)
+            and use "Un-Enroll / Deprovision". This <b>WILL ERROR</b> but we'll ignore
+            that for now.
+          </p>
+            <i>
+              if you're using an old & legacy version, you'll need to run
+              ""Disable block_devmode" alongside everything else.
+            </i>
+          <p>
+            Go into the Bash Shell by using "Open Bash" and execute the following
+            commands below: <br>
+            <kbd>/usr/share/vboot/bin/set_gbb_flags.sh 0x8090</kbd>
+          </p>
+          <p>
+            After using this command, <b>DO NOT USE "Reset GBB Flags"</b> as you'll
+            fuck things up if you do so.
+          </p>
+          <p>
+            Exit SH1mmer and turn off your Chromebook. Unplug everything including the
+            charger, reconnect the battery, and then reconnect the charger.
+          </p>
+      <hr />
+        <h3>ChromeOS Commands</h3>
+          <p>
+            Boot up your Chromebook and press <kbd>CTRL + D</kbd> to enter ChromeOS
+            in a developer mode state.
+          </p>
+          <p>
+            Once it completes and boots into ChromeOS, press 
+            <kbd>CTRL + ALT + SHIFT + R</kbd> to powerwash the Chromebook.
+          </p>
+          <p>
+            After powerwashing, immediately go into the ChromeOS shell by pressing
+            <kbd>CTRL + ALT + F2 (→)</kbd>. Log into the user as: <kbd>root</kbd>, then
+            run the following commands: <br>
+            <kbd>tpm_manager_client take_ownership</kbd>
+            <kbd>cryptohome --action=remove_firmware_management_parameters</kbd>
+          </p>
+            <i>
+              both of these commands should report "success". if not, there has been an 
+              error and you need to use <a href="https://fog.gay">E-Halycon</a> instead.
+            </i>
+          <p>
+            Press <kbd>CTRL + ALT + F1 (←)</kbd> to exit out of the shell, then press 
+            <kbd>CTRL + ALT + Shift + R</kbd> to powerwash the Chromebook again.
+          </p>
+      <hr />
+        <h3>Aftermath</h3>
+          <p>
+            After powerwashing the Chromebook again and going through the setup, the
+            Chromebook <i>should</i> no longer re-enroll and you may use it as a
+            normal laptop.
+          </p>
+          <p>
+            You will only ever have to do this once, and this will let you use
+            SH1mmer even after it has been <b>completely patched.</b>
+          </p>
+    </div>
 </body>
 
 </html>
