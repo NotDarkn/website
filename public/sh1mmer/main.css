@@ -84,8 +84,8 @@ kbd {
   font-size: 90%;
   border-radius: 10px;
   padding: 3px;
-  vertical-align: middle;
 }
+
 kbd::selection{
   background-color: var(--light);
 }
