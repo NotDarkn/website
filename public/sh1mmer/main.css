@@ -83,7 +83,6 @@ kbd {
   color: var(--white);
   font-size: 90%;
   border-radius: 10px;
-  padding: 3px;
 }
 
 kbd::selection{
