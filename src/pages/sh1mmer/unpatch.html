@@ -130,13 +130,14 @@
           <p>
             In the Bash Shell, execute the following commands below:
               <kbd>
-                sudo vpd -i RW_VPD -s check_enrollment=0
-                sudo vpd -i RW_VPD -s block_devmode=0
+                sudo vpd -i RW_VPD -s check_enrollment=0 <br>
+                sudo vpd -i RW_VPD -s block_devmode=0 <br>
                 sudo crossystem block_devmode=0
               </kbd>
           </p>
           <p>
-            After executing all of the commands, it should look like the image below:
+            After executing all of the commands, it shouldn't report any errors or
+            issues, as seen in the image below:
           </p>
             <img src="/sh1mmer/assets/unpatch_cmds_results.png" />
           <p>
