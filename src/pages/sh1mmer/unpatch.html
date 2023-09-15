@@ -117,7 +117,7 @@
           <p>
             The command should report "success" at the end like this image:
           </p>
-            <img src="/sh1mmer/assets/unpatch_bash_results.png" />
+            <img src="/sh1mmer/assets/unpatch_gbb_results.png" />
             <br>
               <i>
                 If it fails, you've been on <kbd>v114</kbd> or newer before 
@@ -127,6 +127,18 @@
             After using this command, <b>DO NOT USE "Reset GBB Flags"</b>, as you'll
             fuck things up if you do so.
           </p>
+          <p>
+            In the Bash Shell, execute the following commands below:
+              <kbd>
+                sudo vpd -i RW_VPD -s check_enrollment=0
+                sudo vpd -i RW_VPD -s block_devmode=0
+                sudo crossystem block_devmode=0
+              </kbd>
+          </p>
+          <p>
+            After executing all of the commands, it should look like the image below:
+          </p>
+            <img src="/sh1mmer/assets/unpatch_cmds_results.png" />
           <p>
             Exit SH1mmer and turn off your Chromebook. Unplug everything including the
             charger, reconnect the battery, and then reconnect the charger.
