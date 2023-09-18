@@ -33,7 +33,7 @@
   margin-left: -10px;
   margin-top: -10px;
   position: absolute;
-  
+
   /*
   background-color: pink;
   border: 3px solid white;
@@ -48,13 +48,13 @@
   margin-left: -128px;
   margin-top: -128px;
   position: absolute;
-  
+
   /*
   background-color: aqua;
   opacity: 0.2;
   border: 3px solid white;
   */
-  
+
   background-image: url("/ehalycon/img/cloud.webp");
   opacity: 0.1;
 }

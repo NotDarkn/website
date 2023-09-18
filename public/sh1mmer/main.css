@@ -5,9 +5,9 @@
   --white: #e6d8ff;
   --font: #e6d8ff;
 
-  --light:#a791e8;
-  --dark2:#59498a;
-  --dark1:#946adc;
+  --light: #a791e8;
+  --dark2: #59498a;
+  --dark1: #946adc;
 }
 * {
   box-sizing: border-box;
@@ -70,7 +70,6 @@ li,
 img {
   margin-top: 30px;
   font-size: 25px;
-
 }
 
 u {
@@ -88,7 +87,7 @@ kbd {
   white-space: nowrap;
 }
 
-kbd::selection{
+kbd::selection {
   background-color: var(--light);
 }
 
@@ -111,7 +110,8 @@ spc {
   margin-right: 10px;
 }
 
-a, button {
+a,
+button {
   background-color: var(--white);
   color: black;
   border: none;
@@ -125,6 +125,7 @@ a, button {
   transition: filter 250ms;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   filter: brightness(80%);
 }

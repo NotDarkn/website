@@ -1,63 +1,82 @@
 ## August 24th, 2023 Changelog:
+
 **Added:**
+
 - Added `diffusehyperion.github.io` as a mirror at `https://osu.bio/sh1mmer/downloader`
 - Added proper credits at the bottom of `/sh1mmer/downloader`
 
 **Changed**
+
 - Changed much of the text at `/sh1mmmer/downloader`
 - Changed the status of `coral.bin` and `corsola.bin` on `dl.osu.bio`
- - They now both work as I've obtained working variants.
+- They now both work as I've obtained working variants.
 
 ## August 21st, 2023 Changelog:
+
 **Added:**
+
 - Added more missing files to the `archive.org` mirror at `https://osu.bio/sh1mmer/downloader`
   - Added `brask.bin.zip`
   - Added `nami..bin`
   - Added `brya.bin.zip`
 
 **Changed:**
+
 - Changed the warning at `/sh1mmer/downloader` to be less vague
   - "your browser is too old and this won't work" to "you won't be able to download from the Discord mirror using this browser or device!"
 - Changed the placement of the `archive.org` mirror at `/sh1mmer/downloader`
   - It's now above `discord.com` instead of being below it.
 
 ## August 2nd, 2023 Changelog:
+
 **Added:**
+
 - Glitz RMA Downloader at `https://osu.bio/sh1mmer/downloader`
 - Created `https://dl.osu.bio`
 - Added `dl.osu.bio` to the RMA Downloader
 
 **Changed:**
+
 - Changed many of the elements of the RMA Downloader
 - Changed The Internet Archive to `dl.osu.bio`
 - Changed file locations of SH1mmer files in `/public` to `/public/sh1mmer`
 
 **Removed:**
+
 - `/wax` as it isn't used for the website
 
 ## July 31th, 2023 Changelog:
+
 **Added:**
+
 - osu.bio credits to `https://osu.bio/sh1mmer/credits`
 
 **Changed:**
+
 - Formatting on (almost) every site on the SH1mmer rehost
 - Many small pieces of text on the SH1mmer rehost
 
 **Removed:**
+
 - The to-do list, it's useless now
 
 ## July 30th, 2023 Changelog
+
 **Added**
+
 - SH1mmer Website: `https://osu.bio/sh1mmer`
 - SH1mmer Builder: `https://osu.bio/builder`
 
 **Changed:**
+
 - All URLs going to shim-the-repo.org or shimmer.me has been changed to osu.bio
 - URLs going to invalid raw shims have been changed to The Internet Archive
 - SH1MMER --> SH1mmer
 
 ## June 30th, 2023 Changelog
+
 **Changed**
+
 - "notdarkn#7188" is now "@notdarkn" due to new Discord username changes.
 - Removed some text in the `style.css` that I didn't need.
 

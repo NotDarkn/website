@@ -78,11 +78,11 @@ body {
   padding: 12px;
   display: flex;
   align-items: flex-start;
-  gap: 16px
+  gap: 16px;
 }
 #footer * {
   margin: 0px;
-  line-height: 1.5
+  line-height: 1.5;
 }
 
 #copyright_text {
@@ -109,24 +109,24 @@ pre {
 }
 
 button2 {
-  padding:1em;
+  padding: 1em;
   text-decoration: solid;
   font-weight: bold;
   border-radius: 10em;
   border: 2px solid white;
   background-color: unset;
-  color:unset;
+  color: unset;
 }
 
 #mainbutton {
   margin-top: 2em;
   font-size: max-width;
-  width:100%;
+  width: 100%;
   text-decoration: unset;
 }
 #mainbutton * {
   font-size: 1.3em;
-  width:50%
+  width: 50%;
 }
 
 #navbar a {
