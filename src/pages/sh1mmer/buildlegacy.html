@@ -1,7 +1,3 @@
----
-
----
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -43,7 +39,7 @@
             event.returnValue = "";
           }
         },
-        { capture: true }
+        { capture: true },
       );
       function start() {
         $("#injector_output").value = "";
@@ -84,7 +80,7 @@
       function generateURL() {
         building = false;
         document.all.downloadURL.href = window.URL.createObjectURL(
-          emulator.disk_images.hda.get_as_file()
+          emulator.disk_images.hda.get_as_file(),
         );
         document.all.downloadURL.click();
       }
@@ -129,10 +125,11 @@
     <div class="section green">
       <h1 class="center">
         <a
-          style="user-select: none; cursor:pointer;"
+          style="user-select: none; cursor: pointer"
           onclick="
           start()
-          ">Start</a
+          "
+          >Start</a
         >
       </h1>
       <div class="flex evenly" id="displaycontainer">
@@ -152,14 +149,13 @@
       </div>
       <br />
       <input id="hd_image" class="invisible" type="file" />
+      <a id="downloadURL" class="invisible" download="injected_shim.bin"></a>
+      <p style="text-align: center">
+        • Wax4Web is powered by
+        <a href="https://github.com/buildroot/buildroot">Buildroot</a> and
+        <a href="https://github.com/copy/v86">v86</a> •
+      </p>
     </div>
-
-    <a id="downloadURL" class="invisible" download="injected_shim.bin"></a>
-    <p style="text-align: center">
-      • Wax4Web is powered by <a href="https://github.com/buildroot/buildroot"
-        >Buildroot</a
-      > and <a href="https://github.com/copy/v86">v86</a> •
-    </p>
   </body>
 </html>
 <style>

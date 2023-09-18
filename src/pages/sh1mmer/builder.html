@@ -1,7 +1,3 @@
----
-
----
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -43,7 +39,7 @@
             event.returnValue = "";
           }
         },
-        { capture: true }
+        { capture: true },
       );
       function start() {
         $("#injector_output").value = "";
@@ -84,7 +80,7 @@
       function generateURL() {
         building = false;
         document.all.downloadURL.href = window.URL.createObjectURL(
-          emulator.disk_images.hda.get_as_file()
+          emulator.disk_images.hda.get_as_file(),
         );
         document.all.downloadURL.click();
       }
@@ -111,14 +107,12 @@
       <p>
         <b>IMPORTANT</b>: IF YOUR BOARD IS <b>HANA</b> OR <b>CORAL</b> OR ANY
         OTHER PRE-FRECON BOARD, <b>THIS WILL NOT WORK!</b> Instead, you'll have
-        to build a legacy shim from <a
-          href="/sh1mmer/buildlegacy"
-          target="_self">the legacy builder</a
-        >
+        to build a legacy shim from
+        <a href="/sh1mmer/buildlegacy" target="_self">the legacy builder</a>
 
-         Next you need a raw RMA shim for that board name. There should be one corresponding
-        to your board <a href="https://dl.osu.bio">here</a> but if not you'll
-        have to source them on your own.. somehow.
+        Next you need a raw RMA shim for that board name. There should be one
+        corresponding to your board <a href="https://dl.osu.bio">here</a> but if
+        not you'll have to source them on your own.. somehow.
       </p>
       <p>
         Once you've found your raw shim, make sure to extract it if it's in a
@@ -129,18 +123,18 @@
         Next, hit the big start button and select your raw .bin file. The VM
         will start up. This will use a considerable amount of memory on your
         system and take a while. If it freezes, that's normal. Once it finishes,
-        it will automatically download the patched version. <b
-          >NO PAYLOADS ARE INCLUDED AS THIS IS A MINISHIM BUILD</b
-        >
+        it will automatically download the patched version.
+        <b>NO PAYLOADS ARE INCLUDED AS THIS IS A MINISHIM BUILD</b>
       </p>
     </div>
     <div class="section green">
       <h1 class="center">
         <a
-          style="user-select: none; cursor:pointer;"
+          style="user-select: none; cursor: pointer"
           onclick="
           start()
-          ">Start</a
+          "
+          >Start</a
         >
       </h1>
       <div class="flex evenly" id="displaycontainer">
@@ -160,14 +154,13 @@
       </div>
       <br />
       <input id="hd_image" class="invisible" type="file" />
+      <a id="downloadURL" class="invisible" download="injected_shim.bin"></a>
+      <p style="text-align: center">
+        • Wax4Web is powered by
+        <a href="https://github.com/buildroot/buildroot">Buildroot</a> and
+        <a href="https://github.com/copy/v86">v86</a> •
+      </p>
     </div>
-
-    <a id="downloadURL" class="invisible" download="injected_shim.bin"></a>
-    <p style="text-align: center">
-      • Wax4Web is powered by <a href="https://github.com/buildroot/buildroot"
-        >Buildroot</a
-      > and <a href="https://github.com/copy/v86">v86</a> •
-    </p>
   </body>
 </html>
 <style>

@@ -19,7 +19,7 @@
       async function start() {
         if (!("showSaveFilePicker" in window)) {
           alert(
-            "you won't be able to download from the Discord mirror using this browser or device!"
+            "you won't be able to download from the Discord mirror using this browser or device!",
           );
         }
 
@@ -3013,12 +3013,12 @@
                 await req.body.pipeTo(ws_dest, { preventClose: true });
                 progress.style.display = "";
                 progress.innerText = `Progress: ${Math.floor(
-                  (i / urls.length) * 100
+                  (i / urls.length) * 100,
                 )}%`;
               }
             } catch {
               alert(
-                "CORS error! You didn't enable the CORS disabler extension"
+                "CORS error! You didn't enable the CORS disabler extension",
               );
               window.location.reload();
             }
@@ -3035,28 +3035,31 @@
     </script>
   </head>
 
-  <body onload="
+  <body
+    onload="
   start()
-  ">
+  "
+  >
     <h1>Glitz - RMA Shim Downloader</h1>
     <p>
       Glitz is a collection of mirrors for publicly-available RMA SHIMS that can
       be used with <a href="https://sh1mmer.me">SH1mmer</a>.<br />
-       As of currently, Glitz provides four different mirrors to download SHIMS
+      As of currently, Glitz provides four different mirrors to download SHIMS
       from.<br />
     </p>
 
     <p>
       <b>Discord Download Instructions:</b>
       <br />
-       1. Install <a
+      1. Install
+      <a
         href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf"
         >this extension</a
       >, (or a Firefox equivalent)
       <br />
-       2. Open the extension, and click the big "C" on the left to enable it.
+      2. Open the extension, and click the big "C" on the left to enable it.
       <br />
-       3. Download your bin from the Discord mirror, and uninstall the extension
+      3. Download your bin from the Discord mirror, and uninstall the extension
       after.
     </p>
 
@@ -3070,7 +3073,7 @@
 
     <button id="download">download</button>
 
-    <h3 style="display:none" id="progress"></h3>
+    <h3 style="display: none" id="progress"></h3>
 
     <br />
 
@@ -3079,8 +3082,8 @@
         In order to use these RMA SHIMS to un-enroll your Chromebook, you will
         need to inject SH1mmer <a href="/sh1mmer/builder">here</a>.
         <br />
-         These files aren't endorsed, created, provided, nor officially
-        supported by <a href="https://mercurywork.shop">Mercury Workshop</a>.
+        These files aren't endorsed, created, provided, nor officially supported
+        by <a href="https://mercurywork.shop">Mercury Workshop</a>.
       </h3>
     </div>
 
@@ -3093,17 +3096,15 @@
     <p>
       <b>credits:</b>
       <br />
-       dl.osu.bio & hosted & edited by <a
-        href="https://discord.com/users/829745505784692776">@notdarkn</a
+      dl.osu.bio & hosted & edited by
+      <a href="https://discord.com/users/829745505784692776">@notdarkn</a><br />
+      dl.diffusehyperion.me by
+      <a href="https://discord.com/users/301279262994857987">@diffusehyperion</a
       ><br />
-       dl.diffusehyperion.me by <a
-        href="https://discord.com/users/301279262994857987">@diffusehyperion</a
-      ><br />
-       originally created by <a
-        href="https://discord.com/users/1039648022084202516">@julia_j</a
-      ><br />
+      originally created by
+      <a href="https://discord.com/users/1039648022084202516">@julia_j</a><br />
       <br />
-       ❤️ thank you ❤️
+      ❤️ thank you ❤️
     </p>
   </body>
 
