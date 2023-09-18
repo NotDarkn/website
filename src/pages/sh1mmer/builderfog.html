@@ -1,228 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>E-Halcyon</title>
 
-    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css" />
-    <link rel="stylesheet" href="/ehalycon/css/style.css" />
-    <link rel="stylesheet" href="/ehalycon/css/clouds.css" />
-    <link rel="icon" href="/ehalycon/img/mercury.png" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>E-Halcyon</title>
 
-    <meta
-      name="description"
-      content="A builder tool for Mercury Workshop's new project, RecoMod, which makes injected RecoMod images automatically when a recovery image is selected."
-    />
-    <meta name="author" content="Mercury Workshop" />
-    <meta
-      name="keywords"
-      content="E-Halcyon, Halcyon, RecoMod, SH1MMER, ChromeOS, Chrome OS, Chromebook, unenrollment, bypassing, exploit, unblocker"
-    />
-    <meta name="darkreader-lock" />
+  <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+  <link rel="stylesheet" href="/ehalycon/css/style.css">
+  <link rel="stylesheet" href="/ehalycon/css/clouds.css">
+  <link rel="icon" href="/ehalycon/img/mercury.png">
 
-    <meta property="og:title" content="Fog4Web" />
-    <meta property="og:url" content="https://osu.bio/sh1mmer/builderfog" />
-    <meta
-      property="og:description"
-      content="A builder tool for Mercury Workshop's new project, RecoMod, which makes injected RecoMod images automatically when a recovery image is selected."
-    />
-    <meta property="og:image" content="/ehalycon/img/mercury.png" />
-    <meta property="og:type" content="website" />
+  <meta name="description"
+    content="A builder tool for Mercury Workshop's new project, RecoMod, which makes injected RecoMod images automatically when a recovery image is selected.">
+  <meta name="author" content="Mercury Workshop">
+  <meta name="keywords"
+    content="E-Halcyon, Halcyon, RecoMod, SH1MMER, ChromeOS, Chrome OS, Chromebook, unenrollment, bypassing, exploit, unblocker">
+  <meta name="darkreader-lock">
 
-    <script is:inline src="/sh1mmer/wax4web/libv86.js"></script>
-    <script is:inline>
-      window.onload = () => {
-        let script = document.createElement("script");
-        script.src = "/ehalycon/js/clouds.js";
-        script.onload = () => {
-          generate();
-          window.dispatchEvent(new Event("scroll"));
-        };
-        document.head.append(script);
-      };
-    </script>
-    <script>
-      const $ = (_) => document.querySelector(_);
+  <meta property="og:title" content="Fog4Web">
+  <meta property="og:url" content="https://osu.bio/sh1mmer/builderfog">
+  <meta property="og:description"
+    content="A builder tool for Mercury Workshop's new project, RecoMod, which makes injected RecoMod images automatically when a recovery image is selected.">
+  <meta property="og:image" content="/ehalycon/img/mercury.png">
+  <meta property="og:type" content="website">
 
-      window.addEventListener("load", () => {
-        $("#injector_output").value = "";
-        $("#hd_image").addEventListener("change", (e) => {
-          if ($("#hd_image").files.length < 0) {
-            alert("Please select a file!");
-          } else {
-            startVM();
-          }
-        });
+  <script src="/sh1mmer/wax4web/libv86.js"></script>
+  <script>
+    window.onload = () => {
+      let script = document.createElement("script");
+      script.src = "/ehalycon/js/clouds.js";
+      script.onload = () => { generate(); window.dispatchEvent(new Event("scroll")) }
+      document.head.append(script);
+    }
+  </script>
+  <script>
+    const $ = _ => document.querySelector(_);
+
+    window.addEventListener("load", () => {
+      $("#injector_output").value = "";
+      $("#hd_image").addEventListener("change", e => {
+        if ($("#hd_image").files.length < 0) {
+          alert("Please select a file!");
+        } else {
+          startVM();
+        }
       });
-      window.addEventListener(
-        "beforeunload",
-        (event) => {
-          if (building) {
-            event.preventDefault();
-            event.returnValue = "";
-          }
+    });
+    window.addEventListener("beforeunload", (event) => {
+      if (building) {
+        event.preventDefault();
+        event.returnValue = "";
+      }
+    }, { capture: true });
+    function start() {
+      $("#injector_output").value = "";
+      $("#hd_image").click();
+    }
+    function startVM() {
+      var emulator = window.emulator = new V86Starter({
+        wasm_path: "/sh1mmer/wax4web/v86.wasm",
+        memory_size: 512 * 1024 * 1024,
+        vga_memory_size: 2 * 1024 * 1024,
+        screen_container: $("#screen_container"),
+        bios: {
+          url: "/sh1mmer/wax4web/seabios.bin",
         },
-        { capture: true },
-      );
-      function start() {
-        $("#injector_output").value = "";
-        $("#hd_image").click();
-      }
-      function startVM() {
-        var emulator = (window.emulator = new V86Starter({
-          wasm_path: "/sh1mmer/wax4web/v86.wasm",
-          memory_size: 512 * 1024 * 1024,
-          vga_memory_size: 2 * 1024 * 1024,
-          screen_container: $("#screen_container"),
-          bios: {
-            url: "/sh1mmer/wax4web/seabios.bin",
-          },
-          vga_bios: {
-            url: "/sh1mmer/wax4web/vgabios.bin",
-          },
-          bzimage: {
-            url: "/sh1mmer/wax4web/bzImage",
-          },
-          initrd: {
-            url: "/sh1mmer/wax4web/bw",
-          },
-          hda: {
-            buffer: document.all.hd_image.files[0],
-          },
-          serial_container: $("#injector_output"),
-          autostart: true,
-        }));
-        emulator.add_listener("serial0-output-char", function (char) {
-          data += char;
-          if (data.endsWith("Your shim has finished building")) {
-            generateURL();
-          }
-        });
-        building = true;
-      }
-      function generateURL() {
-        building = false;
-        document.all.downloadURL.href = window.URL.createObjectURL(
-          emulator.disk_images.hda.get_as_file(),
-        );
-        document.all.downloadURL.click();
-      }
-      var data = "";
-      var building = false;
-    </script>
-  </head>
+        vga_bios: {
+          url: "/sh1mmer/wax4web/vgabios.bin",
+        },
+        bzimage: {
+          url: "/sh1mmer/wax4web/bzImage"
+        },
+        initrd: {
+          url: "/sh1mmer/wax4web/bw"
+        },
+        hda: {
+          buffer: document.all.hd_image.files[0]
+        },
+        serial_container: $("#injector_output"),
+        autostart: true,
+      });
+      emulator.add_listener("serial0-output-char", function (char) {
+        data += char;
+        if (data.endsWith("Your shim has finished building")) {
+          generateURL();
+        }
+      });
+      building = true;
+    }
+    function generateURL() {
+      building = false
+      document.all.downloadURL.href = window.URL.createObjectURL(emulator.disk_images.hda.get_as_file());
+      document.all.downloadURL.click()
 
-  <body>
-    <div id="navbar">
-      <a id="title" href="/">
-        <img
-          src="/ehalycon/img/mercury.png"
-          width="48px"
-          height="48px"
-          alt="The Mercury Workshop logo"
-        />
-        <h1>Fog4Web</h1>
+    }
+    var data = ""
+    var building = false
+
+  </script>
+</head>
+
+<body>
+  <div id="navbar">
+    <a id="title" href="/">
+      <img src="/ehalycon/img/mercury.png" width="48px" height="48px" alt="The Mercury Workshop logo">
+      <h1>Fog4Web</h1>
+    </a>
+    <div id="links">
+      <a href="#instructions">Instructions</a>
+      <a href="#FAQ">FAQ</a>
+      <a href="https://github.com/NotDarkn/website">GitHub</a>
+    </div>
+  </div>
+  <div id="cloud_viewport">
+    <div id="cloud_world"></div>
+  </div>
+  <div id="content">
+    <div id="content_title" class="description">
+      <h1>Defog Your Chromebook</h1>
+      <p>E-Halcyon is a bypass for "The Fog," which is Google's mitigation for the unenrollment and downgrading of
+        Chrome OS devices. It allows you to downgrade and bypass enterprise enrollment on Chromebooks, even if it's
+        received the update that patched downgrading and enrollment escape.</p>
+      <p>This website will allow you to build an E-Halycon injected recovery bin without needing to put in any commands
+        in a Terminal on Linux.</p>
+      <a href="#instructions" id="mainbutton">
+        <!-- todo: fix this mess of a button-->
+        <button2>Build Me</button2>
       </a>
-      <div id="links">
-        <a href="#instructions">Instructions</a>
-        <a href="#FAQ">FAQ</a>
-        <a href="https://github.com/NotDarkn/website">GitHub</a>
-      </div>
     </div>
-    <div id="cloud_viewport">
-      <div id="cloud_world"></div>
+
+    <div id="spacer" style="height: 30px;">
+      <script>document.getElementById("spacer").style.height = "210vh"</script>
     </div>
-    <div id="content">
-      <div id="content_title" class="description">
-        <h1>Defog Your Chromebook</h1>
-        <p>
-          E-Halcyon is a bypass for "The Fog," which is Google's mitigation for
-          the unenrollment and downgrading of Chrome OS devices. It allows you
-          to downgrade and bypass enterprise enrollment on Chromebooks, even if
-          it's received the update that patched downgrading and enrollment
-          escape.
-        </p>
-        <p>
-          This website will allow you to build an E-Halycon injected recovery
-          bin without needing to put in any commands in a Terminal on Linux.
-        </p>
-        <a href="#instructions" id="mainbutton">
-          <!-- todo: fix this mess of a button-->
-          <button2>Build Me</button2>
-        </a>
-      </div>
 
-      <div id="spacer" style="height: 30px">
-        <script>
-          document.getElementById("spacer").style.height = "210vh";
-        </script>
-      </div>
+    <div class="description" id="instructions">
+      <h1>Instructions:</h1>
 
-      <div class="description" id="instructions">
-        <h1>Instructions:</h1>
+      <!-- note: please just enable word wrap on your editor instead of screwing up the indentation for everyone else -->
+      <!-- coolelectronics, you better disable your auto-formatter -->
+      <p>
+        First, you'll need to find your school Chromebook's board name. This can
+        be done by going to <kbd>chrome://version</kbd> on your Chromebook and
+        copying the word after <kbd>stable-channel</kbd>, or by looking up the Chromebook's model.
+      </p>
+      <p>
+        Next you need a recovery image for that board name. There should be one corresponding to your board <a
+          href="https://chrome100.dev">here</a> but if not you'll have to source them on your own..
+        somehow.
+      </p>
+      <p>
+        Once you've found your raw shim, make sure to extract it if it's in a .zip file. If it has some kind of
+        other compression format (.xz, .xf, .gz, etc) make sure you uncompress it first.
+      </p>
+      <p>
+        Next, hit the big start button and select your .bin file. The VM will start up. This will use a
+        considerable amount of memory on your system and take a while. If it freezes, that's normal. Once it
+        finishes, it will automatically download the patched version.
+      </p>
+      <p style="text-align: center">
+        <i>
+          │ p.s: this isn't real and is still a SH1mmer Builder │
 
-        <!-- note: please just enable word wrap on your editor instead of screwing up the indentation for everyone else -->
-        <!-- coolelectronics, you better disable your auto-formatter -->
-        <p>
-          First, you'll need to find your school Chromebook's board name. This
-          can be done by going to <kbd>chrome://version</kbd> on your Chromebook
-          and copying the word after <kbd>stable-channel</kbd>, or by looking up
-          the Chromebook's model.
-        </p>
-        <p>
-          Next you need a recovery image for that board name. There should be
-          one corresponding to your board
-          <a href="https://chrome100.dev">here</a> but if not you'll have to
-          source them on your own.. somehow.
-        </p>
-        <p>
-          Once you've found your raw shim, make sure to extract it if it's in a
-          .zip file. If it has some kind of other compression format (.xz, .xf,
-          .gz, etc) make sure you uncompress it first.
-        </p>
-        <p>
-          Next, hit the big start button and select your .bin file. The VM will
-          start up. This will use a considerable amount of memory on your system
-          and take a while. If it freezes, that's normal. Once it finishes, it
-          will automatically download the patched version.
-        </p>
-        <p style="text-align: center">
-          <i>
-            │ p.s: this isn't real and is still a SH1mmer Builder │
+          <br>
 
-            <br />
+          │ simply put, it's a <b>design concept</b> │
+        </i>
+      </p>
+    </div>
 
-            │ simply put, it's a <b>design concept</b> │
-          </i>
-        </p>
-      </div>
+    <div class="section green">
 
-      <div class="section green">
-        <h1 class="start">
-          <button2 style="user-select: none; cursor: pointer" onclick="start()"
-            >Start</button2
-          >
-        </h1>
+      <h1 class="start">
+        <button2 style="user-select: none; cursor:pointer;" onclick="start()">Start</button2>
+      </h1>
 
-        <div class="flex evenly" id="displaycontainer">
-          <div>
-            <div class="label">Linux Emulator Output:</div>
-            <div id="screen_container">
-              <div class="linux_output"></div>
-              <canvas></canvas>
+      <div class="flex evenly" id="displaycontainer">
+        <div>
+          <div class="label">Linux Emulator Output: </div>
+          <div id="screen_container">
+
+            <div class="linux_output">
             </div>
+            <canvas></canvas>
           </div>
-          <div>
-            <div class="label">Wax Injector Output:</div>
 
-            <textarea readonly id="injector_output" rows="17" cols="60">
-            </textarea>
-          </div>
         </div>
-        <br />
-        <input id="hd_image" class="invisible" type="file" />
+        <div>
+          <div class="label">Wax Injector Output: </div>
+
+          <textarea readonly id="injector_output" rows="17" cols="60"> </textarea>
+        </div>
       </div>
+      <br>
+      <input id="hd_image" class="invisible" type=file></input>
 
       <a id="downloadURL" class="invisible" download="injected_shim.bin"></a>
     </div>
@@ -248,7 +219,8 @@
         <li>
           <h2>Why did you make this "Fog4Web" builder?</h2>
           <p>I got bored and wanted to make a design concept. Originally it looked
-            like the <a href="https://sh1mmer.me">SH1mmer</a> site, now it looks like the <a href="https://fog.gay">E-Halycon</a> website.</p>
+            like the <a href="https://sh1mmer.me">SH1mmer</a> site, now it looks like the <a
+              href="https://fog.gay">E-Halycon</a> website.</p>
         </li>
         <li>
           <h2>Why does it mean to be a skid?</h2>
@@ -282,28 +254,29 @@
       </div>
 
       <div id="fedi_plug"><a href="https://discord.gg/bAgNyGpXSx">discord server</a>
-      <a href="https://akkoma.mercurywork.shop/">fediverse server</a></div>  
+        <a href="https://akkoma.mercurywork.shop/">fediverse server</a>
+      </div>
     </div>
   </div>
 </body>
 <style>
   #displaycontainer {
-      /* background-color: var(--light); */
-      padding: 3em;
-      border-radius: 10px;
+    /* background-color: var(--light); */
+    padding: 3em;
+    border-radius: 10px;
   }
 
   :root {
     --white: #ffffff;
-    --dark2:#656565;
+    --dark2: #656565;
   }
 
   .start {
-        text-align: center;
-        margin-top: 2em;
-        width:100%;
-        text-decoration: unset;
-        font-size: 1.3em;
+    text-align: center;
+    margin-top: 2em;
+    width: 100%;
+    text-decoration: unset;
+    font-size: 1.3em;
   }
 
   kbd {
@@ -318,13 +291,13 @@
   }
 
   #injector_output {
-      resize: none;
-      width: max-content;
-      outline: none;
-      color: whitesmoke;
-      border: 2px solid lightgray;
-      border-radius: 10px;
-      font: 10px monospace;
+    resize: none;
+    width: max-content;
+    outline: none;
+    color: whitesmoke;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    font: 10px monospace;
   }
 
   canvas,
@@ -332,55 +305,55 @@
   #screen_container,
   .linux_output,
   #screen_container {
-      width: 40vw;
-      height: 40vh;
+    width: 40vw;
+    height: 40vh;
   }
 
   .invisible {
-      display: none;
+    display: none;
   }
 
   #screen_container {
-      background-color: black;
-      border: 2px solid lightgray;
-      border-radius: 10px;
+    background-color: black;
+    border: 2px solid lightgray;
+    border-radius: 10px;
 
-      overflow: hidden;
+    overflow: hidden;
   }
 
   .linux_output {
-      outline: none;
-      white-space: pre;
-      font: 10px monospace;
-      line-height: 10px;
-      user-select: none;
-      color: whitesmoke;
+    outline: none;
+    white-space: pre;
+    font: 10px monospace;
+    line-height: 10px;
+    user-select: none;
+    color: whitesmoke;
 
   }
 
   .evenly {
-      justify-content: space-evenly;
+    justify-content: space-evenly;
   }
 
   .flex {
-      display: flex;
+    display: flex;
   }
 
   textarea {
-        /* no clue why but it wont work if its mixed with other elements */
-        background-color: black;
-    }
+    /* no clue why but it wont work if its mixed with other elements */
+    background-color: black;
+  }
 
-    canvas textarea #screen_container .linux_output {
-        color: whitesmoke;
-        font: 10px monospace;
+  canvas textarea #screen_container .linux_output {
+    color: whitesmoke;
+    font: 10px monospace;
 
-    }
+  }
 
-    .label {
-        font: 18px monospace;
-        text-align: center
-    }
+  .label {
+    font: 18px monospace;
+    text-align: center
+  }
 </style>
 
 </html>
