@@ -227,41 +227,28 @@
       <a id="downloadURL" class="invisible" download="injected_shim.bin"></a>
     </div>
 
-    <div style="height: 10vh"></div>
+    <div style="height:10vh">
+    </div>
     <div class="description" id="FAQ">
       <h1>FAQ:</h1>
       <ul>
         <!-- using h2 here for some actual hierarchy and no ugly css -->
         <li>
           <h2>How does this work?</h2>
-          <p>
-            See the
-            <a href="//coolelectronics.me/blog/breaking-cros-2">writeup</a> for
-            more information
-          </p>
+          <p>See the <a href="//coolelectronics.me/blog/breaking-cros-2">writeup</a> for more information</p>
         </li>
         <li>
           <h2>Where do I report bugs?</h2>
-          <p>
-            The SH1mmer
-            <a href="//github.com/MercuryWorkshop/sh1mmer">GitHub</a>
-          </p>
+          <p>The SH1mmer <a href="//github.com/MercuryWorkshop/sh1mmer">GitHub</a></p>
         </li>
         <li>
           <h2>Is this actually an E-Halycon builder?</h2>
-          <p>
-            No, it's fucking not, read the fucking
-            <a href="#instructions">Instructions</a>.
-          </p>
+          <p>No, it's fucking not, read the fucking <a href="#instructions">Instructions</a>.</p>
         </li>
         <li>
           <h2>Why did you make this "Fog4Web" builder?</h2>
-          <p>
-            I got bored and wanted to make a design concept. Originally it
-            looked like the <a href="https://sh1mmer.me">SH1mmer</a> site, now
-            it looks like the <a href="https://fog.gay">E-Halycon</a>
-            website.
-          </p>
+          <p>I got bored and wanted to make a design concept. Originally it looked
+            like the <a href="https://sh1mmer.me">SH1mmer</a> site, now it looks like the <a href="https://fog.gay">E-Halycon</a> website.</p>
         </li>
         <li>
           <h2>Why does it mean to be a skid?</h2>
@@ -273,64 +260,50 @@
         </li>
         <li>
           <h2>Am I going to get arrested for doing this?</h2>
-          <p>
-            ...no, but they can probably take away your Chromebook perms if they
-            find out. Check your district's Technology agreement just to be
-            sure.
-          </p>
+          <p>...no, but they can probably take away your Chromebook perms if they
+            find out. Check your district's Technology agreement just to be sure.</p>
         </li>
       </ul>
     </div>
     <div id="credits" class="description">
       <h1>Credits:</h1>
       <ul style="width: 100%">
-        <li>
-          CoolElectronics - RecoMod, working switch_root, and everything else
-        </li>
+        <li>CoolElectronics - RecoMod, working switch_root, and everything else</li>
         <li>OlyB - Insight and contributions to the RecoMod script</li>
         <li>vk6 - Created this website</li>
         <li>NotDarkn - Created the design concept</li>
       </ul>
     </div>
     <div id="footer">
-      <img
-        src="/ehalycon/img/mercury.png"
-        width="48px"
-        height="48px"
-        alt="The Mercury Workshop logo"
-      />
+      <img src="/ehalycon/img/mercury.png" width="48px" height="48px" alt="The Mercury Workshop logo">
       <div style="flex-grow: 1">
         <p><b>E-Halcyon / Fog4Web</b></p>
-        <a id="copyright_text" href="https://mercurywork.shop"
-          >Copyright (c) 2023 Mercury Workshop</a
-        ><br />
+        <a id="copyright_text" href="https://mercurywork.shop">Copyright (c) 2023 Mercury Workshop</a><br>
       </div>
 
-      <div id="fedi_plug">
-        <a href="https://discord.gg/bAgNyGpXSx">discord server</a>
-        <a href="https://akkoma.mercurywork.shop/">fediverse server</a>
-      </div>
+      <div id="fedi_plug"><a href="https://discord.gg/bAgNyGpXSx">discord server</a>
+      <a href="https://akkoma.mercurywork.shop/">fediverse server</a></div>  
     </div>
-  </body>
-</html>
+  </div>
+</body>
 <style>
   #displaycontainer {
-    /* background-color: var(--light); */
-    padding: 3em;
-    border-radius: 10px;
+      /* background-color: var(--light); */
+      padding: 3em;
+      border-radius: 10px;
   }
 
   :root {
     --white: #ffffff;
-    --dark2: #656565;
+    --dark2:#656565;
   }
 
   .start {
-    text-align: center;
-    margin-top: 2em;
-    width: 100%;
-    text-decoration: unset;
-    font-size: 1.3em;
+        text-align: center;
+        margin-top: 2em;
+        width:100%;
+        text-decoration: unset;
+        font-size: 1.3em;
   }
 
   kbd {
@@ -345,13 +318,13 @@
   }
 
   #injector_output {
-    resize: none;
-    width: max-content;
-    outline: none;
-    color: whitesmoke;
-    border: 2px solid lightgray;
-    border-radius: 10px;
-    font: 10px monospace;
+      resize: none;
+      width: max-content;
+      outline: none;
+      color: whitesmoke;
+      border: 2px solid lightgray;
+      border-radius: 10px;
+      font: 10px monospace;
   }
 
   canvas,
@@ -359,51 +332,55 @@
   #screen_container,
   .linux_output,
   #screen_container {
-    width: 40vw;
-    height: 40vh;
+      width: 40vw;
+      height: 40vh;
   }
 
   .invisible {
-    display: none;
+      display: none;
   }
 
   #screen_container {
-    background-color: black;
-    border: 2px solid lightgray;
-    border-radius: 10px;
+      background-color: black;
+      border: 2px solid lightgray;
+      border-radius: 10px;
 
-    overflow: hidden;
+      overflow: hidden;
   }
 
   .linux_output {
-    outline: none;
-    white-space: pre;
-    font: 10px monospace;
-    line-height: 10px;
-    user-select: none;
-    color: whitesmoke;
+      outline: none;
+      white-space: pre;
+      font: 10px monospace;
+      line-height: 10px;
+      user-select: none;
+      color: whitesmoke;
+
   }
 
   .evenly {
-    justify-content: space-evenly;
+      justify-content: space-evenly;
   }
 
   .flex {
-    display: flex;
+      display: flex;
   }
 
   textarea {
-    /* no clue why but it wont work if its mixed with other elements */
-    background-color: black;
-  }
+        /* no clue why but it wont work if its mixed with other elements */
+        background-color: black;
+    }
 
-  canvas textarea #screen_container .linux_output {
-    color: whitesmoke;
-    font: 10px monospace;
-  }
+    canvas textarea #screen_container .linux_output {
+        color: whitesmoke;
+        font: 10px monospace;
 
-  .label {
-    font: 18px monospace;
-    text-align: center;
-  }
+    }
+
+    .label {
+        font: 18px monospace;
+        text-align: center
+    }
 </style>
+
+</html>
