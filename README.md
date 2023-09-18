@@ -12,16 +12,23 @@
   <li>#2 Rehost of SH1mmer RMA Shims at <a href="https://osu.bio/sh1mmer/downloader">osu.bio/sh1mmer/downloader</a></li>
 </ul>
 
-<h2>Credits</h2>
-<ul>
-  <li><h3>Darkn: <a href="https://discord.com/users/829745505784692776">@notdarkn</a></h3></li> 
-    <i>Creator of <a href=https://osu.bio>osu.bio</a> and <a href=https://icrazeis.gay>icrazeis.gay</a></i>
-  <li><h3>iCraze: <a href="https://discord.com/users/883412614699446283">@icraze</a></h3></li>
-    <i>Main material used for propaganda</i>
-  <li><h3>hell0u: <a href="https://disocrd.com/users/836279485984538634">@waveeeeeee</a><h3></li>
-    <i>Converted site to astro & helped a lot</i>
-  <li><h3>Mercury Workshop: <a href="https://mercurywork.shop/">mercurywork.shop</a><h3></li>
-    <i>Owners of SH1mmer & Builder</i>
-  <li><h3>r/Jailbreak: <a href="https://discord.gg/jb">discord.gg/jb</a></h3></li>
-    <i>Main distributor of <a href=https://osu.bio>osu.bio</a></i>
-</ul>
+## Credits
+
+- **Darkn:** [@notdarkn](https://discord.com/users/829745505784692776)
+
+  - Creator of [osu.bio](https://osu.bio) and [icrazeis.gay](https://icrazeis.gay)
+
+- **iCraze:** [@icraze](https://discord.com/users/883412614699446283)
+
+  - Main material used for propaganda
+
+- **hell0u:** [@waveeeeeee](https://discord.com/users/836279485984538634)
+
+  - Converted site to astro & helped a lot
+
+- **Mercury Workshop:** [mercurywork.shop](https://mercurywork.shop)
+
+  - Owners of SH1mmer & Builder
+
+- **r/Jailbreak:** [discord.gg/jb](https://discord.gg/jb)
+  - Main distributor of [osu.bio](https://osu.bio)

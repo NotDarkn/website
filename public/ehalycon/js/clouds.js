@@ -43,28 +43,28 @@ let previous_frame = 0;
 let framerate;
 
 //mouse event listeners
-window.addEventListener("mousemove", event => {
-  let degrees = 10; //camera rotation range 
-  world_angle_y = -(0.5 - (event.clientX / window.innerWidth)) * degrees;
-  world_angle_x = (0.5 - (event.clientY / window.innerHeight)) * degrees;
+window.addEventListener("mousemove", (event) => {
+  let degrees = 10; //camera rotation range
+  world_angle_y = -(0.5 - event.clientX / window.innerWidth) * degrees;
+  world_angle_x = (0.5 - event.clientY / window.innerHeight) * degrees;
   update_view();
 });
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
     });
   });
 });
-window.addEventListener("scroll", event => {
+window.addEventListener("scroll", (event) => {
   let pos = document.documentElement.scrollTop || document.body.scrollTop;
   let max = document.documentElement.scrollHeight || document.body.scrollHeight;
   distance = (pos / max) * 2400;
   // distance = pos;
   update_view();
-})
+});
 
 //update rotation and camera distance
 function update_view() {
@@ -95,8 +95,9 @@ function create_cloud() {
   let cloud_base = document.createElement("div");
   cloud_base.className = "cloud_base";
 
-  let cloud_x = -window.innerWidth / 4 + Math.random() * window.innerWidth / 2;
-  let cloud_y = Math.random() * window.innerHeight / 2;
+  let cloud_x =
+    -window.innerWidth / 4 + (Math.random() * window.innerWidth) / 2;
+  let cloud_y = (Math.random() * window.innerHeight) / 2;
   let cloud_z = Math.random() * 200;
 
   cloud_base.style.transform = `
@@ -115,7 +116,7 @@ function create_cloud() {
       z: -256 + Math.random() * 512,
       rotation: Math.random() * 360,
       scale: 1 + Math.random(),
-      speed: -1 / 32 + Math.random() / 16
+      speed: -1 / 32 + Math.random() / 16,
     };
     cloud_layer.className = "cloud_layer";
     cloud_layer.style.transform = `

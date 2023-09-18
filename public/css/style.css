@@ -8,19 +8,19 @@ a[href] {
 }
 
 .vertical {
-	position: fixed; /* or absolute */
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	display: table-cell;
-	padding: 40px;
-	border: 5px solid #1c87c9;
-	scroll-margin: 0;
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: table-cell;
+  padding: 40px;
+  border: 5px solid #1c87c9;
+  scroll-margin: 0;
 }
 
 .hide {
-	display: none;
+  display: none;
 }
 
 .buttonuhh {
@@ -31,7 +31,13 @@ a[href] {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: "SF-Reg",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-family:
+    "SF-Reg",
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    "Helvetica Neue",
+    sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 20px;
@@ -42,26 +48,32 @@ a[href] {
   text-align: center;
   text-decoration: none;
   touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  transition:
+    box-shadow 0.2s,
+    -ms-transform 0.1s,
+    -webkit-transform 0.1s,
+    transform 0.1s;
   -webkit-user-select: none;
   user-select: none;
   width: auto;
 }
 
 .buttonuhh:focus-visible {
-  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-  transition: box-shadow .2s;
+  box-shadow:
+    #222222 0 0 0 2px,
+    rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow 0.2s;
 }
 
 .buttonuhh:active {
   background-color: #141414;
   border-color: #fff;
-  transform: scale(.96);
+  transform: scale(0.96);
 }
 
 .buttonuhh:disabled {
   background-color: grey;
-  border-color: #DDDDDD;
+  border-color: #dddddd;
   color: #000000;
   cursor: not-allowed;
   opacity: 1;

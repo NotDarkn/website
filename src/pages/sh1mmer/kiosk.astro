@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Rehosted SH1mmer" />
+    <meta property="og:description" content="SH1mmer: Kiosk" />
+    <meta property="og:url" content="https://osu.bio/sh1mmer/kisok" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://osu.bio/sh1mmer/icon.png" />
+    <meta property="og:image:alt" content="SH1mmer" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:site_name" content="osu.bio" />
+    <title>Kiosk | SH1mmer</title>
+    <link rel="icon" href="/sh1mmer/icon.png" />
+    <link rel="stylesheet" href="/sh1mmer/main.css" />
+    <script src="/sh1mmer/script.js" defer></script>
+    <script is:inline>
+      var messages = {
+        brain:
+          "If you don't have a brain I don't know what you expect me to do except to say you're fucking retarded.",
+        enroll:
+          "This only works on currently un-enrolled Chromebooks, obviously.",
+      };
+    </script>
+    <base target="_blank" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Kiosk</h1>
+      <br />
+      <a href="/sh1mmer" target="_self"> Back to home</a>
+    </div>
+    <div class="section green">
+      <h3>What you'll need</h3>
+      <li>
+        <u onclick="alert(messages.enroll); "
+          >A currently un-enrolled Chromebook</u
+        >
+      </li>
+      <li>
+        <u onclick="alert(messages.brain);">A brain</u>; note that it has to be
+        competent alongside being there.
+      </li>
+      <hr />
+      <h3>Enabling Developer Mode</h3>
+      <p>
+        Press <kbd>Power (⏻) + Reload (↻) + ESC</kbd> at the same time to enter
+        the recovery screen. It'll look like one of the images below:
+      </p>
+      <img src="/sh1mmer/assets/recover_black.png" />
+      <img src="/sh1mmer/assets/recover_white.png" />
+      <p>
+        On this screen, press <kbd>CTRL + D</kbd> at the same time, then follow
+        the on-screen instructions to enable developer mode.
+      </p>
+      <p>
+        After around six minutes of loading developer mode, the screen should
+        look like one of the images below:
+      </p>
+      <img src="/sh1mmer/assets/devmode_black.png" />
+      <img src="/sh1mmer/assets/devmode_white.png" />
+      <p>
+        Press <kbd>CTRL + D</kbd> again on this screen to get past it, and you
+        should now be loading into ChromeOS with developer mode!
+      </p>
+      <hr />
+      <h3>Powerwashing</h3>
+      <p>
+        If you just enabled developer mode, your Chromebook should already be
+        powerwashed, so you won't need to proceed with this step.
+      </p>
+      <p>
+        If you already have developer mode enabled and have data, you will need
+        to powerwash the Chromebook again.
+      </p>
+      <p>
+        Sign out of your account, then press <kbd>CTRL + ALT + SHIFT + R</kbd>
+         at the same time on the account selection screen. After that it should
+        look like the image below:
+      </p>
+      <img src="/sh1mmer/assets/powerwash.png" />
+      <p>
+        From here, press "Powerwash" and proceed with the on-screen instructions
+        and let it finish.
+      </p>
+      <hr />
+      <h3>Re-Enrollment</h3>
+      <p>
+        Go through the setup process and you should end up at this screen below:
+      </p>
+      <img src="/sh1mmer/assets/enrollment.png" />
+      <p>
+        Press the "Enterprise Enrollment" button and log in with your school
+        account to re-enroll into the Chromebook.
+      </p>
+      <hr />
+      <p style="text-align: center">
+        <b>IMPORTANT:</b> DO NOT CLOSE YOUR CHROMEBOOK until the next step and
+        DO NOT SKIP the next step
+        <br />
+         -- SERIOUSLY --
+        <br />
+        <b>IMPORTANT:</b> DO NOT CLOSE YOUR CHROMEBOOK until the next step and
+        DO NOT SKIP the next step
+      </p>
+      <hr />
+      <h3>Safe Re-Unenroll</h3>
+      <p>
+        By this point, you should be at the district login screen, which could
+        look like the image shown below:
+      </p>
+      <img src="/sh1mmer/assets/district_login.png" />
+      <p>
+        On this screen, press <kbd>CTRL + ALT + F2 (→)</kbd>. After pressing
+        this, you should end up on a black console-looking screen. It should
+        look like the image below:
+      </p>
+      <img src="/sh1mmer/assets/chromeos_console.png" />
+      <p>
+        The login is <kbd>root</kbd>, and <b>if it needs a password</b>, the
+        password is
+        <kbd>test0000</kbd>. After logging in, some red text should appear
+        meaning you can type commands into the console now.
+      </p>
+      <p>
+        Type this command in the console and press Enter: <br />
+        <kbd>sudo vpd -i RW_VPD -s check_enrollment=0</kbd>
+      </p>
+      <p>
+        Your device should now be un-enrolled again, but you should still be
+        inside of a currently enrolled session.
+      </p>
+      <p>
+        Press <kbd>CTRL + ALT + F1 (←)</kbd> and you should exit out of the
+        black console screen and re-enter the district login screen.
+      </p>
+      <hr />
+      <h3>Using Kiosk</h3>
+      <p>Take your Kiosk test normally as you would.</p>
+      <p>
+        Try not to close your Chromebook lid until you're <b
+          >ACTUALLY IN THE KIOSK APP</b
+        >, if you shut down your Chromebook in any way before that it'll force
+        you to powerwash/turn on dev mode again and will be majorly
+        inconvenient.
+      </p>
+      <p>
+        Once you are done with the kiosk test, reboot your computer with
+        <kbd>Power (⏻) + Reload (↻)</kbd>, and follow the instructions to
+        re-enable secure mode or developer mode, then powerwash.
+      </p>
+      <p>
+        By this point, your Chromebook is unenrolled again and you have
+        successfully taken a kiosk test!
+      </p>
+    </div>
+  </body>
+</html>

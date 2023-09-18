@@ -1,32 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Glitz Downloader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Rehosted SH1mmer" />
+    <meta property="og:description" content="SH1mmer: Downloader" />
+    <meta property="og:url" content="https://osu.bio/sh1mmer/downloader" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://osu.bio/img/file.png" />
+    <meta property="og:image:alt" content="SH1mmer" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:site_name" content="osu.bio" />
+    <link rel="icon" href="/img/file.png" />
 
-<head>
-  <title>Glitz Downloader</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="UTF-8">
-  <meta property="og:title" content="Rehosted SH1mmer" />
-  <meta property="og:description" content="SH1mmer: Downloader" />
-  <meta property="og:url" content="https://osu.bio/sh1mmer/downloader" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://osu.bio/img/file.png" />
-  <meta property="og:image:alt" content="SH1mmer" />
-  <meta property="og:image:width" content="512" />
-  <meta property="og:image:height" content="512" />
-  <meta property="og:site_name" content="osu.bio" />
-  <link rel="icon" href="/img/file.png" />
+    <script is:inline>
+      async function start() {
+        if (!("showSaveFilePicker" in window)) {
+          alert(
+            "you won't be able to download from the Discord mirror using this browser or device!"
+          );
+        }
 
-  <script>
-
-    async function start() {
-
-      if (!("showSaveFilePicker" in window)) {
-        alert("you won't be able to download from the Discord mirror using this browser or device!")
-      }
-
-
-
-        let data = { 
+        let data = {
           "dl.osu.bio": {
             "brask.zip": "https://dl.osu.bio/api/raw/?path=/brask.zip",
             "brya.zip": "https://dl.osu.bio/api/raw/?path=/brya.zip",
@@ -40,7 +37,7 @@
             "hana.zip": "https://dl.osu.bio/api/raw/?path=/hana.zip",
             "hatch.zip": "https://dl.osu.bio/api/raw/?path=/hatch.zip",
             "jacuzzi.zip": "https://dl.osu.bio/api/raw/?path=/jacuzzi.zip",
-            "kukui.zip": "https://dl.osu.bio/api/raw/?path=/kukui.zip", 
+            "kukui.zip": "https://dl.osu.bio/api/raw/?path=/kukui.zip",
             "lulu.zip": "https://dl.osu.bio/api/raw/?path=/lulu.zip",
             "nami.zip": "https://dl.osu.bio/api/raw/?path=/nami.zip",
             "octopus.zip": "https://dl.osu.bio/api/raw/?path=/octopus.zip",
@@ -53,61 +50,109 @@
             "tidus.zip": "https://dl.osu.bio/api/raw/?path=/tidus.zip",
             "ultima.zip": "https://dl.osu.bio/api/raw/?path=/ultima.zip",
             "volteer.zip": "https://dl.osu.bio/api/raw/?path=/volteer.zip",
-            "zork.zip": "https://dl.osu.bio/api/raw/?path=/zork.zip"
+            "zork.zip": "https://dl.osu.bio/api/raw/?path=/zork.zip",
           },
           "dl.diffusehyperion.me": {
-            "brask.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/brask.zip",
-            "brya.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/brya.zip",
-            "clapper.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/clapper.zip",
-            "coral.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/coral.zip",
-            "corsola.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/corsola.zip",
-            "dedede.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/dedede.zip",
-            "enguarde.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/enguarde.zip",
-            "glimmer.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/glimmer.zip",
-            "grunt.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/grunt.zip",
-            "hana.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/hana.zip",
-            "hatch.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/hatch.zip",
-            "jacuzzi.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/jacuzzi.zip",     
-            "kukui.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/kukui.zip  ",
-            "nami.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/nami.zip",
-            "octopus.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/octopus.zip",
-            "orco.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/orco.zip",
-            "pyro.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/pyro.zip",
-            "reks.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/reks.zip",
-            "sentry.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/sentry.zip",
-            "stout.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/stout.zip",
-            "strongbad.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/strongbad.zip",
-            "tidus.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/tidus.zip",
-            "ultima.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/ultima.zip",
-            "volteer.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/volteer.zip",
-            "zork.zip": "https://dl.diffusehyperion.me/api/raw/?path=/rma/zork.zip"
+            "brask.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/brask.zip",
+            "brya.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/brya.zip",
+            "clapper.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/clapper.zip",
+            "coral.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/coral.zip",
+            "corsola.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/corsola.zip",
+            "dedede.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/dedede.zip",
+            "enguarde.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/enguarde.zip",
+            "glimmer.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/glimmer.zip",
+            "grunt.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/grunt.zip",
+            "hana.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/hana.zip",
+            "hatch.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/hatch.zip",
+            "jacuzzi.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/jacuzzi.zip",
+            "kukui.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/kukui.zip  ",
+            "nami.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/nami.zip",
+            "octopus.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/octopus.zip",
+            "orco.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/orco.zip",
+            "pyro.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/pyro.zip",
+            "reks.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/reks.zip",
+            "sentry.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/sentry.zip",
+            "stout.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/stout.zip",
+            "strongbad.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/strongbad.zip",
+            "tidus.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/tidus.zip",
+            "ultima.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/ultima.zip",
+            "volteer.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/volteer.zip",
+            "zork.zip":
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/zork.zip",
           },
           "archive.org": {
             "brask.zip": "https://archive.org/download/brask/brask.zip",
-            "brya.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fbrya.bin",
-            "clapper.zip": "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/clapper.zip",
-            "coral.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fcoral.bin",
+            "brya.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fbrya.bin",
+            "clapper.zip":
+              "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/clapper.zip",
+            "coral.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fcoral.bin",
             "corsola.zip": "https://archive.org/download/corsola/corsola.zip",
-            "dedede.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fdedede.bin",
-            "enguarde.zip": "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/enguarde.zip",
-            "glimmer.zip": "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/glimmer.zip",
-            "grunt.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fgrunt.bin",
-            "hana.zip": "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/hana.zip",
-            "hatch.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fhatch.bin",
-            "jacuzzi.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fjacuzzi.bin",     
-            "kukui.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fkukui.bin",
-            "nami.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fnami.bin",
-            "octopus.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Foctopus.bin",
-            "orco.zip": "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/orco.zip",
-            "pyro.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fpyro.bin",
-            "reks.zip": "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/reks.zip",
-            "sentry.zip": "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/sentry.zip",
-            "stout.zip": "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/stout.zip",
-            "strongbad.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fstrongbad.bin",
-            "tidus.zip": "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/tidus.zip",
-            "ultima.zip": "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/ultima.zip",
-            "volteer.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fvolteer.bin",
-            "zork.bin": "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fzork.bin"
+            "dedede.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fdedede.bin",
+            "enguarde.zip":
+              "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/enguarde.zip",
+            "glimmer.zip":
+              "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/glimmer.zip",
+            "grunt.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fgrunt.bin",
+            "hana.zip":
+              "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/hana.zip",
+            "hatch.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fhatch.bin",
+            "jacuzzi.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fjacuzzi.bin",
+            "kukui.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fkukui.bin",
+            "nami.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fnami.bin",
+            "octopus.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Foctopus.bin",
+            "orco.zip":
+              "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/orco.zip",
+            "pyro.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fpyro.bin",
+            "reks.zip":
+              "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/reks.zip",
+            "sentry.zip":
+              "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/sentry.zip",
+            "stout.zip":
+              "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/stout.zip",
+            "strongbad.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fstrongbad.bin",
+            "tidus.zip":
+              "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/tidus.zip",
+            "ultima.zip":
+              "https://archive.org/download/sh1mmer/compressed_sh1mmer/crew/ultima.zip",
+            "volteer.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fvolteer.bin",
+            "zork.bin":
+              "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fzork.bin",
           },
           "discord.com": {
             "brask.bin.zip": [
@@ -261,7 +306,7 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134364392427880519/brask.bin.zip.fr",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134364506991112242/brask.bin.zip.fs",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134364619163574282/brask.bin.zip.ft",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134364727456313344/brask.bin.zip.fu"
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134364727456313344/brask.bin.zip.fu",
             ],
             "brya.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134326550280556715/brya.bin.zip.aa",
@@ -448,7 +493,7 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134347169516761148/brya.bin.zip.gz",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134347282280624198/brya.bin.zip.ha",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134347392519516230/brya.bin.zip.hb",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134347449197154314/brya.bin.zip.hc"
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134347449197154314/brya.bin.zip.hc",
             ],
             "clapper.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134364854816354354/clapper.bin.zip.aa",
@@ -517,7 +562,7 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134372033648660560/clapper.bin.zip.cl",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134372145812746362/clapper.bin.zip.cm",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134372262355664936/clapper.bin.zip.cn",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134372304999166082/clapper.bin.zip.co"
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134372304999166082/clapper.bin.zip.co",
             ],
             "coral.bin.zip (BROKEN)": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134489169272512534/coral.bin.zip.aa",
@@ -631,8 +676,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134502139352338633/coral.bin.zip.ee",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134502253127012402/coral.bin.zip.ef",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134502372874391603/coral.bin.zip.eg",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134502441577103430/coral.bin.zip.eh"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134502441577103430/coral.bin.zip.eh",
+            ],
             "corsola.bin.zip (BROKEN)": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134502880326463509/corsola.bin.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134502997318189106/corsola.bin.zip.ab",
@@ -830,8 +875,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134525163724083261/corsola.bin.zip.hl",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134525284847190077/corsola.bin.zip.hm",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134525400916168754/corsola.bin.zip.hn",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134525470780702842/corsola.bin.zip.ho"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134525470780702842/corsola.bin.zip.ho",
+            ],
             "dedede.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134146333234704446/dedede.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134146447353319485/dedede.zip.ab",
@@ -998,8 +1043,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134164139795816489/dedede.zip.gg",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134164249938235433/dedede.zip.gh",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134164359002726561/dedede.zip.gi",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134164392041259048/dedede.zip.gj"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134164392041259048/dedede.zip.gj",
+            ],
             "enguarde.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134208699532070993/enguarde.bin.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134208814850257060/enguarde.bin.zip.ab",
@@ -1054,8 +1099,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134214518789124107/enguarde.bin.zip.by",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134214633956327524/enguarde.bin.zip.bz",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134214747055726754/enguarde.bin.zip.ca",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134214787228766278/enguarde.bin.zip.cb"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134214787228766278/enguarde.bin.zip.cb",
+            ],
             "glimmer.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134219321434963999/glimmer.bin.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134219436606369842/glimmer.bin.zip.ab",
@@ -1104,8 +1149,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134224310207254528/glimmer.bin.zip.bs",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134224423457661008/glimmer.bin.zip.bt",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134224541011427419/glimmer.bin.zip.bu",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134224578596581519/glimmer.bin.zip.bv"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134224578596581519/glimmer.bin.zip.bv",
+            ],
             "grunt.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134167641574084698/grunt.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134167754237284413/grunt.zip.ab",
@@ -1226,8 +1271,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134180942295089162/grunt.zip.em",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134181056342409236/grunt.zip.en",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134181172688211988/grunt.zip.eo",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134181230598946927/grunt.zip.ep"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134181230598946927/grunt.zip.ep",
+            ],
             "hana.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135729101408325723/hana.bin.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135729216202231958/hana.bin.zip.ab",
@@ -1303,8 +1348,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135737207211167844/hana.bin.zip.ct",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135737319530438717/hana.bin.zip.cu",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135737432512417953/hana.bin.zip.cv",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1135737518193643640/hana.bin.zip.cw"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1135737518193643640/hana.bin.zip.cw",
+            ],
             "hatch.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134525716772442112/hatch.bin.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134525835022454906/hatch.bin.zip.ab",
@@ -1448,8 +1493,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134541891732521010/hatch.bin.zip.fj",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134542008703270982/hatch.bin.zip.fk",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134542122364719156/hatch.bin.zip.fl",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134542201058230383/hatch.bin.zip.fm"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134542201058230383/hatch.bin.zip.fm",
+            ],
             "jacuzzi.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134225053878325328/jacuzzi.bin.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134225167170674708/jacuzzi.bin.zip.ab",
@@ -1562,8 +1607,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134237777194659951/jacuzzi.bin.zip.ee",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134237899815137381/jacuzzi.bin.zip.ef",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134238014361575424/jacuzzi.bin.zip.eg",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134238109727461376/jacuzzi.bin.zip.eh"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134238109727461376/jacuzzi.bin.zip.eh",
+            ],
             "kukui.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135764277983199252/kukui.bin.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135764393007788114/kukui.bin.zip.ab",
@@ -1687,8 +1732,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135778279853395998/kukui.bin.zip.ep",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135778390985678868/kukui.bin.zip.eq",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135778503355273336/kukui.bin.zip.er",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1135778559944835184/kukui.bin.zip.es"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1135778559944835184/kukui.bin.zip.es",
+            ],
             "nami.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134542433946963989/nami.bin.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134542550569590794/nami.bin.zip.ab",
@@ -1824,7 +1869,7 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134557726727471154/nami.bin.zip.fb",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134557846298693753/nami.bin.zip.fc",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134557958404055111/nami.bin.zip.fd",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134558043363868692/nami.bin.zip.fe"
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134558043363868692/nami.bin.zip.fe",
             ],
             "octopus.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1133546779472838686/octopus.zip.aa",
@@ -1972,8 +2017,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1133568446534275174/octopus.zip.fm",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1133568597390807101/octopus.zip.fn",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1133568747064541274/octopus.zip.fo",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1133568860449157183/octopus.zip.fp"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1133568860449157183/octopus.zip.fp",
+            ],
             "orco.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134238400891858984/orco.bin.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134238519615815791/orco.bin.zip.ab",
@@ -2024,8 +2069,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134244193473138798/orco.bin.zip.bu",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134244308711649412/orco.bin.zip.bv",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134244421211279490/orco.bin.zip.bw",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134244461203955823/orco.bin.zip.bx"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134244461203955823/orco.bin.zip.bx",
+            ],
             "pyro.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134267257594327120/pyro.bin.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134267371004112936/pyro.bin.zip.ab",
@@ -2129,7 +2174,7 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134278661260988547/pyro.bin.zip.dv",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134278789921243276/pyro.bin.zip.dw",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134278905902137434/pyro.bin.zip.dx",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134278960662978590/pyro.bin.zip.dy"
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134278960662978590/pyro.bin.zip.dy",
             ],
             "reks.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134194044248006727/reks.bin.zip.aa",
@@ -2192,7 +2237,7 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134200642785771560/reks.bin.zip.cf",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134200758489841704/reks.bin.zip.cg",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134200876400136273/reks.bin.zip.ch",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134200950127595610/reks.bin.zip.ci"
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134200950127595610/reks.bin.zip.ci",
             ],
             "sentry.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134244824279679086/sentry.bin.zip.aa",
@@ -2277,7 +2322,7 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134254530561851432/sentry.bin.zip.db",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134254666767675513/sentry.bin.zip.dc",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134254799043448943/sentry.bin.zip.dd",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1134254849316372610/sentry.bin.zip.de"
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1134254849316372610/sentry.bin.zip.de",
             ],
             "stout.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135686809666453644/stout.bin.zip.aa",
@@ -2324,8 +2369,8 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135691547707453570/stout.bin.zip.bp",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135691660513267874/stout.bin.zip.bq",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135691780797501540/stout.bin.zip.br",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1135691823017365626/stout.bin.zip.bs"
-              ],
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1135691823017365626/stout.bin.zip.bs",
+            ],
             "strongbad.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135778820843114587/strongbad.bin.zip.aa",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135778935569928233/strongbad.bin.zip.ab",
@@ -2476,7 +2521,7 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135795496489844747/strongbad.bin.zip.fq",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135795611057258516/strongbad.bin.zip.fr",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135795723137450054/strongbad.bin.zip.fs",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1135795793492705280/strongbad.bin.zip.ft"
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1135795793492705280/strongbad.bin.zip.ft",
             ],
             "tidus.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135708379688476682/tidus.bin.zip.aa",
@@ -2526,7 +2571,7 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135713412299620423/tidus.bin.zip.bs",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135713525776527521/tidus.bin.zip.bt",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135713638716551168/tidus.bin.zip.bu",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1135713727468015726/tidus.bin.zip.bv"
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1135713727468015726/tidus.bin.zip.bv",
             ],
             "ultima.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135795919963553813/ultima.bin.zip.aa",
@@ -2586,7 +2631,7 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135802122517094400/ultima.bin.zip.cc",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135802235511656538/ultima.bin.zip.cd",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135802347226927176/ultima.bin.zip.ce",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1135802428172812308/ultima.bin.zip.cf"
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1135802428172812308/ultima.bin.zip.cf",
             ],
             "volteer.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135802660495315034/volteer.bin.zip.aa",
@@ -2745,7 +2790,7 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135820076906446858/volteer.bin.zip.fx",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135820191297720390/volteer.bin.zip.fy",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135820303696658522/volteer.bin.zip.fz",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1135820402392846426/volteer.bin.zip.ga"
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1135820402392846426/volteer.bin.zip.ga",
             ],
             "zork.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135820693938905218/zork.bin.zip.aa",
@@ -2918,210 +2963,212 @@
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135839669851017306/zork.bin.zip.gl",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135839782820384808/zork.bin.zip.gm",
               "https://cdn.discordapp.com/attachments/1133515362416218187/1135839894581821550/zork.bin.zip.gn",
-              "https://cdn.discordapp.com/attachments/1133515362416218187/1135839990119661618/zork.bin.zip.go"
-            ]
+              "https://cdn.discordapp.com/attachments/1133515362416218187/1135839990119661618/zork.bin.zip.go",
+            ],
+          },
+        };
+        // data = await (await fetch("data.json")).json();
+
+        const select = document.querySelector("#mirror");
+        for (let mirror in data) {
+          let opt = new Option(mirror);
+          select.appendChild(opt);
+        }
+        const file = document.querySelector("#file");
+        let children = [];
+        select.addEventListener("change", () => {
+          for (let child of children) {
+            child.remove();
           }
-      };
-      // data = await (await fetch("data.json")).json();
+          children = [];
 
+          for (let name in data[select.value]) {
+            let opt = new Option(name);
+            file.appendChild(opt);
+            children.push(opt);
+          }
+        });
 
-      const select = document.querySelector('#mirror');
-      for (let mirror in data) {
-        let opt = new Option(mirror);
-        select.appendChild(opt);
+        const download = document.querySelector("#download");
 
+        const progress = document.querySelector("#progress");
 
-      }
-      const file = document.querySelector('#file');
-      let children = [];
-      select.addEventListener("change", () => {
+        download.addEventListener("click", async () => {
+          let urls = data[select.value][file.value];
 
-        for (let child of children) {
-          child.remove();
-        }
-        children = [];
+          if (typeof urls === "object") {
+            let ws_dest = await window
+              .showSaveFilePicker()
+              .then((handle) => handle.createWritable());
+            window.wsd = ws_dest;
 
-        for (let name in data[select.value]) {
-          let opt = new Option(name);
-          file.appendChild(opt);
-          children.push(opt);
-        }
-      });
-
-      const download = document.querySelector("#download");
-
-
-      const progress = document.querySelector("#progress");
-
-      download.addEventListener("click", async () => {
-        let urls = data[select.value][file.value];
-
-        if (typeof urls === "object") {
-          let ws_dest = await window.showSaveFilePicker().then(handle => handle.createWritable());
-          window.wsd = ws_dest;
-
-          try {
-            for (let i in urls) {
-              let url = urls[i];
-              let req = await fetch(url);
-              if (req.status != 200) {
-                alert("this mirror is defective. choose another");
-                window.location.reload();
+            try {
+              for (let i in urls) {
+                let url = urls[i];
+                let req = await fetch(url);
+                if (req.status != 200) {
+                  alert("this mirror is defective. choose another");
+                  window.location.reload();
+                }
+                await req.body.pipeTo(ws_dest, { preventClose: true });
+                progress.style.display = "";
+                progress.innerText = `Progress: ${Math.floor(
+                  (i / urls.length) * 100
+                )}%`;
               }
-              await req.body.pipeTo(ws_dest, {preventClose: true});
-              progress.style.display = "";
-              progress.innerText = `Progress: ${Math.floor(i / urls.length * 100)}%`
+            } catch {
+              alert(
+                "CORS error! You didn't enable the CORS disabler extension"
+              );
+              window.location.reload();
             }
-          } catch {
-            alert("CORS error! You didn't enable the CORS disabler extension")
-            window.location.reload();
+
+            console.log("done!");
+
+            progress.innerText = `Progress: Done!`;
+            ws_dest.close();
+          } else if (urls) {
+            window.open(urls);
           }
+        });
+      }
+    </script>
+  </head>
 
-          console.log("done!");
-
-          progress.innerText = `Progress: Done!`
-          ws_dest.close();
-        } else if (urls) {
-          window.open(urls);
-        }
-
-      });
-    }
-
-
-
-  </script>
-</head>
-
-<body onload="start()">
-    <h1>
-      Glitz - RMA Shim Downloader
-    </h1>
-  <p>
-    Glitz is a collection of mirrors for publicly-available RMA SHIMS that can be used with <a href="https://sh1mmer.me">SH1mmer</a>.<br>
-    As of currently, Glitz provides four different mirrors to download SHIMS from.<br>
-
+  <body onload="
+  start()
+  ">
+    <h1>Glitz - RMA Shim Downloader</h1>
+    <p>
+      Glitz is a collection of mirrors for publicly-available RMA SHIMS that can
+      be used with <a href="https://sh1mmer.me">SH1mmer</a>.<br />
+       As of currently, Glitz provides four different mirrors to download SHIMS
+      from.<br />
     </p>
 
     <p>
       <b>Discord Download Instructions:</b>
-      <br>
-        1. Install <a
-        href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf">this
-        extension</a>, (or a Firefox equivalent)
-        <br>
-        2. Open the extension, and click the big "C" on the left to enable it. 
-        <br>
-        3. Download your bin from the Discord mirror, and uninstall the extension after.
+      <br />
+       1. Install <a
+        href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf"
+        >this extension</a
+      >, (or a Firefox equivalent)
+      <br />
+       2. Open the extension, and click the big "C" on the left to enable it.
+      <br />
+       3. Download your bin from the Discord mirror, and uninstall the extension
+      after.
     </p>
 
-  <select id="mirror">
-    <option>select a mirror</option>
+    <select id="mirror">
+      <option>select a mirror</option>
+    </select>
 
-  </select>
+    <select id="file">
+      <option>select a board</option>
+    </select>
 
-  <select id="file">
+    <button id="download">download</button>
 
-    <option>select a board</option>
+    <h3 style="display:none" id="progress"></h3>
 
-  </select>
+    <br />
 
-  <button id="download">download</button>
-
-  <h3 style="display:none" id="progress"></h3>
-
-    <br>
-
-  <div class="float">
+    <div class="float">
+      <h3>
+        In order to use these RMA SHIMS to un-enroll your Chromebook, you will
+        need to inject SH1mmer <a href="/sh1mmer/builder">here</a>.
+        <br />
+         These files aren't endorsed, created, provided, nor officially
+        supported by <a href="https://mercurywork.shop">Mercury Workshop</a>.
+      </h3>
+    </div>
 
     <h3>
-    In order to use these RMA SHIMS to un-enroll your Chromebook, you will need to inject SH1mmer <a href="/sh1mmer/builder">here</a>.
-    <br>
-    These files aren't endorsed, created, provided, nor officially supported by <a href="https://mercurywork.shop">Mercury Workshop</a>.
+      <a href="https://discord.gg/bAgNyGpXSx">discord</a> •
+      <a href="https://osu.bio">website</a> •
+      <a href="https://github.com/NotDarkn/website">github</a>
     </h3>
 
-  </div>
+    <p>
+      <b>credits:</b>
+      <br />
+       dl.osu.bio & hosted & edited by <a
+        href="https://discord.com/users/829745505784692776">@notdarkn</a
+      ><br />
+       dl.diffusehyperion.me by <a
+        href="https://discord.com/users/301279262994857987">@diffusehyperion</a
+      ><br />
+       originally created by <a
+        href="https://discord.com/users/1039648022084202516">@julia_j</a
+      ><br />
+      <br />
+       ❤️ thank you ❤️
+    </p>
+  </body>
 
-  <h3>
-    <a href="https://discord.gg/bAgNyGpXSx">discord</a> •
-    <a href="https://osu.bio">website</a> •
-    <a href="https://github.com/NotDarkn/website">github</a>
-  </h3>
-  
-  <p>
-    <b>credits:</b>
-    <br>
-    dl.osu.bio & hosted & edited by <a href="https://discord.com/users/829745505784692776">@notdarkn</a><br>
-    dl.diffusehyperion.me by <a href="https://discord.com/users/301279262994857987">@diffusehyperion</a><br>
-    originally created by <a href="https://discord.com/users/1039648022084202516">@julia_j</a><br>
-    <br>
-    ❤️ thank you ❤️
-  </p>
+  <style>
+    @import url("https://osu.bio/css/fonts.css");
 
-</body>
-
-<style>
-  @import url("https://osu.bio/css/fonts.css");
-
-
-  * {
-    text-align: center;
-  }
-
-  marquee {
-    text-align: initial !important;
-  }
-  
-  a[href] {
-    color: #2e8ff9;
-  }
-
-  p, 
-  h2 {
-    font-family: "SF-Reg";
-  }
-  
-  .float {
-    animation: MoveUpDown 1s ease-in-out infinite, MoveLeft 3.72s ease-in-out infinite;
-    position: relative;
-    left: 0;
-    bottom: 0;
-  }
-  @keyframes MoveUpDown {
-
-    0%,
-    100% {
-      bottom: -8px;
+    * {
+      text-align: center;
     }
 
-    50% {
-      bottom: 8px;
-    }
-  }
-
-  @keyframes MoveLeft {
-
-    0%,
-    100% {
-      left: -8px;
+    marquee {
+      text-align: initial !important;
     }
 
-    50% {
-      left: 8px;
+    a[href] {
+      color: #2e8ff9;
     }
-  }
 
-  body,
-  html{
-    --lightness: 40%;
-    background-color: #131516;
-    color: #e3e1de
-  }
+    p,
+    h2 {
+      font-family: "SF-Reg";
+    }
 
-  select,
-  button {
-    background-color: #E3E1DE;
-    border-color: #5A5A5A;
-    border-radius: 4px
-  }
-</style>
+    .float {
+      animation:
+        MoveUpDown 1s ease-in-out infinite,
+        MoveLeft 3.72s ease-in-out infinite;
+      position: relative;
+      left: 0;
+      bottom: 0;
+    }
+    @keyframes MoveUpDown {
+      0%,
+      100% {
+        bottom: -8px;
+      }
+
+      50% {
+        bottom: 8px;
+      }
+    }
+
+    @keyframes MoveLeft {
+      0%,
+      100% {
+        left: -8px;
+      }
+
+      50% {
+        left: 8px;
+      }
+    }
+
+    body,
+    html {
+      --lightness: 40%;
+      background-color: #131516;
+      color: #e3e1de;
+    }
+
+    select,
+    button {
+      background-color: #e3e1de;
+      border-color: #5a5a5a;
+      border-radius: 4px;
+    }
+  </style>
+</html>
