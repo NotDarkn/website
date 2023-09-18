@@ -1,22 +1,18 @@
----
-
----
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="Rehosted SH1mmer" />
-    <meta property="og:description" content="SH1mmer: Builder" />
-    <meta property="og:url" content="https://osu.bio/sh1mmer/builder" />
+    <meta property="og:description" content="SH1mmer: Legacy" />
+    <meta property="og:url" content="https://osu.bio/sh1mmer/buildlegacy" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://osu.bio/sh1mmer/icon.png" />
     <meta property="og:image:alt" content="SH1mmer" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
     <meta property="og:site_name" content="osu.bio" />
-    <title>Wax4Web</title>
+    <title>Wax4Web (Legacy)</title>
     <link rel="icon" href="/sh1mmer/icon.png" />
     <link rel="stylesheet" href="/sh1mmer/main.css" />
     <script src="/sh1mmer/script.js" defer></script>
@@ -43,7 +39,7 @@
             event.returnValue = "";
           }
         },
-        { capture: true }
+        { capture: true },
       );
       function start() {
         $("#injector_output").value = "";
@@ -65,7 +61,7 @@
             url: "/sh1mmer/wax4web/bzImage",
           },
           initrd: {
-            url: "/sh1mmer/wax4web/bw",
+            url: "/sh1mmer/wax4web/legacy",
           },
           hda: {
             buffer: document.all.hd_image.files[0],
@@ -84,7 +80,7 @@
       function generateURL() {
         building = false;
         document.all.downloadURL.href = window.URL.createObjectURL(
-          emulator.disk_images.hda.get_as_file()
+          emulator.disk_images.hda.get_as_file(),
         );
         document.all.downloadURL.click();
       }
@@ -96,11 +92,12 @@
   <body>
     <div class="header">
       <h1>Wax4Web</h1>
-      <h3>a simple and easy to use mini SH1mmer builder</h3>
+      <h3>a simple and easy to use legacy SH1mmer builder</h3>
       <br />
       <a href="/sh1mmer" target="_self"> Back to home</a>
     </div>
     <div class="section blue">
+      <h1>THIS IS THE LEGACY VERSION</h1>
       <h3>How to use</h3>
       <p>
         First, you'll need to find your school Chromebook's board name. This can
@@ -109,16 +106,9 @@
         Chromebook's model.
       </p>
       <p>
-        <b>IMPORTANT</b>: IF YOUR BOARD IS <b>HANA</b> OR <b>CORAL</b> OR ANY
-        OTHER PRE-FRECON BOARD, <b>THIS WILL NOT WORK!</b> Instead, you'll have
-        to build a legacy shim from <a
-          href="/sh1mmer/buildlegacy"
-          target="_self">the legacy builder</a
-        >
-
-         Next you need a raw RMA shim for that board name. There should be one corresponding
-        to your board <a href="https://dl.osu.bio">here</a> but if not you'll
-        have to source them on your own.. somehow.
+        Next you need a raw RMA shim for that board name. There should be one
+        corresponding to your board <a href="https://dl.osu.bio">here</a> but if
+        not you'll have to source them on your own.. somehow.
       </p>
       <p>
         Once you've found your raw shim, make sure to extract it if it's in a
@@ -129,18 +119,17 @@
         Next, hit the big start button and select your raw .bin file. The VM
         will start up. This will use a considerable amount of memory on your
         system and take a while. If it freezes, that's normal. Once it finishes,
-        it will automatically download the patched version. <b
-          >NO PAYLOADS ARE INCLUDED AS THIS IS A MINISHIM BUILD</b
-        >
+        it will automatically download the patched version.
       </p>
     </div>
     <div class="section green">
       <h1 class="center">
         <a
-          style="user-select: none; cursor:pointer;"
+          style="user-select: none; cursor: pointer"
           onclick="
           start()
-          ">Start</a
+          "
+          >Start</a
         >
       </h1>
       <div class="flex evenly" id="displaycontainer">
@@ -164,9 +153,9 @@
 
     <a id="downloadURL" class="invisible" download="injected_shim.bin"></a>
     <p style="text-align: center">
-      • Wax4Web is powered by <a href="https://github.com/buildroot/buildroot"
-        >Buildroot</a
-      > and <a href="https://github.com/copy/v86">v86</a> •
+      • Wax4Web is powered by
+      <a href="https://github.com/buildroot/buildroot">Buildroot</a> and
+      <a href="https://github.com/copy/v86">v86</a> •
     </p>
   </body>
 </html>
