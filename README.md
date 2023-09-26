@@ -18,17 +18,18 @@
 
   - Creator of [osu.bio](https://osu.bio) and [icrazeis.gay](https://icrazeis.gay)
 
-- **iCraze:** [@icraze](https://discord.com/users/883412614699446283)
-
-  - Main material used for propaganda
-
 - **hell0u:** [@waveeeeeee](https://discord.com/users/836279485984538634)
 
   - Converted site to astro & helped a lot
 
+- **RegalAether:** [regalaether](https://github.com/RegalAether)
+
+  - Fixed inaccuracies in pages such as [unpatch](https://osu.bio/sh1mmer/unpatch).
+
+- **DiffuseHyperion:**  [diffusehyperion](https://github.com/DiffuseHyperion)
+
+  - Providing another mirror to the [downloader](https://osu.bio/sh1mmer/downloader).
+
 - **Mercury Workshop:** [mercurywork.shop](https://mercurywork.shop)
 
   - Owners of SH1mmer & Builder
-
-- **r/Jailbreak:** [discord.gg/jb](https://discord.gg/jb)
-  - Main distributor of [osu.bio](https://osu.bio)
