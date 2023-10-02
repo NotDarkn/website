@@ -5,6 +5,7 @@ this will also require you to have firmware management parameters to be removed,
 okay instructions:
 1. boot into sh1mmer
 2. run the following
+- /usr/share/vboot/bin/set_gbb_flags.sh 0x8090
 - tpm_manager_client take_ownership
 - chromeos-tpm-recovery
 3. reboot
