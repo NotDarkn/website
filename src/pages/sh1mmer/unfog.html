@@ -102,13 +102,13 @@
       </p>
       <p>
         In the Bash Shell, execute the following commands below: <br />
-        <kbd>/usr/share/vboot/bin/set_gbb_flags.sh 0x8090</kbd>
-        <kbd>tpm_manager_client take_ownership</kbd>
+        <kbd>/usr/share/vboot/bin/set_gbb_flags.sh 0x8090</kbd><br />
+        <kbd>tpm_manager_client take_ownership</kbd><br />
         <kbd>chromeos-tpm-recovery</kbd>
       </p>
       <i>If this doesn't work, run <kbd>flashrom --wp-disable</kbd> then try again.</i>
       <p>The commands should report "success" at the end like this image:</p>
-      <img src="/sh1mmer/assets/unfog_bash_results.png" />
+      <img src="/sh1mmer/assets/unfog_bash_shell.png" />
       <br />
       <i>
         If it fails, you have some sort of FWMP with v114 or newer and cannot 
