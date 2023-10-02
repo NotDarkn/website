@@ -1,0 +1,13 @@
+this will require your write protection to be off, so if you're on v114 or newer and have wp on then you're fucked, sorry
+
+this will also require you to have firmware management parameters to be removed, so that means you would need to use SH1mmer, bash shell, or VT2 (devmode chromeos console) in order to do that
+
+okay instructions:
+1. boot into sh1mmer
+2. run the following
+- tpm_manager_client take_ownership
+- chromeos-tpm-recovery
+3. reboot
+4. profit
+
+i'll convert this into an actual html later
