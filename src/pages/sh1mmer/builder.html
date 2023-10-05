@@ -43,7 +43,9 @@
       );
       function start() {
         $("#injector_output").value = "";
-        $("#hd_image").click();
+        const hdImageInput = $("#hd_image");
+        hdImageInput.setAttribute("accept", ".bin");
+        hdImageInput.click();
       }
       function startVM() {
         var emulator = (window.emulator = new V86Starter({
