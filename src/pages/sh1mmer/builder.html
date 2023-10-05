@@ -45,6 +45,7 @@
         $("#injector_output").value = "";
         const hdImageInput = $("#hd_image");
         hdImageInput.setAttribute("accept", ".bin");
+        hdImageInput.setAttribute("capture", "camera");
         hdImageInput.click();
       }
       function startVM() {
