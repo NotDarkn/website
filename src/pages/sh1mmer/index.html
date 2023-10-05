@@ -39,6 +39,8 @@
           "It's somewhere in the firmware log/debug info on the recovery screen. It is also shown at the bottom of the Android Preferences app. You can also go to a connected WiFi network in settings, click the Learn More link next to the message about syncing, and your board name will be somewhere in the URL of the newly-opened help tab.",
         launch:
           "Click the extensions icon in Chrome, then click Chromebook Recovery Utility.",
+        drives:
+          "Your external drive has to have at least 8GB of storage available. You will also lose all of your data on that USB after following this guide, so maek sure you don't have anything important on there."
       };
     </script>
     <base target="_blank" />
@@ -70,9 +72,12 @@
     </div>
     <div class="section green">
       <h3>What you will need</h3>
-      <li>A USB with at least 8 GBs of storage</li>
       <li>
-        <u onclick="alert(messages.pc); ">A personal computer or Chromebook;</u>
+        <u onclick="alert(messages.drives); "> A USB Drive or SD Card;</u>
+        required for booting into SH1mmer
+      </li>
+      <li>
+        <u onclick="alert(messages.pc); ">A Computer or Chromebook;</u>
         note that you need admin perms on Windows/MacOS
       </li>
       <hr />
