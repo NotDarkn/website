@@ -54,11 +54,11 @@
       }
     }, { capture: true });
     function start() {
-        $("#injector_output").value = "";
-        const hdImageInput = $("#hd_image");
-        hdImageInput.setAttribute("accept", ".bin");
-        hdImageInput.click();
-      }
+      $("#injector_output").value = "";
+      const hdImageInput = $("#hd_image");
+      hdImageInput.setAttribute("accept", ".bin");
+      hdImageInput.click();
+    }
     function startVM() {
       var emulator = window.emulator = new V86Starter({
         wasm_path: "/sh1mmer/wax4web/v86.wasm",
