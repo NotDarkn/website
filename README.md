@@ -34,6 +34,6 @@
 
   - Owners of SH1mmer & Builder
 
- - **Raina:**
+ - **Raina:** [@huaraina](https://discord.com/users/716417518197014538)
 
-  - very cool gal :3
+   - very cool gal :3
