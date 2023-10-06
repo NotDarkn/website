@@ -37,3 +37,7 @@
  - **Raina:** [@huaraina](https://discord.com/users/716417518197014538)
 
    - very cool gal :3
+
+- **Bypassi:** [@bypassi](https://discord.com/users/904829646145720340)
+
+   - Providing screenshots to [unpatch](https://osu.bio/sh1mmer/unpatch).
