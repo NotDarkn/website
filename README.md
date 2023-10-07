@@ -1,4 +1,4 @@
-<h1><p align="center"><a href="https://osu.bio">osu.bio</a> - Darkn's Website</p></h1>
+<h1 align="center"><a href="https://osu.bio">osu.bio</a> - Darkn's Website</h1>
 
 ![Dual Screenshot](https://github.com/NotDarkn/website/assets/73033672/0065fc7a-385b-4897-b4e3-6e641bb060e5)
 
