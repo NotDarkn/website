@@ -36,11 +36,11 @@
 
  - **Raina:** [@huaraina](https://discord.com/users/716417518197014538)
 
-   - very cool gal :3
+   - Adding small contributions to pages such as [kiosk.txt](https://osu.bio/sh1mmer/kiosk.txt).
 
 - **Bypassi:** [@bypassi](https://discord.com/users/904829646145720340)
 
-   - Providing screenshots to [unpatch](https://osu.bio/sh1mmer/unpatch).
+   - Providing screenshots to [unpatch](https://osu.bio/sh1mmer/unpatch) & [unfog](https://osub.io/sh1mmer/unfog).
  
 ## Notice
 
