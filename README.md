@@ -36,7 +36,7 @@
 
  - **Raina:** [@huaraina](https://discord.com/users/716417518197014538)
 
-   - Adding small contributions to pages such as [kiosk.txt](https://osu.bio/sh1mmer/kiosk.txt).
+   - Adding small contributions to [kiosk.txt](https://osu.bio/sh1mmer/kiosk.txt).
 
 - **Bypassi:** [@bypassi](https://discord.com/users/904829646145720340)
 
