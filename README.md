@@ -41,6 +41,10 @@
 - **Bypassi:** [@bypassi](https://discord.com/users/904829646145720340)
 
    - Providing screenshots to [unpatch](https://osu.bio/sh1mmer/unpatch) & [unfog](https://osu.bio/sh1mmer/unfog).
+
+- **verysillycat** [@environment.](https://discord.com/users/825069530376044594)
+
+   - Fixing multiple typos & providing small changes to the README.
  
 ## Notice
 
