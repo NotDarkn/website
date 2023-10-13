@@ -40,7 +40,7 @@
 
 - **Bypassi:** [@bypassi](https://discord.com/users/904829646145720340)
 
-   - Providing screenshots to [unpatch](https://osu.bio/sh1mmer/unpatch) & [unfog](https://osub.io/sh1mmer/unfog).
+   - Providing screenshots to [unpatch](https://osu.bio/sh1mmer/unpatch) & [unfog](https://osu.bio/sh1mmer/unfog).
  
 ## Notice
 
