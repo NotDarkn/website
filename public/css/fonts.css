@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Black Italic'), local('SFProDisplay-BlackItalic'),
-        url('fonts/SFProDisplay-BlackItalic.woff2') format('woff2');
+        url('../fonts/SFProDisplay-BlackItalic.woff2') format('woff2');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -18,7 +18,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Black'), local('SFProDisplay-Black'),
-        url('fonts/SFProDisplay-Black.woff2') format('woff2');
+        url('../fonts/SFProDisplay-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -27,7 +27,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Bold'), local('SFProDisplay-Bold'),
-        url('fonts/SFProDisplay-Bold.woff2') format('woff2');
+        url('../fonts/SFProDisplay-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -36,7 +36,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Heavy'), local('SFProDisplay-Heavy'),
-        url('fonts/SFProDisplay-Heavy.woff2') format('woff2');
+        url('../fonts/SFProDisplay-Heavy.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -45,7 +45,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Heavy Italic'), local('SFProDisplay-HeavyItalic'),
-        url('fonts/SFProDisplay-HeavyItalic.woff2') format('woff2');
+        url('../fonts/SFProDisplay-HeavyItalic.woff2') format('woff2');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -54,7 +54,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Bold Italic'), local('SFProDisplay-BoldItalic'),
-        url('fonts/SFProDisplay-BoldItalic.woff2') format('woff2');
+        url('../fonts/SFProDisplay-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -63,7 +63,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Light'), local('SFProDisplay-Light'),
-        url('fonts/SFProDisplay-Light.woff2') format('woff2');
+        url('../fonts/SFProDisplay-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -72,7 +72,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Medium'), local('SFProDisplay-Medium'),
-        url('fonts/SFProDisplay-Medium.woff2') format('woff2');
+        url('../fonts/SFProDisplay-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -81,7 +81,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Light Italic'), local('SFProDisplay-LightItalic'),
-        url('fonts/SFProDisplay-LightItalic.woff2') format('woff2');
+        url('../fonts/SFProDisplay-LightItalic.woff2') format('woff2');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -90,7 +90,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Medium Italic'), local('SFProDisplay-MediumItalic'),
-        url('fonts/SFProDisplay-MediumItalic.woff2') format('woff2');
+        url('../fonts/SFProDisplay-MediumItalic.woff2') format('woff2');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -99,7 +99,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Regular'), local('SFProDisplay-Regular'),
-        url('fonts/SFProDisplay-Regular.woff2') format('woff2');
+        url('../fonts/SFProDisplay-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -108,7 +108,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Regular Italic'), local('SFProDisplay-RegularItalic'),
-        url('fonts/SFProDisplay-RegularItalic.woff2') format('woff2');
+        url('../fonts/SFProDisplay-RegularItalic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -117,7 +117,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Semibold'), local('SFProDisplay-Semibold'),
-        url('fonts/SFProDisplay-Semibold.woff2') format('woff2');
+        url('../fonts/SFProDisplay-Semibold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -126,7 +126,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Semibold Italic'), local('SFProDisplay-SemiboldItalic'),
-        url('fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2');
+        url('../fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
@@ -135,7 +135,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Thin'), local('SFProDisplay-Thin'),
-        url('fonts/SFProDisplay-Thin.woff2') format('woff2');
+        url('../fonts/SFProDisplay-Thin.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -144,7 +144,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Thin Italic'), local('SFProDisplay-ThinItalic'),
-        url('fonts/SFProDisplay-ThinItalic.woff2') format('woff2');
+        url('../fonts/SFProDisplay-ThinItalic.woff2') format('woff2');
     font-weight: 100;
     font-style: italic;
     font-display: swap;
@@ -153,7 +153,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Ultralight Italic'), local('SFProDisplay-UltralightItalic'),
-        url('fonts/SFProDisplay-UltralightItalic.woff2') format('woff2');
+        url('../fonts/SFProDisplay-UltralightItalic.woff2') format('woff2');
     font-weight: 100;
     font-style: italic;
     font-display: swap;
@@ -162,7 +162,7 @@
 @font-face {
     font-family: 'SF-Reg';
     src: local('SFProDisplay Ultralight'), local('SFProDisplay-Ultralight'),
-        url('fonts/SFProDisplay-Ultralight.woff2') format('woff2');
+        url('../fonts/SFProDisplay-Ultralight.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
