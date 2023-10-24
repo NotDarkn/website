@@ -24,17 +24,17 @@
     content="A builder tool for Mercury Workshop's new project, RecoMod, which makes injected RecoMod images automatically when a recovery image is selected.">
   <meta property="og:image" content="/ehalycon/img/mercury.png">
   <meta property="og:type" content="website">
-  
+
   <script>
     window.onload = () => {
       let script = document.createElement("script");
-      script.src = "/ehalycon/js/clouds.js";
-      script.onload = () => { generate(); window.dispatchEvent(new Event("scroll")) }
+      script.src = "/static/js/clouds.js";
+      script.onload = () => {generate(); window.dispatchEvent(new Event("scroll"))}
       document.head.append(script);
     }
   </script>
-  <script src="/static/js/clouds.js"></script>
-  <script is:inline src="/sh1mmer/wax4web/libv86.js"></script>
+  
+  <script src="/sh1mmer/wax4web/libv86.js"></script>
   <script>
     const $ = _ => document.querySelector(_);
 
