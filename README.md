@@ -36,7 +36,8 @@
 
  - **Raina:** [@huaraina](https://discord.com/users/716417518197014538)
 
-   - Adding small contributions to [kiosk.txt](https://osu.bio/sh1mmer/kiosk.txt).
+   - Adding contributions to [kiosk.txt](https://osu.bio/sh1mmer/kiosk.txt)
+   - Adding nother mirror to the [downloader](https://osu.bio/sh1mmer/downloader).
 
 - **Bypassi:** [@bypassi](https://discord.com/users/904829646145720340)
 
