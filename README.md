@@ -20,7 +20,8 @@
 
 - **hell0u:** [@waveeeeeee](https://discord.com/users/836279485984538634)
 
-  - Converted site to astro & helped a lot
+  - Converted many parts of the site to Astro
+  - Improved many parts of the website code
 
 - **RegalAether:** [regalaether](https://github.com/RegalAether)
 
@@ -32,7 +33,7 @@
 
 - **Mercury Workshop:** [mercurywork.shop](https://mercurywork.shop)
 
-  - Owners of SH1mmer & Builder
+  - Owners of [SH1mmer](https://sh1mmer.me) & [Builder](https://sh1mmer.me/builder)
 
  - **Raina:** [@huaraina](https://discord.com/users/716417518197014538)
 
