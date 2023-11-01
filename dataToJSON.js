@@ -81,7 +81,7 @@ let data = {
             "jacuzzi.zip":
               "https://dl.diffusehyperion.me/api/raw/?path=/rma/jacuzzi.zip",
             "kukui.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/kukui.zip  ",
+              "https://dl.diffusehyperion.me/api/raw/?path=/rma/kukui.zip",
             "nami.zip":
               "https://dl.diffusehyperion.me/api/raw/?path=/rma/nami.zip",
             "octopus.zip":
@@ -133,7 +133,9 @@ let data = {
             "jacuzzi.bin":
               "https://kxtz.femboy.vip/sh1mmer/download/shims/jacuzzi.bin",
             "kukui.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/kukui.bin  ",
+              "https://kxtz.femboy.vip/sh1mmer/download/shims/kukui.bin",
+            "lulu.bin":
+              "https://kxtz.femboy.vip/sh1mmer/download/shims/lulu.bin",
             "nami.bin":
               "https://kxtz.femboy.vip/sh1mmer/download/shims/nami.bin",
             "octopus.bin":
