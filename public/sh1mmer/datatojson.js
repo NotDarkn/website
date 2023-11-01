@@ -134,6 +134,8 @@ let data = {
               "https://kxtz.femboy.vip/sh1mmer/download/shims/jacuzzi.bin",
             "kukui.bin":
               "https://kxtz.femboy.vip/sh1mmer/download/shims/kukui.bin",
+            "lulu.bin":
+              "https://kxtz.femboy.vip/sh1mmer/download/shims/lulu.bin",
             "nami.bin":
               "https://kxtz.femboy.vip/sh1mmer/download/shims/nami.bin",
             "octopus.bin":
