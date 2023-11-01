@@ -3053,6 +3053,10 @@
         const selectFile = document.querySelector("#file");
         const downloadButton = document.querySelector("#download");
 
+        // Initially hide the board selection and download button
+        selectFile.style.display = "none";
+        downloadButton.style.display = "none";
+
         let optSelectBoard = new Option("select a board");
         selectFile.appendChild(optSelectBoard);
 
@@ -3069,6 +3073,7 @@
             let opt = new Option(name);
             selectFile.appendChild(opt);
           }
+          selectFile.style.display = "block";
           downloadButton.style.display = "none"; // Hide the Download button
         });
 
@@ -3082,8 +3087,8 @@
           if (selectedMirror && selectedFile) {
             let url = data[selectedMirror][selectedFile];
             // Perform the download action here.
-      }
-    });
+          }
+        });
 
         const download = document.querySelector("#download");
 
@@ -3269,13 +3274,6 @@
       background-color: #e3e1de;
       border-color: #5a5a5a;
       border-radius: 4px;
-    }
-
-    #mirror,
-    #file,
-    #download {
-      display: block;
-      margin: 0 auto;
     }
   </style>
 </html>
