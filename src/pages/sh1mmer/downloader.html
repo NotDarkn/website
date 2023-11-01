@@ -3049,23 +3049,35 @@
         };
         // data = await (await fetch("data.json")).json();
 
-        const select = document.querySelector("#mirror");
+        const selectMirror = document.querySelector("#mirror");
+        const selectFile = document.querySelector("#file");
+        const downloadButton = document.querySelector("#download");
+
         for (let mirror in data) {
           let opt = new Option(mirror);
-          select.appendChild(opt);
+          selectMirror.appendChild(opt);
         }
-        const file = document.querySelector("#file");
-        let children = [];
-        select.addEventListener("change", () => {
-          for (let child of children) {
-            child.remove();
-          }
-          children = [];
 
-          for (let name in data[select.value]) {
+        selectMirror.addEventListener("change", () => {
+          selectFile.innerHTML = "<option>select a board</option>";
+          downloadButton.style.display = "none";
+
+          for (let name in data[selectMirror.value]) {
             let opt = new Option(name);
-            file.appendChild(opt);
-            children.push(opt);
+            selectFile.appendChild(opt);
+          }
+        });
+
+        selectFile.addEventListener("change", () => {
+          downloadButton.style.display = "block";
+        });
+
+        downloadButton.addEventListener("click", async () => {
+          let selectedMirror = selectMirror.value;
+          let selectedFile = selectFile.value;
+          if (selectedMirror && selectedFile) {
+            let url = data[selectedMirror][selectedFile];
+            // Perform the download action here.
           }
         });
 
@@ -3113,37 +3125,6 @@
         });
       }
     </script>
-    <script>
-      document.getElementById("mirror").addEventListener("change", function() {
-      var mirrorSelect = document.getElementById("mirror");
-      var fileSelect = document.getElementById("file");
-      var downloadButton = document.getElementById("download");
-
-      if (mirrorSelect.value === "select") {
-        // If "Select a mirror" is chosen, hide the file select and download button.
-        fileSelect.style.display = "none";
-        downloadButton.style.display = "none";
-      } else {
-        // If a mirror is selected, show the file select and clear its selection.
-        fileSelect.style.display = "block";
-        fileSelect.value = "select";
-
-        // Hide the Download button.
-        downloadButton.style.display = "none";
-      }
-    });
-
-    document.getElementById("file").addEventListener("change", function() {
-      var downloadButton = document.getElementById("download");
-      if (this.value !== "select") {
-        // If a board is selected, show the Download button.
-        downloadButton.style.display = "block";
-      } else {
-        // If "Select a board" is chosen, hide the Download button.
-        downloadButton.style.display = "none";
-      }
-    });
-  </script>
   </head>
 
   <body
@@ -3175,14 +3156,14 @@
     </p>
 
     <select id="mirror">
-      <option value="select">select a mirror</option>
+      <option>select a mirror</option>
     </select>
     
-    <select id="file" style="display: none;">
-      <option value="select">select a board</option>
+    <select id="file">
+      <option>select a board</option>
     </select>
     
-    <button id="download" style="display: none;">download</button>
+    <button id="download">download</button>
 
     <h3 style="display: none" id="progress"></h3>
 
