@@ -3053,6 +3053,10 @@
         const selectFile = document.querySelector("#file");
         const downloadButton = document.querySelector("#download");
 
+        // Initially, disable the board selection and download button
+        selectFile.disabled = true;
+        downloadButton.disabled = true;
+
         for (let mirror in data) {
           let opt = new Option(mirror);
           selectMirror.appendChild(opt);
@@ -3060,16 +3064,12 @@
 
         selectMirror.addEventListener("change", () => {
           selectFile.innerHTML = "<option>select a board</option>";
-          downloadButton.style.display = "none";
-
-          for (let name in data[selectMirror.value]) {
-            let opt = new Option(name);
-            selectFile.appendChild(opt);
-          }
+          selectFile.disabled = false;
+          downloadButton.disabled = true;
         });
 
         selectFile.addEventListener("change", () => {
-          downloadButton.style.display = "block";
+          downloadButton.disabled = false;
         });
 
         downloadButton.addEventListener("click", async () => {
