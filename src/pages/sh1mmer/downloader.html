@@ -3049,13 +3049,14 @@
         };
         // data = await (await fetch("data.json")).json();
 
+
         const selectMirror = document.querySelector("#mirror");
         const selectFile = document.querySelector("#file");
         const downloadButton = document.querySelector("#download");
 
-        // Initially, disable the board selection and download button
-        selectFile.disabled = true;
-        downloadButton.disabled = true;
+        // Initially hide the board selection and download button
+        selectFile.style.display = "none";
+        downloadButton.style.display = "none";
 
         for (let mirror in data) {
           let opt = new Option(mirror);
@@ -3063,13 +3064,17 @@
         }
 
         selectMirror.addEventListener("change", () => {
-          selectFile.innerHTML = "<option>select a board</option>";
-          selectFile.disabled = false;
-          downloadButton.disabled = true;
+          selectFile.innerHTML = ""; // Clear any previous options
+          for (let name in data[selectMirror.value]) {
+            let opt = new Option(name);
+            selectFile.appendChild(opt);
+          }
+          selectFile.style.display = "block";
+          downloadButton.style.display = "none"; // Hide the Download button
         });
 
         selectFile.addEventListener("change", () => {
-          downloadButton.disabled = false;
+          downloadButton.style.display = "block";
         });
 
         downloadButton.addEventListener("click", async () => {
