@@ -3098,7 +3098,7 @@
               }
             } catch {
               alert(
-                "CORS error! You didn't enable the CORS disabler extension",
+                "CORS error! Please enable the CORS disabler extension. If you don't have one for your browser, switch to Chrome, install the extension, and try agian.",
               );
               window.location.reload();
             }
@@ -3135,7 +3135,7 @@
       <a
         href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf"
         >this extension</a
-      >, (or a Firefox equivalent)
+      >, (or an equivalent)
       <br />
       2. Open the extension, and click the big "C" on the left to enable it.
       <br />
@@ -3253,6 +3253,19 @@
       background-color: #e3e1de;
       border-color: #5a5a5a;
       border-radius: 4px;
+    }
+
+    #file,
+    #download {
+      display: none;
+    }
+
+    #mirror:focus + #file {
+      display: block;
+    }
+
+    #file:focus + #download {
+      display: block;
     }
   </style>
 </html>
