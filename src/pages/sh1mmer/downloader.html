@@ -3164,15 +3164,19 @@
       after.
     </p>
 
-    <select id="mirror">
-      <option>select a mirror</option>
-    </select>
-    
-    <select id="file">
-      <option>select a board</option>
-    </select>
-    
-    <button id="download">download</button>
+    <div class="center-container">
+
+      <select id="mirror">
+        <option>select a mirror</option>
+      </select>
+      
+      <select id="file">
+        <option>select a board</option>
+      </select>
+      
+      <button id="download">download</button>
+
+    </div>
 
     <h3 style="display: none" id="progress"></h3>
 
@@ -3269,11 +3273,18 @@
       color: #e3e1de;
     }
 
+    .center-container {
+      text-align: center; /* Center its contents horizontally */
+    }
+
     select,
     button {
       background-color: #e3e1de;
       border-color: #5a5a5a;
       border-radius: 4px;
+      display: inline-block; /* Display elements side by side */
+      margin: 0 10px; /* Add some margin between elements */
+      text-align: center; /* Center the text within the elements */
     }
   </style>
 </html>
