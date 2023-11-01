@@ -3049,12 +3049,10 @@
         };
         // data = await (await fetch("data.json")).json();
 
-
         const selectMirror = document.querySelector("#mirror");
         const selectFile = document.querySelector("#file");
         const downloadButton = document.querySelector("#download");
 
-        // Initially hide the board selection and download button
         selectFile.style.display = "none";
         downloadButton.style.display = "none";
 
@@ -3067,15 +3065,15 @@
         }
 
         selectMirror.addEventListener("change", () => {
-          selectFile.innerHTML = ""; // Clear any previous options
-          selectFile.appendChild(optSelectBoard); // Add back the "select a board" option
+          selectFile.innerHTML = "";
+          selectFile.appendChild(optSelectBoard);
 
           for (let name in data[selectMirror.value]) {
             let opt = new Option(name);
             selectFile.appendChild(opt);
           }
           selectFile.style.display = "block";
-          downloadButton.style.display = "none"; // Hide the Download button
+          downloadButton.style.display = "none";
         });
 
         selectFile.addEventListener("change", () => {
@@ -3087,7 +3085,6 @@
           let selectedFile = selectFile.value;
           if (selectedMirror && selectedFile) {
             let url = data[selectedMirror][selectedFile];
-            // Perform the download action here.
           }
         });
 
