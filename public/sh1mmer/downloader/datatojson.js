@@ -3031,5 +3031,9 @@ let jsonString = JSON.stringify(data);
 
 writeFile('data.json', jsonString, (err) => {
   if (err) throw err;
-  console.log("data.json has been written! please copy to public/sh1mmer/data.json, the file is located where you ran the node command for this file from.")
+  console.log("data.json has been written! the file should already be overwritten for you.")
 });
+
+// to run this command, install node.js, then run:
+// cd path/to/website/public/sh1mmer/downloader
+// node datatojson.js
