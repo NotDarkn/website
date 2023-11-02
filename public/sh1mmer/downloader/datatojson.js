@@ -2,6 +2,8 @@ import { writeFile } from 'fs';
 
 let data = {
           "dl.osu.bio": {
+            "ambassador.zip":
+              "https://dl.osu.bio/api/raw/?path=/ambassador.zip",
             "brask.zip": 
               "https://dl.osu.bio/api/raw/?path=/brask.zip",
             "brya.zip": 
@@ -3037,3 +3039,7 @@ writeFile('data.json', jsonString, (err) => {
 // to run this command, install node.js, then run:
 // cd path/to/website/public/sh1mmer/downloader
 // node datatojson.js
+//
+// note: make sure to add this to website/public/sh1mmer too
+// this stops things from breaking lol
+// -hell0u
