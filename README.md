@@ -34,6 +34,7 @@
 - **Mercury Workshop:** [mercurywork.shop](https://mercurywork.shop)
 
   - Owners of [SH1mmer](https://sh1mmer.me) & [Builder](https://sh1mmer.me/builder)
+  - Providing some of the RMA shims for [dl.osu.bio](https://dl.osu.bio)
 
  - **Raina:** [@huaraina](https://discord.com/users/716417518197014538)
 
@@ -43,6 +44,10 @@
 - **Bypassi:** [@bypassi](https://discord.com/users/904829646145720340)
 
    - Providing screenshots to [unpatch](https://osu.bio/sh1mmer/unpatch) & [unfog](https://osu.bio/sh1mmer/unfog).
+ 
+- **julia_j:** [@julia_j](https://discord.com/users/1039648022084202516)
+  
+   - Allowing people like [me](https://discord.com/users/829745505784692776) to rehost the [downloader](https://osu.bio/sh1mmer/downloader).
 
 - **verysillycat** [@environment.](https://discord.com/users/825069530376044594)
 
