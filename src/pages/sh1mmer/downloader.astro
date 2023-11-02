@@ -20,15 +20,20 @@ import Alert from '@mui/joy/Alert';
   <meta property="og:image:height" content="512" />
   <meta property="og:site_name" content="osu.bio" />
   <link rel="icon" href="/img/file.png" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
 
   <script is:inline>
     async function start() {
       if (!("showSaveFilePicker" in window)) {
-        const compatAlert = document.querySelector("#compatAlert");
-        compatAlert.style.display = "initial";
+        try {
+          const compatAlert = document.querySelector("#compatAlert");
+          compatAlert.style.display = "initial";
+        } catch (e) {
+          console.log(e)
+        }
       }
 
-      data = await (await fetch("data.json")).json();
+      const data = await (await fetch("data.json")).json();
 
       const select = document.querySelector("#mirror");
       for (let mirror in data) {
@@ -96,15 +101,20 @@ import Alert from '@mui/joy/Alert';
       });
 
       const mirror = document.querySelector("#mirror");
-      const filee = document.querySelector("#file");
+      const boardd = document.querySelector("#file");
       const downloadd = document.querySelector("#download");
 
       mirror.addEventListener("change", () => {
-        filee.style.display = "initial";
+        if(mirror.value !== 'select a mirror') {
+          boardd.style.display = "initial";
+        } else
+        { boardd.style.display = "none "}
       });
 
-      filee.addEventListener("change", () => {
-        downloadd.style.display = "initial";
+      boardd.addEventListener("change", () => {
+        if(boardd.value !== 'select a board') {
+          downloadd.style.display = "initial";
+        } else { downloadd.style.display = "none"}
       });
 
     }

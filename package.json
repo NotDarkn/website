@@ -7,23 +7,23 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "clean": "prettier . --write",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^7.6.3",
     "@astrojs/partytown": "^2.0.2",
     "@astrojs/react": "^3.0.4",
+    "@astrojs/sitemap": "^3.0.3",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/inter": "^5.0.15",
     "@mui/icons-material": "^5.14.16",
     "@mui/joy": "5.0.0-beta.13",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "astro": "^3.4.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@types/react": "^18.2.34",
+    "@types/react-dom": "^18.2.14",
+    "astro": "^3.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.25",
