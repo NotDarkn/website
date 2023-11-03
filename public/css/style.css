@@ -19,10 +19,8 @@ a[href] {
   scroll-margin: 0;
 }
 
+/* creds: kxtz website */
 .alt {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
   display: flex;
   overflow: hidden;
   justify-content: center;
@@ -33,22 +31,20 @@ a[href] {
 .alt-main {
   background-color: #313244;
   max-width: 400px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 25px;
   border-radius: 8px;
   border: 5px solid #fff;
   box-shadow: 0 0 15px rgba(49, 50, 68, 0.5);
   text-align: center;
 }
 
-.sbanner {
+.sakamato {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
+/* this is all mainly from kxtz's about me css */
 
 .hide {
   display: none;
