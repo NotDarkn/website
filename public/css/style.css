@@ -31,7 +31,7 @@ a[href] {
 .alt-main {
   background-color: #0D1117;
   max-width: 400px;
-  padding: 25px;
+  padding: 20px;
   border-radius: 8px;
   border: 5px solid #fff;
   box-shadow: 0 0 15px rgba(49, 50, 68, 0.5);
@@ -40,7 +40,7 @@ a[href] {
 
 .sakamato {
   width: auto;
-  height: 210px;
+  height: 200px;
   vertical-align: middle;
 }
 
