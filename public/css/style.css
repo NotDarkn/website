@@ -42,6 +42,7 @@ a[href] {
   width: 150px;
   height: 150px;
   margin-bottom: 10px;
+  border-radius: 50%;
 }
 /* this is all mainly from kxtz's about me css */
 
