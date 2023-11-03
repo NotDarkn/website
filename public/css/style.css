@@ -29,7 +29,7 @@ a[href] {
 }
 
 .alt-main {
-  background-color: #313244;
+  background-color: #0D1117;
   max-width: 400px;
   padding: 20px;
   border-radius: 8px;
@@ -42,6 +42,7 @@ a[href] {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  margin-bottom: -1px;
   vertical-align: middle;
 }
 
