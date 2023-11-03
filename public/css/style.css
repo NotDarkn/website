@@ -34,10 +34,8 @@ a[href] {
 }
 
 .sbanner {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  width: 50%;
+  height: 50%;
 }
 
 .hide {
