@@ -20,13 +20,14 @@ a[href] {
 }
 
 .alt {
-  position: flex; /* or absolute */
+  position: fixed; /* or absolute */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  display: table-cell;
-  padding: 40px;
+  display: flex;
+  overflow: hidden;
+  padding: 20px;
   border: 5px solid #fff;
   background-color: #313244;
   box-shadow: 0 0 15px rgba(49, 50, 68, 0.5);
