@@ -1,30 +1,32 @@
-@font-face {
-  font-family: "Comic-Sans";
-  src: url("../fonts/comic-sans.ttf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-    font-family: "SF-Reg";
-    src: url("../fonts/sf-pro-regular.otf") format("opentype");
+  @font-face {
+    font-family: 'SF-Reg';
+    src: url('../fonts/SFProDisplay.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
   }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-family: "SF-Reg", sans-serif;
-}
+  @font-face {
+    font-family: 'Comic-Sans';
+    src: url('../fonts/ComicSans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 
-.TweakInfo {
-  font-family: "SF-Reg", sans-serif;
-  font-size: 18px;
-}
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-family: "SF-Reg", sans-serif;
+  }
+
+  .TweakInfo {
+    font-family: "SF-Reg", sans-serif;
+    font-size: 18px;
+  }
