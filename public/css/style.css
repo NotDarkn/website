@@ -44,6 +44,22 @@ a[href] {
   margin-bottom: 10px;
   border-radius: 50%;
 }
+
+.icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons a:hover {
+  color: #888888;
+}
+
 /* this is all mainly from kxtz's about me css */
 
 .hide {
