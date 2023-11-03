@@ -49,14 +49,14 @@ a[href] {
   margin-top: 20px;
 }
 
-.social-icons a {
+.icons a {
   font-size: 24px;
   margin: 0 10px;
   text-decoration: none;
   color: #fff;
 }
 
-.social-icons a:hover {
+.icons a:hover {
   color: #888888;
 }
 
