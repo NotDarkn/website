@@ -1,286 +1,344 @@
 ---
-import '@fontsource/inter';
-import { CssVarsProvider } from '@mui/joy/styles';
-import Box from '@mui/joy/Box';
-import Alert from '@mui/joy/Alert';
+import "@fontsource/inter";
+import { CssVarsProvider } from "@mui/joy/styles";
+import Box from "@mui/joy/Box";
+import Alert from "@mui/joy/Alert";
 ---
+
 <!doctype html>
 <html lang="en">
-<head>
-  <title>Glitz Downloader</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="UTF-8" />
-  <meta property="og:title" content="Rehosted SH1mmer" />
-  <meta property="og:description" content="SH1mmer: Downloader" />
-  <meta property="og:url" content="https://osu.bio/sh1mmer/downloader" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://osu.bio/img/file.png" />
-  <meta property="og:image:alt" content="SH1mmer" />
-  <meta property="og:image:width" content="512" />
-  <meta property="og:image:height" content="512" />
-  <meta property="og:site_name" content="osu.bio" />
-  <link rel="icon" href="/img/file.png" />
-  <link rel="sitemap" href="/sitemap-index.xml" />
+  <head>
+    <title>Glitz Downloader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Rehosted SH1mmer" />
+    <meta property="og:description" content="SH1mmer: Downloader" />
+    <meta property="og:url" content="https://osu.bio/sh1mmer/downloader" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://osu.bio/img/file.png" />
+    <meta property="og:image:alt" content="SH1mmer" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:site_name" content="osu.bio" />
+    <link rel="icon" href="/img/file.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
 
-  <script is:inline>
-    async function start() {
-      if (!("showSaveFilePicker" in window)) {
-        try {
-          const compatAlert = document.querySelector("#compatAlert");
-          compatAlert.style.display = "initial";
-        } catch (e) {
-          console.log(e)
-        }
-      }
-
-      const data = await (await fetch("data.json")).json();
-
-      const select = document.querySelector("#mirror");
-      for (let mirror in data) {
-        let opt = new Option(mirror);
-        select.appendChild(opt);
-      }
-      const file = document.querySelector("#file");
-      let children = [];
-      select.addEventListener("change", () => {
-        for (let child of children) {
-          child.remove();
-        }
-        children = [];
-
-        for (let name in data[select.value]) {
-          let opt = new Option(name);
-          file.appendChild(opt);
-          children.push(opt);
-        }
-      });
-
-      const download = document.querySelector("#download");
-
-      const progress = document.querySelector("#progress");
-
-      download.addEventListener("click", async () => {
-        let urls = data[select.value][file.value];
-
-        if (typeof urls === "object") {
-          let ws_dest = await window
-            .showSaveFilePicker()
-            .then((handle) => handle.createWritable());
-          window.wsd = ws_dest;
-
+    <script is:inline>
+      async function start() {
+        if (!("showSaveFilePicker" in window)) {
           try {
-            for (let i in urls) {
-              let url = urls[i];
-              let req = await fetch(url);
-              if (req.status != 200) {
-                const defectiveMirrorAlert = document.querySelector("#defectiveMirrorAlert");
-                defectiveMirrorAlert.style.display = "initial";
-                await sleep(7000);
-                window.location.reload();
-              }
-              await req.body.pipeTo(ws_dest, { preventClose: true });
-              progress.style.display = "";
-              progress.innerText = `Progress: ${Math.floor(
-                (i / urls.length) * 100,
-              )}%`;
-            }
-          } catch {
-            const corsAlert = document.querySelector("#corsAlert");
-            corsAlert.style.display = "initial";
-            await sleep(20000);
-            window.location.reload();
+            const compatAlert = document.querySelector("#compatAlert");
+            compatAlert.style.display = "initial";
+          } catch (e) {
+            console.log(e);
           }
-
-          console.log("done!");
-
-          progress.innerText = `Progress: Done!`;
-          ws_dest.close();
-        } else if (urls) {
-          window.open(urls);
         }
-      });
 
-      const mirror = document.querySelector("#mirror");
-      const boardd = document.querySelector("#file");
-      const downloadd = document.querySelector("#download");
+        let data;
+        try {
+          data = await (await fetch("data.json")).json();
+        } catch (error) {
+          console.error(error);
+          try {
+            const dataAlert = document.querySelector("#dataAlert");
+            dataAlert.style.display = "initial";
+          } catch (e) {
+            console.log(e);
+          }
+        }
 
-      mirror.addEventListener("change", () => {
-        if(mirror.value !== 'select a mirror') {
-          boardd.style.display = "initial";
-        } else
-        { boardd.style.display = "none"; downloadd.style.display = "none"; }
-      });
+        const select = document.querySelector("#mirror");
+        for (let mirror in data) {
+          let opt = new Option(mirror);
+          select.appendChild(opt);
+        }
+        const file = document.querySelector("#file");
+        let children = [];
+        select.addEventListener("change", () => {
+          for (let child of children) {
+            child.remove();
+          }
+          children = [];
 
-      boardd.addEventListener("change", () => {
-        if(boardd.value !== 'select a board') {
-          downloadd.style.display = "initial";
-        } else { downloadd.style.display = "none"}
-      });
+          for (let name in data[select.value]) {
+            let opt = new Option(name);
+            file.appendChild(opt);
+            children.push(opt);
+          }
+        });
 
-    }
-    function sleep(ms) {
-     return new Promise((resolve) => {
-        setTimeout(resolve, ms);
-      });
-  }
-  </script>
+        const download = document.querySelector("#download");
 
-</head>
-<CssVarsProvider defaultMode="dark">
-<body onload="
+        const progress = document.querySelector("#progress");
+
+        download.addEventListener("click", async () => {
+          let urls = data[select.value][file.value];
+
+          if (typeof urls === "object") {
+            let ws_dest = await window
+              .showSaveFilePicker()
+              .then((handle) => handle.createWritable());
+            window.wsd = ws_dest;
+
+            try {
+              for (let i in urls) {
+                let url = urls[i];
+                let req = await fetch(url);
+                if (req.status != 200) {
+                  const defectiveMirrorAlert = document.querySelector(
+                    "#defectiveMirrorAlert",
+                  );
+                  defectiveMirrorAlert.style.display = "initial";
+                  await sleep(7000);
+                  window.location.reload();
+                }
+                await req.body.pipeTo(ws_dest, { preventClose: true });
+                progress.style.display = "";
+                progress.innerText = `Progress: ${Math.floor(
+                  (i / urls.length) * 100,
+                )}%`;
+              }
+            } catch {
+              const corsAlert = document.querySelector("#corsAlert");
+              corsAlert.style.display = "initial";
+              await sleep(20000);
+              window.location.reload();
+            }
+
+            console.log("done!");
+
+            progress.innerText = `Progress: Done!`;
+            ws_dest.close();
+          } else if (urls) {
+            window.open(urls);
+          }
+        });
+
+        const mirror = document.querySelector("#mirror");
+        const boardd = document.querySelector("#file");
+        const downloadd = document.querySelector("#download");
+
+        mirror.addEventListener("change", () => {
+          if (mirror.value !== "select a mirror") {
+            boardd.style.display = "initial";
+          } else {
+            boardd.style.display = "none";
+            downloadd.style.display = "none";
+          }
+        });
+
+        boardd.addEventListener("change", () => {
+          if (boardd.value !== "select a board") {
+            downloadd.style.display = "initial";
+          } else {
+            downloadd.style.display = "none";
+          }
+        });
+      }
+      function sleep(ms) {
+        return new Promise((resolve) => {
+          setTimeout(resolve, ms);
+        });
+      }
+    </script>
+  </head>
+  <CssVarsProvider defaultMode="dark">
+    <body onload="
   start()
   ">
-  <Box
-  sx={{
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
-    width: '100%',
-  }}>
-<Alert id="compatAlert" sx={{display: 'none'}} color="danger" variant="outlined" size='lg'>Warning! You won't be able to download from the Discord mirror using this browser, switch to another.</Alert>
-<br />
-<Alert id="corsAlert" sx={{display: 'none'}} color="danger" variant="outlined" size='lg'>CORS error! Please enable the CORS disabler extension. If you don't have one for your browser, switch to Chrome, install the extension, and try again. Reloading in 20 seconds...</Alert>
-<br />
-<Alert id="defectiveMirrorAlert" sx={{display: 'none'}} color="danger" variant="outlined" size='lg'>The chosen mirror is defective, try choosing another after reloading! Reloading in 7 seconds...</Alert>
-</Box>
-  <h1>Glitz - RMA Shim Downloader</h1>
-  <p>
-    Glitz is a collection of mirrors for publicly-available RMA shims that can
-    be used with <a href="https://sh1mmer.me">SH1mmer</a>.<br />
-    As of currently, Glitz provides five different mirrors to download shims
-    from.<br />
-  </p>
-  <p>
-    <b>Discord Download Instructions:</b>
-    <br />
-    1. Install
-    <a href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf">this
-      extension</a>, (or an equivalent)
-    <br />
-    2. Open the extension, and click the big "C" on the left to enable it.
-    <br />
-    3. Download your bin from the Discord mirror, and uninstall the extension
-    after.
-  </p>
-
-  <select style="margin-right: 4px;" id="mirror">
-    <option>select a mirror</option>
-  </select>
-
-  <select id="file" style="margin-left: 5px; display: none;">
-    <option>select a board</option>
-  </select>
-
-  <button id="download" style="margin-left: 9px; display: none;">download</button>
-
-  <h3 style="display: none" id="progress"></h3>
-
-  <br />
-
-  <div class="float">
-    <h3>
-      In order to use these RMA shims to un-enroll your Chromebook, you will
-      need to inject SH1mmer <a href="/sh1mmer/builder">here</a>.
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+          width: "100%",
+        }}
+      >
+        <Alert
+          id="compatAlert"
+          sx={{ display: "none", marginBottom: "7px" }}
+          color="danger"
+          variant="outlined"
+          size="lg"
+        >
+          Warning! You won't be able to download from the Discord mirror using
+          this browser, switch to another.
+        </Alert>
+        <Alert
+          id="corsAlert"
+          sx={{ display: "none", marginBottom: "7px" }}
+          color="danger"
+          variant="outlined"
+          size="lg"
+        >
+          CORS error! Please enable the CORS disabler extension. If you don't
+          have one for your browser, switch to Chrome, install the extension,
+          and try again. Reloading in 20 seconds...
+        </Alert>
+        <Alert
+          id="defectiveMirrorAlert"
+          sx={{ display: "none", marginBottom: "7px" }}
+          color="danger"
+          variant="outlined"
+          size="lg"
+        >
+          The chosen mirror is defective, try choosing another after reloading!
+          Reloading in 7 seconds...
+        </Alert>
+        <Alert
+          id="dataAlert"
+          sx={{ display: "none" }}
+          color="danger"
+          variant="outlined"
+          size="lg"
+        >
+          Oops! Unable to fetch <code>data.json</code>
+        </Alert>
+      </Box>
       <br />
-      These files aren't endorsed, created, provided, nor officially supported
-      by <a href="https://mercurywork.shop">Mercury Workshop</a>.
-    </h3>
-  </div>
+      <h1>Glitz - RMA Shim Downloader</h1>
+      <p>
+        Glitz is a collection of mirrors for publicly-available RMA shims that
+        can be used with <a href="https://sh1mmer.me">SH1mmer</a>.<br />
+         As of currently, Glitz provides five different mirrors to download
+        shims from.<br />
+      </p>
+      <p>
+        <b>Discord Download Instructions:</b>
+        <br />
+         1. Install
+        <a
+          href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf"
+          >this extension</a
+        >, (or an equivalent)
+        <br />
+         2. Open the extension, and click the big "C" on the left to enable it.
+        <br />
+         3. Download your bin from the Discord mirror, and uninstall the
+        extension after.
+      </p>
 
-  <h3>
-    <a href="https://discord.gg/bAgNyGpXSx">discord</a> •
-    <a href="https://osu.bio">website</a> •
-    <a href="https://github.com/NotDarkn/website">github</a>
-  </h3>
+      <select style="margin-right: 4px;" id="mirror">
+        <option>select a mirror</option>
+      </select>
 
-  <p>
-    <b>credits:</b>
-    <br />
-    dl.osu.bio & hosted & edited by
-    <a href="https://discord.com/users/829745505784692776">@notdarkn</a><br />
-    improvements all thanks to
-    <a href="https://discord.com/users/836279485984538634">@waveeeeeee</a><br />
-    dl.diffusehyperion.me by
-    <a href="https://discord.com/users/301279262994857987">@diffusehyperion</a><br />
-    kxtz.femboy.vip by
-    <a href="https://discord.com/users/952792525637312552">@kxtzownsu</a><br />
-    originally created by
-    <a href="https://discord.com/users/1039648022084202516">@julia_j</a><br />
-  </p>
-  <p>
-    <font size="+2">
-    ❤️ thank you ❤️
-    </font>
-  </p>
-</body>
-</CssVarsProvider>
-<style>
-  @import url("https://osu.bio/css/fonts.css");
+      <select id="file" style="margin-left: 5px; display: none;">
+        <option>select a board</option>
+      </select>
 
-  * {
-    text-align: center;
-  }
+      <button id="download" style="margin-left: 9px; display: none;"
+        >download</button
+      >
 
-  marquee {
-    text-align: initial !important;
-  }
+      <h3 style="display: none" id="progress"></h3>
 
-  a[href] {
-    color: #2e8ff9;
-  }
+      <br />
 
-  p,
-  h2 {
-    font-family: "SF-Reg";
-  }
+      <div class="float">
+        <h3>
+          In order to use these RMA shims to un-enroll your Chromebook, you will
+          need to inject SH1mmer <a href="/sh1mmer/builder">here</a>.
+          <br />
+           These files aren't endorsed, created, provided, nor officially
+          supported by <a href="https://mercurywork.shop">Mercury Workshop</a>.
+        </h3>
+      </div>
 
-  .float {
-    animation:
-      MoveUpDown 1s ease-in-out infinite,
-      MoveLeft 3.72s ease-in-out infinite;
-    position: relative;
-    left: 0;
-    bottom: 0;
-  }
+      <h3>
+        <a href="https://discord.gg/bAgNyGpXSx">discord</a> •
+        <a href="https://osu.bio">website</a> •
+        <a href="https://github.com/NotDarkn/website">github</a>
+      </h3>
 
-  @keyframes MoveUpDown {
+      <p>
+        <b>credits:</b>
+        <br />
+         dl.osu.bio & hosted & edited by
+        <a href="https://discord.com/users/829745505784692776">@notdarkn</a><br
+        />
+         improvements all thanks to
+        <a href="https://discord.com/users/836279485984538634">@waveeeeeee</a
+        ><br />
+         dl.diffusehyperion.me by
+        <a href="https://discord.com/users/301279262994857987"
+          >@diffusehyperion</a
+        ><br />
+         kxtz.femboy.vip by
+        <a href="https://discord.com/users/952792525637312552">@kxtzownsu</a><br
+        />
+         originally created by
+        <a href="https://discord.com/users/1039648022084202516">@julia_j</a><br
+        />
+      </p>
+      <p>
+        <font size="+2"> ❤️ thank you ❤️</font>
+      </p>
+    </body>
+  </CssVarsProvider>
+  <style>
+    @import url("https://osu.bio/css/fonts.css");
 
-    0%,
-    100% {
-      bottom: -8px;
+    * {
+      text-align: center;
     }
 
-    50% {
-      bottom: 8px;
-    }
-  }
-
-  @keyframes MoveLeft {
-
-    0%,
-    100% {
-      left: -8px;
+    marquee {
+      text-align: initial !important;
     }
 
-    50% {
-      left: 8px;
+    a[href] {
+      color: #2e8ff9;
     }
-  }
 
-  body,
-  html {
-    --lightness: 40%;
-    background-color: #131516;
-    color: #e3e1de;
-  }
+    p,
+    h2 {
+      font-family: "SF-Reg";
+    }
 
-  select,
-  button {
-    background-color: #e3e1de;
-    border-color: #5a5a5a;
-    border-radius: 4px;
-  }
-</style>
+    .float {
+      animation:
+        MoveUpDown 1s ease-in-out infinite,
+        MoveLeft 3.72s ease-in-out infinite;
+      position: relative;
+      left: 0;
+      bottom: 0;
+    }
 
+    @keyframes MoveUpDown {
+      0%,
+      100% {
+        bottom: -8px;
+      }
+
+      50% {
+        bottom: 8px;
+      }
+    }
+
+    @keyframes MoveLeft {
+      0%,
+      100% {
+        left: -8px;
+      }
+
+      50% {
+        left: 8px;
+      }
+    }
+
+    body,
+    html {
+      --lightness: 40%;
+      background-color: #131516;
+      color: #e3e1de;
+    }
+
+    select,
+    button {
+      background-color: #e3e1de;
+      border-color: #5a5a5a;
+      border-radius: 4px;
+    }
+  </style>
 </html>
