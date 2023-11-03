@@ -8,6 +8,17 @@ async function start() {
       }
     }
 
+    if (isMobileDevice = true) {
+        try {
+            const mobileAlert = document.querySelector("#mobileAlert");
+            const compatAlert = document.querySelector("#compatAlert");
+            mobileAlert.style.display = "initial";
+            compatAlert.style.display = "none";
+          } catch (e) {
+            console.log(e);
+          }
+    }
+
     let data;
     try {
       data = await (await fetch("data.json")).json();
@@ -114,3 +125,6 @@ async function start() {
       setTimeout(resolve, ms);
     });
   }
+  function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+ }
