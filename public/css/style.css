@@ -20,22 +20,27 @@ a[href] {
 }
 
 .alt {
-  max-width: 400px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  text-align: center;
   padding: 20px;
   display: flex;
   overflow: hidden;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  border: 5px solid #fff;
+}
+
+.alt-main {
   background-color: #313244;
+  max-width: 400px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 8px;
+  border: 5px solid #fff;
   box-shadow: 0 0 15px rgba(49, 50, 68, 0.5);
-  scroll-margin: 0;
+  text-align: center;
 }
 
 .sbanner {
