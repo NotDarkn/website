@@ -126,5 +126,5 @@ async function start() {
     });
   }
   function isMobileDevice() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone|SamsungBrowser|Dolfin|Skyfire|Bolt|Opera Mobi|Opera Tablet|NetFront|Silk|PlayBook|Nook|Kindle|Mobile Safari|Puffin|Minimo|Presto|Fennec|Blazer|Dolfin|Dolphin|GoBrowser|Jasmine|Polaris|B-LineApp|NetFrontLife|Firefox|Fennec|Minimo|Opera Mobi|maemo|mowser|obigo|NetFront|Skyfire|Teleca|UP.Browser|TencentTraveler|Polaris|QQBrowser|Puffin|MicroB|Opera Mini|Mobile Safari|Blazer|Dolfin|Opera Mobi|Opera Tablet|Nook|Kindle/.test(navigator.userAgent);
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
  }
