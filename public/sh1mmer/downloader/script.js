@@ -8,7 +8,7 @@ async function start() {
       }
     }
 
-    if (isMobileDevice = true) {
+    if (isMobileDevice == true) {
         try {
             const mobileAlert = document.querySelector("#mobileAlert");
             const compatAlert = document.querySelector("#compatAlert");
