@@ -26,10 +26,11 @@ a[href] {
   transform: translate(-50%, -50%);
   text-align: center;
   display: table-cell;
+  max-width: 200px;
   padding: 40px;
   border: 5px solid #fff;
   background-color: #313244;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   scroll-margin: 0;
 }
 
