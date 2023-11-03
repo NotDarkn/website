@@ -20,14 +20,18 @@ a[href] {
 }
 
 .alt {
-  position: fixed; /* or absolute */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  display: table-cell;
+  max-width: 400px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
   overflow: hidden;
-  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   border: 5px solid #fff;
   background-color: #313244;
   box-shadow: 0 0 15px rgba(49, 50, 68, 0.5);
