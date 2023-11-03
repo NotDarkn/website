@@ -7,7 +7,7 @@ a[href] {
   color: #2e8ff9;
 }
 
-.main {
+.vertical {
   position: fixed; /* or absolute */
   top: 50%;
   left: 50%;
