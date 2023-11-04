@@ -29,7 +29,7 @@ a[href] {
 }
 
 .alt-main {
-  background-color: #0D1117;
+  background-color: #24292E;
   max-width: 400px;
   padding: 20px;
   border-radius: 8px;
@@ -64,7 +64,7 @@ a[href] {
 }
 
 .icons:hover {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .hide {
