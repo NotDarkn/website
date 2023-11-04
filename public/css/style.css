@@ -38,6 +38,8 @@ a[href] {
   text-align: center;
 }
 
+/* all the stuff up here is from kxtz's about me site, so ty for that!! */
+
 .sakamato {
   width: auto;
   height: 150px;
@@ -55,8 +57,6 @@ a[href] {
 .icons:hover {
   opacity: 0.5;
 }
-
-/* this is all mainly from kxtz's about me css */
 
 .hide {
   display: none;
