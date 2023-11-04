@@ -47,10 +47,11 @@ a[href] {
 }
 
 .header-height {
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .text-height {
+  margin-top: 10px;
   line-height: 1.2;
 }
 
