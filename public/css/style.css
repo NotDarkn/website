@@ -49,6 +49,11 @@ a[href] {
   margin-right: 8px;
   width: 25px;
   height: 25px;
+  transition: opacity 0.5s;
+}
+
+.icons:hover {
+  opacity: 0.7;
 }
 
 /* this is all mainly from kxtz's about me css */
