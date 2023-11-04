@@ -37,12 +37,12 @@ a[href] {
   box-shadow: 0 0 15px rgba(49, 50, 68, 0.5);
   text-align: center;
 }
-
 /* all the stuff up here is from kxtz's about me site, so ty for that!! */
 
 .sakamato {
   width: auto;
   height: 150px;
+  margin-bottom: -10px;
   vertical-align: middle;
 }
 
