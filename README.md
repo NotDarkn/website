@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://osu.bio">osu.bio</a> - Darkn's Website</h1>
 
-![Dual Screenshot](https://github.com/NotDarkn/website/assets/73033672/0065fc7a-385b-4897-b4e3-6e641bb060e5)
+![main](https://github.com/NotDarkn/website/assets/73033672/7d08a0f7-200c-47b4-9111-e7721af9fcf5)
 
 <h2>Features</h2>
 <ul>
