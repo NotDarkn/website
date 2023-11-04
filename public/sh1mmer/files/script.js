@@ -1,4 +1,4 @@
-//without this the website will not run
+// the site can run w/o this just MW likes this file for some reason lol
 window.onload = function () {
   console.log(
     "%c SH1MMER!!",
