@@ -33,7 +33,6 @@ a[href] {
   max-width: 400px;
   padding: 20px;
   border-radius: 8px;
-  margin-bottom: 10px;
   border: 5px solid #fff;
   box-shadow: 0 0 15px rgba(49, 50, 68, 0.5);
   text-align: center;
@@ -45,6 +44,10 @@ a[href] {
   height: 150px;
   margin-bottom: -10px;
   vertical-align: middle;
+}
+
+.p-margin {
+  margin-top: 10px;
 }
 
 .icons {
