@@ -46,8 +46,8 @@ a[href] {
   vertical-align: middle;
 }
 
-.header-margin {
-  margin-bottom: 10px;
+.text-height {
+  line-height: 1.2;
 }
 
 .icons {
