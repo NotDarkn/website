@@ -46,6 +46,10 @@ a[href] {
   vertical-align: middle;
 }
 
+.header-height {
+  margin-bottom: 10px
+}
+
 .text-height {
   margin-top: 10px;
   line-height: 1.2;
