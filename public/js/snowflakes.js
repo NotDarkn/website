@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const numSnowflakes = 50;
   
     // Get the container element where the snowflakes will be added
-    const container = document.getElementById('snowflake-container');
+    const container = document.getElementById('snowflakes-container');
   
     if (container) {
       for (let i = 0; i < numSnowflakes; i++) {
