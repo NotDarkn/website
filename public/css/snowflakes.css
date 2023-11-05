@@ -8,6 +8,15 @@ html, body {
     background: linear-gradient(#123, #111);
 }
 
+@keyframes snowfall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
 .snowflake {
     --size: 1vw;
     width: var(--size);
@@ -16,35 +25,5 @@ html, body {
     border-radius: 50%;
     position: absolute;
     top: -5vh;
-}
-
-@keyframes snowfall {
-0% {
-    transform: translate3d(var(--left-ini), 0, 0);
-}
-100% {
-    transform: translate3d(var(--left-end), 110vh, 0);
-}
-}
-  
-/* Define properties for each snowflake */
-.snowflake:nth-child(1) {
-    --size: calc(random(5) * 0.2vw);
-    --left-ini: calc(random(20) - 10vw);
-    --delay: random(10s);
-  }
-  
-  /* Repeat the properties for other snowflakes */
-  .snowflake:nth-child(2) {
-    --size: calc(random(5) * 0.2vw);
-    --left-ini: calc(random(20) - 10vw);
-    --delay: random(10s);
-  }
-
-/* Continue repeating the properties for snowflakes 3 through 50 */
-/* ... */
-
-/* Add a small blur every 6 snowflakes */
-.snowflake:nth-child(6n) {
-    filter: blur(1px);
+    animation: snowfall infinite;
 }
