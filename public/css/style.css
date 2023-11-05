@@ -95,16 +95,6 @@ a[href] {
     opacity: 0.1
 }
 
-/* fix uncolored borders on iPhones with a notch */
-.header {
-  padding-top: env(safe-area-inset-top);
-}
-
-.footer {
-  padding-bottom: env(safe-area-inset-bottom);
-}
-/* end */
-
 .hide {
   display: none;
 }
