@@ -67,6 +67,26 @@ a[href] {
   opacity: 0.3;
 }
 
+/* chatgpt'd code */
+.snowflakes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.snowflake {
+  position: absolute;
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: falling 5s linear infinite, drift 3s linear infinite;
+}
+/* chatgpd'd code */
+
 .hide {
   display: none;
 }
