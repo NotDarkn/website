@@ -13,7 +13,7 @@ html, body {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(110vh);
+        transform: translateY(120vh);
     }
 }
 
@@ -26,5 +26,5 @@ html, body {
     position: absolute;
     top: -5vh;
     animation: snowfall infinite;
-    opacity: 0.7
+    opacity: 0.5
 }
