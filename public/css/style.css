@@ -40,7 +40,7 @@ a[href] {
   max-width: 300px;
   padding: 20px;
   border-radius: 15px;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.75);
   text-align: center;
 }
@@ -54,8 +54,9 @@ a[href] {
 }
 
 .header-height {
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 50px;
 }
 
 .text-height {
