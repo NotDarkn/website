@@ -21,7 +21,7 @@ async function start() {
 
     let data;
     try {
-      data = await (await fetch("downloader/data.json")).json();
+      data = await (await fetch("/sh1mmer/downloader/data.json")).json();
     } catch (error) {
       console.error(error);
       try {
