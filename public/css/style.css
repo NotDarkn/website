@@ -36,7 +36,7 @@ a[href] {
 }
 
 .alt-main {
-  background-color: rgba(9, 10, 10, 1.0);
+  background-color: rgb(17, 17, 17, 0.75);
   max-width: 400px;
   padding: 20px;
   border-radius: 8px;
