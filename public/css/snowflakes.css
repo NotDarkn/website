@@ -13,7 +13,7 @@ html, body {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(100vh);
+        transform: translateY(110vh);
     }
 }
 
