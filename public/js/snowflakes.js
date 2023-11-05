@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const numSnowflakes = 50;
   
     // Get the container element where the snowflakes will be added
-    const container = document.getElementById('snowflakes-container');
+    const container = document.getElementById('snowflake-container');
   
     if (container) {
       for (let i = 0; i < numSnowflakes; i++) {
@@ -15,6 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         container.appendChild(snowflake);
       }
     } else {
-      console.error('The snowflakes-container element was not found in the HTML.');
+      console.error('The snowflake-container element was not found in the HTML.');
     }
   });

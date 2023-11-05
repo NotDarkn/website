@@ -8,7 +8,7 @@ html, body {
     background: linear-gradient(#123, #111);
 }
 
-.snowflakes {
+.snowflake {
     --size: 1vw;
     width: var(--size);
     height: var(--size);
@@ -28,14 +28,14 @@ html, body {
 }
   
 /* Define properties for each snowflake */
-.snowflakes:nth-child(1) {
+.snowflake:nth-child(1) {
     --size: calc(#{random(5)} * 0.2vw);
     --left-ini: calc(#{random(20) - 10}vw);
     --delay: #{random(10)}s;
   }
   
 /* Repeat the properties for other snowflakes */
-.snowflakes:nth-child(2) {
+.snowflake:nth-child(2) {
     --size: calc(#{random(5)} * 0.2vw);
     --left-ini: calc(#{random(20) - 10}vw);
     --delay: #{random(10)}s;
@@ -45,6 +45,6 @@ html, body {
 /* ... */
 
 /* Add a small blur every 6 snowflakes */
-.snowflakes:nth-child(6n) {
+.snowflake:nth-child(6n) {
     filter: blur(1px);
 }
