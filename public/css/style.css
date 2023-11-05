@@ -74,6 +74,7 @@ a[href] {
   opacity: 0.1;
 }
 
+/* source: https://community.codenewbie.org/alvaro_montoro/creating-a-snowfall-effect-with-html-and-css-2p4 */
 @keyframes snowfall {
     0% {
         transform: translateY(0);
@@ -94,6 +95,7 @@ a[href] {
     animation: snowfall infinite;
     opacity: 0.1
 }
+/* thanks to hell0u/waveeeeee for making changes and fixes to the css code! <3 */
 
 .hide {
   display: none;

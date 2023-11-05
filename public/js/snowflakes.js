@@ -1,3 +1,6 @@
+// source: https://community.codenewbie.org/alvaro_montoro/creating-a-snowfall-effect-with-html-and-css-2p4
+// changes, fixes, and edits made by hell0u/waveeeeee, thank you!!! <3
+
 function createSnowflakes() {
     const numSnowflakes = 50;
     const maxSize = 0.2;
