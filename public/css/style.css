@@ -19,8 +19,8 @@ html, body {
 
 @media (orientation: portrait) {
   body {
-  padding-top: calc(env(safe-area-inset-top, 20px));
-  padding-bottom: calc(env(safe-area-inset-bottom, 20px));
+  padding-top: max(env(safe-area-inset-top), 20px);
+  padding-bottom: max(env(safe-area-inset-bottom), 20px);
   }
 }
 
