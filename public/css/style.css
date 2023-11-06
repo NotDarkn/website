@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  font-family: "Inter";
+  font-family: "Inter", "sans-serif", "Arial";
   position: relative;
   overflow: hidden;
   color: #fff;
@@ -54,8 +54,7 @@ a[href] {
 }
 
 .header-height {
-  letter-spacing: normal;
-  word-spacing: normal; 
+  letter-spacing: -0.5px;
   font-weight: 600;
   font-kerning: none;
   margin-bottom: 10px;
