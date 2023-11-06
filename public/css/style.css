@@ -10,10 +10,17 @@ html, body {
   background: linear-gradient(#123, #111);
 }
 
+@media (orientation: landscape) {
+  body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+}
+
 @media (orientation: portrait) {
   body {
-  padding-top: env(safe-area-inset-top, 20px);
-  padding-bottom: env(safe-area-inset-bottom, 20px);
+  padding-top: calc(env(safe-area-inset-top, 20px));
+  padding-bottom: calc(env(safe-area-inset-bottom, 20px));
   }
 }
 
