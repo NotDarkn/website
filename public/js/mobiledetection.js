@@ -9,4 +9,4 @@ window.addEventListener('resize', function() {
         header.classList.remove('mobile-header-height');
         header.classList.add('header-height');
     }
- });
+ });    
