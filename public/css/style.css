@@ -1,5 +1,5 @@
 html, body {
-  padding: 0;
+  padding: 0 env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
   margin: 0;
   width: 100vw;
   height: 100vh;
