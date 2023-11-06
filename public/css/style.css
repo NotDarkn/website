@@ -8,28 +8,6 @@ html, body {
   overflow: hidden;
   color: #fff;
   background: linear-gradient(#123, #111);
-  padding-top: constant(safe-area-inset-top);
-  padding-bottom: constant(safe-area-inset-bottom);
-  padding-left: constant(safe-area-inset-left);
-  padding-right: constant(safe-area-inset-right);
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
-}
-
-@media (orientation: landscape) {
-  body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  }
-}
-
-@media (orientation: portrait) {
-  body {
-  padding-top: max(env(safe-area-inset-top), 20px);
-  padding-bottom: max(env(safe-area-inset-bottom), 20px);
-  }
 }
 
 a[href] {
@@ -55,10 +33,6 @@ a[href] {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-top: env(safe-area-inset-top, 20px);
-  padding-bottom: env(safe-area-inset-bottom, 20px);
-  padding-left: env(safe-area-inset-left, 20px);
-  padding-right: env(safe-area-inset-right, 20px);
 }
 
 .alt-main {
