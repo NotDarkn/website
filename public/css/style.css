@@ -54,8 +54,10 @@ a[href] {
 }
 
 .mobile-header-height {
-  letter-spacing: -10px;
+  letter-spacing: -3px;
   margin-bottom: 10px;
+  font-kerning: none;
+  font-weight: 600;
 }
 
 .header-height {
