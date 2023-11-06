@@ -1,9 +1,5 @@
 html, body {
   padding: 0;
-  padding-top: env(safe-area-inset-top, 20px);
-  padding-bottom: env(safe-area-inset-bottom, 20px);
-  padding-left: env(safe-area-inset-left, 20px);
-  padding-right: env(safe-area-inset-right, 20px);
   margin: 0;
   width: 100vw;
   height: 100vh;
@@ -15,10 +11,10 @@ html, body {
 }
 
 @media (orientation: portrait) {
- body {
- padding-top: env(safe-area-inset-top, 20px);
- padding-bottom: env(safe-area-inset-bottom, 20px);
- }
+  body {
+  padding-top: env(safe-area-inset-top, 20px);
+  padding-bottom: env(safe-area-inset-bottom, 20px);
+  }
 }
 
 a[href] {
@@ -44,6 +40,10 @@ a[href] {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding-top: env(safe-area-inset-top, 20px);
+  padding-bottom: env(safe-area-inset-bottom, 20px);
+  padding-left: env(safe-area-inset-left, 20px);
+  padding-right: env(safe-area-inset-right, 20px);
 }
 
 .alt-main {
@@ -68,7 +68,7 @@ a[href] {
   letter-spacing: -2px;
   margin-bottom: 10px;
   font-kerning: none;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .header-height {
