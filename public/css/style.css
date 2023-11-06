@@ -53,6 +53,20 @@ a[href] {
   vertical-align: middle;
 }
 
+.mobile-header-height {
+  letter-spacing: -3px;
+  margin-bottom: 10px;
+  font-kerning: none;
+  font-weight: 600;
+}
+
+.header-height {
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  font-kerning: none;
+  margin-bottom: 10px;
+}
+
 .text-height {
   margin-top: 10px;
   line-height: 1.2;
