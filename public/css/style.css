@@ -55,6 +55,7 @@ a[href] {
 
 .header-height {
   letter-spacing: -0.1px; 
+  transform: scale(1.05, 0.95);
   font-weight: 600;
   font-kerning: none;
   margin-bottom: 10px;
