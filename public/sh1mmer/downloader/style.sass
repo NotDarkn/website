@@ -1,0 +1,45 @@
+@use '../../css/fonts.sass'
+
+*
+  text-align: center
+
+marquee
+  text-align: initial !important
+
+a[href]
+  color: #2e8ff9
+
+p, h2
+  font-family: "SF-Reg", system-ui
+
+.float
+  animation: MoveUpDown 1s ease-in-out infinite, MoveLeft 3.72s ease-in-out infinite
+  position: relative
+  left: 0
+  bottom: 0
+
+@keyframes MoveUpDown
+  0%,
+  100%
+    bottom: -8px
+
+  50%
+    bottom: 8px
+
+@keyframes MoveLeft
+  0%,
+  100%
+    left: -8px
+
+  50%
+    left: 8px
+
+body, html
+  --lightness: 40%
+  background-color: #131516
+  color: #e3e1de
+
+select, button
+  background-color: #e3e1de
+  border-color: #5a5a5a
+  border-radius: 4px
