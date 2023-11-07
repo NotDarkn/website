@@ -29,42 +29,59 @@ import '../../public/css/fonts.sass'
         href="”/img/icraze-touch-icon-72x72.webp/"
       />
       <link rel="icon" type="image/x-icon" href="/img/icraze-favicon.webp" />
-      <script>
-      document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
-      checkbox.addEventListener('click', function() {
-        document.getElementById('finish').disabled = !Array.from(document.querySelectorAll('input[type="checkbox"]')).every(checkbox => checkbox.checked);
-      });
-      });
-
-      document.getElementById('finish').addEventListener('click', function() {
-      document.getElementById('checkboxes').style.display = 'none';
-      document.getElementById('icraze').style.display = 'block';
-      });
-      </script>
-      <style>
-        #submitButton[disabled] {
-          background-color: gray;
-        }
-      </style>
+      <script is:inline src="/js/checkboxes.js"></script>
     </head>
     <body>
       <br />
       <div id="checkboxes">
         <div class="vertical">
           <h1>~ ~ ~ warning! ~ ~ ~</h1>
-          <input type="checkbox" id="checkbox1" name="checkbox1" value="Checkbox1">
-          <label style="font-family: SF-Reg;" for="checkbox1">I know this is fake.</label>
-          <br>
-          <br>
-          <input type="checkbox" id="checkbox2" name="checkbox2" value="Checkbox2">
-          <label style="font-family: SF-Reg;" for="checkbox2">I know this is a joke.</label>
-          <br>
-          <br>
-          <input type="checkbox" id="checkbox3" name="checkbox3" value="Checkbox3">
-          <label style="font-family: SF-Reg;" for="checkbox3">I know not to take this seriously.</label>
-          <br>
-          <br>
-          <input class="buttonuhh idk" type="button" id="finish" value="Submit" disabled>
+          <input 
+            type="checkbox" 
+            id="checkbox1" 
+            name="checkbox1" 
+            value="Checkbox1"
+          >
+            <label 
+              style="font-family: SF-Reg;" 
+              for="checkbox1"
+            >I know this is fake.
+            </label>
+          <br />
+          <br />
+          <input 
+            type="checkbox" 
+            id="checkbox2" 
+            name="checkbox2" 
+            value="Checkbox2"
+          >
+            <label 
+            style="font-family: SF-Reg;" 
+            for="checkbox2"
+            >I know this is a joke.
+            </label>
+          <br />
+          <br />
+          <input 
+            type="checkbox" 
+            id="checkbox3" 
+            name="checkbox3" 
+            value="Checkbox3"
+          >
+            <label 
+            style="font-family: SF-Reg;" 
+            for="checkbox3"
+            >I know not to take this seriously.
+            </label>
+          <br />
+          <br />
+          <input 
+          class="buttonuhh idk" 
+          type="button" 
+          id="finish" 
+          value="click" 
+          disabled
+          >
         </div>
       </div>
       <div id="icraze" style="display: none">
