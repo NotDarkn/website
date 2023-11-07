@@ -29,56 +29,60 @@ import '../../public/css/fonts.sass'
         href="”/img/icraze-touch-icon-72x72.webp/"
       />
       <link rel="icon" type="image/x-icon" href="/img/icraze-favicon.webp" />
-      <script type="text/javascript" src="/js/jquery-3.7.1.slim.min.js"
-      ></script>
-      <script>
-        const idk = document.querySelectorAll("button.idk");
-
-        idk.forEach((button) => {
-          button.addEventListener("click", () => {
-            const crazy = document.getElementById("crazy");
-            const el = document.getElementById("el");
-            el!.style.display = "none";
-            crazy!.style.display = "block";
-          });
-        });
-
-        $("#ac1,#ac2,#ac3").click(function () {
-          if ($("#ac1:checked,#ac2:checked,#ac3:checked").length == 3)
-            $("#btn").removeAttr("disabled");
-          else $("#btn").attr("disabled", "disabled");
-        });
-      </script>
     </head>
     <body>
       <br />
-      <div class="vertical" id="el">
-        <h1>~ ~ ~ warning! ~ ~ ~</h1>
-        <label style="font-family: SF-Reg;">
-          <input id="ac1" type="checkbox" />I know this is fake.
-        </label>
-        <br />
-        <br />
-        <label style="font-family: SF-Reg;">
-          <input id="ac2" type="checkbox" />I know this is a joke.
-        </label>
-        <br />
-        <br />
-        <label style="font-family: SF-Reg;">
-          <input id="ac3" type="checkbox" />I know not to take this seriously.
-        </label>
-        <br />
-        <br />
-        <button id="btn" class="buttonuhh idk" disabled="disabled">click</button
-        >
+      <div id="checkboxes">
+        <div class="vertical">
+          <h1>~ ~ ~ warning! ~ ~ ~</h1>
+          <input 
+            type="checkbox" 
+            id="checkbox1" 
+            name="checkbox1" 
+            value="Checkbox1"
+          >
+            <label style="font-family: SF-Reg;" for="checkbox1"
+              >I know this is fake.
+            </label>
+          <br />
+          <br />
+          <input 
+            type="checkbox" 
+            id="checkbox2" 
+            name="checkbox2" 
+            value="Checkbox2"
+          >
+            <label style="font-family: SF-Reg;" for="checkbox2"
+              >I know this is a joke.
+            </label>
+          <br />
+          <br />
+          <input 
+            type="checkbox" 
+            id="checkbox3" 
+            name="checkbox3" 
+            value="Checkbox3"
+          >
+            <label style="font-family: SF-Reg;" for="checkbox3"
+              >I know not to take this seriously.
+            </label>
+          <br />
+          <br />
+          <input 
+            class="buttonuhh idk" 
+            type="button" 
+            id="finish" 
+            value="click" 
+            disabled
+          >
+        </div>
       </div>
-      <div id="crazy" style="display: none">
+      <div id="icraze" style="display: none">
         <p style="font-family: Comic-Sans; text-align: -webkit-center;">
           <font size="+3"><b>p.s: this is fully satire</b></font>
           <br />
           <font size="+1">this was ai generated and partly edited</font>
         </p>
-
         <hr />
         <h1>iCraze: A Malware Distributor</h1>
         <font size="+1"
@@ -183,6 +187,7 @@ import '../../public/css/fonts.sass'
           >
         </p>
       </div>
+      <script type="text/javascript" src="/js/checkboxes.js"></script>
     </body>
   </html>
 </head>
