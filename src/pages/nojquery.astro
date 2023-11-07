@@ -31,36 +31,32 @@ import '../../public/css/fonts.sass'
       <link rel="icon" type="image/x-icon" href="/img/icraze-favicon.webp" />
       <script>
       document.getElementById('checkbox1').onclick = function() {
-           checkBoxes();
-       }
-       document.getElementById('checkbox2').onclick = function() {
-           checkBoxes();
-       }
-       document.getElementById('checkbox3').onclick = function() {
-           checkBoxes();
-       }
+          checkBoxes();
+      }
+      document.getElementById('checkbox2').onclick = function() {
+          checkBoxes();
+      }
+      document.getElementById('checkbox3').onclick = function() {
+          checkBoxes();
+      }
 
-       function checkBoxes() {
-           var checkbox1 = document.getElementById('checkbox1');
-           var checkbox2 = document.getElementById('checkbox2');
-           var checkbox3 = document.getElementById('checkbox3');
-           var submitButton = document.getElementById('submitButton');
+      function checkBoxes() {
+          var checkbox1 = document.getElementById('checkbox1');
+          var checkbox2 = document.getElementById('checkbox2');
+          var checkbox3 = document.getElementById('checkbox3');
+          var submitButton = document.getElementById('submitButton');
 
-           if (checkbox1.checked && checkbox2.checked && checkbox3.checked) {
-               submitButton.disabled = false;
-           } else {
-               submitButton.disabled = true;
-           }
-       }
+          if (checkbox1.checked && checkbox2.checked && checkbox3.checked) {
+              submitButton.disabled = false;
+          } else {
+              submitButton.disabled = true;
+          }
+      }
 
-       document.getElementById('submitButton').onclick = function() {
-           document.getElementById('checkbox1').style.display = 'none';
-           document.getElementById('checkbox2').style.display = 'none';
-           document.getElementById('checkbox3').style.display = 'none';
-           this.style.display = 'none';
-
-           document.getElementById('mainContent').style.display = 'block';
-       }
+      document.getElementById('submitButton').onclick = function() {
+          document.getElementById('checkboxContainer').style.display = 'none';
+          document.getElementById('mainContent').style.display = 'block';
+      }
       </script>
       <style>
         #submitButton[disabled] {
@@ -71,16 +67,15 @@ import '../../public/css/fonts.sass'
     <body>
       <br />
       <div class="vertical" id="el">
-        <input type="checkbox" id="checkbox1" name="checkbox1" value="Checkbox1">
-        <label style="font-family: SF-Reg;" for="checkbox1">Checkbox 1</label>
-        <br>
-        <input type="checkbox" id="checkbox2" name="checkbox2" value="Checkbox2">
-        <label style="font-family: SF-Reg;" for="checkbox2">Checkbox 2</label>
-        <br>
-        <input type="checkbox" id="checkbox3" name="checkbox3" value="Checkbox3">
-        <label style="font-family: SF-Reg;" for="checkbox3">Checkbox 3</label>
-        <br>
-        <input type="button" id="submitButton" value="Submit" disabled>
+        <div id="checkboxContainer">
+          <input type="checkbox" id="checkbox1" name="checkbox1" value="Checkbox1">
+          <label for="checkbox1">Checkbox 1</label><br>
+          <input type="checkbox" id="checkbox2" name="checkbox2" value="Checkbox2">
+          <label for="checkbox2">Checkbox 2</label><br>
+          <input type="checkbox" id="checkbox3" name="checkbox3" value="Checkbox3">
+          <label for="checkbox3">Checkbox 3</label><br>
+          <input type="button" id="submitButton" value="Submit" disabled>
+        </div>
       </div>
       <div id="mainContent" style="display: none">
         <p style="font-family: Comic-Sans; text-align: -webkit-center;">
