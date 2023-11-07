@@ -127,6 +127,7 @@ button {
   padding: 5px 10px;
   max-width: 100%;
   transition: filter 250ms;
+  cursor: pointer
 }
 
 a:hover,
