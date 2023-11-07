@@ -7,7 +7,6 @@ function createSnowflakes() {
     const maxTranslate = 10;
     const container = document.getElementById('snowflake-container');
 
-    // Function to generate a random number from min to max
     function randomBetween(min, max) {
         return (Math.random() * max) + min;
     }
@@ -18,7 +17,6 @@ function createSnowflakes() {
             let randomLeft = randomBetween(0, window.innerWidth) + "px";
             let randomDuration = randomBetween(3, 10);
 
-            // Create div and apply styles
             const snowflake = document.createElement('div');
             snowflake.classList.add('snowflake');
             snowflake.style.width = randomSize;
@@ -29,8 +27,6 @@ function createSnowflakes() {
 
             container.appendChild(snowflake);
         }
-    } else {
-        console.error('The snowflake-container element was not found in the HTML.');
     }
 }
 
