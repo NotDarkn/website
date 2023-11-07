@@ -114,8 +114,7 @@ spc {
   margin-right: 10px;
 }
 
-a,
-button {
+a {
   background-color: var(--white);
   color: black;
   border: none;
