@@ -25,6 +25,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-repeat: no-repeat;
   background-image: url("/sh1mmer/assets/background_min.webp");

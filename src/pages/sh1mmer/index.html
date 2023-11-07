@@ -21,19 +21,6 @@
     <link rel="stylesheet" href="/sh1mmer/files/main.css" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script src="/sh1mmer/files/script.js" defer></script>
-    <script is:inline src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script is:inline>
-      $(document).ready(function () {
-        $("#fogbutton").click(function () {
-          $("html, body").animate(
-            {
-              scrollTop: $("#fog").offset().top,
-            },
-            1000,
-          );
-        });
-      });
-    </script>
     <script is:inline>
       var messages = {
         mercury:
@@ -71,7 +58,7 @@
       <br />
       <h4>
         If this isn't working for you, check
-        <button id="fogbutton" style="cursor: pointer">"The Fog"</button>
+        <button href="#fog" style="cursor: pointer">"The Fog"</button>
         section below.
       </h4>
     </div>
