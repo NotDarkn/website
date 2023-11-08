@@ -14,7 +14,17 @@
     <meta property="og:site_name" content="SH1mmer" />
     <title>Unpatch | SH1mmer</title>
 
+    <link rel="preload" href="/sh1mmer/assets/icon.png" as="image" />
     <link rel="preload" href="/sh1mmer/files/main.css" as="style">
+    
+    <link rel="preload" href="/sh1mmer/assets/unpatch_battery.webp" as="image" />
+    <link rel="preload" href="/sh1mmer/assets/unpatch_battery_connector.webp" as="image" />
+    <link rel="preload" href="/sh1mmer/assets/unpatch_jumper.webp" as="image" />
+    <link rel="preload" href="/sh1mmer/assets/unpatch_jumper_pins.webp" as="image" />
+    <link rel="preload" href="/sh1mmer/assets/unpatch_bash_results.webp" as="image" />
+    <link rel="preload" href="/sh1mmer/assets/unpatch_shell.webp" as="image" />
+    <link rel="preload" href="/sh1mmer/assets/unpatch_shell_results.webp" as="image" />
+    <link rel="preload" href="/sh1mmer/assets/yipeee.webp" as="image" />
     
     <link rel="icon" href="/sh1mmer/assets/icon.png" />
     <link rel="stylesheet" href="/sh1mmer/files/main.css" />
@@ -81,8 +91,8 @@
         SH1mmer.
       </p>
       <p>An <b>example</b> of the battery connector location is shown below:</p>
-        <img src="/sh1mmer/assets/unpatch_battery.webp" />
-        <img src="/sh1mmer/assets/unpatch_battery_connector.webp" />
+        <img src="/sh1mmer/assets/unpatch_battery.webp" alt="Unpatch Battery" />
+        <img src="/sh1mmer/assets/unpatch_battery_connector.webp" alt="Unpatch Battery Connector" />
       <br />
       <i> The Chromebook shown here is the Acer Chromebook 311 (C733).</i>
       <p>
@@ -98,8 +108,8 @@
           This is the case for you if WP doesn't disable after unplugging the battery.
         </i>
       <br />
-        <img src="/sh1mmer/assets/unpatch_jumper.webp" />
-        <img src="/sh1mmer/assets/unpatch_jumper_pins.webp" />
+        <img src="/sh1mmer/assets/unpatch_jumper.webp" alt="Unpatch Jumper" />
+        <img src="/sh1mmer/assets/unpatch_jumper_pins.webp" alt="Unpatch Jumper Pins" />
       <br />
         <i>
           The Chromebook shown here is the Acer Chromebook Spin 511 (R753T).
@@ -127,7 +137,7 @@
       </p>
       <i> This lets you enter ChromeOS in dev mode, which is required later.</i>
       <p>The command should report "success" at the end like this image:</p>
-      <img src="/sh1mmer/assets/unpatch_bash_results.webp" />
+      <img src="/sh1mmer/assets/unpatch_bash_results.webp" alt="Unpatch Bash Results" />
       <br />
       <i>
         If it fails, you've been on <kbd>v114</kbd> or newer before and cannot
@@ -156,7 +166,7 @@
         <kbd>CTRL + ALT + F2 (→)</kbd>. The shell should look like the image
         below:
       </p>
-      <img src="/sh1mmer/assets/unpatch_shell.webp" />
+      <img src="/sh1mmer/assets/unpatch_shell.webp" alt="Unpatch Shell" />
       <p>
         Log into the user as: <kbd>root</kbd>, then run the following commands:
         <br />
@@ -165,7 +175,7 @@
         <kbd>cryptohome --action=remove_firmware_management_parameters</kbd>
       </p>
       <p>The screen should report "success" like the image below:</p>
-      <img src="/sh1mmer/assets/unpatch_shell_results.webp" />
+      <img src="/sh1mmer/assets/unpatch_shell_results.webp" alt="Unpatch Shell Results" />
       <br />
       <i>
         If it fails, try downgrading to <kbd>v110</kbd> if possible. If you
@@ -188,7 +198,7 @@
         SH1mmer even after it has been <b>completely patched.</b>
       </p>
       <div class="image-center">
-        <img src="/sh1mmer/assets/yipeee.webp" />
+        <img src="/sh1mmer/assets/yipeee.webp" alt="Yipeee" />
       </div>
     </div>
   </body>
