@@ -28,7 +28,7 @@
         pc: 
           "Or if you can download the recovery utility extension on your school computer, but that's exceedingly rare.",
         board:
-          "It's somewhere in the firmware log/debug info on the recovery screen. It is also shown at the bottom of the Android Preferences app. You can also go to a connected WiFi network in settings, click the Learn More link next to the message about syncing, and your board name will be somewhere in the URL of the newly-opened help tab.",
+        "Press Esc + Refresh + Power to enter recovery mode, and look up your codename on https://cros.tech/. Click your device, and your board name will be shown. Note that GRABBITER is the same as FLEEX (which is OCTOPUS) but is not shown on most online databases.",
         launch:
           "Click the extensions icon in Chrome, then click Chromebook Recovery Utility.",
         drives:
@@ -42,7 +42,7 @@
     <div class="header">
       <h1>SH1mmer</h1>
       <p class="acronym">
-        Shady Hacking 1nstrument Makes Machine Enrollment Retreat
+        Shady Hardware 1nstrument Makes Machine Enrollment Retreat
       </p>
     </div>
     <div class="section blue">
@@ -65,7 +65,7 @@
     <div class="section green">
       <h3>What you will need</h3>
       <li>
-        <u onclick="alert(messages.drives); ">A USB Drive or SD Card;</u>
+        <u onclick="alert(messages.drives); ">A USB drive or SD card;</u>
         required for booting into SH1mmer
       </li>
       <li>
@@ -73,7 +73,7 @@
         note that you need admin perms on Windows/MacOS
       </li>
       <hr />
-      <h3>Writing to USB</h3>
+      <h3>Writing to a USB</h3>
       <p>
         First, you'll need to find your managed Chromebook's board name. This
         can be done by going to <kbd>chrome://version</kbd> on your Chromebook
@@ -107,18 +107,21 @@
       <p>
         Once the downloads are complete,
         <u onclick="alert(messages.launch);">launch the recovery utility</u>
-        and plug your USB into your personal computer.
+        and plug your USB drive into your personal computer.
       </p>
-      <i>Note: Your USB will be completely cleared and partitioned.</i>
+      <i>IMPORTANT: Your USB drive will be completely erased and partitioned.</i>
       <p>
         In the recovery utility window, click the settings icon (⚙) and press
         "Use local image".
       </p>
-      <img src="/sh1mmer/assets/recovery_utility.webp" />
+      <img src="/sh1mmer/assets/recovery_utility.webp" alt="Chromebook Recovery Utility"/>
       <p>
         Select your injected shim file, identify your USB, and start the writing
         process. This will take about 10 minutes.
       </p>
+      <i>NOTE: You can also use a tool such as Rufus, BalenaEtcher, or Win32DiskImager
+        to flash on Windows, as these often work better than the Chromebook Recovery
+        Utility. If you're on Linux, <kbd>dd</kbd> is recommended.</i>
       <hr />
       <h3>Executing on Chromebook</h3>
       <p>
@@ -126,17 +129,17 @@
         is done by pressing the power button (⏻), reload key (↻), and ESC key at
         the same time. Your screen should look one of the images below:
       </p>
-      <img src="/sh1mmer/assets/recover_black.webp" />
-      <img src="/sh1mmer/assets/recover_white.webp" />
+      <img src="/sh1mmer/assets/recover_black.webp" alt="Recovery mode (groot UI)"/>
+      <img src="/sh1mmer/assets/recover_white.webp" alt="Recovery mode (old UI)"/>
       <p>Press <kbd>CTRL + D</kbd> on this screen, then press enter.</p>
       <p>
         It will now say something about "Confirm returning to secure mode" or
-        that "OS verification is OFF". You will most likely not actually be in
-        dev mode, but the exploit will work regardless. Your screen should look
-        like one of the images below:
+        that "OS verification is OFF". You will not actually be in dev mode, 
+        but the exploit will work regardless. Your screen should look like 
+        one of the images below:
       </p>
-      <img src="/sh1mmer/assets/confirm_black.webp" />
-      <img src="/sh1mmer/assets/confirm_white.webp" />
+      <img src="/sh1mmer/assets/confirm_black.webp" alt="TONORM (groot UI)" />
+      <img src="/sh1mmer/assets/confirm_white.webp" alt="TONORM+FWMP (old UI)" />
       <p>
         On this screen, press the power button (⏻), reload key (↻), and ESC key
         at the same time again! This is very important and cannot be skipped.
@@ -147,16 +150,14 @@
         and ESC key again. After a brief black-and-white loading screen, you
         should be in the SH1mmer menu.
       </p>
-      <img src="/sh1mmer/assets/utils-select01.webp" />
+      <img src="/sh1mmer/assets/utils-select01.webp" alt="SH1MMER Beautiful World UI" />
       <p>Play around with the UI, exit, and reboot.</p>
       <hr />
       <h3>What now?</h3>
       <p>
         You will now be able to, among other things, unenroll your Chromebook.
         It will now behave entirely as if it is a personal computer and no
-        longer contain spyware or blocker extensions. After you do this and get
-        past the "Determining Device Configuration" screen, you will be able to
-        actually turn dev mode on.
+        longer contain spyware or blocker extensions. 
       </p>
       <p>
         Note that while unenrolled, it is recommended to add your personal
@@ -174,14 +175,14 @@
         including
         <a href="https://luphoria.com/netlog-policy-password-tool"
           >the policy netlog trick</a
-        >. While on a school account and unenrolled, you can bypass Wi-Fi blocks
-        by using a secure DNS such as Cloudflare 1.1.1.1 from
+        >. While on a school account and unenrolled, you can bypass some network-level 
+        blocks by using a secure DNS such as Cloudflare 1.1.1.1 from
         <kbd>chrome://os-settings/osPrivacy</kbd>. It is also recommended to
         enable "MAC address randomization" in <kbd>chrome://flags</kbd> to stay
         hidden.
       </p>
-      <img src="/sh1mmer/assets/secure_dns.webp" />
-      <img src="/sh1mmer/assets/mac_randomization.webp" />
+      <img src="/sh1mmer/assets/secure_dns.webp" alt="Secure DNS" />
+      <img src="/sh1mmer/assets/mac_randomization.webp" alt="MAC Address Randomization" />
       <p>
         To take a kiosk exam, the safest option is to re-enroll temporarily.
         Instructions are hosted here: <a href="/sh1mmer/kiosk" 
@@ -189,12 +190,18 @@
       </p>
         or alternatively, the original text file (for local copies): <a 
         href="/sh1mmer/files/kiosk.txt" target="_self">Kiosk.txt</a>
+      <p>
+        You can also use <a href="https://github.com/MercuryWorkshop/fakemurk"
+        >fakemurk</a> as a way to enroll your device but stay in developer mode 
+        and have control over policies and extensions. You may need to use this 
+        to get WiFi passwords if <kbd>chrome://net-export</kbd> is blocked.
+      </p>
       <hr />
       <div id="fog">
         <h3>The Fog...</h3>
         <h4>(Google's response, and why this might not be working for you)</h4>
         <p>
-          Downgrading and unenrollment has been patched by Google. If your
+          Downgrading and unenrollment has been patched* by Google. If your
           Chromebook has never updated to version 112 before (check in
           <kbd>chrome://version</kbd>), then you can ignore this and follow the
           normal instructions. If not, unenrollment will not work as normal.
