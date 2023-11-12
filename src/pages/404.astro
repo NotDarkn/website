@@ -1,35 +1,55 @@
 ---
-import "../../public/css/old.sass";
-import "../../public/css/fonts.sass";
+import "@fontsource/inter";
+import "../../public/css/style.sass";
+import { Button, CssVarsProvider } from "@mui/joy";
+import { OpenInNew } from "@mui/icons-material";
 ---
-
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
-    <title>Error 404</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oops.. 404!</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta property="og:title" content="Oops.. 404!" />
+    <meta property="og:description" content="Quick Profile of Darkn" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="404.. Oops!" />
+
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="preload" href="js/snowflakes.js" as="script" />
     <link rel="apple-touch-icon" href="/img/site-touch-icon.webp" />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
       href="/img/site-touch-icon-72x72.webp"
     />
-    <link
-      rel="icon"
-      sizes="128x128"
-      type="image/x-icon"
-      href="/img/site-favicon.webp"
-    />
+    <link rel="icon" type="image/x-icon" href="/img/site-favicon.webp" />
+    <style lang="sass">
+      body
+        display: flex
+        overflow: hidden
+        justify-content: center
+        align-items: center
+        min-height: 100vh
+      a
+        color: rgb(199, 223, 247)
+    </style>
   </head>
-  <body>
-    <div class="vertical">
-      <h1><p style="text-align: center;">Error 404</p></h1>
-      <p style="text-align: center;">Unknown Page Found</p>
-      <h1>
-        <p style="text-align: center;">
-          <a href="/index">Go Back</a>
+  <CssVarsProvider defaultMode="dark">
+    <body class="alt">
+      <div class="alt-main">
+        <h1 class="header-height">Oops.. 404!</h1>
+        <p class="text-height">You shouldn't be here! Go back...  or else.</p>
+        <p class="text-height" style="text-align: center;">
+          <Button component="a" href="/" size="sm" variant="soft">Go Back</Button>
         </p>
-      </h1>
-    </div>
-  </body>
+      </div>
+      <div id="snowflake-container"></div>
+      <script type="text/javascript" src="/js/snowflakes.js"></script>
+      <script type="text/javascript" src="/js/mobiledetection.js"></script>
+    </body>
+  </CssVarsProvider>
+
 </html>
