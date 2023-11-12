@@ -45,6 +45,27 @@ a[href]
 
 /* some of the stuff up here is from kxtz's about me site, so ty for that!!
 
+/* fade in experimentation start
+
+.sakamato, .header-height, .text-height, .icons
+  opacity: 0
+  animation: fadeIn 3s
+  animation-fill-mode: forwards
+
+.sakamato 
+  animation-delay: 3s
+
+.header-height 
+  animation-delay: 5s
+
+.text-height 
+  animation-delay: 7s
+
+.icons
+  animation-delay: 9s
+
+/* fade in experimentation end
+
 .sakamato
   width: auto
   height: 150px
@@ -74,16 +95,16 @@ a[href]
   transition: opacity 0.5s
 
   &:hover
-    opacity: 0.1
+  opacity: 0.1
 
 
 @keyframes fadeIn 
   0% 
-      opacity: 0
+    opacity: 0
   
   100% 
-      opacity: 1
-      
+    opacity: 1
+
 /* source: https://community.codenewbie.org/alvaro_montoro/creating-a-snowfall-effect-with-html-and-css-2p4
 @keyframes snowfall
   0%
