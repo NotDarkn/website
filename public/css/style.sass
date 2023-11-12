@@ -40,8 +40,10 @@ a[href]
   border: 3px solid #fff
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.75)
   text-align: center
+  animation: fadeIn 5s
+  animation-fill-mode: forwards
 
-/* all the stuff up here is from kxtz's about me site, so ty for that!!
+/* some of the stuff up here is from kxtz's about me site, so ty for that!!
 
 .sakamato
   width: auto
@@ -74,6 +76,14 @@ a[href]
   &:hover
     opacity: 0.1
 
+
+@keyframes fadeIn 
+  0% 
+      opacity: 0
+  
+  100% 
+      opacity: 1
+      
 /* source: https://community.codenewbie.org/alvaro_montoro/creating-a-snowfall-effect-with-html-and-css-2p4
 @keyframes snowfall
   0%
@@ -81,6 +91,7 @@ a[href]
 
   100%
     transform: translateY(130vh)
+
 
 .snowflake
   --size: 1vw
