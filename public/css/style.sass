@@ -54,9 +54,23 @@ a[href]
  100% 
    opacity: 1
 
-.sakamato, .header-height, .text-height, .icons
+@keyframes fadeInLeft
+ 0% 
+   opacity: 0
+   transform: translateX(-100%)
+ 
+ 100% 
+   opacity: 1
+   transform: translateX(0);
+
+.sakamato, .header-height, .text-height
   opacity: 0
   animation: fadeIn 3s
+  animation-fill-mode: forwards
+
+.icons
+  animation-delay: 9s
+  animation: fadeInLeft 3s
   animation-fill-mode: forwards
 
 .sakamato 
@@ -68,8 +82,6 @@ a[href]
 .text-height 
   animation-delay: 7s
 
-.icons
-  animation-delay: 9s
 
 /* fade in experimentation end
 
