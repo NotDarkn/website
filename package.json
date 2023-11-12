@@ -20,15 +20,15 @@
     "@fontsource/inter": "^5.0.15",
     "@mui/icons-material": "^5.14.16",
     "@mui/joy": "5.0.0-beta.13",
-    "@types/react": "^18.2.36",
-    "@types/react-dom": "^18.2.14",
-    "astro": "^3.4.3",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "astro": "^3.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.5"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.26",
+    "@types/jquery": "^3.5.27",
     "prettier": "3.0.3",
     "prettier-plugin-astro": "^0.12.1",
     "typescript": "^5.2.2"
