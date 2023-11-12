@@ -83,14 +83,7 @@ a[href]
  width: 25px
  height: 25px
  animation-delay: $animation-delay
-
-$icons: a b c d e
-
-@each $icon in $icons
- .icons-#{$icon}
-  @include icon-style(2.75s + 0.25s * index($icons, $icon))
-
-
+ 
 $icons: a b c d e
 
 @each $icon in $icons
