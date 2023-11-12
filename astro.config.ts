@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import cloudflare from "@astrojs/cloudflare";
+import vercel from '@astrojs/vercel/serverless';
 import react from "@astrojs/react";
 import partytown from '@astrojs/partytown';
 
@@ -9,6 +10,6 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://osu.bio",
   output: "server",
-  adapter: cloudflare(),
+  adapter: process.env.CF_PAGES === '1' ? cloudflare() : vercel(),
   integrations: [react(), partytown(), sitemap()]
 });
