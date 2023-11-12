@@ -47,6 +47,13 @@ a[href]
 
 /* fade in experimentation start
 
+@keyframes fadeIn 
+ 0% 
+   opacity: 0
+ 
+ 100% 
+   opacity: 1
+
 .sakamato, .header-height, .text-height, .icons
   opacity: 0
   animation: fadeIn 3s
@@ -94,16 +101,8 @@ a[href]
   height: 25px
   transition: opacity 0.5s
 
-  &:hover
+&:hover
   opacity: 0.1
-
-
-@keyframes fadeIn 
-  0% 
-    opacity: 0
-  
-  100% 
-    opacity: 1
 
 /* source: https://community.codenewbie.org/alvaro_montoro/creating-a-snowfall-effect-with-html-and-css-2p4
 @keyframes snowfall
