@@ -40,7 +40,7 @@ a[href]
   border: 3px solid #fff
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.75)
   text-align: center
-  animation: fadeIn 5s
+  animation: fadeIn 1s
   animation-fill-mode: forwards
 
 /* some of the stuff up here is from kxtz's about me site, so ty for that!!
@@ -54,24 +54,24 @@ a[href]
  100% 
    opacity: 1
 
-.sakamato, .header-height, .text-height
-  opacity: 0
-  animation: fadeIn 3s
-  animation-fill-mode: forwards
-
 .icons-a, .icons-b, .icons-c, .icons-d, .icons-e
   opacity: 0
   animation: fadeIn 1s
   animation-fill-mode: forwards
 
-.sakamato 
-  animation-delay: 3s
+.sakamato, .header-height, .text-height
+  opacity: 0
+  animation: fadeIn 0.5s
+  animation-fill-mode: forwards
 
-.header-height 
-  animation-delay: 4s
+.sakamato 
+  animation-delay: 0.5s
+
+.header-height  
+  animation-delay: 1s
 
 .text-height 
-  animation-delay: 5s
+  animation-delay: 2s
 
 /* fade in experimentation end
 
@@ -112,8 +112,8 @@ a[href]
   margin-right: 8px
   width: 25px
   height: 25px
-  animation-delay: 2s
-  transition: opacity 0.5s
+  animation-delay: 1.25s
+  transition: opacity 0.5s ease-in-out
 
   &:hover
     opacity: 0.1
@@ -124,8 +124,8 @@ a[href]
   margin-right: 8px
   width: 25px
   height: 25px
-  animation-delay: 3s
-  transition: opacity 0.5s
+  animation-delay: 1.5s
+  transition: opacity 0.5s ease-in-out
 
   &:hover
     opacity: 0.1
@@ -136,8 +136,8 @@ a[href]
   margin-right: 8px
   width: 25px
   height: 25px
-  animation-delay: 4s
-  transition: opacity 0.5s
+  animation-delay: 1.75s
+  transition: opacity 0.5s ease-in-out
 
   &:hover
     opacity: 0.1
@@ -148,8 +148,8 @@ a[href]
   margin-right: 8px
   width: 25px
   height: 25px
-  animation-delay: 5s
-  transition: opacity 0.5s
+  animation-delay: 2s
+  transition: opacity 0.5s ease-in-out
 
   &:hover
     opacity: 0.1
