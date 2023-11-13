@@ -1,6 +1,7 @@
 ---
 import "@fontsource/inter";
 import "../../public/css/style.sass";
+import { Analytics } from '@vercel/analytics/react';
 import { Button, CssVarsProvider } from "@mui/joy";
 ---
 <html lang="en-us">
@@ -47,6 +48,7 @@ import { Button, CssVarsProvider } from "@mui/joy";
       <div id="snowflake-container"></div>
       <script src="../../public/js/snowflakes.ts"></script>
       <script src="../../public/js/mobile404.ts"></script>
-    </body>
-  </CssVarsProvider>
+    </CssVarsProvider>
+    <Analytics />
+  </body>
 </html>
