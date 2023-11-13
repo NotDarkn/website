@@ -3,14 +3,16 @@ function isMobileDevice() {
 };
 
 window.onload = function() {
-    if(isMobileDevice()) {
-        var element;
-        if(window.location.pathname === "/index.html") {
-            element = document.querySelector(".header-height");
-            element.className = "mobile-header-height";
-        } else if(window.location.pathname === "/404.html") {
-            element = document.querySelector(".header-height-404");
-            element.className = "mobile-header-height-404";
+    if(window.location.pathname === "/index.html" || window.location.pathname === "/404.html") {
+        if(isMobileDevice()) {
+            var element;
+            if(window.location.pathname === "/index.html") {
+                element = document.querySelector(".header-height");
+                element.className = "mobile-header-height";
+            } else if(window.location.pathname === "/404.html") {
+                element = document.querySelector(".header-height-404");
+                element.className = "mobile-header-height-404";
+            }
         }
     }
  };
