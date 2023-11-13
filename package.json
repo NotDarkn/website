@@ -29,7 +29,6 @@
     "sass": "^1.69.5"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.27",
     "prettier": "3.0.3",
     "prettier-plugin-astro": "^0.12.1",
     "typescript": "^5.2.2"
