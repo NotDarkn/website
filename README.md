@@ -23,6 +23,11 @@
   - Converted many parts of the site to Astro
   - Improved many parts of the website code
 
+- **Mercury Workshop:** [mercurywork.shop](https://mercurywork.shop)
+
+  - Owners of [SH1mmer](https://sh1mmer.me) & [Builder](https://sh1mmer.me/builder)
+  - Provided some of the RMA shims for [dl.osu.bio](https://dl.osu.bio)
+  
 - **RegalAether:** [regalaether](https://github.com/RegalAether)
 
   - Fixed inaccuracies in pages such as [unpatch](https://osu.bio/sh1mmer/unpatch).
@@ -30,11 +35,6 @@
 - **DiffuseHyperion:**  [diffusehyperion](https://github.com/DiffuseHyperion)
 
   - Providing another mirror to the [downloader](https://osu.bio/sh1mmer/downloader).
-
-- **Mercury Workshop:** [mercurywork.shop](https://mercurywork.shop)
-
-  - Owners of [SH1mmer](https://sh1mmer.me) & [Builder](https://sh1mmer.me/builder)
-  - Providing some of the RMA shims for [dl.osu.bio](https://dl.osu.bio)
 
 - **Raina:** [@huaraina](https://discord.com/users/716417518197014538)
 
