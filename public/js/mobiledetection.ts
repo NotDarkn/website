@@ -9,8 +9,8 @@ window.onload = function() {
             element = document.querySelector(".header-height");
             element.className = "mobile-header-height";
         } else if(window.location.pathname === "/404.html") {
-            element = document.querySelector(".404-header-height");
-            element.className = "404-mobile-header-height";
+            element = document.querySelector(".header-height-404");
+            element.className = "mobile-header-height-404";
         }
     }
  };
