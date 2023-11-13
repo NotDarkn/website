@@ -1,3 +1,3 @@
 // CssVarsProvider.mjs
-import { CssVarsProvider } from '@mui/joy/styles';
+import CssVarsProvider from '@mui/joy/styles';
 export { CssVarsProvider };
