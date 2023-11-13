@@ -47,24 +47,22 @@ a[href]
 
 .icons-a, .icons-b, .icons-c, .icons-d, .icons-e
   opacity: 0
-  animation: fadeIn 2.75s
+  animation: fadeIn 2.0s
   animation-fill-mode: forwards
 
-.sakamato, .header-height, .text-height, .mobile-header-height
+.sakamato, .header-height, .text-height, .mobile-header-height, .404-text-height, .404-header-height, .404-mobile-header-height
   opacity: 0
-  animation: fadeIn 1.25s
+  animation: fadeIn 1.0s
   animation-fill-mode: forwards
 
-.sakamato 
+.sakamato, .404-header-height, .404-mobile-header-height
+  animation-delay: 1.0s
+
+.header-height, .mobile-header-height, .404-text-height
   animation-delay: 1.25s
 
-.header-height, .mobile-header-height  
-  animation-delay: 1.75s
-
 .text-height 
-  animation-delay: 2.25s
-
-/* fade in experimentation end
+  animation-delay: 1.50s
 
 @mixin icon-style($animation-delay)
  margin-left: 8px
@@ -77,7 +75,9 @@ $icons: a b c d e
 
 @each $icon in $icons
  .icons-#{$icon}
-   @include icon-style(2.75s + 0.25s * index($icons, $icon))
+   @include icon-style(2.0s + 0.25s * index($icons, $icon))
+
+/* fade in experimentation end
 
 .sakamato
   width: auto
@@ -85,18 +85,18 @@ $icons: a b c d e
   margin-bottom: -15px
   vertical-align: middle
 
-.mobile-header-height
+.mobile-header-height, .404-mobile-header-height
   letter-spacing: -2.4px
   margin-bottom: -6px
   margin-top: 18px
   font-kerning: none
   font-size: 33px
 
-.header-height
+.header-height, .404-header-height
   letter-spacing: -0.5px
   margin-bottom: 10px
 
-.text-height
+.text-height, .404-text-height
   margin-top: 10px
   line-height: 1.2
 
