@@ -49,6 +49,10 @@ html {
   font-size: 35px;
 }
 
+.astro-margin {
+  margin-right: 13px;
+}
+
 .section {
   padding: 50px 5vw;
   color: var(--font);
