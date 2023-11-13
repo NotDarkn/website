@@ -1,7 +1,6 @@
 ---
 import "@fontsource/inter";
 import "../../public/css/style.sass";
-import { Analytics } from '@vercel/analytics/react';
 import { Button, CssVarsProvider } from "@mui/joy";
 ---
 <html lang="en-us">
@@ -36,7 +35,7 @@ import { Button, CssVarsProvider } from "@mui/joy";
         color: rgb(199, 223, 247)
     </style>
   </head>
-  <CssVarsProvider defaultMode="dark">
+    <CssVarsProvider defaultMode="dark">
     <body class="alt">
       <div class="alt-main">
         <h1 class="header-height-404">Oops.. 404!</h1>
@@ -49,6 +48,5 @@ import { Button, CssVarsProvider } from "@mui/joy";
       <script src="../../public/js/snowflakes.ts"></script>
       <script src="../../public/js/mobile404.ts"></script>
     </CssVarsProvider>
-    <Analytics />
   </body>
 </html>

@@ -11,5 +11,8 @@ export default defineConfig({
   site: "https://osu.bio",
   output: "server",
   adapter: process.env.CF_PAGES === '1' ? cloudflare() : vercel(),
-  integrations: [react(), partytown(), sitemap()]
+  integrations: [react(), partytown(), sitemap()],
+  webAnalytics: {
+    enabled: true,
+  },
 });
