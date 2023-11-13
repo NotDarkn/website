@@ -36,14 +36,17 @@
   - Owners of [SH1mmer](https://sh1mmer.me) & [Builder](https://sh1mmer.me/builder)
   - Providing some of the RMA shims for [dl.osu.bio](https://dl.osu.bio)
 
- - **Raina:** [@huaraina](https://discord.com/users/716417518197014538)
+- **Raina:** [@huaraina](https://discord.com/users/716417518197014538)
 
    - Adding contributions to [kiosk.txt](https://osu.bio/sh1mmer/kiosk.txt)
-   - Adding another mirror to the [downloader](https://osu.bio/sh1mmer/downloader).
 
 - **Bypassi:** [@bypassi](https://discord.com/users/904829646145720340)
 
    - Providing screenshots to [unpatch](https://osu.bio/sh1mmer/unpatch) & [unfog](https://osu.bio/sh1mmer/unfog).
+
+- **kxtz:** [@kxtzownsu](https://discord.com/952792525637312552)
+  
+   - Providing another mirror to the [downloader](https://osu.bio/sh1mmer/downloader).
  
 - **julia_j:** [@julia_j](https://discord.com/users/1039648022084202516)
   
