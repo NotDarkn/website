@@ -4,8 +4,14 @@ dist/
 # generated types
 .astro/
 
-# dependencies
-node_modules/
+# yarn stuff, zero-install enabled btw
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 # logs
 npm-debug.log*
