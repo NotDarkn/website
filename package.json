@@ -32,6 +32,4 @@
     "prettier": "3.1.0",
     "prettier-plugin-astro": "^0.12.2",
     "typescript": "^5.2.2"
-  },
-  "packageManager": "yarn@4.0.2"
-}
+  }}

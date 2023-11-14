@@ -4,14 +4,8 @@ dist/
 # generated types
 .astro/
 
-# yarn stuff, zero-install enabled btw
-.yarn/*
-!.yarn/cache
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+# dependencies
+node_modules/
 
 # logs
 npm-debug.log*
@@ -32,3 +26,4 @@ pnpm-debug.log*
 # Vercel Files
 .vercel/
 .vercel
+node_modules
