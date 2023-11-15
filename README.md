@@ -56,7 +56,7 @@
 - **verysillycat** [@environment.](https://discord.com/users/825069530376044594)
 
    - Fixing multiple typos & providing small changes to the README.
-   - Adding minor but helpful fixes to pages sucu as the [main site](https://osu.bio/index).
+   - Adding minor but helpful fixes to pages such as the [main site](https://osu.bio/index).
  
 ## Notice
 
