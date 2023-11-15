@@ -10,7 +10,7 @@ html, body
   background: linear-gradient(#222, #111)
 
 a[href]
-  color: rgba(0,0,0,0.1)
+  color: rgba(0,0,0,0.0)
 
 /* creds: kxtz website
 
@@ -75,7 +75,7 @@ $icons: a b c d e
 
 @each $icon in $icons
  .icons-#{$icon}
-   @include icon-style(2.05s + 0.2s * index($icons, $icon))
+   @include icon-style(2.05s + 0.25s * index($icons, $icon))
 
 /* fade in experimentation end
 
