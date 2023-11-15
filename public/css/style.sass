@@ -12,7 +12,7 @@ html, body
 a[href]
   color: rgba(0,0,0,0.0)
 
-/* creds: kxtz website
+/* some css below was taken from kxtz's website
 
 .alt
   display: flex
@@ -30,7 +30,28 @@ a[href]
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.75)
   text-align: center
 
-/* some of the stuff up here is from kxtz's about me site, so ty for that!!
+/* ty kxtz for letting me do that, ty!!
+
+.sakamato
+  width: auto
+  height: 150px
+  margin-bottom: -15px
+  vertical-align: middle
+
+.mobile-header-height, .mobile-header-height-404
+  letter-spacing: -2.4px
+  margin-bottom: -6px
+  margin-top: 18px
+  font-kerning: none
+  font-size: 33px
+
+.header-height, .header-height-404
+  letter-spacing: -0.5px
+  margin-bottom: 10px
+
+.text-height, .text-height-404
+  margin-top: 10px
+  line-height: 1.2
 
 /* fade in experimentation start
 
@@ -65,11 +86,11 @@ a[href]
   animation-delay: 1.70s
 
 @mixin icon-style($animation-delay)
- margin-left: 6px
- margin-right: 6px
- width: 25px
- height: 25px
- animation-delay: $animation-delay
+  margin-left: 6px
+  margin-right: 6px
+  width: 25px
+  height: 25px
+  animation-delay: $animation-delay
  
 $icons: a b c d e
 
@@ -79,35 +100,14 @@ $icons: a b c d e
 
 /* fade in experimentation end
 
-.sakamato
-  width: auto
-  height: 150px
-  margin-bottom: -15px
-  vertical-align: middle
-
-.mobile-header-height, .mobile-header-height-404
-  letter-spacing: -2.4px
-  margin-bottom: -6px
-  margin-top: 18px
-  font-kerning: none
-  font-size: 33px
-
-.header-height, .header-height-404
-  letter-spacing: -0.5px
-  margin-bottom: 10px
-
-.text-height, .text-height-404
-  margin-top: 10px
-  line-height: 1.2
-
 /* source: https://community.codenewbie.org/alvaro_montoro/creating-a-snowfall-effect-with-html-and-css-2p4
+
 @keyframes snowfall
   0%
     transform: translateY(-10vh)
 
   100%
     transform: translateY(130vh)
-
 
 .snowflake
   --size: 1vw
