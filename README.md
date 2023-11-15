@@ -50,7 +50,8 @@
    - Allowing me to take CSS & design reference from [their website](https://kxtz.femboy.vip).
  
 - **julia_j:** [@julia_j](https://discord.com/users/1039648022084202516)
-  
+
+   - Providing many of the RMA shims that are being hosted on [dl.osu.bio](https://dl.osu.bio).
    - Allowing people like [me](https://discord.com/users/829745505784692776) to rehost the [downloader](https://osu.bio/sh1mmer/downloader).
 
 - **verysillycat** [@environment.](https://discord.com/users/825069530376044594)
