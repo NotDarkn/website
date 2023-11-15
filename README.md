@@ -47,6 +47,7 @@
 - **kxtz:** [@kxtzownsu](https://discord.com/952792525637312552)
   
    - Providing another mirror to the [downloader](https://osu.bio/sh1mmer/downloader).
+   - Allowing me to take CSS & design reference from [their website](https://kxtz.femboy.vip).
  
 - **julia_j:** [@julia_j](https://discord.com/users/1039648022084202516)
   
@@ -55,6 +56,7 @@
 - **verysillycat** [@environment.](https://discord.com/users/825069530376044594)
 
    - Fixing multiple typos & providing small changes to the README.
+   - Adding minor but helpful fixes to pages sucu as the [main site](https://osu.bio/index).
  
 ## Notice
 
