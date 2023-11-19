@@ -14,9 +14,9 @@ export default defineConfig({
     webAnalytics: {
       enabled: true,
     },
+    speedInsights: {
+      enabled: true,
+    }
   }),
-  integrations: [react(), partytown(), sitemap()],
-  webAnalytics: {
-    enabled: true,
-  },
+  integrations: [react(), partytown(), sitemap()]
  });
