@@ -3,59 +3,59 @@ import { writeFile } from 'fs';
 let data = {
           "dl.osu.bio": {
             "ambassador.zip":
-              "https://dl.osu.bio/api/raw/?path=/ambassador.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/ambassador.zip",
             "brask.zip": 
-              "https://dl.osu.bio/api/raw/?path=/brask.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/brask.zip",
             "brya.zip": 
-              "https://dl.osu.bio/api/raw/?path=/brya.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/brya.zip",
             "clapper.zip": 
-              "https://dl.osu.bio/api/raw/?path=/clapper.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/clapper.zip",
             "coral.zip": 
-              "https://dl.osu.bio/api/raw/?path=/coral.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/coral.zip",
             "corsola.zip":
-              "https://dl.osu.bio/api/raw/?path=/corsola.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/corsola.zip",
             "dedede.zip": 
-              "https://dl.osu.bio/api/raw/?path=/dedede.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/dedede.zip",
             "enguarde.zip": 
-              "https://dl.osu.bio/api/raw/?path=/enguarde.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/enguarde.zip",
             "glimmer.zip": 
-              "https://dl.osu.bio/api/raw/?path=/glimmer.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/glimmer.zip",
             "grunt.zip": 
-              "https://dl.osu.bio/api/raw/?path=/grunt.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/grunt.zip",
             "hana.zip": 
-              "https://dl.osu.bio/api/raw/?path=/hana.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/hana.zip",
             "hatch.zip": 
-              "https://dl.osu.bio/api/raw/?path=/hatch.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/hatch.zip",
             "jacuzzi.zip": 
-              "https://dl.osu.bio/api/raw/?path=/jacuzzi.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/jacuzzi.zip",
             "kukui.zip": 
-              "https://dl.osu.bio/api/raw/?path=/kukui.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/kukui.zip",
             "lulu.zip": 
-              "https://dl.osu.bio/api/raw/?path=/lulu.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/lulu.zip",
             "nami.zip": 
-              "https://dl.osu.bio/api/raw/?path=/nami.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/nami.zip",
             "octopus.zip":
-              "https://dl.osu.bio/api/raw/?path=/octopus.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/octopus.zip",
             "orco.zip": 
-              "https://dl.osu.bio/api/raw/?path=/orco.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/orco.zip",
             "pyro.zip": 
-              "https://dl.osu.bio/api/raw/?path=/pyro.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/pyro.zip",
             "reks.zip": 
-              "https://dl.osu.bio/api/raw/?path=/reks.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/reks.zip",
             "sentry.zip": 
-              "https://dl.osu.bio/api/raw/?path=/sentry.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/sentry.zip",
             "stout.zip": 
-              "https://dl.osu.bio/api/raw/?path=/stout.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/stout.zip",
             "strongbad.zip": 
-              "https://dl.osu.bio/api/raw/?path=/strongbad.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/strongbad.zip",
             "tidus.zip": 
-              "https://dl.osu.bio/api/raw/?path=/tidus.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/tidus.zip",
             "ultima.zip": 
-              "https://dl.osu.bio/api/raw/?path=/ultima.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/ultima.zip",
             "volteer.zip": 
-              "https://dl.osu.bio/api/raw/?path=/volteer.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/volteer.zip",
             "zork.zip": 
-              "https://dl.osu.bio/api/raw/?path=/zork.zip",
+              "https://dl.osu.bio/api/raw/?path=/SH1mmer/zork.zip",
           },
           "dl.diffusehyperion.me": {
             "brask.zip":
