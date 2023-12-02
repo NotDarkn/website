@@ -1,5 +1,5 @@
 var classNames = ['icons-a', 'icons-b', 'icons-c', 'icons-d', 'icons-e'];
-var delays = [2275, 2500, 2725, 2950, 3175];
+var delays = [3775, 4000, 4225, 4450, 4675];
 
 classNames.forEach((className, index) => {
    setTimeout(() => {
