@@ -1,7 +1,10 @@
-var elements = document.querySelectorAll('icons-a, icons-b, icons-c, icons-d, icons-e');
+var elements = document.querySelectorAll('.icons-a, .icons-b, .icons-c, .icons-d, .icons-e');
 
-setTimeout(() => {
- elements.forEach(element => {
-   element.className = 'icon-js';
- });
-}, 4650);
+function changeClasses() {
+   for (var i = 0; i < elements.length; i++) {
+       elements[i].classList.remove('icons-a', 'icons-b', 'icons-c', 'icons-d', 'icons-e');
+       elements[i].classList.add('icon-js');
+   }
+}
+
+setTimeout(changeClasses, 4650);
