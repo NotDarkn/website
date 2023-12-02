@@ -7,4 +7,4 @@ function changeClasses() {
    }
 }
 
-setTimeout(changeClasses, 4775);
+setTimeout(changeClasses, 4650);
