@@ -35,6 +35,7 @@
 - **DiffuseHyperion:**  [diffusehyperion](https://github.com/DiffuseHyperion)
 
   - Providing another mirror to the [downloader](https://osu.bio/sh1mmer/downloader).
+  - Provided many of the prebuilt shims for [dl.osu.bio](https://dl.osu.bio).
 
 - **Raina:** [@huaraina](https://discord.com/users/716417518197014538)
 
