@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^7.7.1",
+    "@astrojs/cloudflare": "^8.0.0",
     "@astrojs/partytown": "^2.0.2",
-    "@astrojs/react": "^3.0.5",
+    "@astrojs/react": "^3.0.7",
     "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/vercel": "^5.2.0",
+    "@astrojs/vercel": "^6.0.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/inter": "^5.0.15",
@@ -23,7 +23,7 @@
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@vercel/analytics": "^1.1.1",
-    "astro": "^3.5.5",
+    "astro": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.5"
