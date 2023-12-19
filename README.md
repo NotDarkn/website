@@ -1,15 +1,12 @@
-<h1 align="center"><a href="https://osu.bio">osu.bio</a> - Darkn's Website</h1>
-
 ![GIF](https://github.com/NotDarkn/website/assets/73033672/4edfb3fe-c1dd-4a47-bba0-a52ad9cc7ddc)
 
 <h2>Features</h2>
 <ul>
-  <li>Black Void of Nothing.</li>
-  <li>Quite Literally Nothing.</li>
+  <li>Mini Portfolio of Darkn at <a href="https://osu.bio">osu.bio</a></li>
   <li>Fake Propaganda Hosted at <a href="https://osu.bio/icraze">osu.bio/icraze</a></li>
   <li>Rehost of SH1mmer & Builder at <a href="https://osu.bio/sh1mmer">osu.bio/sh1mmer</a></li>
   <li>#1 Rehost of SH1mmer RMA Shims at <a href="https://dl.osu.bio">Darkn's File Host</a></li>
-  <li>#2 Rehost of SH1mmer RMA Shims at <a href="https://osu.bio/sh1mmer/downloader">osu.bio/sh1mmer/downloader</a></li>
+  <li>#2 Rehost of SH1mmer RMA Shims at <a href="https://osu.bio/sh1mmer/downloader">Glitz Downloader</a></li>
 </ul>
 
 ## Credits
