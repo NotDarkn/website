@@ -67,16 +67,16 @@
 </details>
 
 <details>
-  <summary><a href="https://discord.com/users/716417518197014538"><b>Raina</b></a></summary>
+  <summary><a href="https://bypassi.com"><b>Bypassi</b></a></summary>
   <ul>
-    <li>Adding contributions to <a href="https://osu.bio/sh1mmer/files/kiosk.txt">Kiosk.txt</a></li>
+    <li>Providing screenshots for <a href="https://osu.bio/sh1mmer/unpatch">Unpatch</a> and <a href="https://osu.bio/sh1mmer/unfog">Unfog</a></li>
   </ul>
 </details>
 
 <details>
-  <summary><a href="https://bypassi.com"><b>Bypassi</b></a></summary>
+  <summary><a href="https://discord.com/users/716417518197014538"><b>Raina</b></a></summary>
   <ul>
-    <li>Providing screenshots for <a href="https://osu.bio/sh1mmer/unpatch">Unpatch</a> and <a href="https://osu.bio/sh1mmer/unfog">Unfog</a></li>
+    <li>Adding contributions to <a href="https://osu.bio/sh1mmer/files/kiosk.txt">Kiosk.txt</a></li>
   </ul>
 </details>
  
