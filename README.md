@@ -84,7 +84,7 @@
 This repository is licensed through the `GNU AFFERO GENERAL PUBLIC LICENSE`. More details are listed [here](https://github.com/NotDarkn/website/blob/main/LICENSE). 
 
 ```
-NotDarkn/website: Darkn's Online Profile (Source Code)
+NotDarkn/website: Darkn's Website (Source Code)
 Copyright (C) 2024 Darkn
 
 This program is free software: you can redistribute it and/or modify
