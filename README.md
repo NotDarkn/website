@@ -82,4 +82,4 @@
  
 ## License
 
-This repository is licensed through the `GNU GENERAL PUBLIC LICENSE (Version 3)`. More details are listed [here](https://github.com/NotDarkn/website/tree/main?tab=GPL-3.0-1-ov-file). 
+This repository is licensed through the `GNU GENERAL PUBLIC LICENSE (Version 3)`. More details are listed [here](/?tab=GPL-3.0-1-ov-file). 
