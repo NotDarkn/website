@@ -82,4 +82,4 @@
  
 ## License
 
-This repository is licensed through the `GNU GENERAL PUBLIC LICENSE (Version 3)`. More details are listed [here](https://github.com/NotDarkn/website/blob/main/LICENSE). 
+This repository is licensed through the `GNU AFFERO GENERAL PUBLIC LICENSE`. More details are listed [here](https://github.com/NotDarkn/website/blob/main/LICENSE). 
