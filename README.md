@@ -60,6 +60,6 @@
    - Fixing multiple typos & providing small changes to the README.
    - Adding minor but helpful fixes to pages such as the [main site](https://osu.bio).
  
-## Notice
+## License
 
-I do **NOT** allow **ANYONE** to rehost my website without any permission. Since I do not use a license, I still withhold **ALL RIGHTS AND COPYRIGHT** to **my code** that I have on this website. This includes forking the website and editing all of the credits to be your own, as it is still basically my website but with different credits. However, forking this repo, making edits, and then sending a pull request is perfectly fine by me as long as it isn't rehosted somewhere. If you are rehosting **my parts of my website** without my solicited permission, please take it down before I file a claim for it to be taken down, thank you.
+This repository is licensed through the `GNU GENERAL PUBLIC LICENSE (Version 3)`. More details are listed [here](https://github.com/NotDarkn/website/blob/main/LICENSE). 
