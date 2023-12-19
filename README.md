@@ -1,6 +1,34 @@
-![GIF](https://github.com/NotDarkn/website/assets/73033672/4edfb3fe-c1dd-4a47-bba0-a52ad9cc7ddc)
+<h1>
+  <a href="https://osu.bio" target="_blank"><img src="https://github.com/NotDarkn/website/assets/73033672/61f75adb-5e24-454b-8c7f-59ca4f32941c" alt="Darkn's Website" width="auto"></a>
+</h1>
 
-## Features
+<p align="center">
+  <img 
+    src="https://img.shields.io/github/commit-activity/m/NotDarkn/website?style=for-the-badge&logo=GitHub&label=Commits" 
+    alt="GitHub Commits" />
+  </img>
+  <img 
+    src="https://img.shields.io/github/stars/NotDarkn/website?style=for-the-badge&logo=GitHub" 
+    alt="GitHub Stars" />
+  </img>
+  <img 
+    src="https://img.shields.io/github/contributors/NotDarkn/website?style=for-the-badge&logo=GitHub&color=blue" 
+    alt="GitHub Contributors" />
+  </img>
+</p>
+<p align="center">
+  A website with an easily available license alongside its source code, designed for cleanliness and usability.
+</p>
+<p align="center">
+  <a href="https://osu.bio" target="_blank">🌐 Website</a>
+  •
+  <a href="https://discord.gg/ER8saRhYpg" target="_blank">☎️ Discord</a>
+  •
+  <a href="https://twitter.com/NotDarkn" target="_blank">📫 Twitter</a>
+</p>
+
+## 📚 List of Features
+
 <ul>
   <li>Mini Portfolio of Darkn at <a href="https://osu.bio">osu.bio</a></li>
   <li>Fake Propaganda Hosted at <a href="https://osu.bio/icraze">osu.bio/icraze</a></li>
@@ -9,7 +37,7 @@
   <li>#2 Rehost of SH1mmer RMA Shims at <a href="https://osu.bio/sh1mmer/downloader">Glitz Downloader</a></li>
 </ul>
 
-## Credits
+## 🔍 Credits & Contributors
 <details>
   <summary><a href="https://discord.com/users/829745505784692776"><b>Darkn</b></a></summary>
   <ul>
@@ -80,7 +108,7 @@
   </ul>
 </details>
  
-## License
+## 🔒 Code License
 This repository is licensed through the `GNU AFFERO GENERAL PUBLIC LICENSE`. More details are listed [here](https://github.com/NotDarkn/website/blob/main/LICENSE). 
 
 ```
