@@ -17,7 +17,7 @@
   </img>
 </p>
 <p align="center">
-  A website with an easily available license alongside its source code, designed for cleanliness and usability.
+  An open-sourced website with an easily accessible license, designed for simplicity, cleanliness, and usability.
 </p>
 <p align="center">
   <a href="https://osu.bio" target="_blank">🌐 Website</a>
