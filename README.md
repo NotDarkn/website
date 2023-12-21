@@ -38,84 +38,74 @@
 </ul>
 
 ## 🔍 Credits & Contributors
-<details>
-  <summary><a href="https://discord.com/users/829745505784692776"><b>Darkn</b></a></summary>
-  <ul>
-    <li>Creator of <a href="https://osu.bio">osu.bio</a></li>
-    <li>Creator of <a href="https://icrazeis.gay">icrazeis.gay</a> (Domain expired)</li>
-  </ul>
-</details>
+<table id='credit'>
+<tr>
+  <td id='Darkn'>
+  <a href='https://github.com/NotDarkn'>
+  <img src='https://github.com/NotDarkn.png' width='140px;'>
+</a>
+  <h4 align='center'><a href='https://discord.gg/ER8saRhYpg'>Darkn</a></h4>
+</td>
+  <td id='hell0u'>
+  <a href='https://github.com/13waves'>
+  <img src='https://github.com/13waves.png' width='140px;'>
+</a>
+  <h4 align='center'><a href='https://uhhwavee.vercel.app/'>hell0u</a></h4>
+</td>
+  <td id='MercuryWorkshop'>
+  <a href='https://github.com/MercuryWorkshop'>
+  <img src='https://github.com/MercuryWorkshop.png' width='140px;'>
+</a>
+  <h4 align='center'><a href='https://mercurywork.shop'>Mercury Workshop</a></h4>
+</td>
+  <td id='DiffuseHyperion'>
+  <a href='https://github.com/DiffuseHyperion'>
+  <img src='https://github.com/DiffuseHyperion.png' width='140px;'>
+</a>
+  <h4 align='center'><a href='https://www.diffusehyperion.me/'>DiffuseHyperion</a></h4>
+</td>
+  <td id='kxtz'>
+  <a href='https://github.com/kxtzownsu'>
+  <img src='https://github.com/kxtzownsu.png' width='140px;'>
+</a>
+  <h4 align='center'><a href='https://kxtz.femboy.vip/'>kxtz</a></h4>
+</td>
+</tr>
 
-<details>
-  <summary><a href="https://discord.com/users/836279485984538634"><b>hell0u</b></a></summary>
-  <ul>
-    <li>Converted many parts of the site to Astro</li>
-    <li>Improved many parts of the website code</li>
-  </ul>
-</details>
+<tr>
+  <td id='julia_j'>
+  <a href='https://discord.com/users/1039648022084202516'>
+  <img src='https://cdn.discordapp.com/avatars/1039648022084202516/39b7a93b8d41bcd0babde43f98f26e0a.webp?size=512' width='140px;'>
+</a>
+  <h4 align='center'><a href='https://discord.com/users/1039648022084202516'>julia_j</a></h4>
+</td>
+  <td id='cortex'>
+  <a href='https://github.com/verysillycat'>
+  <img src='https://github.com/verysillycat.png' width='140px;'>
+</a>
+  <h4 align='center'><a href='https://e-z.bio/cortex'>verysillycat</a></h4>
+</td>
+  <td id='bypassi'>
+  <a href='https://github.com/bypassiwastaken'>
+  <img src='https://github.com/bypassiwastaken.png' width='140px;'>
+</a>
+  <h4 align='center'><a href='https://bypassi.me'>Bypassi</a></h4>
+</td>
+  <td id='regalaether'>
+  <a href='https://github.com/RegalAether'>
+  <img src='https://github.com/RegalAether.png' width='140px;'>
+</a>
+  <h4 align='center'><a href='https://github.com/RegalAether'>RegalAether</a></h4>
+</td>
+  <td id='ichitaso'>
+  <a href='https://github.com/huaraina'>
+  <img src='https://github.com/huaraina.png' width='140px;'>
+</a>
+  <h4 align='center'><a href='https://discord.com/users/716417518197014538'>Raina</a></h4>
+</td>
+</tr>
+</table>
 
-<details>
-  <summary><a href="https://mercurywork.shop"><b>Mercury Workshop</b></a></summary>
-  <ul>
-    <li>Owners of <a href="https://sh1mmer.me">sh1mmer.me</a></li>
-    <li>Provided some of the RMA shims for <a href="https://dl.osu.bio">Darkn's File Host</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary><a href="https://github.com/DiffuseHyperion"><b>DiffuseHyperion</b></a></summary>
-  <ul>
-    <li>Providing another mirror to <a href="https://osu.bio/sh1mmer/downloader">Glitz Downloader</a></li>
-    <li>Provided many of the prebuilt shims for <a href="https://dl.osu.bio">Darkn's File Host</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary><a href="https://kxtz.femboy.vip/"><b>kxtz</b></a></summary>
-  <ul>
-    <li>Providing another mirror to <a href="https://osu.bio/sh1mmer/downloader">Glitz Downloader</a></li>
-    <li>Allowing me to take CSS & design reference from their <a href="https://kxtz.femboy.vip">website</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary><a href="https://discord.com/users/1039648022084202516"><b>julia_j</b></a></summary>
-  <ul>
-    <li>Providing many of the RMA shims that are being hosted on <a href="https://dl.osu.bio">Darkn's File Host</a></li>
-    <li>Allowing people like <a href="https://discord.com/users/829745505784692776">me</a> to rehost <a href="https://osu.bio/sh1mmer/downloader">Glitz Downloader</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary><a href="https://e-z.bio/cortex"><b>verystillcat</b></a></summary>
-  <ul>
-    <li>Fixing multiple typos & providing small changes to the README</li>
-    <li>Adding minor but helpful fixes to pages such as the <a href="https://osu.bio">main page</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary><a href="https://bypassi.com"><b>Bypassi</b></a></summary>
-  <ul>
-    <li>Providing screenshots for <a href="https://osu.bio/sh1mmer/unpatch">Unpatch</a> and <a href="https://osu.bio/sh1mmer/unfog">Unfog</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary><a href="https://github.com/RegalAether"><b>RegalAether</b></a></summary>
-  <ul>
-    <li>Fixing inaccuracies in pages such as <a href="https://osu.bio/sh1mmer/unpatch">Unpatch</a>.</li>
-  </ul>
-</details>
-
-
-<details>
-  <summary><a href="https://discord.com/users/716417518197014538"><b>Raina</b></a></summary>
-  <ul>
-    <li>Adding contributions to <a href="https://osu.bio/sh1mmer/files/kiosk.txt">Kiosk.txt</a></li>
-  </ul>
-</details>
- 
 ## 🔒 Code License
 This repository is licensed through the `GNU AFFERO GENERAL PUBLIC LICENSE`. More details are listed [here](https://github.com/NotDarkn/website/blob/main/LICENSE). 
 
