@@ -30,11 +30,11 @@
 ## 📚 Features Included
 
 <ul>
-  <li>Mini Portfolio of Darkn at <a href="https://osu.bio">osu.bio</a></li>
-  <li>Fake Propaganda Hosted at <a href="https://osu.bio/icraze">osu.bio/icraze</a></li>
-  <li>Rehost of SH1mmer & Builder at <a href="https://osu.bio/sh1mmer">osu.bio/sh1mmer</a></li>
-  <li>#1 Rehost of SH1mmer RMA Shims at <a href="https://dl.osu.bio">Darkn's File Host</a></li>
-  <li>#2 Rehost of SH1mmer RMA Shims at <a href="https://osu.bio/sh1mmer/downloader">Glitz Downloader</a></li>
+  <li>Mini Portfolio of Darkn at <a href="https://osu.bio">Darkn's Bio</a></li>
+  <li>Fake Propaganda Hosted at <a href="https://osu.bio/icraze">iCrazeWare</a></li>
+  <li>Complete Rehost of SH1mmer at <a href="https://osu.bio/sh1mmer">SH1mmer</a></li>
+  <li>#1 Rehost of RMA shims at <a href="https://dl.osu.bio">Darkn's File Host</a></li>
+  <li>#2 Rehost of RMA shims at <a href="https://osu.bio/sh1mmer/downloader">Glitz Downloader</a></li>
 </ul>
 
 ## 🔍 Helpful Contributors
