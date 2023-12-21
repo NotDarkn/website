@@ -102,6 +102,14 @@
 </details>
 
 <details>
+  <summary><a href="https://github.com/RegalAether"><b>RegalAether</b></a></summary>
+  <ul>
+    <li>Fixing inaccuracies in pages such as <a href="https://osu.bio/sh1mmer/unpatch">Unpatch</a>.</li>
+  </ul>
+</details>
+
+
+<details>
   <summary><a href="https://discord.com/users/716417518197014538"><b>Raina</b></a></summary>
   <ul>
     <li>Adding contributions to <a href="https://osu.bio/sh1mmer/files/kiosk.txt">Kiosk.txt</a></li>
