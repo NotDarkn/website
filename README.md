@@ -27,7 +27,7 @@
   <a href="https://twitter.com/NotDarkn" target="_blank">📫 Twitter</a>
 </p>
 
-## 📚 List of Features
+## 📚 Features Included
 
 <ul>
   <li>Mini Portfolio of Darkn at <a href="https://osu.bio">osu.bio</a></li>
@@ -37,7 +37,7 @@
   <li>#2 Rehost of SH1mmer RMA Shims at <a href="https://osu.bio/sh1mmer/downloader">Glitz Downloader</a></li>
 </ul>
 
-## 🔍 Credits & Contributors
+## 🔍 Helpful Contributors
 <table id='credit'>
 <tr>
   <td id='Darkn'>
@@ -56,7 +56,7 @@
   <a href='https://github.com/MercuryWorkshop'>
   <img src='https://github.com/MercuryWorkshop.png' width='140px;'>
 </a>
-  <h4 align='center'><a href='https://mercurywork.shop'>Mercury Workshop</a></h4>
+  <h4 align='center'><a href='https://mercurywork.shop'>MW Group</a></h4>
 </td>
   <td id='DiffuseHyperion'>
   <a href='https://github.com/DiffuseHyperion'>
