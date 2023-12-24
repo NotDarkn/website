@@ -29,13 +29,81 @@
 
 ## 📚 Features Included
 
-<ul>
-  <li>Mini Portfolio of Darkn at <a href="https://osu.bio">Darkn's Bio</a></li>
-  <li>Fake Propaganda Hosted at <a href="https://osu.bio/icraze">iCrazeWare</a></li>
-  <li>Complete Rehost of SH1mmer at <a href="https://osu.bio/sh1mmer">SH1mmer</a></li>
-  <li>#1 Rehost of RMA shims at <a href="https://dl.osu.bio">Darkn's File Host</a></li>
-  <li>#2 Rehost of RMA shims at <a href="https://osu.bio/sh1mmer/downloader">Glitz Downloader</a></li>
-</ul>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <a
+          href="https://osu.bio"
+          >📖 Mini Portfolio</a
+        >
+      </td>
+      <td>
+        <a
+          href="https://osu.bio/icraze"
+          >📢 Fake Propaganda</a
+        >
+      </td>
+      <td>
+        <a
+          href="https://osu.bio/sh1mmer"
+          >🖥️ SH1mmer Rehost</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Small description of me with social media links!
+      </td>
+      <td>
+        Propaganda directed towards the user 
+        <a 
+          href="https://icraze.dev"
+          >iCraze</a
+        >.
+      </td>
+      <td>
+        Rehost of
+        <a
+          href="https://sh1mmer.me"
+          >SH1mmer</a
+        >
+        after being taken down.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a 
+          href="https://osu.bio/404"
+          >❗ Simplistic 404 Page</a
+        >
+      </td>
+      <td>
+        <a
+          href="https://dl.osu.bio"
+          >⬇️ OneDrive File Host</a
+        >
+      </td>
+      <td>
+        <a 
+          href="https://osu.bio/sh1mmer/downloader"
+          >🌏 Glitz Downloader</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Sleek, simple, and clean 404 page.
+      </td>
+      <td>
+        File host with RMA shims and prebuilt files.
+      </td>
+      <td>
+        Simple multi-mirror downloader for RMA shims!
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## 🔍 Helpful Contributors
 <table id='credit'>
