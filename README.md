@@ -28,7 +28,6 @@
 </p>
 
 ## 📚 Features Included
-
 <table>
   <tbody>
     <tr>
@@ -104,6 +103,8 @@
     </tr>
   </tbody>
 </table>
+
+> **Note**: These features can be removed or new features can be added by the user at any time. Modify the code at `/src/pages/` and/or `/public/` if you wish to modify anything. Documentation is not provided, as it's relatively simple to add, remove, and configure.
 
 ## 🔍 Helpful Contributors
 <table id='credit'>
