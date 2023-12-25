@@ -104,7 +104,7 @@
   </tbody>
 </table>
 
-> **Note**: These features can be removed or new features can be added by the user at any time. Modify the code at `/src/pages/` and/or `/public/` if you wish to modify anything. Documentation is not provided, as it's relatively simple to add, remove, and configure.
+> **Note**: These features can be removed, or added, by the user at any time. Modify the code at `/src/pages/` and/or `/public/` if you wish to modify anything. Documentation is not provided, however the code is simple enough to add, remove, and configure anything.
 
 ## 🔍 Helpful Contributors
 <table id='credit'>
