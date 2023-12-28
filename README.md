@@ -92,7 +92,7 @@
     </tr>
     <tr>
       <td>
-        Sleek, simple, and clean 404 page.
+        404 page with simplicity, sleekness, and cleanliness.
       </td>
       <td>
         File host with RMA shims and prebuilt files.
