@@ -17,8 +17,8 @@ export const NAV_ITEMS: NavItems = {
 
 export const SITE = {
 	// Your site's detail?
-	name: "Blog",
-	title: "Darkn - Blog",
+	name: "Darkn's Blog",
+	title: "osu.bio",
 	description: "Clean, minimal, personal blog for Darkn",
 	url: "https://blog.osu.bio",
 	githubUrl: "https://github.com/NotDarkn/website",
@@ -33,10 +33,10 @@ export const SITE = {
 	// Author: Twitter handler
 	authorTwitter: "NotDarkn", // Example: FredKSchott
 	// Author: Image external source
-	authorImage: "", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg, https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
+	authorImage: "https://github.com/NotDarkn.png", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg, https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
 	// Author: Bio
 	authorBio:
-		"placeholder 1",
+		"✨ a (shit) web developer interested in Chromebooks and iOS jailbreaks. currently 15 years old! 🌎",
 };
 
 // Ink - Theme configuration
