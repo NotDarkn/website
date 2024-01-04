@@ -14,7 +14,7 @@ module.exports = {
     safelist: ['dark'],
     theme: {
 		fontFamily: {
-			sans: ['Fira Code', ...fontFamily.sans],
+			mono: ['IBM Plex Mono', ...fontFamily.mono],
 		},
 		extend: {
             colors: {
