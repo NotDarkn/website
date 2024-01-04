@@ -2,9 +2,9 @@ backend:
   name: github
   branch: main
   publish_mode: editorial_workflow
-  repo: NotDarkn/website # change this to your repo
-  site_domain: blog.osu.bio # change this to your domain
-  base_url: https://blog.osu.bio # change this to your prod URL
+  repo: NotDarkn/website 
+  site_domain: blog.osu.bio 
+  base_url: https://blog.osu.bio 
   auth_scope: repo
   auth_endpoint: oauth
   display_url: https://blog.osu.bio
