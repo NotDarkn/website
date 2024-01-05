@@ -23,13 +23,13 @@ export const SITE = {
 		"https://github.com/NotDarkn.png",
 	// YT video channel Id (used in media.astro)
 	ytChannelId: "",
-	// Optional, user/author settings (example)
+	// Optional, user/author settings
 	// Author: name
-	author: "Darkn", // Example: Fred K. Schott
+	author: "Darkn",
 	// Author: Twitter handler
-	authorTwitter: "NotDarkn", // Example: FredKSchott
+	authorTwitter: "NotDarkn",
 	// Author: Image external source
-	authorImage: "https://github.com/NotDarkn.png", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg, https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
+	authorImage: "https://github.com/NotDarkn.png",
 	// Author: Bio
 	authorBio:
 		"✨ a (shit) web developer interested in Chromebooks and iOS jailbreaks. currently 15 years old! 🌎",
