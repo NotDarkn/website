@@ -143,26 +143,6 @@ module.exports = {
         }
     },
     /**
-     * Color Palette - Modified
-     */
-        modified: {
-            colors: {
-                primary: colors.purple[700],
-                secondary: colors.purple[800],
-                dark: {
-                    primary: colors.purple[300],
-                    secondary: colors.purple[500]
-                },
-                accent: {
-                    gray: {
-                        light: colors.gray[333],
-                        dark: colors.gray[333]
-                    },
-                    default: colors.blue[700]
-                }
-            }
-        },
-    /**
      * Color Palette - Default/Duplicate of Purple Heart (Never remove this)
      */
     default: {
