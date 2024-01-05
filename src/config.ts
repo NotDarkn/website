@@ -4,6 +4,7 @@ export const NAV_ITEMS: NavItems = {
 	blog: {
 		path: "/",
 		title: "blog",
+	},
 };
 
 export const SITE = {
