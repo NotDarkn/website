@@ -15,7 +15,7 @@ export const SITE = {
 	// Your site's detail?
 	name: "Darkn's Blog",
 	title: "osu.bio",
-	description: "Clean, minimal, personal blog for Darkn",
+	description: "Written Blogs by Darkn",
 	url: "https://blog.osu.bio",
 	githubUrl: "https://github.com/NotDarkn/website",
 	listDrafts: false,
@@ -32,7 +32,7 @@ export const SITE = {
 	authorImage: "https://github.com/NotDarkn.png",
 	// Author: Bio
 	authorBio:
-		"✨ a (shit) web developer interested in Chromebooks and iOS jailbreaks. currently 15 years old! 🌎",
+		"✨ a 15-year-old web developer interested in Chromebooks and iOS jailbreaks! 🌎",
 };
 
 // Ink - Theme configuration

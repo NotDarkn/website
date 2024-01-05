@@ -103,10 +103,6 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
                 </div>
                 <br/>
             }
-            {
-                meta?.collection && meta?.id && 
-                    <EditUrl label=" Suggest changes on GitHub" editUrl={`${SITE.githubUrl}/tree/main/src/content/${meta?.collection}/${meta?.id}`}/>
-            }
         </div>
     </MainLayout>
 </html>
@@ -115,7 +111,7 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
         @apply py-4 mb-1 text-center md:text-left
     }
     .post__title {
-        @apply text-5xl font-extrabold text-theme-primary dark:text-theme-dark-primary
+        @apply text-4xl font-extrabold text-theme-primary dark:text-theme-dark-primary pt-1 pb-3
     }
     .post__desc {
         @apply text-gray-500 dark:text-gray-100 flex justify-center text-left md:flex-none md:justify-start
@@ -134,7 +130,7 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
     }
 
     .avatar {
-        @apply w-12 h-12 rounded-full object-cover p-1 border-2 border-solid border-theme-dark-primary dark:border-theme-primary
+        @apply w-20 h-20 rounded-full object-cover p-1 border-2 border-solid border-theme-dark-primary dark:border-theme-primary
     }
     .avatar--lg {
         @apply w-32 h-32
@@ -167,7 +163,7 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
         @apply flex-grow border-0 text-theme-accent-gray-dark
     }
     .subscription-form button, .button {
-        @apply px-4 py-2 uppercase font-bold text-white bg-gradient-to-tr from-theme-primary to-theme-dark-secondary dark:from-theme-dark-secondary dark:to-theme-primary
+        @apply px-3 py-2 uppercase font-bold text-white bg-gradient-to-tr from-theme-primary to-theme-dark-secondary dark:from-theme-dark-secondary dark:to-theme-primary
     }
     .author-card__follow-btn {
         @apply rounded-md shadow-md shadow-theme-dark-secondary dark:shadow-theme-primary hover:shadow-theme-secondary hover:dark:shadow-theme-secondary hover:shadow-lg transition-all

@@ -12,15 +12,11 @@ const __dirname = dirname(__filename);
 import remarkCodeTitles from 'remark-code-titles'
 import decapCmsOauth from "astro-decap-cms-oauth";
 
-// Full Astro Configuration API Documentation:
-// https://docs.astro.build/reference/configuration-reference
-
-// https://astro.build/config
 export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
   output: 'server',
-  site: 'https://blog.osu.bio', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+  site: 'https://blog.osu.bio',
   server: {
-    port: 3792, // The port to run the dev server on.
+    port: 3792, 
   },
   markdown: {
     syntaxHighlight: 'shiki',

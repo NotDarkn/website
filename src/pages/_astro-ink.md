@@ -1,4 +1,3 @@
-**Darkn's Blog** is a crisp, minimal, personal blog theme for Astro, that shows the capability of statically built sites - offering all the goodness and DX of the modern JS ecosystem without actually shipping any JS by default. And, above all...     
-### It's Open-Source!
-**Maintained By:** Aftab Alam // [@aftabbuddy](https://twitter.com/aftabbuddy)  // [one-aalam](https://github.com/one-aalam)
-                
+**Darkn's Blog** is a newly created blog based off of the Astro Ink theme template made by Aftab Alam. This blog may or will consist of many topics, such as Chromebook blogs, iOS jailbreaking blogs, technical blogs, and more. That's all! ❤️   
+### Blog Credits!
+**Created by:** Darkn // [notdarkn](https://discord.gg/ER8saRhYpg) // [@notdarkn](https://twitter.com/notdarkn)

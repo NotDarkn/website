@@ -17,7 +17,7 @@ const posts = await getCollection('blog')
     <div class="hero ">
         <div class="hero__face">
             <div class="author-card">
-                <img src="https://assets.website-files.com/5e51c674258ffe10d286d30a/5e5358878e2493fbea064dd9_peep-59.svg" title="Aalam" />
+                <img src="../assets/chiyo.png" alt="chiyo" title="chiyo" />
             </div>
         </div>
         <div class="hero__says">
@@ -27,9 +27,9 @@ const posts = await getCollection('blog')
         </div>
     </div>
     <hr/>
-    <PostPreviewList posts={posts.slice(0, 3)} heading="recent posts"/>
+    <PostPreviewList posts={posts.slice(0, 3)} heading="Recent Blogs"/>
     <div class="page__actions">
-        <a class="action__go-to-blog ink-h" href="/blog" title="All Posts">All Posts &rarr;</a>
+        <a class="action__go-to-blog ink-h" href="/blog" title="All Blogs">All Blogs &rarr;</a>
     </div>
 </DefaultPageLayout>
 
