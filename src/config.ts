@@ -1,8 +1,12 @@
 import type { NavItems } from "./types";
 
 export const NAV_ITEMS: NavItems = {
-	blog: {
+	home: {
 		path: "/",
+		title: "home",
+	},
+	blog: {
+		path: "/blog",
 		title: "blog",
 	},
 };
