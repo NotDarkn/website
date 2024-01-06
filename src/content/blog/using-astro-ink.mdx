@@ -1,0 +1,166 @@
+---
+title: Configuring Astro Ink As a Beginner
+description: Using and configuring Astro Ink has been a pain.
+tags:
+  - difficult
+  - blog
+  - theme
+author: Darkn
+authorTwitter: NotDarkn
+date: "2024-01-05T11:52:30Z"
+image: "../images/creating-blogs-header.png"
+category: design
+---
+While searching around with a friend, we found a blog template that we thought
+looked really nice, so I decided to take it and use it. Now don't get me wrong,
+it's a great looking template, but it sure has some issues.
+
+### This won't be the case for everyone, but it was for me.
+***
+## Choosing A Template
+A few weeks ago, I was discussing with a friend about the idea of making a blog on my website
+with the domain [blog.osu.bio](https://blog.osu.bio) and they were fine with the idea. 
+
+About 2 days ago, we started putting that plan into action by searching around the 
+[Astro Themes](https://astro.build/themes/?search=&categories%5B%5D=blog) website to look for a theme,
+and we found two we were interested in:
+<figure>
+    <img 
+        style="float: right" 
+        src="https://github.com/chrismwilliams/astro-theme-cactus/assets/12715988/84c89d42-4525-4674-b10c-6d6ebdc06382" alt="Astro Cactus" 
+        width="440"
+    />
+    <img 
+        src="https://github.com/NotDarkn/website/assets/73033672/999c16d9-3221-422b-a76e-fc31ccd34e7a" 
+        alt="Astro Ink" 
+        width="430" 
+    />
+    <figcaption style="text-align: center">Astro Ink vs Astro Cactus</figcaption>
+</figure>
+We wanted to try out Astro Cactus first, but another friend of ours came in since this was being
+discussed in a group chat and commented that Astro Cactus was "too compact", so we decided to
+try Astro Ink first.
+
+Simply make a new branch on [NotDarkn/website](https://github.com/NotDarkn/website) called "blog", delete
+all of the files in there, run the provided npx command, and start configuring! Unfortunately, it wasn't
+that easy after getting all of the required files.
+
+## Attempting Configuration
+Originally I was confused on where to go as the way files were arranged was completely unknown territory 
+for me. 
+
+I didn't understand why there were tons and tons of files in the src folder, or where any of the css elements
+were, or why the code had long blocks of style in them, but either way I decided to persist.
+
+<figure>
+    <img 
+        style="margin: auto" 
+        src="https://cdn.discordapp.com/attachments/892067098728230963/1193041885657321552/explorer_gZZEZDRLfs.gif" 
+        alt="Files" 
+    />
+    <figcaption style="text-align: center">Examples of Files</figcaption>
+</figure>
+
+I began with modifying what I could understand to an extent, such as deleting non-important files, changing configs, 
+replacing images with my own, making it look like my own site, and etc.
+
+However when it came to changing main aspects of the website, I realized that deleting just one file could break the
+entire blog, which annoyed me considering that I wasn't running a live server at the time to view the website in real-time as I was editing.
+
+I would try to delete one thing cause I didn't want it, and Vercel & CF Pages would give up on building the website.
+Change a value to another one and the website would break again.
+
+<figure>
+    <img 
+        style="float: right" 
+        src="https://cdn.discordapp.com/attachments/892067098728230963/1193046900161650798/chrome_FPveZzOWRh.png" alt="Page 2" 
+        width="440"
+    />
+    <img 
+        src="https://cdn.discordapp.com/attachments/892067098728230963/1193046886752473158/image.png" 
+        alt="Page 1" 
+        width="430" 
+    />
+    <figcaption style="text-align: center">Deleting and Fixing Repeatedly</figcaption>
+</figure>
+
+Soon I would finish deleting all of the stuff I wanted to delete, and finally I could start actually configuring the
+site to look like what I want it to be.
+
+However that wouldn't be without its own challenges, of course.
+
+## Actually Configuring
+
+I began with wanting to change the font to be monospace, specifically 
+[IBM Plex Mono](https://fontsource.org/fonts/ibm-plex-mono)  since there wasn't any other good monospace font 
+on Fontsource. 
+
+However, I realized a problem. **Where the fuck do you change the font?** It wasn't in the config files, and it wasn't
+even in the tailwind configuration files. So where the fuck do I change it?
+
+This is when I realized that this site has **barely any actual documentation.** Everything has been difficult 
+because despite being a popular blog template, no one has made any good documentation on it, at all.
+
+<figure>
+    <img 
+        style="margin: auto" 
+        src="https://cdn.discordapp.com/attachments/892067098728230963/1193049583555711027/chrome_Mskty5fHuj.gif" 
+        alt="Files" 
+    />
+    <figcaption style="text-align: center">Lack of Documentation in GitHub</figcaption>
+</figure>
+
+Regardless, I decided to persist and attempt in installing the font as it was the first thing I wanted to do. I looked around the files for a bit and found 3 files which had font changes, so I changed those fonts to IBM Plex Mono.
+With that, the font didn't change, christ, what now? Well I forgot to install it, oops. Installed the font, and it changed!
+
+Yay! Except that took me a FUCKING HOUR. The lack of documentation makes it basically a "Where's Waldo?" mini-game since
+you have to find each corresponding shit yourself.
+
+Next, I wanted to change the background color to a solid color with no transition, and oh my fucking god this almost took me 2 hours to fucking do.
+
+<figure>
+    <img 
+        style="float: right" 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193053831416787074/chrome_SDDnrG0uG6.png"
+        alt="Commit List 2" 
+        width="435"
+    />
+    <img 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193053831152541726/chrome_aClpFN5m34.png" 
+        alt="Commit List 1" 
+        width="435" 
+    />
+    <figcaption style="text-align: center">2 Hours of Commits (+ more)</figcaption>
+</figure>
+
+It took a friend to help me find the file when I was an hour in, then another thirty minutes for me to figure out
+what part of the code was giving the background a transition color.
+
+Then I spent 20 minutes trying to modify the color to my liking, and finally I had finished modifying everything I
+had wanted to.
+
+## Closing Thoughts
+
+Do I believe that all of this was worth it? Eh, I guess. I mean I learnt a little bit about how files, imports, and
+other shit are used now. But at the same time, I want my sanity and time back from all of that.
+
+The extreme lack of documentation was a serious blow with this template, and I'm sure this is an issue with other
+templates too. Having a lack of documentation makes things more complicated for users, like myself.
+
+<figure>
+    <img 
+        style="margin: auto" 
+        src="
+https://media.discordapp.net/attachments/892067098728230963/1193055655079182426/chrome_ASrL9HzAMv.gif" 
+        alt="Files" 
+    />
+    <figcaption style="text-align: center">Only Features Listed in GitHub</figcaption>
+</figure>
+
+You can place the blame partially on the user for not being intelligent enough on how to modify the code, but part of 
+the blame also goes towards the developer for providing a lackluster amount of documentation to assist the user.
+
+Anyways, I spent another hour modifying everything else to my liking while also experimenting with a quick post to
+make sure everything is how I wanted it to be, and yeah, here I am now. As I use Astro Ink, I like how it looks! 
+I just think it could be less complicated.
+***

@@ -48,7 +48,6 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
                     }
                     {!AUTHOR_AVATAR ? ' | ' : ''}
                     <span class="post__date">
-                        <!-- post creation/updation data -->
                         { new Intl.DateTimeFormat('en-US', { dateStyle: 'full' }).format(new Date(content.date))}
                     </span>
                     <span class="post__stats">
@@ -57,7 +56,6 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
                             <Icon class="w-5 h-5 inline-block" pack="mdi" name="eye" />
                             <PostStats slug={meta?.slug} client:load /> 
                         }
-                        <!-- | <Icon class="w-5 h-5 inline-block" pack="mdi" name="clock" /> 2 mins -->
                     </span>
                 </div>
             </h5>
@@ -130,7 +128,7 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
     }
 
     .avatar {
-        @apply w-20 h-20 rounded-full object-cover p-1 border-2 border-solid border-theme-dark-primary dark:border-theme-primary
+        @apply w-12 h-12 rounded-full object-cover p-1 border-2 border-solid border-theme-dark-primary dark:border-theme-primary
     }
     .avatar--lg {
         @apply w-36 h-36

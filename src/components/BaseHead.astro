@@ -38,14 +38,12 @@ const { title = SITE.title, description, permalink, image } = Astro.props;
 <meta name="msapplication-config" content="/browserconfig.xml" />
 <meta name="theme-color" content="#ffffff" />
 
-<!-- Open Graph Tags (Facebook) -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content={title} />
 {permalink && <meta property="og:url" content={permalink} />}
 {description && <meta property="og:description" content={description} />}
 {image && <meta property="og:image" content={image} />}
 
-<!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:title" content={title} />
 {permalink && <meta property="twitter:url" content={permalink} />}

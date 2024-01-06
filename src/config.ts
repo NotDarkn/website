@@ -14,7 +14,7 @@ export const NAV_ITEMS: NavItems = {
 export const SITE = {
 	// Your site's detail?
 	name: "Darkn's Blog",
-	title: "osu.bio",
+	title: "Darkn",
 	description: "Written Blogs by Darkn",
 	url: "https://blog.osu.bio",
 	githubUrl: "https://github.com/NotDarkn/website",
@@ -43,4 +43,4 @@ export const USE_MEDIA_THUMBNAIL = true;
 export const USE_AUTHOR_CARD = true;
 export const USE_SUBSCRIPTION = false; /* works only when USE_AUTHOR_CARD is true */
 
-export const USE_VIEW_STATS = true;
+export const USE_VIEW_STATS = false;
