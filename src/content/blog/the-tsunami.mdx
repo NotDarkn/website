@@ -16,7 +16,7 @@ their posts named "[Breaking chromeOS's enrollment security model: A postmortem]
 wrong with their post which prompted me to create a post of my own with the 
 correct fixes.
 
-### As of Dec 27, 2023, the blog has fixed the incorrect listed pins.
+### As of Dec 27, 2023, their blog has fixed the incorrect listed pins.
 ***
 ## Providing Context
 Originally when I was reading through the blog, it had mentioned about a ChromeOS
@@ -90,8 +90,9 @@ issue when a blog post like this is widely used within the community as referenc
     <figcaption style="text-align: center">Responses In The PR</figcaption>
 </figure>
 
-I decided that I was gonna make my own blog with a post (like this one) which provided correct
-instructions, however I had gotten lazy and schoolwork was piling up, so I couldn't till now.
+I decided that I was gonna make my own blog with a post like the one you're reading right now 
+that provides correct instructions, however I had gotten lazy and schoolwork was piling up, 
+so I couldn't till now.
 
 Anyways, that's enough context, here are the **proper** instructions for bypassing The Tsunami,
 since [their blog post](https://blog.coolelectronics.me/breaking-cros-6/) still has some problems,
@@ -211,7 +212,8 @@ After the pins are **securely** bridged, you may plug in the charger (or the bat
 cables and boot the Chromebook. Once it has booted, boot into SH1MMER as you normally would. Disable OS verification 
 (blocked or not), boot into the "Insert Recovery Media" screen, and plug in your SH1MMER USB or SD card.
 
-Enter the Utilities screen and run "Un-Enroll Device" (or "Deprovision Device" if Legacy). This won't do anything, but it's a necessary step. After that, enter the Bash Shell and then run the following commands. It should end up like the
+Enter the Utilities screen and run "Un-Enroll Device" (or "Deprovision Device" if Legacy). This won't do anything currently, 
+but it's a necessary step. After that, enter the Bash Shell and then run the following commands. It should end up like the
 picture below:
 
 ```bash
@@ -224,7 +226,7 @@ flashrom --wp-disable
         src="https://osu.bio/sh1mmer/assets/unpatch_bash_results.webp" 
         alt="Command Output" 
     />
-    <figcaption style="text-align: center">Command Output</figcaption>
+    <figcaption style="text-align: center">Command Output (Bash Shell)</figcaption>
 </figure>
 
 ### Booting into ChromeOS
@@ -243,7 +245,7 @@ tpm_manager_client take_ownership
         src="https://osu.bio/sh1mmer/assets/unpatch_shell_results.webp" 
         alt="Command Output" 
     />
-    <figcaption style="text-align: center">Command Output</figcaption>
+    <figcaption style="text-align: center">Command Output (VT2 Shell)</figcaption>
 </figure>
 
 Both the commands should report success, and if they do, that's great! Simply exit out of the VT2 shell by pressing 
@@ -254,8 +256,9 @@ may go through the setup screen and it shouldn't re-enroll anymore!
 I don't know what to say except that **I extremely do not recommend doing this.** It's a difficult process for
 new users that don't know how to bridge pins, and it's very easy to brick your Chromebook doing this.
 
-There have already been reports of people bricking their Chromebook in servers like the SH1MMER Discord or the 
-TitaniumNetwork Discord. These are because of bridging incorrect pins, bridging multiple pins, or many other reasons.
+There have already been reports of people bricking their Chromebook in servers like the [SH1MMER Discord](https://discord.gg/f7c3xySHuW) 
+or the [TitaniumNetwork Discord](https://discord.gg/unblock). These are because of bridging incorrect pins, bridging multiple pins, 
+or many other reasons.
 
 ***Note**: Some of these reports don't have any evidence, but it probably did happen.*
 <figure>
@@ -277,8 +280,8 @@ All in all, just don't do this shit. If your Chromebooks bricks, that's on you. 
 ends up being unenrolled, then congratulations. You took the risk for a huge reward, and now you can do whatever the hell
 you want on that Chromebook.
 
-For me, I have OCTOPUS and JACUZZI Chromebooks where I can downgrade to any version anytime I want cause I used 
-[this guide](https://osu.bio/sh1mmer/unfog), so I don't need to do this.
+For me, I have OCTOPUS and JACUZZI Chromebooks where I can downgrade to any version anytime I want and use SH1mmer 
+cause I used [this guide](https://osu.bio/sh1mmer/unfog), so I don't need to do this.
 
 **Not like I'd ever do this myself anyways.**
 ***
