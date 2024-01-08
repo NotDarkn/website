@@ -1,0 +1,284 @@
+---
+title: Properly Bypassing The Tsunami (v114+)
+description: Issues with another blog has prompted me to make this.
+tags:
+  - chromeos
+author: Darkn
+authorTwitter: NotDarkn
+date: "2024-01-07T22:33:30Z"
+image: "https://blog.osu.bio/images/chromeos-the-tsunami.png"
+category: chromeos
+---
+> If you're here just for instructions, [click here](#bypassing-instructions).
+
+One day I was looking around a person's blog when I stumbled across one of
+their posts named "[Breaking chromeOS's enrollment security model: A postmortem](https://blog.coolelectronics.me/breaking-cros-6/)". I was intrigued, but there were a few things that were 
+wrong with the post which prompted me to create a post of my own with those 
+fixes.
+
+### As of Dec 27, 2023, the blog has fixed the incorrect listed pins.
+***
+## Providing Context
+Originally when I was reading through the blog, it had mentioned about a ChromeOS
+firmware patch in v114 which introduced a patch that the community named, "The Tsunami".
+
+This patch was intended to prevent users from disabling 
+[write protection](https://blog.coolelectronics.me/breaking-cros-6/#so-what-even-is-write-protection) 
+if they had Firmware Management Parameters (FWMP) on their device, which was meant to
+prevent users from unenrolling through disabling write protection.
+
+Within this guide, it mentioned about bypassing The Tsunami through using a **pencil**
+(you can find this to be wrong later) to bridge pins 3 and 4 on the SOIC-8 chip inside of the 
+Chromebook's motherboard.
+
+<figure>
+    <img 
+        style="float: right" 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193765701492674661/chrome_YSTvOLP6a4.png" 
+        alt="Hypothetical Bridging" 
+        width="440"
+    />
+    <img 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193765713345773638/chrome_Fmpr3vGarm.png" 
+        alt="Explaining Pins" 
+        width="440" 
+    />
+    <figcaption style="text-align: center">Hypothetically Bridging Pins</figcaption>
+</figure>
+
+However, there was something wrong with these instructions. An unexperienced user wouldn't
+be able to notice the underlying problems in these "instructions", but.. **you aren't supposed 
+to bridge pins 3 and 4.**
+
+This concerned me as providing incorrect instructions for something so dangerous can actually
+cause a user to destroy their Chromebook. *Yes, there are people in this community, many in fact,
+who do this type of shit just to unenroll their device.*
+
+I found the blog's source code on their GitHub and sent a [pull request](https://blog.coolelectronics.me/breaking-cros-6/) fixing the incorrect instructions issue (alongside some other issues), and the pull request 
+was declined. 
+
+<figure>
+    <img 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193769086954520666/chrome_tGfm2ugzbM.png" 
+        alt="Declined Pull Request" 
+    />
+    <figcaption style="text-align: center">Declined Pull Request</figcaption>
+</figure>
+
+Understandably, sending a PR to a blog can piss off someone, but this is meant to fix serious 
+issues in a blog post that is used widely within the community.
+
+The reason that it was the "[pencil bypass](https://blog.coolelectronics.me/breaking-cros-6/#the-pencil-bypass)" 
+to begin with and why it's still there now is because the creator thought it was "funny" and even 
+though I won't deny that, it's still an issue.
+
+Having incorrect info isn't the greatest, which I replied with in the PR, and it's especially an
+issue when a blog post like this is widely used within the community as reference to new users.
+
+<figure>
+    <img 
+        style="float: right" 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193770618294902834/chrome_veiq4oODRH.png" 
+        alt="NotDarkn's Reply" 
+        width="440"
+    />
+    <img 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193770618542374943/chrome_iT2dODqhzi.png" 
+        alt="CoolElectronic's Reply" 
+        width="440" 
+    />
+    <figcaption style="text-align: center">Responses In The PR</figcaption>
+</figure>
+
+I decided that I was gonna make my own blog with a post (like this one) which provided correct
+instructions, however I had gotten lazy and schoolwork was piling up, so I couldn't till now.
+
+Anyways, that's enough context, here are the **proper** instructions for bypassing The Tsunami,
+since [their blog post](https://blog.coolelectronics.me/breaking-cros-6/) still has some problems,
+even since Jan 7th, 2023.
+
+## Bypassing Instructions
+Please understand that **I DO NOT RECOMMEND DOING THIS.** It is risky, dangerous, and not easy to do
+for beginners. Please attempt at your own risk. Any damages made is **your own fault. Not mine, or others.**
+
+**Necessary Items:**
+- **Tin Foil**: $2 avg.
+- **Scissors**: $4 avg.
+- **Tape**: $4 avg. **(Optional)**
+
+**Other Requirements:**
+- USB or SD Card with SH1MMER
+- Screwdriver corresponding to your Chromebook screws
+- Competent and courage, because I don't recommend this.
+
+### Opening The Chromebook
+First, you will need to open up your Chromebook using, most likely, a Phillips screwdriver. After that,
+disconnect the battery on the Chromebook. Methods to disconnect the connector may vary on each model.
+
+<figure>
+    <img 
+        style="float: right" 
+        src="https://osu.bio/sh1mmer/assets/unpatch_battery_connector.webp" 
+        alt="Battery Connector 2" 
+        width="440"
+    />
+    <img 
+        src="https://osu.bio/sh1mmer/assets/unpatch_battery.webp" 
+        alt="Battery Connector 2" 
+        width="440" 
+    />
+    <figcaption style="text-align: center">Examples of Battery Connector</figcaption>
+</figure>
+
+Afterword, look around the Chromebook motherboard and look for **a small 8-pin chip with pins sticking out or in.**
+These chips tend to have **WINBOND** or **GIGADEVICE** branding, and may either say **25Q64[xx]** or **25Q128[xx]**
+right below the branding.
+
+Your Chromebook may have multiple of these chips, just look for the one that is most similar to the description
+stated or most similar to the pictures provided below.
+
+Please understand that the SOIC-8 chip, the one on the left or appears first, is much easier to bridge than the 
+WSON-8 chip, the one on the right or appears second.
+
+<figure>
+    <img 
+        style="float: right" 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193778714010468432/wson-8.png" 
+        alt="WSON-8 chip" 
+        width="443"
+    />
+    <img 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193778714371162194/soic-8.jpg" 
+        alt="SOIC-8 Chip" 
+        width="438" 
+    />
+    <figcaption style="text-align: center">SOIC-8 chip (left) - WSON-8 chip (right)</figcaption>
+</figure>
+
+### Bridging Pins
+Now you're going to have to use the picture(s) below as reference on **what pins to bridge**, as this is important. These
+are the charts for both of the chips:
+
+<figure>
+    <img 
+        style="float: right" 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193784136318603394/wson-8_chart.png" 
+        alt="WSON-8 chart" 
+        width="440"
+    />
+    <img 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193784136037564436/soic-8_chart.png" 
+        alt="SOIC-8 chart" 
+        width="440" 
+    />
+    <figcaption style="text-align: center">SOIC-8 chart (left) - WSON-8 chart (right)</figcaption>
+</figure>
+
+**"How do you bridge these pins?"** This is where the supplies you got earlier comes into play, as they'll be
+how you can bridge these pins.
+
+Take a piece of tin foil and cut it where it's **long enough** to get to either side of the chip while
+being **small enough** to not make contact with multiple pins on either side of the chip. I cannot provide
+measurements as the chip size is different on each model.
+
+Through using the charts listed above, look for the circle/indent on the chip so you can know where each pin is located.
+From here, use the tin foil and place one end on **pin 3 (WP)** and place the other end on **pin 8 (VCC).** 
+**MAKE SURE** it's making contact with the pins and **IS NOT** making contact with other nearby pins. You may place tape
+on top of the chip to keep the tin foil on the pins, but that's if you have to.
+
+Use the picture below to know where to put the tin foil and tape:
+- **Green**: Indent/Circle
+- **Red**: Tin Foil
+- **Blue**: Tape
+
+<figure>
+    <img 
+        style="float: right" 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193789190580752424/wson-8_chip_-_bridge.png" 
+        alt="WSON-8 bridge" 
+        width="443"
+    />
+    <img 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193789191167946763/soic-8_chip_-_bridge.png" 
+        alt="SOIC-8 bridge" 
+        width="438" 
+    />
+    <figcaption style="text-align: center">SOIC-8 bridge (left) - WSON-8 bridge (right)</figcaption>
+</figure>
+
+### Booting Into SH1MMER
+After the pins are **securely** bridged, you may plug in the charger (or the battery) alongside all the other necessary 
+cables and boot the Chromebook. Once it has booted, boot into SH1MMER as you normally would. Disable OS verification 
+(blocked or not), boot into the "Insert Recovery Media" screen, and plug in your SH1MMER USB or SD card.
+
+Enter the Utilities screen and run "Un-Enroll Device" (or "Deprovision Device" if Legacy). This won't do anything, but it's a necessary step. After that, enter the Bash Shell and then run the following commands. It should end up like the
+picture below:
+
+```bash
+flashrom --wp-disable
+  /usr/share/vboot/bin/set_gbb_flags.sh 0x8090
+```
+**If the commands fails here, you need to repeat the [Bridging Pins](#bridging-pins) instructions.**
+<figure>
+    <img 
+        src="https://osu.bio/sh1mmer/assets/unpatch_bash_results.webp" 
+        alt="Command Output" 
+    />
+    <figcaption style="text-align: center">Command Output</figcaption>
+</figure>
+
+### Booting into ChromeOS
+Reboot the Chromebook and get past the OS verification screen by pressing **CTRL + D**. After waiting 5 minutes and
+booting into ChromeOS, **DO NOT PROCEED WITH THE SETUP SCREEN.** Instead, enter the VT2 shell by pressing 
+**CTRL + ALT + F2**.
+
+Log into the shell as **root** and then run the following commands. It should end up like the picture below:
+```bash
+tpm_manager_client take_ownership
+  cryptohome --action=remove_firmware_management_parameters
+```
+
+<figure>
+    <img 
+        src="https://osu.bio/sh1mmer/assets/unpatch_shell_results.webp" 
+        alt="Command Output" 
+    />
+    <figcaption style="text-align: center">Command Output</figcaption>
+</figure>
+
+Both the commands should report success, and if they do, that's great! Simply exit out of the VT2 shell by pressing 
+**CTRL + ALT + F1**, then powerwash the Chromebook by pressing **CTRL + ALT + SHIFT + R**. Once it's powerwashed, you 
+may go through the setup screen and it shouldn't re-enroll anymore!
+
+## Closing Thoughts
+I don't know what to say except that **I extremely do not recommend doing this.** It's a difficult process for
+new users that don't know how to bridge pins, and it's very easy to brick your Chromebook doing this.
+
+There have already been reports of people bricking their Chromebook in servers like the SH1MMER Discord or the 
+TitaniumNetwork Discord. These are because of bridging incorrect pins, bridging multiple pins, or many other reasons.
+
+***Note**: Some of these reports don't have any evidence, but it probably did happen.*
+<figure>
+    <img 
+        style="float: right" 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193802959008583732/Vesktop_fDaJ6xjyY2.png" 
+        alt="TN Discord" 
+        width="440"
+    />
+    <img 
+        src="https://media.discordapp.net/attachments/892067098728230963/1193801034150191124/Vesktop_uDidQJ2DNb.png" 
+        alt="SH1MMER Discord" 
+        width="443" 
+    />
+    <figcaption style="text-align: center">SH1MMER Discord (left) - TN Discord (right)</figcaption>
+</figure>
+
+All in all, just don't do this shit. If your Chromebooks bricks, that's on you. But if you do this and your Chromebook
+ends up being unenrolled, then congratulations. You took the risk for a huge reward, and now you can do whatever the hell
+you want on that Chromebook.
+
+For me, I have OCTOPUS and JACUZZI Chrombooks where I can downgrade to any version anytime I want cause I used 
+[this guide](https://osu.bio/sh1mmer/unfog), so I don't need this. 
+
+**Not like I'd ever do this myself anyways.**
+***
