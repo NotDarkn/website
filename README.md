@@ -22,6 +22,8 @@
 <p align="center">
   <a href="https://osu.bio" target="_blank">🌐 Website</a>
   •
+  <a href="https://blog.osu.bio" target="_blank">✍ Blog</a>
+  •
   <a href="https://discord.gg/ER8saRhYpg" target="_blank">☎️ Discord</a>
   •
   <a href="https://twitter.com/NotDarkn" target="_blank">📫 Twitter</a>
