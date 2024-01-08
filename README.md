@@ -73,8 +73,8 @@
     <tr>
       <td>
         <a 
-          href="https://osu.bio/404"
-          >❗ Simplistic 404 Page</a
+          href="https://blog.osu.bio"
+          >🖊️ Simplistic Blog</a
         >
       </td>
       <td>
@@ -92,7 +92,7 @@
     </tr>
     <tr>
       <td>
-        Made with simplicity, sleekness, and cleanliness.
+        Made with pain, sleekness, and cleanliness.
       </td>
       <td>
         File host with RMA shims and prebuilt files.
