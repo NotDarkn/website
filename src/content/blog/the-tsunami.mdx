@@ -103,9 +103,9 @@ Please understand that **I DO NOT RECOMMEND DOING THIS.** It is risky, dangerous
 for beginners. Please attempt at your own risk. Any damages made is **your own fault. Not mine, or others.**
 
 **Necessary Items:**
-- **Tin Foil**: $2 avg.
+- **Conductive Material**: Staple, Tin Foil, Paperclip, etc.
 - **Scissors**: $4 avg.
-- **Tape**: $4 avg. **(Optional)**
+- **Tape**: $4 avg. **(Recommended, but optional)**
 
 **Other Requirements:**
 - USB or SD Card with [SH1MMER](https://sh1mmer.me)
@@ -178,18 +178,18 @@ are the charts for both of the chips:
 **"How do you bridge these pins?"** This is where the supplies you got earlier comes into play, as they'll be
 how you can bridge these pins.
 
-Take a piece of tin foil and cut it where it's **long enough** to get to either side of the chip while
-being **small enough** to not make contact with multiple pins on either side of the chip. I cannot provide
-measurements as the chip size is different on each model.
+Take a piece of your conductive material and shape it into something that's **long enough** to get to either side 
+of the chip while being **small enough** to not make contact with multiple pins on either side of the chip. I 
+cannot provide measurements as the chip size is different on each model.
 
 Through using the charts listed above, look for the circle/indent on the chip so you can know where each pin is located.
-From here, take the tin foil and place one end on **pin 3 (WP)** and place the other end on **pin 8 (VCC).** 
+From here, take your conductive material and place one end on **pin 3 (WP)** and place the other end on **pin 8 (VCC).** 
 **MAKE SURE** it's making contact with the pins and **IS NOT** making contact with other nearby pins. You may place tape
-on top of the chip to keep the tin foil on the pins, but that's if you have to.
+on top of the chip to keep the conductive material on the pins, but that's if you have to.
 
 Use the picture below to know where to put the tin foil and tape:
-- **Green**: Indent/Circle
-- **Red**: Tin Foil
+- **Green**: Indent / Circle
+- **Red**: Conductive Material
 - **Blue**: Tape
 
 <figure>
@@ -212,9 +212,9 @@ After the pins are **securely** bridged, you may plug in the charger (or the bat
 cables and boot the Chromebook. Once it has booted, boot into SH1MMER as you normally would. Disable OS verification 
 (blocked or not), boot into the "Insert Recovery Media" screen, and plug in your SH1MMER USB or SD card.
 
-Enter the Utilities screen and run "Un-Enroll Device" (or "Deprovision Device" if Legacy). This won't do anything currently, 
-but it's a necessary step. After that, enter the Bash Shell and then run the following commands. It should end up like the
-picture below:
+Enter the Utilities screen and run "Un-Enroll Device" (or "Deprovision Device" if Legacy). This won't do anything 
+currently,  but it's a necessary step. After that, enter the Bash Shell and then run the following commands. 
+It should end up like the picture below:
 
 ```bash
 flashrom --wp-disable
