@@ -1,6 +1,12 @@
-body
-  background-color: #131516
-  color: #e3e1de
+html, body
+  padding: 0
+  margin: 0
+  color: #fff
+  background: linear-gradient(#222, #111)
+
+.backgrounddiv 
+  background: linear-gradient(#222, #111)
+
 
 a[href]
   color: #2e8ff9
@@ -12,8 +18,11 @@ a[href]
   transform: translate(-50%, -50%)
   text-align: center
   display: table-cell
-  padding: 40px
-  border: 5px solid #1c87c9
+  padding: 35px
+  background-color: rgba(11, 11, 11, 0.5)
+  border-radius: 60px 
+  border: 3px solid #fff
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.75)
   scroll-margin: 0
 
 .hide
@@ -21,7 +30,7 @@ a[href]
 
 .buttonuhh
   background-color: #191919
-  border: 1px solid #fff
+  border: 3px solid #fff
   border-radius: 26px
   box-sizing: border-box
   color: #ffffff
@@ -30,7 +39,7 @@ a[href]
   font-family: "SF-Reg", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif
   font-size: 40px
   font-weight: 600
-  line-height: 20px
+  line-height: 15px
   margin: 0
   outline: none
   padding: 26px 36px
@@ -55,3 +64,25 @@ a[href]
     color: #000000
     cursor: not-allowed
     opacity: 1
+
+/* source: https://community.codenewbie.org/alvaro_montoro/creating-a-snowfall-effect-with-html-and-css-2p4
+
+@keyframes snowfall
+  0%
+    transform: translateY(-10vh)
+
+  100%
+    transform: translateY(160vh)
+
+.snowflake
+  --size: 1vw
+  width: var(--size)
+  height: var(--size)
+  background: white
+  border-radius: 50%
+  position: absolute
+  top: -5vh
+  animation: snowfall infinite
+  opacity: 0.1
+
+/* thanks to hell0u/waveeeeee for making changes and fixes to the css code! <3
