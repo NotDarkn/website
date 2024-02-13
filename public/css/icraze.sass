@@ -1,0 +1,90 @@
+html, body
+  padding-left: 10px
+  padding-right: 10px
+  margin: 0
+  color: #fff
+  background-attachment: fixed
+  background-size: cover
+  background-image: url("../../public/img/gradient.webp")
+
+a[href]
+  color: #2e8ff9
+
+.vertical
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+  display: table-cell
+  padding-top: 30px
+  padding-bottom: 30px
+  padding-right: 35px
+  padding-left: 35px
+  background-color: rgba(11, 11, 11, 0.5)
+  border-radius: 60px 
+  border: 3px solid #fff
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.75)
+  scroll-margin: 0
+
+.hide
+  display: none
+
+.buttonuhh
+  background-color: #191919
+  border: 3px solid #fff
+  border-radius: 26px
+  box-sizing: border-box
+  color: #ffffff
+  cursor: pointer
+  display: inline-block
+  font-family: "SF-Reg", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif
+  font-size: 33px
+  font-weight: 600
+  line-height: 15px
+  margin: 0
+  outline: none
+  padding: 26px 36px
+  position: relative
+  text-align: center
+  text-decoration: none
+  touch-action: manipulation
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s
+  -webkit-user-select: none
+  user-select: none
+  width: auto
+  &:focus-visible
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px
+    transition: box-shadow 0.2s
+  &:active
+    background-color: #141414
+    border-color: #fff
+    transform: scale(0.96)
+  &:disabled
+    background-color: grey
+    border-color: #dddddd
+    color: #000000
+    cursor: not-allowed
+    opacity: 1
+
+/* source: https://community.codenewbie.org/alvaro_montoro/creating-a-snowfall-effect-with-html-and-css-2p4
+
+@keyframes snowfall
+  0%
+    transform: translateY(-10vh)
+
+  100%
+    transform: translateY(160vh)
+
+.snowflake
+  --size: 1vw
+  width: var(--size)
+  height: var(--size)
+  background: white
+  border-radius: 50%
+  position: fixed
+  top: -5vh
+  animation: snowfall infinite
+  opacity: 0.1
+
+/* thanks to hell0u/waveeeeee for making changes and fixes to the css code! <3
