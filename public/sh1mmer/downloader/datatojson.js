@@ -57,57 +57,57 @@ let data = {
             "zork.zip": 
               "https://dl.osu.bio/api/raw/?path=/SH1mmer/zork.zip",
           },
-          "dl.diffusehyperion.me": {
+          "diffusehyperion.com": {
             "brask.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/brask.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/brask.zip",
             "brya.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/brya.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/brya.zip",
             "clapper.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/clapper.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/clapper.zip",
             "coral.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/coral.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/coral.zip",
             "corsola.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/corsola.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/corsola.zip",
             "dedede.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/dedede.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/dedede.zip",
             "enguarde.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/enguarde.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/enguarde.zip",
             "glimmer.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/glimmer.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/glimmer.zip",
             "grunt.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/grunt.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/grunt.zip",
             "hana.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/hana.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/hana.zip",
             "hatch.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/hatch.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/hatch.zip",
             "jacuzzi.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/jacuzzi.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/jacuzzi.zip",
             "kukui.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/kukui.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/kukui.zip",
             "nami.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/nami.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/nami.zip",
             "octopus.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/octopus.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/octopus.zip",
             "orco.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/orco.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/orco.zip",
             "pyro.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/pyro.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/pyro.zip",
             "reks.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/reks.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/reks.zip",
             "sentry.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/sentry.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/sentry.zip",
             "stout.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/stout.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/stout.zip",
             "strongbad.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/strongbad.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/strongbad.zip",
             "tidus.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/tidus.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/tidus.zip",
             "ultima.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/ultima.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/ultima.zip",
             "volteer.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/volteer.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/volteer.zip",
             "zork.zip":
-              "https://dl.diffusehyperion.me/api/raw/?path=/rma/zork.zip",
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/zork.zip",
           },
           "kxtz.femboy.vip": {
             "brask.bin":
