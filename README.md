@@ -115,7 +115,7 @@
   <a href='https://github.com/NotDarkn'>
   <img src='https://github.com/NotDarkn.png' width='140px;'>
 </a>
-  <h4 align='center'><a href='https://discord.gg/ER8saRhYpg'>Darkn</a></h4>
+  <h4 align='center'><a href='https://osu.bio'>Darkn</a></h4>
 </td>
   <td id='hell0u'>
   <a href='https://github.com/13waves'>
@@ -133,7 +133,7 @@
   <a href='https://github.com/DiffuseHyperion'>
   <img src='https://github.com/DiffuseHyperion.png' width='140px;'>
 </a>
-  <h4 align='center'><a href='https://www.diffusehyperion.me/'>DiffuseHyperion</a></h4>
+  <h4 align='center'><a href='https://diffusehyperion.com/'>DiffuseHyperion</a></h4>
 </td>
   <td id='kxtz'>
   <a href='https://github.com/kxtzownsu'>
