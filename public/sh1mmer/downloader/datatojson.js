@@ -56,6 +56,62 @@ let data = {
               "https://dl.osu.bio/api/raw/?path=/SH1mmer/volteer.zip",
             "zork.zip": 
               "https://dl.osu.bio/api/raw/?path=/SH1mmer/zork.zip",
+            },
+          "sh1m.b0vik.dev": {
+            "ambassador.zip":
+              "https://sh1m.b0vik.dev/shims/unmodified/ambassador.zip",
+            "brask.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/brask.zip",
+            "brya.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/brya.zip",
+            "clapper.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/clapper.zip",
+            "coral.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/coral.zip",
+            "corsola.zip":
+              "https://sh1m.b0vik.dev/shims/unmodified/corsola.zip",
+            "dedede.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/dedede.zip",
+            "enguarde.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/enguarde.zip",
+            "glimmer.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/glimmer.zip",
+            "grunt.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/grunt.zip",
+            "hana.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/hana.zip",
+            "hatch.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/hatch.zip",
+            "jacuzzi.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/jacuzzi.zip",
+            "kukui.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/kukui.zip",
+            "lulu.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/lulu.zip",
+            "nami.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/nami.zip",
+            "octopus.zip":
+              "https://sh1m.b0vik.dev/shims/unmodified/octopus.zip",
+            "orco.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/orco.zip",
+            "pyro.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/pyro.zip",
+            "reks.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/reks.zip",
+            "sentry.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/sentry.zip",
+            "stout.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/stout.zip",
+            "strongbad.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/strongbad.zip",
+            "tidus.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/tidus.zip",
+            "ultima.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/ultima.zip",
+            "volteer.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/volteer.zip",
+            "zork.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/zork.zip",
           },
           "diffusehyperion.com": {
             "brask.zip":
@@ -108,60 +164,6 @@ let data = {
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/volteer.zip",
             "zork.zip":
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/zork.zip",
-          },
-          "kxtz.femboy.vip": {
-            "brask.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/brask.bin",
-            "brya.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/brya.bin",
-            "clapper.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/clapper.bin",
-            "coral.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/coral.bin",
-            "corsola.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/corsola.bin",
-            "dedede.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/dedede.bin",
-            "enguarde.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/enguarde.bin",
-            "glimmer.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/glimmer.bin",
-            "grunt.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/grunt.bin",
-            "hana.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/hana.bin",
-            "hatch.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/hatch.bin",
-            "jacuzzi.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/jacuzzi.bin",
-            "kukui.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/kukui.bin",
-            "lulu.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/lulu.bin",
-            "nami.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/nami.bin",
-            "octopus.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/octopus.bin",
-            "orco.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/orco.bin",
-            "pyro.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/pyro.bin",
-            "reks.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/reks.bin",
-            "sentry.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/sentry.bin",
-            "stout.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/stout.bin",
-            "strongbad.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/strongbad.bin",
-            "tidus.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/tidus.bin",
-            "ultima.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/ultima.bin",
-            "volteer.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/volteer.bin",
-            "zork.bin":
-              "https://kxtz.femboy.vip/sh1mmer/download/shims/zork.bin",
           },
           "archive.org": {
             "brask.zip": 
