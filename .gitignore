@@ -20,6 +20,9 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# lock files
+yarn.lock
+
 # intelliJ
 .idea/
 
