@@ -49,5 +49,5 @@ export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
       allowNodeBuiltins: true
     }
   },
-  adapter: process.env.CF_PAGES === '1' ? cloudflare() : vercel()
+  adapter: vercel()
 });

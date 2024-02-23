@@ -40,7 +40,6 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^9.0.1",
     "@astrojs/markdoc": "^0.8.2",
     "@astrojs/vercel": "^6.1.2",
     "@fontsource/ibm-plex-mono": "^5.0.8",
