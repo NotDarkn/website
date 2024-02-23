@@ -13,6 +13,7 @@ import remarkCodeTitles from 'remark-code-titles'
 import decapCmsOauth from "astro-decap-cms-oauth";
 
 export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
+  outDir: './dist',
   output: 'server',
   site: 'https://blog.osu.bio',
   server: {
