@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-dep:
+  update-deps:
     runs-on: ubuntu-latest
 
     steps:
