@@ -22,6 +22,8 @@ pnpm-debug.log*
 
 # lock files
 yarn.lock
+pnpm-lock.yaml
+bun.lockb
 
 # intelliJ
 .idea/
