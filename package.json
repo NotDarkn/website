@@ -20,10 +20,10 @@
     "@fontsource/inter": "^5.0.16",
     "@mui/icons-material": "^5.15.11",
     "@mui/joy": "5.0.0-beta.29",
-    "@types/react": "^18.2.60",
+    "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "@vercel/analytics": "^1.2.2",
-    "astro": "^4.4.5",
+    "astro": "^4.4.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.71.1"
