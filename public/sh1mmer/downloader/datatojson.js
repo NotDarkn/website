@@ -112,7 +112,63 @@ let data = {
               "https://sh1m.b0vik.dev/shims/unmodified/volteer.zip",
             "zork.zip": 
               "https://sh1m.b0vik.dev/shims/unmodified/zork.zip",
-          },
+            },
+          "dl.kxtz.dev": {
+            "ambassador.bin":
+              "https://dl.kxtz.dev/shims/Raw/ambassador.bin",
+            "brask.bin": 
+              "https://dl.kxtz.dev/shims/Raw/brask.bin",
+            "brya.bin": 
+              "https://dl.kxtz.dev/shims/Raw/brya.bin",
+            "clapper.bin": 
+              "https://dl.kxtz.dev/shims/Raw/clapper.bin",
+            "coral.bin": 
+              "https://dl.kxtz.dev/shims/Raw/coral.bin",
+            "corsola.bin":
+              "https://dl.kxtz.dev/shims/Raw/corsola.bin",
+            "dedede.bin": 
+              "https://dl.kxtz.dev/shims/Raw/dedede.bin",
+            "enguarde.bin": 
+              "https://dl.kxtz.dev/shims/Raw/enguarde.bin",
+            "glimmer.bin": 
+              "https://dl.kxtz.dev/shims/Raw/glimmer.bin",
+            "grunt.bin": 
+              "https://dl.kxtz.dev/shims/Raw/grunt.bin",
+            "hana.bin": 
+              "https://dl.kxtz.dev/shims/Raw/hana.bin",
+            "hatch.bin": 
+              "https://dl.kxtz.dev/shims/Raw/hatch.bin",
+            "jacuzzi.bin": 
+              "https://dl.kxtz.dev/shims/Raw/jacuzzi.bin",
+            "kukui.bin": 
+              "https://dl.kxtz.dev/shims/Raw/kukui.bin",
+            "lulu.bin": 
+              "https://dl.kxtz.dev/shims/Raw/lulu.bin",
+            "nami.bin": 
+              "https://dl.kxtz.dev/shims/Raw/nami.bin",
+            "octopus.bin":
+              "https://dl.kxtz.dev/shims/Raw/octopus.bin",
+            "orco.bin": 
+              "https://dl.kxtz.dev/shims/Raw/orco.bin",
+            "pyro.bin": 
+              "https://dl.kxtz.dev/shims/Raw/pyro.bin",
+            "reks.bin": 
+              "https://dl.kxtz.dev/shims/Raw/reks.bin",
+            "sentry.bin": 
+              "https://dl.kxtz.dev/shims/Raw/sentry.bin",
+            "stout.bin": 
+              "https://dl.kxtz.dev/shims/Raw/stout.bin",
+            "strongbad.bin": 
+              "https://dl.kxtz.dev/shims/Raw/strongbad.bin",
+            "tidus.bin": 
+              "https://dl.kxtz.dev/shims/Raw/tidus.bin",
+            "ultima.bin": 
+              "https://dl.kxtz.dev/shims/Raw/ultima.bin",
+            "volteer.bin": 
+              "https://dl.kxtz.dev/shims/Raw/volteer.bin",
+            "zork.bin": 
+              "https://dl.kxtz.dev/shims/Raw/zork.bin",
+            },
           "diffusehyperion.com": {
             "brask.zip":
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/brask.zip",
@@ -164,7 +220,7 @@ let data = {
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/volteer.zip",
             "zork.zip":
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/zork.zip",
-          },
+            },
           "archive.org": {
             "brask.zip": 
               "https://archive.org/download/brask/brask.zip",
@@ -216,7 +272,7 @@ let data = {
               "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fvolteer.bin",
             "zork.bin":
               "https://archive.org/download/dl2.sh1mmer.me/dl2.sh1mmer.me.zip/dl2.sh1mmer.me%2Fminishim%2Fzork.bin",
-          },
+            },
           "discord.com": {
             "brask.bin.zip": [
               "https://cdn.discordapp.com/attachments/1133515362416218187/1134347661684781116/brask.bin.zip.aa",
