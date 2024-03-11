@@ -139,7 +139,7 @@
   <a href='https://github.com/kxtzownsu'>
   <img src='https://github.com/kxtzownsu.png' width='140px;'>
 </a>
-  <h4 align='center'><a href='https://kxtz.femboy.vip/'>kxtz</a></h4>
+  <h4 align='center'><a href='https://kxtz.dev/'>kxtz</a></h4>
 </td>
 </tr>
 
