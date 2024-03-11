@@ -57,62 +57,6 @@ let data = {
             "zork.zip": 
               "https://dl.osu.bio/api/raw/?path=/SH1mmer/zork.zip",
             },
-          "sh1m.b0vik.dev": {
-            "ambassador.zip":
-              "https://sh1m.b0vik.dev/shims/unmodified/ambassador.zip",
-            "brask.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/brask.zip",
-            "brya.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/brya.zip",
-            "clapper.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/clapper.zip",
-            "coral.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/coral.zip",
-            "corsola.zip":
-              "https://sh1m.b0vik.dev/shims/unmodified/corsola.zip",
-            "dedede.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/dedede.zip",
-            "enguarde.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/enguarde.zip",
-            "glimmer.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/glimmer.zip",
-            "grunt.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/grunt.zip",
-            "hana.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/hana.zip",
-            "hatch.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/hatch.zip",
-            "jacuzzi.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/jacuzzi.zip",
-            "kukui.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/kukui.zip",
-            "lulu.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/lulu.zip",
-            "nami.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/nami.zip",
-            "octopus.zip":
-              "https://sh1m.b0vik.dev/shims/unmodified/octopus.zip",
-            "orco.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/orco.zip",
-            "pyro.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/pyro.zip",
-            "reks.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/reks.zip",
-            "sentry.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/sentry.zip",
-            "stout.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/stout.zip",
-            "strongbad.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/strongbad.zip",
-            "tidus.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/tidus.zip",
-            "ultima.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/ultima.zip",
-            "volteer.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/volteer.zip",
-            "zork.zip": 
-              "https://sh1m.b0vik.dev/shims/unmodified/zork.zip",
-            },
           "dl.kxtz.dev": {
             "ambassador.bin":
               "https://dl.kxtz.dev/shims/Raw/ambassador.bin",
@@ -168,6 +112,62 @@ let data = {
               "https://dl.kxtz.dev/shims/Raw/volteer.bin",
             "zork.bin": 
               "https://dl.kxtz.dev/shims/Raw/zork.bin",
+            },
+          "sh1m.b0vik.dev": {
+            "ambassador.zip":
+              "https://sh1m.b0vik.dev/shims/unmodified/ambassador.zip",
+            "brask.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/brask.zip",
+            "brya.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/brya.zip",
+            "clapper.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/clapper.zip",
+            "coral.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/coral.zip",
+            "corsola.zip":
+              "https://sh1m.b0vik.dev/shims/unmodified/corsola.zip",
+            "dedede.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/dedede.zip",
+            "enguarde.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/enguarde.zip",
+            "glimmer.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/glimmer.zip",
+            "grunt.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/grunt.zip",
+            "hana.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/hana.zip",
+            "hatch.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/hatch.zip",
+            "jacuzzi.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/jacuzzi.zip",
+            "kukui.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/kukui.zip",
+            "lulu.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/lulu.zip",
+            "nami.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/nami.zip",
+            "octopus.zip":
+              "https://sh1m.b0vik.dev/shims/unmodified/octopus.zip",
+            "orco.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/orco.zip",
+            "pyro.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/pyro.zip",
+            "reks.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/reks.zip",
+            "sentry.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/sentry.zip",
+            "stout.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/stout.zip",
+            "strongbad.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/strongbad.zip",
+            "tidus.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/tidus.zip",
+            "ultima.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/ultima.zip",
+            "volteer.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/volteer.zip",
+            "zork.zip": 
+              "https://sh1m.b0vik.dev/shims/unmodified/zork.zip",
             },
           "diffusehyperion.com": {
             "brask.zip":
