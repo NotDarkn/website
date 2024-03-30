@@ -1,5 +1,39 @@
 @use '../../css/fonts.sass'
 
+.center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  background-color: rgba(11, 11, 11, 0.5)
+  padding-left: 30px
+  padding-right: 30px
+  padding-top: 15px
+  padding-bottom: 20px
+  min-width: 280px
+  max-width: 560px
+  border-radius: 60px
+  border: 3px solid #fff
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.75)
+
+@keyframes snowfall
+  0%
+    transform: translateY(-10vh)
+
+  100%
+    transform: translateY(160vh)
+
+.snowflake
+  --size: 1vw
+  width: var(--size)
+  height: var(--size)
+  background: white
+  border-radius: 50%
+  position: fixed
+  top: -5vh
+  animation: snowfall infinite
+  opacity: 0.1
+
 *
   text-align: center
 
@@ -38,7 +72,6 @@ body, html
   --lightness: 40%
   background-color: #131516
   color: #e3e1de
-  font-size: 107%
 
 select, button
   background-color: #e3e1de
@@ -47,8 +80,8 @@ select, button
   padding-top: 1px
   border-radius: 6px
   border-width: 2px
-  font-size: 90%
-  width: 150px
+  font-size: 100%
+  width: 140px
 
 summary:after 
   content: "click to show credits"

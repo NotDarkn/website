@@ -26,6 +26,7 @@ import { CssVarsProvider, Box, Alert } from "@mui/joy";
   </head>
   <CssVarsProvider defaultMode="dark">
     <body onload="start()">
+      <div class="center">
       <Box
         sx={{
           display: "flex",
@@ -33,6 +34,8 @@ import { CssVarsProvider, Box, Alert } from "@mui/joy";
           justifyContent: "center",
           flexDirection: "column",
           width: "100%",
+          pt: "10px",
+          mb: "-30px",
         }}
       >
         <Alert
@@ -42,8 +45,7 @@ import { CssVarsProvider, Box, Alert } from "@mui/joy";
           variant="outlined"
           size="lg"
         >
-          The chosen mirror is defective, try choosing another after reloading!
-          Reloading in 7 seconds...
+          The chosen mirror is defective! Reloading in 7 seconds...
         </Alert>
         <Alert
           id="dataAlert"
@@ -59,10 +61,10 @@ import { CssVarsProvider, Box, Alert } from "@mui/joy";
       <h1>Glitz - RMA Shim Downloader</h1>
 
       <p>
-        Glitz is a collection of mirrors for publicly-available RMA shims that
-        can be used with <a href="/sh1mmer">SH1mmer</a>.<br />
-         As of currently, Glitz provides five different mirrors to download
-        shims from.<br />
+        Glitz is a collection of mirrors for publicly-leaked Chromebook RMA
+          shims. <br />
+        Currently, Glitz provides five different mirrors to download shims 
+          from.<br />
       </p>
 
       <select id="mirror" style="margin-right: 4px;">
@@ -80,7 +82,7 @@ import { CssVarsProvider, Box, Alert } from "@mui/joy";
       <br />
       <div class="float">
         <h3>
-          In order to use SH1mmer with these RMA shims, you need to inject them <a href=
+          In order to use SH1mmer, you need to inject the shims <a href=
           "/sh1mmer/builder">here</a>.
           <br />
            These files aren't endorsed or supported by <a href="https://mercurywork.shop"
@@ -127,6 +129,11 @@ import { CssVarsProvider, Box, Alert } from "@mui/joy";
       <p>
         <font size="+3"> ❤️ thank you ❤️</font>
       </p>
+      
+    </div>
+
+    <div id="snowflake-container"/>
+    <script src="../../../public/js/snowflakes.ts"></script>
     </body>
   </CssVarsProvider>
 </html>
