@@ -36,37 +36,6 @@ import { CssVarsProvider, Box, Alert } from "@mui/joy";
         }}
       >
         <Alert
-          id="compatAlert"
-          sx={{ display: "none", marginBottom: "7px" }}
-          color="danger"
-          variant="outlined"
-          size="lg"
-        >
-          Warning! You won't be able to download from the Discord mirror using
-          this browser, switch to another.
-        </Alert>
-        <Alert
-          id="mobileAlert"
-          sx={{ display: "none", marginBottom: "7px" }}
-          color="danger"
-          variant="outlined"
-          size="lg"
-        >
-          Warning! You won't be able to download from the Discord mirror using
-          this device, switch to another.
-        </Alert>
-        <Alert
-          id="corsAlert"
-          sx={{ display: "none", marginBottom: "7px" }}
-          color="danger"
-          variant="outlined"
-          size="lg"
-        >
-          CORS error! Please enable the CORS disabler extension. If you don't
-          have one for your browser, switch to Chrome, install the extension,
-          and try again. Reloading in 20 seconds...
-        </Alert>
-        <Alert
           id="defectiveMirrorAlert"
           sx={{ display: "none", marginBottom: "7px" }}
           color="danger"
@@ -91,22 +60,8 @@ import { CssVarsProvider, Box, Alert } from "@mui/joy";
       <p>
         Glitz is a collection of mirrors for publicly-available RMA shims that
         can be used with <a href="/sh1mmer">SH1mmer</a>.<br />
-         As of currently, Glitz provides six different mirrors to download
+         As of currently, Glitz provides five different mirrors to download
         shims from.<br />
-      </p>
-      <p>
-        <b>Discord Download Instructions:</b>
-        <br />
-         1. Install
-        <a
-          href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf"
-          >this extension</a
-        >, (or an equivalent)
-        <br />
-         2. Open the extension, and click the big "C" on the left to enable it.
-        <br />
-         3. Download your bin from the Discord mirror, and uninstall the
-        extension after.
       </p>
 
       <select style="margin-right: 4px;" id="mirror">
