@@ -38,8 +38,23 @@ body, html
   --lightness: 40%
   background-color: #131516
   color: #e3e1de
+  font-size: 107%
 
 select, button
+  font-family: "SF-Reg", system-ui
   background-color: #e3e1de
   border-color: #5a5a5a
-  border-radius: 4px
+  padding-bottom: 1px
+  padding-top: 1px
+  border-radius: 6px
+  border-width: 2px
+  font-size: 90%
+  width: 150px
+
+summary:after 
+  content: "click to show credits"
+  font-weight: bold
+
+details[open] summary:after 
+  content: "click to close credits"
+  font-weight: bold
