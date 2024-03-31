@@ -90,3 +90,22 @@ summary:after
 details[open] summary:after 
   content: "click to close credits"
   font-weight: bold
+
+@keyframes fadeIn 
+  from 
+    opacity: 0
+    transform: translateY(-20px)
+
+  to 
+    opacity: 1
+    transform: translateY(0)
+    
+// thank you hell0u/waveeeeee for improving the code below!! <3
+details > *:not(summary) 
+  opacity: 0
+  animation: fadeIn 0.5s ease-in-out forwards
+
+@for $i from 1 through 3 
+  details > *:not(summary):nth-child(#{$i}) 
+    animation-delay: calc(0.3s - (0.1s * ($i - 1)))
+// again, thank you hell0u/waveeeeee!! ^^
