@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://osu.bio/sitemap-index.xml
+Sitemap: https://darkn.bio/sitemap-index.xml
