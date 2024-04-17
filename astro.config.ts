@@ -8,7 +8,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://osu.bio",
+  site: "https://darkn.bio",
   output: "server",
   adapter: process.env.CF_PAGES === '1' ? cloudflare() : vercel({
     webAnalytics: {
