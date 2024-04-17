@@ -1,119 +1,121 @@
 import { writeFile } from 'fs';
 
 let data = {
-          "dl.osu.bio": {
+          "dl.darkn.bio": {
             "ambassador.zip":
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/ambassador.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/ambassador.zip",
             "brask.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/brask.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/brask.zip",
             "brya.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/brya.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/brya.zip",
             "clapper.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/clapper.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/clapper.zip",
             "coral.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/coral.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/coral.zip",
             "corsola.zip":
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/corsola.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/corsola.zip",
             "dedede.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/dedede.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/dedede.zip",
             "enguarde.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/enguarde.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/enguarde.zip",
             "glimmer.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/glimmer.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/glimmer.zip",
             "grunt.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/grunt.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/grunt.zip",
             "hana.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/hana.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/hana.zip",
             "hatch.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/hatch.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/hatch.zip",
             "jacuzzi.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/jacuzzi.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/jacuzzi.zip",
             "kefka.zip":
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/kefka.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/kefka.zip",
             "kukui.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/kukui.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/kukui.zip",
             "lulu.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/lulu.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/lulu.zip",
             "nami.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/nami.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/nami.zip",
             "octopus.zip":
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/octopus.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/octopus.zip",
             "orco.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/orco.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/orco.zip",
             "pyro.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/pyro.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/pyro.zip",
             "reks.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/reks.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/reks.zip",
             "sentry.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/sentry.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/sentry.zip",
             "stout.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/stout.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/stout.zip",
             "strongbad.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/strongbad.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/strongbad.zip",
             "tidus.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/tidus.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/tidus.zip",
             "ultima.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/ultima.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/ultima.zip",
             "volteer.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/volteer.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/volteer.zip",
             "zork.zip": 
-              "https://dl.osu.bio/api/raw/?path=/SH1mmer/zork.zip",
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/zork.zip",
             },
           "dl.kxtz.dev": {
-            "ambassador.bin":
-              "https://dl.kxtz.dev/shims/Raw/ambassador.bin",
-            "brask.bin": 
-              "https://dl.kxtz.dev/shims/Raw/brask.bin",
-            "brya.bin": 
-              "https://dl.kxtz.dev/shims/Raw/brya.bin",
-            "clapper.bin": 
-              "https://dl.kxtz.dev/shims/Raw/clapper.bin",
-            "coral.bin": 
-              "https://dl.kxtz.dev/shims/Raw/coral.bin",
-            "corsola.bin":
-              "https://dl.kxtz.dev/shims/Raw/corsola.bin",
-            "dedede.bin": 
-              "https://dl.kxtz.dev/shims/Raw/dedede.bin",
-            "enguarde.bin": 
-              "https://dl.kxtz.dev/shims/Raw/enguarde.bin",
-            "glimmer.bin": 
-              "https://dl.kxtz.dev/shims/Raw/glimmer.bin",
-            "grunt.bin": 
-              "https://dl.kxtz.dev/shims/Raw/grunt.bin",
-            "hana.bin": 
-              "https://dl.kxtz.dev/shims/Raw/hana.bin",
-            "hatch.bin": 
-              "https://dl.kxtz.dev/shims/Raw/hatch.bin",
-            "jacuzzi.bin": 
-              "https://dl.kxtz.dev/shims/Raw/jacuzzi.bin",
-            "kukui.bin": 
-              "https://dl.kxtz.dev/shims/Raw/kukui.bin",
-            "lulu.bin": 
-              "https://dl.kxtz.dev/shims/Raw/lulu.bin",
-            "nami.bin": 
-              "https://dl.kxtz.dev/shims/Raw/nami.bin",
-            "octopus.bin":
-              "https://dl.kxtz.dev/shims/Raw/octopus.bin",
-            "orco.bin": 
-              "https://dl.kxtz.dev/shims/Raw/orco.bin",
-            "pyro.bin": 
-              "https://dl.kxtz.dev/shims/Raw/pyro.bin",
-            "reks.bin": 
-              "https://dl.kxtz.dev/shims/Raw/reks.bin",
-            "sentry.bin": 
-              "https://dl.kxtz.dev/shims/Raw/sentry.bin",
-            "stout.bin": 
-              "https://dl.kxtz.dev/shims/Raw/stout.bin",
-            "strongbad.bin": 
-              "https://dl.kxtz.dev/shims/Raw/strongbad.bin",
-            "tidus.bin": 
-              "https://dl.kxtz.dev/shims/Raw/tidus.bin",
-            "ultima.bin": 
-              "https://dl.kxtz.dev/shims/Raw/ultima.bin",
-            "volteer.bin": 
-              "https://dl.kxtz.dev/shims/Raw/volteer.bin",
-            "zork.bin": 
-              "https://dl.kxtz.dev/shims/Raw/zork.bin",
+            "ambassador.zip":
+              "https://dl.kxtz.dev/shims/Raw/ambassador.zip",
+            "brask.zip": 
+              "https://dl.kxtz.dev/shims/Raw/brask.zip",
+            "brya.zip": 
+              "https://dl.kxtz.dev/shims/Raw/brya.zip",
+            "clapper.zip": 
+              "https://dl.kxtz.dev/shims/Raw/clapper.zip",
+            "coral.zip": 
+              "https://dl.kxtz.dev/shims/Raw/coral.zip",
+            "corsola.zip":
+              "https://dl.kxtz.dev/shims/Raw/corsola.zip",
+            "dedede.zip": 
+              "https://dl.kxtz.dev/shims/Raw/dedede.zip",
+            "enguarde.zip": 
+              "https://dl.kxtz.dev/shims/Raw/enguarde.zip",
+            "glimmer.zip": 
+              "https://dl.kxtz.dev/shims/Raw/glimmer.zip",
+            "grunt.zip": 
+              "https://dl.kxtz.dev/shims/Raw/grunt.zip",
+            "hana.zip": 
+              "https://dl.kxtz.dev/shims/Raw/hana.zip",
+            "hatch.zip": 
+              "https://dl.kxtz.dev/shims/Raw/hatch.zip",
+            "jacuzzi.zip": 
+              "https://dl.kxtz.dev/shims/Raw/jacuzzi.zip",
+            "kefka.zip": 
+              "https://dl.kxtz.dev/shims/Raw/kefka.zip",
+            "kukui.zip": 
+              "https://dl.kxtz.dev/shims/Raw/kukui.zip",
+            "lulu.zip": 
+              "https://dl.kxtz.dev/shims/Raw/lulu.zip",
+            "nami.zip": 
+              "https://dl.kxtz.dev/shims/Raw/nami.zip",
+            "octopus.zip":
+              "https://dl.kxtz.dev/shims/Raw/octopus.zip",
+            "orco.zip": 
+              "https://dl.kxtz.dev/shims/Raw/orco.zip",
+            "pyro.zip": 
+              "https://dl.kxtz.dev/shims/Raw/pyro.zip",
+            "reks.zip": 
+              "https://dl.kxtz.dev/shims/Raw/reks.zip",
+            "sentry.zip": 
+              "https://dl.kxtz.dev/shims/Raw/sentry.zip",
+            "stout.zip": 
+              "https://dl.kxtz.dev/shims/Raw/stout.zip",
+            "strongbad.zip": 
+              "https://dl.kxtz.dev/shims/Raw/strongbad.zip",
+            "tidus.zip": 
+              "https://dl.kxtz.dev/shims/Raw/tidus.zip",
+            "ultima.zip": 
+              "https://dl.kxtz.dev/shims/Raw/ultima.zip",
+            "volteer.zip": 
+              "https://dl.kxtz.dev/shims/Raw/volteer.zip",
+            "zork.zip": 
+              "https://dl.kxtz.dev/shims/Raw/zork.zip",
             },
           "sh1m.b0vik.dev": {
             "ambassador.zip":
