@@ -1,5 +1,5 @@
 <h1>
-  <a href="https://osu.bio" target="_blank"><img src="https://github.com/NotDarkn/website/assets/73033672/61f75adb-5e24-454b-8c7f-59ca4f32941c" alt="Darkn's Website" width="auto"></a>
+  <a href="https://darkn.bio" target="_blank"><img src="https://github.com/NotDarkn/website/assets/73033672/61f75adb-5e24-454b-8c7f-59ca4f32941c" alt="Darkn's Website" width="auto"></a>
 </h1>
 
 <p align="center">
@@ -20,9 +20,9 @@
   An open-sourced website with an easily accessible license, designed for simplicity, cleanliness, and usability.
 </p>
 <p align="center">
-  <a href="https://osu.bio" target="_blank">🌐 Website</a>
+  <a href="https://darkn.bio" target="_blank">🌐 Website</a>
   •
-  <a href="https://blog.osu.bio" target="_blank">✍ Blog</a>
+  <a href="https://blog.darkn.bio" target="_blank">✍ Blog</a>
   •
   <a href="https://discord.gg/ER8saRhYpg" target="_blank">☎️ Discord</a>
   •
@@ -35,19 +35,19 @@
     <tr>
       <td>
         <a
-          href="https://osu.bio"
+          href="https://darkn.bio"
           >📖 Mini Portfolio</a
         >
       </td>
       <td>
         <a
-          href="https://osu.bio/icraze"
+          href="https://darkn.bio/icraze"
           >📢 Fake Propaganda</a
         >
       </td>
       <td>
         <a
-          href="https://osu.bio/sh1mmer"
+          href="https://darkn.bio/sh1mmer"
           >🖥️ SH1mmer Rehost</a
         >
       </td>
@@ -75,19 +75,19 @@
     <tr>
       <td>
         <a 
-          href="https://blog.osu.bio"
+          href="https://blog.darkn.bio"
           >🖊️ Simplistic Blog</a
         >
       </td>
       <td>
         <a
-          href="https://dl.osu.bio"
+          href="https://dl.darkn.bio"
           >⬇️ OneDrive File Host</a
         >
       </td>
       <td>
         <a 
-          href="https://osu.bio/sh1mmer/downloader"
+          href="https://darkn.bio/sh1mmer/downloader"
           >🌏 Glitz Downloader</a
         >
       </td>
@@ -115,7 +115,7 @@
   <a href='https://github.com/NotDarkn'>
   <img src='https://github.com/NotDarkn.png' width='140px;'>
 </a>
-  <h4 align='center'><a href='https://osu.bio'>Darkn</a></h4>
+  <h4 align='center'><a href='https://darkn.bio'>Darkn</a></h4>
 </td>
   <td id='hell0u'>
   <a href='https://github.com/13waves'>
