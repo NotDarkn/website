@@ -201,6 +201,7 @@ button:not(.disabled):hover {
 
 #waxOptions label {
   font-size: 20px;
+  text-align: center;
 }
 
 #waxOptions span {
