@@ -15,14 +15,15 @@
     <title>Wax4Web</title>
 
     <link rel="preload" href="/sh1mmer/files/main.css" as="style">
-    <link rel="preload" href="/sh1mmer/wax4web/libv86.js" as="script">
-    <link rel="preload" href="/sh1mmer/wax4web/beautifulworld.js" as="script">
     
     <link rel="icon" href="/sh1mmer/assets/icon.png" />
     <link rel="stylesheet" href="/sh1mmer/files/main.css" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <script is:inline src="/sh1mmer/wax4web/hterm_all.min.js" defer></script>
+    <script is:inline src="/sh1mmer/wax4web/zip.min.js" defer></script>
     <script is:inline src="/sh1mmer/wax4web/libv86.js"></script>
-    <script is:inline src="/sh1mmer/wax4web/beautifulworld.js"></script>
+    <script is:inline src="/sh1mmer/wax4web/wax4web.js"></script>
   </head>
 
   <body>
@@ -32,151 +33,50 @@
       <br />
       <a href="/sh1mmer" target="_self">Back to home</a>
     </div>
-    <div class="section blue">
+    <div class="section blue" id="wax4webDirectionsContainer">
       <h3>How to use</h3>
       <p>
-        First, you'll need to find your school Chromebook's board name. This can
-        be done by going to <kbd>chrome://version</kbd> on your Chromebook and
-        copying the word after <kbd>stable-channel</kbd>, or by looking up the
-        Chromebook's model.
+        See the directions at <a href="." target="_self">home</a> to find the correct shim for your device.
       </p>
       <p>
-        <b>IMPORTANT</b>: IF YOUR BOARD IS <b>HANA</b> OR <b>CORAL</b> OR ANY
-        OTHER PRE-FRECON BOARD, <b>THIS WILL NOT WORK!</b> Instead, you'll have
-        to build a legacy shim from
-        <a href="/sh1mmer/buildlegacy" target="_self">the legacy builder</a>
-
-        Next you need a raw RMA shim for that board name. There should be one
-        corresponding to your board <a href="https://dl.darkn.bio">here</a> but if
-        not you'll have to source them on your own.. somehow.
+        Once you've found your shim, make sure to extract it if it's in a .zip file. If it has
+        any other kind of compression (.gz, .bz2, .xz, etc) make sure you decompress it first.
       </p>
       <p>
-        Once you've found your raw shim, make sure to extract it if it's in a
-        .zip file. If it has some kind of other compression format (.xz, .xf,
-        .gz, etc) make sure you uncompress it first.
+        Before pressing start, you may select or deselect any of the options below.
+        <!--<br><b>Important:</b> if your board is <b>hana</b> or <b>coral</b> or any other
+        pre-frecon board, you <b>must</b> check the "legacy" box!-->
       </p>
       <p>
-        Next, hit the big start button and select your raw .bin file. The VM
-        will start up. This will use a considerable amount of memory on your
-        system and take a while. If it freezes, that's normal. Once it finishes,
-        it will automatically download the patched version.
-        <b>NO PAYLOADS ARE INCLUDED AS THIS IS A MINISHIM BUILD</b>
+        Next, hit the start button and select your .bin file. The VM will start up. This will use a
+        considerable amount of memory on your system and take a while. If it freezes, that's normal. Once it
+        finishes, it will automatically download the patched version.
       </p>
-    </div>
-    <div class="section green">
-      <h1 class="center">
-        <a
-          style="user-select: none; cursor: pointer"
-          onclick="
-          start()
-          "
-          >Start</a
-        >
-      </h1>
-      <div class="flex evenly" id="displaycontainer">
+    <br />
+    <div class="section green" id="wax4webEmulatorContainer">
+      <div id="waxOptions">
+        <label><input type="checkbox" name="legacy"> <span>Legacy</span> <i>Non-GUI version, more updated, more features, not as pretty</i></label>
+        <label><input type="checkbox" name="payloads" checked> <span>Payloads</span> <i>Include extra payloads</i></label>
+        <label><input type="checkbox" name="fast" checked> <span>Fast</span> <i>Reduce build time at the cost of a larger shim size</i></label>
+        <label><input type="checkbox" name="debug"> <span>Debug</span> <i>Show debug messages</i></label>
+      </div>
+      <a href="javascript:void(0)" target="_self" class="waxbutton disabled" id="startButton">Start</a>
+      <a href="javascript:void(0)" target="_self" class="waxbutton" id="downloadButton" style="display: none;">Download</a>
+      <div id="displayContainer">
         <div>
-          <div class="label">Linux Emulator Output:</div>
+          <div class="label">Linux Output</div>
           <div id="screen_container">
-            <div class="linux_output"></div>
-            <canvas></canvas>
+            <div id="linuxOutput" class="builderlog"></div>
+            <canvas style="display: none;"></canvas>
           </div>
         </div>
         <div>
-          <div class="label">Wax Injector Output:</div>
-
-          <textarea readonly id="injector_output" rows="17" cols="60">
-          </textarea>
+          <div class="label">Main Output</div>
+          <div id="waxOutput" class="builderlog"></div>
         </div>
       </div>
-      <br />
-      <input id="hd_image" class="invisible" type="file" />
-      <a id="downloadURL" class="invisible" download="injected_shim.bin"></a>
-      <p style="text-align: center">
-        • Wax4Web is powered by
-        <a href="https://github.com/buildroot/buildroot">Buildroot</a> and
-        <a href="https://github.com/copy/v86">v86</a> •
-      </p>
-    </div>
+      <div class="waxfooter">Wax4Web is powered by <a href="https://github.com/buildroot/buildroot">Buildroot</a>
+      and <a href="https://github.com/copy/v86">v86</a></div>
+    </div>  
   </body>
 </html>
-<style>
-  #displaycontainer {
-    /* background-color: var(--light); */
-    padding: 3em;
-    border-radius: 10px;
-  }
-
-  .center {
-    text-align: center;
-    margin: 1em;
-  }
-
-  #injector_output {
-    resize: none;
-    width: max-content;
-    outline: none;
-    color: whitesmoke;
-    border: 5px solid black;
-    border-radius: 10px;
-    font: 10px monospace;
-  }
-
-  canvas,
-  #injector_output,
-  #screen_container,
-  .linux_output,
-  #screen_container {
-    width: 40vw;
-    height: 40vh;
-  }
-
-  .invisible {
-    display: none;
-  }
-
-  #screen_container {
-    background-color: black;
-    border: 5px solid black;
-    border-radius: 10px;
-
-    overflow: hidden;
-  }
-
-  .linux_output {
-    outline: none;
-    white-space: pre;
-    font: 10px monospace;
-    line-height: 10px;
-    user-select: none;
-    color: whitesmoke;
-  }
-
-  .evenly {
-    justify-content: space-evenly;
-  }
-
-  .flex {
-    display: flex;
-  }
-
-  html {
-    background-color: black;
-    color: white;
-    font-family: monospace;
-  }
-
-  textarea {
-    /* no clue why but it wont work if its mixed with other elements */
-    background-color: black;
-  }
-
-  canvas textarea #screen_container .linux_output {
-    color: whitesmoke;
-    font: 10px monospace;
-  }
-
-  .label {
-    font: 18px monospace;
-    text-align: center
-  }
-</style>
