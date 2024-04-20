@@ -33,50 +33,51 @@
       <br />
       <a href="/sh1mmer" target="_self">Back to home</a>
     </div>
-    <div class="section blue" id="wax4webDirectionsContainer">
-      <h3>How to use</h3>
+    <div class="section blue">
+      <h3>Instructions</h3>
       <p>
-        See the directions at <a href="." target="_self">home</a> to find the correct shim for your device.
+        See the directions at <a href="/" target="_self">home</a> on how to find a shim for your device.
+        If there isn't a shim for your device, then good luck finding one.. somehow.
       </p>
       <p>
-        Once you've found your shim, make sure to extract it if it's in a .zip file. If it has
+        Once you've found your shim, make sure to extract it if it's in a <kbd>.zip</kbd> file. If it has 
         any other kind of compression (.gz, .bz2, .xz, etc) make sure you decompress it first.
       </p>
       <p>
         Before pressing start, you may select or deselect any of the options below.
-        <!--<br><b>Important:</b> if your board is <b>hana</b> or <b>coral</b> or any other
-        pre-frecon board, you <b>must</b> check the "legacy" box!-->
+        <br><b>IMPORTANT:</b> If your board is <b>HANA</b> or <b>CORAL</b> or any other
+        pre-frecon board, you <b>MUST</b> check the "Legacy" box!
       </p>
       <p>
-        Next, hit the start button and select your .bin file. The VM will start up. This will use a
+        Next, hit the start button and select your <kbd>.bin</kbd> file. The VM will start up. This will use a
         considerable amount of memory on your system and take a while. If it freezes, that's normal. Once it
         finishes, it will automatically download the patched version.
       </p>
     <br />
-    <div class="section green" id="wax4webEmulatorContainer">
+    <div class="section green-builder">
       <div id="waxOptions">
-        <label><input type="checkbox" name="legacy"> <span>Legacy</span> <i>Non-GUI version, more updated, more features, not as pretty</i></label>
+        <label><input type="checkbox" name="legacy"> <span>Legacy</span> <i>CLI, more updated & features</i></label>
         <label><input type="checkbox" name="payloads" checked> <span>Payloads</span> <i>Include extra payloads</i></label>
-        <label><input type="checkbox" name="fast" checked> <span>Fast</span> <i>Reduce build time at the cost of a larger shim size</i></label>
+        <label><input type="checkbox" name="fast" checked> <span>Fast</span> <i>Reduce build time (but larger file)</i></label>
         <label><input type="checkbox" name="debug"> <span>Debug</span> <i>Show debug messages</i></label>
       </div>
       <a href="javascript:void(0)" target="_self" class="waxbutton disabled" id="startButton">Start</a>
       <a href="javascript:void(0)" target="_self" class="waxbutton" id="downloadButton" style="display: none;">Download</a>
       <div id="displayContainer">
         <div>
-          <div class="label">Linux Output</div>
+          <div class="buildlabel">Linux Output</div>
           <div id="screen_container">
             <div id="linuxOutput" class="builderlog"></div>
             <canvas style="display: none;"></canvas>
           </div>
         </div>
         <div>
-          <div class="label">Main Output</div>
+          <div class="buildlabel">Main Output</div>
           <div id="waxOutput" class="builderlog"></div>
         </div>
       </div>
-      <div class="waxfooter">Wax4Web is powered by <a href="https://github.com/buildroot/buildroot">Buildroot</a>
-      and <a href="https://github.com/copy/v86">v86</a></div>
+      <div class="waxfooter">• Wax4Web is powered by <a href="https://github.com/buildroot/buildroot">Buildroot</a>
+      and <a href="https://github.com/copy/v86">v86</a> •</div>
     </div>  
   </body>
 </html>

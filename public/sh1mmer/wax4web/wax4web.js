@@ -6,8 +6,6 @@ if (!ENABLE_WAX4WEB) throw "wax4web is disabled on this site";
 
 const wax4webTarZipChunks = 2;
 const minDiskSize = 1024 * 1024 * 1024; // 1 GiB
-const wax4webDirectionsContainer = document.getElementById("wax4webDirectionsContainer");
-const wax4webEmulatorContainer = document.getElementById("wax4webEmulatorContainer");
 let waxOptions;
 let startButton;
 let downloadButton;
@@ -151,7 +149,7 @@ function initFromFile(file) {
 		autostart: false
 	});
 	emulator.add_listener("download-progress", function(p) {
-		updateLoadProgress(p.file_name, p.loaded / p.total);
+		if (p.lengthComputable) updateLoadProgress(p.file_name, p.loaded / p.total);
 	});
 	emulator.add_listener("emulator-ready", async function() {
 		var opts = Array.from(waxOptions.querySelectorAll("input[type=checkbox]"));

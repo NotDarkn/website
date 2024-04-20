@@ -61,6 +61,10 @@ html {
 .section.green {
   background-color: var(--dark1);
 }
+.section.green-builder {
+  background-color: var(--dark1);
+  border-radius: 20px;
+}
 *::selection {
   background-color: var(--dark2);
 }
@@ -157,9 +161,13 @@ button:not(.disabled):hover {
 }
 
 .builderlog * {
+  font-family: monospace;
 }
 
 .builderlog {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   font-family: monospace;
   color: white;
   background-color: black;
@@ -173,16 +181,24 @@ button:not(.disabled):hover {
   white-space: pre;
 }
 
+.buildlabel {
+  font-family: monospace;
+  font-size: 15px;
+  text-align: center;
+}
+
 #linuxOutput {
+  padding: 10px;
   display: flex !important;
   flex-direction: column;
   justify-content: flex-end;
+  font-family: monospace;
 }
 
 .waxfooter {
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 #waxOptions {
@@ -195,7 +211,7 @@ button:not(.disabled):hover {
 #waxOptions input[type=checkbox] {
   transform: scale(1.5);
   cursor: pointer;
-  accent-color: #0f9931;
+  accent-color: #d3c5ff;
   vertical-align: baseline;
 }
 
