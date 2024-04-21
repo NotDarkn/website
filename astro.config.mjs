@@ -15,7 +15,7 @@ import decapCmsOauth from "astro-decap-cms-oauth";
 
 export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
   output: 'server',
-  site: 'https://blog.osu.bio',
+  site: 'https://blog.darkn.bio',
   server: {
     port: 3792, 
   },
