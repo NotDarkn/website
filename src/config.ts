@@ -16,7 +16,7 @@ export const SITE = {
 	name: "Darkn's Blog",
 	title: "Darkn",
 	description: "Written Blogs by Darkn",
-	url: "https://blog.osu.bio",
+	url: "https://blog.darkn.bio",
 	githubUrl: "https://github.com/NotDarkn/website",
 	listDrafts: false,
 	image:
