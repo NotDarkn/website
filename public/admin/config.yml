@@ -3,12 +3,12 @@ backend:
   branch: main
   publish_mode: editorial_workflow
   repo: NotDarkn/website 
-  site_domain: blog.osu.bio 
-  base_url: https://blog.osu.bio 
+  site_domain: blog.darkn.bio 
+  base_url: https://blog.darkn.bio 
   auth_scope: repo
   auth_endpoint: oauth
-  display_url: https://blog.osu.bio
-  logo_url: https://blog.osu.bio/assets/logo.svg
+  display_url: https://blog.darkn.bio
+  logo_url: https://blog.darkn.bio/assets/logo.svg
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
