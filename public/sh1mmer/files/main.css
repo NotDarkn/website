@@ -65,6 +65,16 @@ html {
   background-color: var(--dark1);
   border-radius: 20px;
 }
+.section.green-kiosk {
+  background-color: var(--dark1);
+  border-radius: 20px;
+  text-align: center;
+}
+.section.blue-kiosk {
+  background-color: var(--light);
+  border-radius: 20px;
+  text-align: center;
+}
 *::selection {
   background-color: var(--dark2);
 }
@@ -132,6 +142,12 @@ a {
   max-width: 100%;
   transition: filter 250ms;
   cursor: pointer
+}
+
+.kioskfooter {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
 }
 
 a:not(.disabled):hover,

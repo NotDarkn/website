@@ -43,6 +43,18 @@
       <br />
       <a href="/sh1mmer" target="_self">Back to home</a>
     </div>
+    <div class="section blue">
+      <div class="section green-kiosk">
+        <h3 style="margin-bottom: -15px">NOTE: I DO <b>NOT</b> RECOMMEND USING THIS.</h3>
+        <p>
+          It's <b>VERY LIKELY</b> that when you re-enroll during the process
+          it will notify Google Admin Console (GAC) that your Chromebook has
+          re-enrolled with OS verification <b>off.</b>
+        </p>
+        <div class="kioskfooter">• so yeah, don't use this nor' <a href="https://github.com/MercuryWorkshop/fakemurk/issues/12">
+        fakemurk either</a>, you're better off using <a href="https://github.com/r58Playz/terraos">terraOS</a> •</div>
+      </div>  
+    </div>
     <div class="section green">
       <h3>What you'll need</h3>
       <li>
@@ -107,15 +119,13 @@
         account to re-enroll into the Chromebook.
       </p>
       <hr />
-      <p style="text-align: center">
-        <b>IMPORTANT:</b> DO NOT CLOSE YOUR CHROMEBOOK until the next step and
-        DO NOT SKIP the next step
-        <br />
-        -- SERIOUSLY --
-        <br />
-        <b>IMPORTANT:</b> DO NOT CLOSE YOUR CHROMEBOOK until the next step and
-        DO NOT SKIP the next step
-      </p>
+      <div class="section blue-kiosk">
+      <h3 style="margin-bottom: -15px">IMPORTANT</h3>
+        <p>
+          DO NOT CLOSE YOUR CHROMEBOOK until the next step and
+          DO NOT SKIP the next step. Seriously.
+        </p>
+      </div>
       <hr />
       <h3>Safe Re-Unenroll</h3>
       <p>
@@ -130,9 +140,8 @@
       </p>
       <img src="/sh1mmer/assets/chromeos_console.webp" alt="ChromeOS Bash Shell" />
       <p>
-        The login is <kbd>root</kbd>, and <b>if it needs a password</b>, the
-        password is <kbd>test0000</kbd>. After logging in, some red text should
-        appear meaning you can type commands into the console now.
+        The login is <kbd>root</kbd>. After logging in, you should be able to
+        type commands into the console now.
       </p>
       <p>
         Type this command in the console and press Enter: <br />
@@ -158,7 +167,7 @@
       <p>
         Once you are done with the kiosk test, reboot your computer with
         <kbd>Power (⏻) + Reload (↻)</kbd>, and follow the instructions to
-        re-enable secure mode or developer mode, then powerwash.
+        re-enable secure mode or disable developer mode, then powerwash.
       </p>
       <p>
         By this point, your Chromebook is unenrolled again and you have
