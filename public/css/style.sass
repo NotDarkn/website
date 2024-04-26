@@ -1,3 +1,4 @@
+
 html, body
   margin: 0
   font-family: "Inter", "SF Pro Display", "SF Hello", "SF Pro", "sans-serif", "Arial"
@@ -69,20 +70,20 @@ a[href]
   animation-delay: $delay
 
 .alt-main
-@include fadeIn(2s)
+  @include fadeIn(2s)
 
 .icons-a, .icons-b, .icons-c, .icons-d, .icons-e
   opacity: 0
-@include fadeIn(1.5s)
+  @include fadeIn(1.5s)
 
 .pfp, .header-height, .text-height, .mobile-header-height, .text-height-404, .header-height-404, .mobile-header-height-404
-@include fadeIn(1.2s)
+  @include fadeIn(1.2s)
 
 .header-height, .mobile-header-height, .text-height-404
-@include delay(1.35s)
+  @include delay(1.35s)
 
 .text-height
-@include delay(1.70s)
+  @include delay(1.70s)
 
 @mixin icon-style($animation-delay)
   margin-left: 5.5px
@@ -94,7 +95,7 @@ a[href]
 $icons: a b c d e
 
 @each $icon in $icons
-.icons-#{$icon}
+ .icons-#{$icon}
   @include icon-style(2.05s + 0.225s * index($icons, $icon))
 
 /* fade in experimentation end
