@@ -77,7 +77,11 @@ a[href]
   @include fadeIn(1.5s)
 
 .pfp, .header-height, .text-height, .mobile-header-height, .text-height-404, .header-height-404, .mobile-header-height-404
+  opacity: 0
   @include fadeIn(1.2s)
+  
+.pfp, .header-height-404, .mobile-header-height-404
+  @include delay(1s)
 
 .header-height, .mobile-header-height, .text-height-404
   @include delay(1.35s)
