@@ -1,11 +1,6 @@
 html, body
-  padding: 0
   margin: 0
-  width: 100vw
-  height: 100vh
   font-family: "Inter", "sans-serif", "Arial"
-  position: relative
-  overflow: hidden
   color: #fff
   background-color: #222222
   background-attachment: fixed
@@ -15,7 +10,7 @@ html, body
 a[href]
   color: rgba(0,0,0,0.0)
 
-/* some css below was taken from kxtz's website
+/* some css in .alt & .alt-main is from kxtz
 
 .alt
   display: flex
@@ -33,13 +28,12 @@ a[href]
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.75)
   text-align: center
 
-/* ty kxtz for letting me do that, ty!!
+/* thank you kxtz ^^
 
 .sakamato
   width: auto
   height: 150px
-  margin-bottom: -15px
-  vertical-align: middle
+  margin-bottom: -19px
 
 .mobile-header-height, .mobile-header-height-404
   letter-spacing: -2.4px
@@ -89,10 +83,10 @@ a[href]
   animation-delay: 1.70s
 
 @mixin icon-style($animation-delay)
-  margin-left: 6px
-  margin-right: 6px
+  margin-left: 5.5px
+  margin-right: 5.5px
   width: 25px
-  height: 25px
+  height: auto
   animation-delay: $animation-delay
  
 $icons: a b c d e
@@ -104,14 +98,14 @@ $icons: a b c d e
 /* fade in experimentation end
 
 .icon-js
-  margin-left: 6px
-  margin-right: 6px
+  margin-left: 5.5px
+  margin-right: 5.5px
   width: 25px
-  height: 25px
+  height: auto
   transition: opacity 0.5s
 
 .icon-js:hover
-  opacity: 0.25
+  opacity: 0.35
 
 /* source: https://community.codenewbie.org/alvaro_montoro/creating-a-snowfall-effect-with-html-and-css-2p4
 
@@ -123,9 +117,6 @@ $icons: a b c d e
     transform: translateY(130vh)
 
 .snowflake
-  --size: 1vw
-  width: var(--size)
-  height: var(--size)
   background: white
   border-radius: 50%
   position: fixed
