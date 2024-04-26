@@ -54,35 +54,35 @@ a[href]
 
 /* fade in experimentation start
 
-@keyframes fadeIn 
- 0% 
-   opacity: 0
- 
- 100% 
-   opacity: 1
+@keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+@mixin fadeIn($time: 0s)
+  animation: fadeIn $time
+  animation-fill-mode: forwards
+
+@mixin delay($delay: 0s)
+  animation-delay: $delay
 
 .alt-main
-  animation: fadeIn 2s
-  animation-fill-mode: forwards
+@include fadeIn(2s)
 
 .icons-a, .icons-b, .icons-c, .icons-d, .icons-e
   opacity: 0
-  animation: fadeIn 1.5s
-  animation-fill-mode: forwards
+@include fadeIn(1.5s)
 
 .pfp, .header-height, .text-height, .mobile-header-height, .text-height-404, .header-height-404, .mobile-header-height-404
-  opacity: 0
-  animation: fadeIn 1.2s
-  animation-fill-mode: forwards
-
-.pfp, .header-height-404, .mobile-header-height-404
-  animation-delay: 1.0s
+@include fadeIn(1.2s)
 
 .header-height, .mobile-header-height, .text-height-404
-  animation-delay: 1.35s
+@include delay(1.35s)
 
 .text-height
-  animation-delay: 1.70s
+@include delay(1.70s)
 
 @mixin icon-style($animation-delay)
   margin-left: 5.5px
@@ -90,12 +90,12 @@ a[href]
   width: 25px
   height: auto
   animation-delay: $animation-delay
- 
+
 $icons: a b c d e
 
 @each $icon in $icons
- .icons-#{$icon}
-   @include icon-style(2.05s + 0.225s * index($icons, $icon))
+.icons-#{$icon}
+  @include icon-style(2.05s + 0.225s * index($icons, $icon))
 
 /* fade in experimentation end
 
