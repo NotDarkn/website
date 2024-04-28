@@ -36,6 +36,8 @@ let data = {
               "https://dl.darkn.bio/api/raw/?path=/SH1mmer/lulu.zip",
             "nami.zip": 
               "https://dl.darkn.bio/api/raw/?path=/SH1mmer/nami.zip",
+            "nissa.zip": 
+              "https://dl.darkn.bio/api/raw/?path=/SH1mmer/nissa.zip",
             "octopus.zip":
               "https://dl.darkn.bio/api/raw/?path=/SH1mmer/octopus.zip",
             "orco.zip": 
@@ -198,10 +200,14 @@ let data = {
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/hatch.zip",
             "jacuzzi.zip":
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/jacuzzi.zip",
+            "kefka.zip":
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/kefka.zip",
             "kukui.zip":
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/kukui.zip",
             "nami.zip":
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/nami.zip",
+            "nissa.zip":
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/nissa.zip",
             "octopus.zip":
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/octopus.zip",
             "orco.zip":
