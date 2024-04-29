@@ -18,7 +18,7 @@ a[href]
   overflow: hidden
   justify-content: center
   align-items: center
-  min-height: 100vh
+  min-height: 90vh
 
 .alt-main
   background-color: rgba(11, 11, 11, 0.5)
@@ -69,6 +69,9 @@ a[href]
 @mixin delay($delay: 0s)
   animation-delay: $delay
 
+.alert
+  @include fadeIn(2s)
+  
 .alt-main
   @include fadeIn(2s)
 

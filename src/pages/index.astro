@@ -1,6 +1,8 @@
 ---
 import "@fontsource/inter";
 import "/public/css/style.sass";
+import { Box, Alert, CssVarsProvider } from "@mui/joy";
+
 ---
 
 <html lang="en-us">
@@ -38,7 +40,31 @@ import "/public/css/style.sass";
     <link rel="icon" type="image/x-icon" href="/img/site-favicon.webp" />
     <meta name="darkreader-lock">
   </head>
-  <body class="alt">
+  <body>
+    <div class="alert">
+    <CssVarsProvider defaultMode="dark">
+        <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+          width: "100%",
+          pt: "10px",
+          //mb: "-30px",
+        }}
+      >
+        <Alert
+          color="neutral"
+          variant="outlined"
+          size="lg"
+        >
+          osu.bio is moving to darkn.bio!
+        </Alert>
+      </Box>
+      </CssVarsProvider>
+    </div>
+    <div class="alt">
     <div class="alt-main">
       <a href="https://omori.fandom.com/wiki/KEL" target="_blank">
         <img
@@ -73,5 +99,6 @@ import "/public/css/style.sass";
     <script src="../../public/js/iconchange.ts"></script>
     <script src="../../public/js/snowflakes.ts"></script>
     <script src="../../public/js/mobiledetection.ts"></script>
+    </div>
   </body>
 </html>
