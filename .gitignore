@@ -22,7 +22,7 @@ pnpm-debug.log*
 
 # lock files
 yarn.lock
-pnpm-lock.yaml
+#pnpm-lock.yaml
 bun.lockb
 
 # intelliJ
