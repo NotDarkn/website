@@ -176,6 +176,8 @@ let data = {
               "https://sh1m.b0vik.dev/shims/unmodified/zork.zip",
             },
           "diffusehyperion.com": {
+            "ambassador.zip":
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/ambassador.zip",
             "brask.zip":
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/brask.zip",
             "brya.zip":
@@ -204,6 +206,8 @@ let data = {
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/kefka.zip",
             "kukui.zip":
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/kukui.zip",
+            "lulu.zip":
+              "https://dl.diffusehyperion.com/api/raw/?path=/rma/lulu.zip",
             "nami.zip":
               "https://dl.diffusehyperion.com/api/raw/?path=/rma/nami.zip",
             "nissa.zip":
