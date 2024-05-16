@@ -4,7 +4,7 @@ function isMobileDevice() {
 
 window.onload = function() {
     if(isMobileDevice()) {
-        var element = document.querySelector(".header-height");
-        element.className = "mobile-header-height";
+        var element = document.querySelector(".header");
+        element.className = "mobile-header";
     }
 };

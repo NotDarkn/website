@@ -1,4 +1,3 @@
-
 html, body
   margin: 0
   font-family: "Inter", "SF Pro Display", "SF Hello", "SF Pro", "sans-serif", "Arial"
@@ -11,28 +10,25 @@ html, body
 a[href]
   color: rgba(0,0,0,0.0)
 
-.ok 
- overflow-y: hidden
+/* some css in .center / .box is from kxtz
 
-/* some css in .alt & .alt-main is from kxtz
-
-.alt
+.center
   display: flex
   overflow: hidden
   justify-content: center
   align-items: center
   min-height: 100vh
 
-.alt-main
+.box
   background-color: rgba(11, 11, 11, 0.5)
   max-width: 300px
   padding: 20px
   border-radius: 60px
   border: 3px solid #fff
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.75)
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.75)
   text-align: center
 
-/* thank you kxtz ^^
+/* thanks kxtz ^^
 
 .pfp
   width: auto
@@ -41,19 +37,23 @@ a[href]
   border-radius: 50%
   border: 2px solid #fff
 
-.mobile-header-height, .mobile-header-height-404
+.mobile-header, .mobile-header-404
   letter-spacing: -2.4px
   margin-bottom: -7px
   margin-top: 19px
   font-kerning: none
   font-size: 33px
 
-.header-height, .header-height-404
+.header-height, .header-404
   letter-spacing: -0.5px
   margin-bottom: -1px
 
-.text-height, .text-height-404
+.text-404
   margin-top: 10px
+  line-height: 1.2
+
+.text
+  margin-top: -10px
   line-height: 1.2
 
 /* fade in experimentation start
@@ -72,34 +72,30 @@ a[href]
 @mixin delay($delay: 0s)
   animation-delay: $delay
 
-.alert
-  @include fadeIn(2s)
-  
-.alt-main
+.box, .alert
   @include fadeIn(2s)
 
 .icons-a, .icons-b, .icons-c, .icons-d, .icons-e
   opacity: 0
   @include fadeIn(1.5s)
 
-.pfp, .header-height, .text-height, .mobile-header-height, .text-height-404, .header-height-404, .mobile-header-height-404
+.pfp, .header, .text, .mobile-header, .header-404, .text-404, .mobile-header-404
   opacity: 0
   @include fadeIn(1.2s)
   
-.pfp, .header-height-404, .mobile-header-height-404
+.pfp,.header-404, .mobile-header-404
   @include delay(1s)
 
-.header-height, .mobile-header-height, .text-height-404
+.header, .mobile-header, .text-404
   @include delay(1.35s)
 
-.text-height
+.text
   @include delay(1.70s)
 
 @mixin icon-style($animation-delay)
-  margin-left: 5.5px
-  margin-right: 5.5px
+  margin-left: 4px
+  margin-right: 7px
   width: 25px
-  height: auto
   animation-delay: $animation-delay
 
 $icons: a b c d e
@@ -111,10 +107,9 @@ $icons: a b c d e
 /* fade in experimentation end
 
 .icon-js
-  margin-left: 5.5px
-  margin-right: 5.5px
+  margin-left: 4px
+  margin-right: 7px
   width: 25px
-  height: auto
   transition: opacity 0.5s
 
 .icon-js:hover
