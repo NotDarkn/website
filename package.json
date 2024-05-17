@@ -18,15 +18,15 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fontsource/inter": "^5.0.18",
-    "@mui/icons-material": "^5.15.17",
+    "@mui/icons-material": "^5.15.18",
     "@mui/joy": "5.0.0-beta.36",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "@vercel/analytics": "^1.2.2",
-    "astro": "^4.8.4",
+    "astro": "^4.8.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sass": "^1.77.1"
+    "sass": "^1.77.2"
   },
   "devDependencies": {
     "prettier": "3.2.5",
