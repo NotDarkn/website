@@ -39,7 +39,7 @@ a[href]
 
 .mobile-header, .mobile-header-404
   letter-spacing: -2.4px
-  margin-bottom: -7px
+  margin-bottom: 19px
   margin-top: 19px
   font-kerning: none
   font-size: 33px
@@ -48,12 +48,8 @@ a[href]
   letter-spacing: -0.5px
   margin-bottom: -1px
 
-.text-404
-  margin-top: 10px
-  line-height: 1.2
-
 .text
-  margin-top: -10px
+  margin-top: -15px
   line-height: 1.2
 
 /* fade in experimentation start
@@ -79,17 +75,17 @@ a[href]
   opacity: 0
   @include fadeIn(1.5s)
 
-.pfp, .header, .text, .mobile-header, .header-404, .text-404, .mobile-header-404
+.pfp, .header, .text, .mobile-header, .header-404, .mobile-header-404, .fade1-404, .fade2-404
   opacity: 0
   @include fadeIn(1.2s)
   
 .pfp,.header-404, .mobile-header-404
   @include delay(1s)
 
-.header, .mobile-header, .text-404
+.header, .mobile-header, .fade1-404
   @include delay(1.35s)
 
-.text
+.text,.fade2-404
   @include delay(1.70s)
 
 @mixin icon-style($animation-delay)

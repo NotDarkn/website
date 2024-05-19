@@ -1,0 +1,125 @@
+html, body
+  margin: 0
+  font-family: "Inter", "SF Pro Display", "SF Hello", "SF Pro", "sans-serif", "Arial"
+  color: #fff
+  background-color: #222222
+  background-attachment: fixed
+  background-size: cover
+  background-image: url("/img/gradient.webp")
+
+a[href]
+  color: rgba(0,0,0,0.0)
+
+.text
+  margin-top: -15px
+  line-height: 1.2
+
+.mobile-header
+  letter-spacing: -2.4px
+  margin-bottom: 19px
+  margin-top: 19px
+  font-kerning: none
+  font-size: 33px
+/* alt-version of design
+
+.center
+  display: flex
+  overflow: hidden
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+
+.pfp
+  width: auto
+  height: 84px
+  margin-bottom: -20px
+  border-radius: 7px
+  border: 2px solid #fff
+
+.box
+  background-color: rgba(11, 11, 11, 0.5)
+  max-width: 275px
+  padding: 20px
+  border-radius: 15px
+  border: 3px solid #fff
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.75)
+
+/* alt version ends here
+
+/* fade in experimentation start
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+@mixin fadeIn($time: 0s)
+  animation: fadeIn $time
+  animation-fill-mode: forwards
+
+@mixin delay($delay: 0s)
+  animation-delay: $delay
+
+.box, .alert
+  @include fadeIn(2s)
+
+.icons-a, .icons-b, .icons-c, .icons-d, .icons-e, .icons-f
+  opacity: 0
+  @include fadeIn(1.5s)
+
+.pfp, .header, .text, .mobile-header
+  opacity: 0
+  @include fadeIn(1.2s)
+  
+.pfp
+  @include delay(1s)
+
+.header, .mobile-header
+  @include delay(1.35s)
+
+.text
+  @include delay(1.70s)
+
+@mixin icon-style($animation-delay)
+  margin-left: 0.5px
+  margin-right: 10.5px
+  width: 25px
+  animation-delay: $animation-delay
+
+$icons: a b c d e f g
+
+@each $icon in $icons
+ .icons-#{$icon}
+  @include icon-style(2.05s + 0.225s * index($icons, $icon))
+
+/* fade in experimentation end
+
+.icon-js
+  margin-left: 0.5px
+  margin-right: 10.5px
+  width: 25px
+  transition: opacity 0.5s
+
+.icon-js:hover
+  opacity: 0.35
+
+/* source: https://community.codenewbie.org/alvaro_montoro/creating-a-snowfall-effect-with-html-and-css-2p4
+
+@keyframes snowfall
+  0%
+    transform: translateY(-10vh)
+
+  100%
+    transform: translateY(130vh)
+
+.snowflake
+  background: white
+  border-radius: 50%
+  position: fixed
+  top: -5vh
+  animation: snowfall infinite
+  opacity: 0.1
+
+/* thanks to hell0u/waveeeeee for making changes and fixes to the css code! <3
