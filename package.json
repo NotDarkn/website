@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^10.4.0",
-    "@astrojs/partytown": "^2.1.0",
+    "@astrojs/partytown": "^2.1.1",
     "@astrojs/react": "^3.5.0",
     "@astrojs/sitemap": "^3.1.5",
-    "@astrojs/vercel": "^7.6.0",
+    "@astrojs/vercel": "^7.7.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fontsource/inter": "^5.0.18",
@@ -23,10 +23,10 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vercel/analytics": "^1.3.1",
-    "astro": "^4.10.1",
+    "astro": "^4.10.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sass": "^1.77.4"
+    "sass": "^1.77.5"
   },
   "devDependencies": {
     "prettier": "3.2.5",
