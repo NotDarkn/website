@@ -107,7 +107,7 @@ From here, take your conductive material and place one end on **pin 3 (WP)** and
 **MAKE SURE** it's making contact with the pins and **IS NOT** making contact with other nearby pins. You may place tape
 on top of the chip to keep the conductive material on the pins, but that's if you have to.
 
-Use the picture below to know where to put the tin foil and tape:
+Use the picture below to know where to put your conductive material and tape:
 - **Green**: Indent / Circle
 - **Red**: Conductive Material
 - **Blue**: Tape
@@ -147,6 +147,23 @@ flashrom --wp-disable
         alt="Command Output" 
     />
     <figcaption style="text-align: center">Command Output (Bash Shell)</figcaption>
+</figure>
+
+### Cryptohome Update
+For those on v124 or newer, they changed **cryptohome** to **device_management_client**. However, this doesn't remove
+FWMP due to "*a weird quirk of the refactors*" and will simply error upon running the command with
+ ***--action=remove_firmware_management_parameters***.
+
+Instead, you'll need to downgrade ChromeOS to v123 (or lower) **with developer mode** on to bypass the 
+"***ChromeOS is out-of-date***" error. If you don't know how to downgrade, below are instructions that I've made.
+
+**If recovery reports "An Unexpected Error Occured", try a different version.**
+<figure>
+    <img 
+        src="../images/the-tsunami/downgrade-guide.webp" 
+        alt="Downgrade Guide" 
+    />
+    <figcaption style="text-align: center">Downgrading Guide (Utada Hikaru Discord)</figcaption>
 </figure>
 
 ### Booting into ChromeOS
@@ -200,8 +217,7 @@ All in all, just don't do this shit. If your Chromebooks bricks, that's on you. 
 ends up being unenrolled, then congratulations. You took the risk for a huge reward, and now you can do whatever the hell
 you want on that Chromebook.
 
-For me, I have OCTOPUS and JACUZZI Chromebooks where I can downgrade to any version anytime I want and use SH1mmer 
-cause I used [this guide](https://darkn.bio/sh1mmer/unfog), so I don't need to do this.
+For me, I have OCTOPUS and JACUZZI Chromebooks which skipped kernver 2 and have write protection disabled, so I can just downgrade to v107 and unenroll with SH1MMER anytime I want.
 
 **Not like I'd ever do this myself anyways.**
 ***
