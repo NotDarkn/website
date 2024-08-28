@@ -106,7 +106,7 @@
   </tbody>
 </table>
 
-> **Note**: These features can be removed, or added, by the user at any time. Modify the code at `/src/pages/` + `/public/` if you wish to modify anything. Documentation is not provided, however the code is simple enough to add, remove, or configure anything.
+> **Note**: These features can be removed, or added, by the user at any time. Modify the code at `/src/pages/` + `/public/` if you wish to modify anything. Documentation is not provided, however the code is simple enough to add, remove, or configure anything. Please also note that the file host is hosted thanks to [onedrive-cf-index](https://github.com/lyc8503/onedrive-cf-index-ng).
 
 ## 🔍 Helpful Contributors
 <table id='credit'>
@@ -146,7 +146,7 @@
 <tr>
   <td id='julia_j'>
   <a href='https://discord.com/users/1039648022084202516'>
-  <img src='https://cdn.discordapp.com/avatars/1039648022084202516/39b7a93b8d41bcd0babde43f98f26e0a.webp?size=512' width='140px;'>
+  <img src='https://cdn.discordapp.com/avatars/1039648022084202516/02d836d5e0eb3bd83ff6a44dc632becf.png?size=2048' width='140px;'>
 </a>
   <h4 align='center'><a href='https://discord.com/users/1039648022084202516'>julia_j</a></h4>
 </td>
