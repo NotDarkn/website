@@ -121,7 +121,7 @@
   <a href='https://github.com/13waves'>
   <img src='https://github.com/13waves.png' width='140px;'>
 </a>
-  <h4 align='center'><a href='https://uhhwavee.vercel.app/'>hell0u</a></h4>
+  <h4 align='center'><a href='https://wavee.space/'>hell0u</a></h4>
 </td>
   <td id='MercuryWorkshop'>
   <a href='https://github.com/MercuryWorkshop'>
