@@ -14,10 +14,10 @@
     "@astrojs/partytown": "^2.1.2",
     "@astrojs/react": "^3.6.2",
     "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/vercel": "^7.8.0",
+    "@astrojs/vercel": "^7.8.1",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
-    "@fontsource/inter": "^5.0.20",
+    "@fontsource/inter": "^5.0.21",
     "@mui/icons-material": "^5.16.7",
     "@mui/joy": "5.0.0-beta.48",
     "@types/react": "^18.3.5",
@@ -31,7 +31,7 @@
   "devDependencies": {
     "prettier": "3.2.5",
     "prettier-plugin-astro": "^0.13.0",
-    "typescript": "^5.5.4"
+    "typescript": "^5.6.2"
   },
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.10.0"
 }
