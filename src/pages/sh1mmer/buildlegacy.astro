@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta property="og:title" content="Rehosted SH1mmer" />
+    <meta property="og:description" content="SH1mmer: Builder" />
+    <meta property="og:url" content="https://darkn.bio/sh1mmer/builder" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://darkn.bio/sh1mmer/assets/icon.png" />
+    <meta property="og:image:alt" content="SH1mmer" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:site_name" content="SH1mmer" />
+    <title>Wax4Web</title>
+
+    <link rel="preload" href="/sh1mmer/files/main.css" as="style">
+    
+    <link rel="icon" href="/sh1mmer/assets/icon.png" />
+    <link rel="stylesheet" href="/sh1mmer/files/main.css" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <script is:inline src="/sh1mmer/wax4web/hterm_all.min.js" defer></script>
+    <script is:inline src="/sh1mmer/wax4web/zip.min.js" defer></script>
+    <script is:inline src="/sh1mmer/wax4web/libv86.js"></script>
+    <script is:inline src="/sh1mmer/wax4web/wax4web.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Wax4Web</h1>
+      <h3>a simple and easy to use mini SH1mmer builder</h3>
+      <br />
+      <a href="/sh1mmer" target="_self">Back to home</a>
+    </div>
+    <div class="section blue">
+      <h3>Instructions</h3>
+      <p>
+        See the directions at <a href="/sh1mmer" target="_self">home</a> on how to find a shim for your device.
+        If there isn't a shim for your device, then good luck finding one.. somehow.
+      </p>
+      <p>
+        Once you've found your shim, make sure to extract it if it's in a <kbd>.zip</kbd> file. If it has 
+        any other kind of compression (.gz, .bz2, .xz, etc) make sure you decompress it first.
+      </p>
+      <p>
+        Before pressing start, you may select or deselect any of the options below.
+      </p>
+      <p>
+        Next, hit the start button and select your <kbd>.bin</kbd> file. The VM will start up. This will use a
+        considerable amount of memory on your system and take a while. If it freezes, that's normal. Once it
+        finishes, it will automatically download the patched version.
+      </p>
+    <br />
+    <div class="section green-builder">
+      <div id="waxOptions">
+        <label><input type="checkbox" name="legacy" checked> <span>Legacy</span> <i>CLI, more updated & features</i></label>
+        <label><input type="checkbox" name="payloads" checked> <span>Payloads</span> <i>Include extra payloads</i></label>
+        <label><input type="checkbox" name="fast" checked> <span>Fast</span> <i>Reduce build time (but larger file)</i></label>
+        <label><input type="checkbox" name="debug"> <span>Debug</span> <i>Show debug messages</i></label>
+      </div>
+      <a href="javascript:void(0)" target="_self" class="waxbutton disabled" id="startButton">Start</a>
+      <a href="javascript:void(0)" target="_self" class="waxbutton" id="downloadButton" style="display: none;">Download</a>
+      <div id="displayContainer">
+        <div>
+          <div class="buildlabel">Linux Output</div>
+          <div id="screen_container">
+            <div id="linuxOutput" class="builderlog"></div>
+            <canvas style="display: none;"></canvas>
+          </div>
+        </div>
+        <div>
+          <div class="buildlabel">Main Output</div>
+          <div id="waxOutput" class="builderlog"></div>
+        </div>
+      </div>
+      <div class="waxfooter">• Wax4Web is powered by <a href="https://github.com/buildroot/buildroot">Buildroot</a>
+      and <a href="https://github.com/copy/v86">v86</a> •</div>
+    </div>  
+  </body>
+</html>
