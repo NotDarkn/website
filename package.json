@@ -18,13 +18,13 @@
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
     "@fontsource/inter": "^5.1.0",
-    "@mui/icons-material": "^5.16.8",
+    "@mui/icons-material": "^5.16.9",
     "@mui/joy": "5.0.0-beta.48",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^18.3.14",
+    "@types/react-dom": "^18.3.2",
     "@vercel/analytics": "^1.4.1",
-    "astro": "^4.16.16",
-    "npm": "^10.9.1",
+    "astro": "^4.16.17",
+    "npm": "^10.9.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sass": "^1.82.0"
@@ -34,5 +34,5 @@
     "prettier-plugin-astro": "^0.13.0",
     "typescript": "^5.7.2"
   },
-  "packageManager": "pnpm@9.14.4"
+  "packageManager": "pnpm@9.15.0"
 }
