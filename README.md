@@ -118,8 +118,8 @@
   <h4 align='center'><a href='https://darkn.bio'>Darkn</a></h4>
 </td>
   <td id='hell0u'>
-  <a href='https://github.com/13waves'>
-  <img src='https://github.com/13waves.png' width='140px;'>
+  <a href='https://github.com/uhhwave'>
+  <img src='https://github.com/uhhwave.png' width='140px;'>
 </a>
   <h4 align='center'><a href='https://wavee.space/'>hell0u</a></h4>
 </td>
