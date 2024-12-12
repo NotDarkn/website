@@ -10,6 +10,44 @@ html, body
 a[href]
   color: rgba(0,0,0,0.0)
 
+/* button */
+.buttonuhh
+  background-color: #191919
+  border: 3px solid #fff
+  border-radius: 26px
+  box-sizing: border-box
+  color: #ffffff
+  cursor: pointer
+  display: inline-block
+  font-family: "SF-Reg", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif
+  font-size: 19px
+  font-weight: 600
+  line-height: 15px
+  margin: 0
+  outline: none
+  padding: 15px 19px
+  position: relative
+  text-align: center
+  text-decoration: none
+  touch-action: manipulation
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s
+  -webkit-user-select: none
+  user-select: none
+  width: auto
+  &:focus-visible
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px
+    transition: box-shadow 0.2s
+  &:active
+    background-color: #141414
+    border-color: #fff
+    transform: scale(0.96)
+  &:disabled
+    background-color: grey
+    border-color: #dddddd
+    color: #000000
+    cursor: not-allowed
+    opacity: 1
+
 /* some css in .center / .box is from kxtz
 
 .center
@@ -129,3 +167,4 @@ $icons: a b c d e
   opacity: 0.1
 
 /* thanks to hell0u/waveeeeee for making changes and fixes to the css code! <3
+

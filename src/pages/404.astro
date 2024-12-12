@@ -1,7 +1,6 @@
 ---
 import "@fontsource/inter";
 import "/public/css/style.sass";
-import { Button, CssVarsProvider } from "@mui/joy";
 ---
 <html lang="en-us">
   <head>
@@ -36,18 +35,20 @@ import { Button, CssVarsProvider } from "@mui/joy";
     </style>
     <meta name="darkreader-lock">
   </head>
-    <CssVarsProvider defaultMode="dark">
     <body class="center">
       <div class="box">
         <h1 class="header-404">Oops.. 404!</h1>
         <p class="fade1-404">You shouldn't be here! Go back...  or else.</p>
         <p class="fade2-404" style="text-align: center;">
-          <Button component="a" href="/" size="sm" variant="soft">Go Back</Button>
+          <a href="/"><input
+            class="buttonuhh idk"
+            type="button"
+            value="Go Back"
+          /></a>
         </p>
       </div>
       <div id="snowflake-container"></div>
       <script src="../../public/js/snowflakes.ts"></script>
       <script src="../../public/js/mobile404.ts"></script>
-    </CssVarsProvider>
   </body>
 </html>
