@@ -32,7 +32,7 @@ export const SITE = {
 	authorImage: "https://github.com/NotDarkn.png",
 	// Author: Bio
 	authorBio:
-		"✨ a 15-year-old web developer interested in Chromebooks and iOS jailbreaks! 🌎",
+		"✨ a (shit) web developer interested in Chromebooks and ULTRAKILL. currently 16 years old! 🌎",
 };
 
 // Ink - Theme configuration
