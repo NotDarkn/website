@@ -131,7 +131,7 @@
 </td>
   <td id='DiffuseHyperion'>
   <a href='https://github.com/DiffuseHyperion'>
-  <img src='https://cdn.discordapp.com/avatars/301279262994857987/3d899db86c69f4814712ce695ddc4f4d.png?size=4096' width='140px;'>
+  <img src='https://github.com/DiffuseHyperion.png' width='140px;'>
 </a>
   <h4 align='center'><a href='https://diffusehyperion.com/'>DiffuseHyperion</a></h4>
 </td>
@@ -164,7 +164,7 @@
 </td>
   <td id='regalaether'>
   <a href='https://github.com/RegalAether'>
-  <img src='https://cdn.discordapp.com/avatars/678345517297696769/e87113de497958d83a92b72a93062d7b.png?size=4096' width='140px;'>
+  <img src='https://github.com/RegalAether.png' width='140px;'>
 </a>
   <h4 align='center'><a href='https://github.com/RegalAether'>RegalAether</a></h4>
 </td>
