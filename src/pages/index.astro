@@ -2,6 +2,12 @@
 import "@fontsource/inter";
 import "/public/css/style.sass";
 
+const DISCORD_ID = '829745505784692776';
+const response = await fetch(`https://api.lanyard.rest/v1/users/${DISCORD_ID}`);
+const { data } = await response.json();
+const avatarUrl = data?.discord_user?.avatar 
+  ? `https://cdn.discordapp.com/avatars/${DISCORD_ID}/${data.discord_user.avatar}`
+  : '/img/placeholder.png';
 ---
 
 <html lang="en-us">
@@ -44,8 +50,8 @@ import "/public/css/style.sass";
         <a href="https://www.youtube.com/watch?v=AIkktiq_T0Y" target="_blank">
           <img
             class="pfp"
-            src="https://cdn.discordapp.com/avatars/829745505784692776/33a5b48fb9547aba4bedeae3d37cfce9.png?size=2048
-            alt="custom - pfp"
+            src={avatarUrl}
+            alt="Darkn's Profile Picture"
           />
         </a>
         <h1 class="header">Darkn</h1>
