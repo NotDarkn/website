@@ -182,7 +182,7 @@ This repository is licensed through the `GNU AFFERO GENERAL PUBLIC LICENSE`. Mor
 
 ```
 NotDarkn/website: Darkn's Website (Source Code)
-Copyright (C) 2024 Darkn
+Copyright (C) 2025 Darkn
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
