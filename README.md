@@ -151,10 +151,10 @@
   <h4 align='center'><a href='https://discord.com/users/1039648022084202516'>julia_j</a></h4>
 </td>
   <td id='cortex'>
-  <a href='https://github.com/verysillycat'>
-  <img src='https://github.com/verysillycat.png' width='140px;'>
+  <a href='https://github.com/refurbishing'>
+  <img src='https://github.com/refurbishing.png' width='140px;'>
 </a>
-  <h4 align='center'><a href='https://e-z.bio/cortex'>verysillycat</a></h4>
+  <h4 align='center'><a href='https://e-z.bio/cortex'>refurbishing</a></h4>
 </td>
   <td id='bypassi'>
   <a href='https://github.com/bypassiwastaken'>
