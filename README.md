@@ -82,7 +82,7 @@
       <td>
         <a
           href="https://dl.darkn.bio"
-          >⬇️ OneDrive File Host</a
+          >⬇️ <s>OneDrive File Host</s></a
         >
       </td>
       <td>
@@ -97,7 +97,8 @@
         Made with pain, sleekness, and cleanliness.
       </td>
       <td>
-        File host with RMA shims and prebuilt files.
+        Nothing lasts forever. Read about the takedown
+        <a href="https://darkn.bio/notice">here</a>.
       </td>
       <td>
         Simple multi-mirror downloader for RMA shims!
