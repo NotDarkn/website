@@ -1,7 +1,7 @@
 name: Update Dependencies
 on:
   schedule:
-    - cron: '0 5 * * 3,6'
+    - cron: '36 3 * * 1' 
   workflow_dispatch:
 
 jobs:
@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Setup Bun.sh
         uses: oven-sh/setup-bun@v1
@@ -22,8 +24,13 @@ jobs:
 
       - name: Commit updates
         run: |
-         git config user.name "github-actions[bot]"
-         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-         git add .
-         git commit -m "chore(deps): bump dependencies"
-         git push
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          # only commit and push *if* there are changes
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git commit -m "chore(deps): bump dependencies"
+            git push
+          else
+            echo "no changes to commit"
+          fi
