@@ -13,14 +13,14 @@
     "@astrojs/cloudflare": "^12.5.4",
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.4.1",
-    "@astrojs/vercel": "^8.1.5",
+    "@astrojs/vercel": "^8.2.0",
     "@fontsource/inter": "^5.2.6",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.9.3",
+    "astro": "^5.10.0",
     "sass": "^1.89.2"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.0",
     "prettier-plugin-astro": "^0.14.1",
     "typescript": "^5.8.3"
   }
