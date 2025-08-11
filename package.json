@@ -16,8 +16,8 @@
     "@astrojs/vercel": "^8.2.2",
     "@fontsource/inter": "^5.2.6",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.12.8",
-    "sass": "^1.89.2"
+    "astro": "^5.12.9",
+    "sass": "^1.90.0"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
