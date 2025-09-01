@@ -10,14 +10,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.6.5",
+    "@astrojs/cloudflare": "^12.6.7",
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.5.1",
-    "@astrojs/vercel": "^8.2.6",
+    "@astrojs/vercel": "^8.2.7",
     "@fontsource/inter": "^5.2.6",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.13.3",
-    "sass": "^1.90.0"
+    "astro": "^5.13.5",
+    "sass": "^1.91.0"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
