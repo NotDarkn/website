@@ -12,12 +12,12 @@
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.8",
     "@astrojs/partytown": "^2.1.4",
-    "@astrojs/sitemap": "^3.5.1",
+    "@astrojs/sitemap": "^3.6.0",
     "@astrojs/vercel": "^8.2.7",
-    "@fontsource/inter": "^5.2.7",
+    "@fontsource/inter": "^5.2.8",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.13.7",
-    "sass": "^1.92.1"
+    "astro": "^5.13.9",
+    "sass": "^1.93.0"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
