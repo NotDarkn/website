@@ -1,5 +1,5 @@
 <h1>
-  <a href="https://darkn.bio" target="_blank"><img src="https://github.com/NotDarkn/website/assets/73033672/61f75adb-5e24-454b-8c7f-59ca4f32941c" alt="Darkn's Website" width="auto"></a>
+  <a href="https://darkn.pages.dev" target="_blank"><img src="https://github.com/NotDarkn/website/assets/73033672/61f75adb-5e24-454b-8c7f-59ca4f32941c" alt="Darkn's Website" width="auto"></a>
 </h1>
 
 <p align="center">
@@ -20,9 +20,9 @@
   An open-sourced website with an easily accessible license, designed for simplicity, cleanliness, and usability.
 </p>
 <p align="center">
-  <a href="https://darkn.bio" target="_blank">🌐 Website</a>
+  <a href="https://darkn.pages.dev" target="_blank">🌐 Website</a>
   •
-  <a href="https://blog.darkn.bio" target="_blank">✍ Blog</a>
+  <a href="https://blogkn.vercal.app" target="_blank">✍ Blog</a>
   •
   <a href="https://discord.gg/ER8saRhYpg" target="_blank">☎️ Discord</a>
   •
@@ -35,19 +35,19 @@
     <tr>
       <td>
         <a
-          href="https://darkn.bio"
+          href="https://darkn.pages.dev"
           >📖 Mini Portfolio</a
         >
       </td>
       <td>
         <a
-          href="https://darkn.bio/icraze"
+          href="https://darkn.pages.dev/icraze"
           >📢 Fake Propaganda</a
         >
       </td>
       <td>
         <a
-          href="https://darkn.bio/sh1mmer"
+          href="https://darkn.pages.dev/sh1mmer"
           >🖥️ SH1mmer Rehost</a
         >
       </td>
@@ -75,19 +75,19 @@
     <tr>
       <td>
         <a 
-          href="https://blog.darkn.bio"
+          href="https://blogkn.vercel.app"
           >🖊️ Simplistic Blog</a
         >
       </td>
       <td>
         <a
-          href="https://dl.darkn.bio"
+          href="https://hostkn.pages.dev"
           >⬇️ <s>OneDrive File Host</s></a
         >
       </td>
       <td>
         <a 
-          href="https://darkn.bio/sh1mmer/downloader"
+          href="https://darkn.pages.dev/sh1mmer/downloader"
           >🌏 Glitz Downloader</a
         >
       </td>
@@ -98,7 +98,7 @@
       </td>
       <td>
         Nothing lasts forever. Read about the takedown
-        <a href="https://darkn.bio/notice">here</a>.
+        <a href="https://darkn.pages.dev/notice">here</a>.
       </td>
       <td>
         Simple multi-mirror downloader for RMA shims!
@@ -116,7 +116,7 @@
   <a href='https://github.com/NotDarkn'>
   <img src='https://github.com/NotDarkn.png' width='140px;'>
 </a>
-  <h4 align='center'><a href='https://darkn.bio'>Darkn</a></h4>
+  <h4 align='center'><a href='https://darkn.pages.dev'>Darkn</a></h4>
 </td>
   <td id='hell0u'>
   <a href='https://github.com/uhhwave'>
@@ -183,7 +183,7 @@ This repository is licensed through the `GNU AFFERO GENERAL PUBLIC LICENSE`. Mor
 
 ```
 NotDarkn/website: Darkn's Website (Source Code)
-Copyright (C) 2025 Darkn
+Copyright (C) 2026 Darkn
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
