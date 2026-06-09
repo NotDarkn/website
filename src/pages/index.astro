@@ -1,85 +1,48 @@
----
-import "@fontsource/inter";
-import "/public/css/style.sass";
-
-const DISCORD_ID = '829745505784692776';
-const response = await fetch(`https://api.lanyard.rest/v1/users/${DISCORD_ID}`);
-const { data } = await response.json();
-const avatarUrl = data?.discord_user?.avatar 
-  ? `https://cdn.discordapp.com/avatars/${DISCORD_ID}/${data.discord_user.avatar}`
-  : '/img/placeholder.png';
----
-
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
-    <title>Darkn's Bio</title>
+    <title>meowspeak</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <meta property="og:title" content="Darkn's Bio" />
-    <meta property="og:description" content="Quick Profile of Darkn" />
-    <meta property="og:url" content="https://darkn.bio" />
+    <meta property="og:title" content="meowspeak" />
+    <meta property="og:description" content="meowspeak" />
+    <meta property="og:url" content="https://meowspeak.online" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/img/site-favicon.webp" />
-    <meta property="og:image:alt" content="Sakamato" />
+    <meta property="og:image" content="/img/bingus.gif" />
+    <meta property="og:image:alt" content="yk the one" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
-    <meta property="og:site_name" content="Profile" />
-
-    <link rel="preload" href="/img/discord-icon-alt.webp" as="image" />
-    <link rel="preload" href="/img/sh1mmer-alt.webp" as="image" />
-    <link rel="preload" href="/img/twitter.webp" as="image" />
-    <link rel="preload" href="/img/download.webp" as="image" />
-    <link rel="preload" href="/img/blog_icon.webp" as="image" />
+    <meta property="og:site_name" content="meowspeak" />
 
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="apple-touch-icon" href="/img/site-touch-icon.webp" />
+    <link rel="apple-touch-icon" href="/img/bingus.gif" />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="/img/site-touch-icon-72x72.webp"
+      href="/img/bingus.gif"
     />
-    <link rel="icon" type="image/x-icon" href="/img/site-favicon.webp" />
+    <link rel="icon" type="image/x-icon" href="/img/bingus.gif" />
     <meta name="darkreader-lock">
+    <style lang="sass">
+      .center
+        display: flex
+        overflow: hidden
+        justify-content: center
+        align-items: center
+        min-height: 95vh
+      
+      .center2
+        text-align: center
+    </style>
   </head>
   <body>
     <div class="center">
-      <div class="box">
-        <a href="https://www.youtube.com/watch?v=AIkktiq_T0Y" target="_blank">
-          <img
-            class="pfp"
-            src="https://i.imgur.com/vFXABJc.png"
-            alt="Darkn's Profile Picture"
-          />
-        </a>
-        <h1 class="header">Darkn</h1>
-        <p class="text">
-          ✨ a (bad) web developer interested in Chromebooks and ULTRAKILL.
-          currently 17 years old! 🌎
-        </p>
-        <a href="https://discord.gg/ER8saRhYpg" target="_blank">
-          <img src="/img/discord-icon-alt.webp" class="icons-a" />
-        </a>
-        <a href="https://twitter.com/notdarkn" target="_blank">
-          <img src="/img/twitter.webp" class="icons-b" />
-        </a>
-        <a href="/sh1mmer" target="_blank">
-          <img src="/img/sh1mmer-alt.webp" class="icons-c" />
-        </a>
-        <a href="https://speedrun.com/users/Darknn" target="_blank">
-          <img src="/img/src_icon.webp" class="icons-d" />
-        </a>
-        <a href="https://blogkn.vercel.app" target="_blank">
-          <img src="/img/blog_icon.webp" class="icons-e" />
-
-        </a>
+      <div class="center2">
+        <p style="margin-bottom: 5px">im shreddy fazchair, im from the freddy fazbear movie</p>
+        <img src="/img/bingus.gif"/>
       </div>
-      <div id="snowflake-container"></div>
-      <script src="../../public/js/iconchange.ts"></script>
-      <script src="../../public/js/snowflakes.ts"></script>
-      <script src="../../public/js/mobiledetection.ts"></script>
     </div>
   </body>
 </html>

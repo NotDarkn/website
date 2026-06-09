@@ -24,6 +24,7 @@ pnpm-debug.log*
 yarn.lock
 pnpm-lock.yaml
 bun.lockb
+bun.lock
 package-lock.json
 
 # intelliJ
